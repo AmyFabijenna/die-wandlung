@@ -314,6 +314,29 @@
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 20, 147, 0.4);
+            filter: drop-shadow(0 4px 12px rgba(0, 229, 255, 0.4));
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon img {
+            border-color: #ff1493;
+            transform: scale(1.05);
+            filter: drop-shadow(0 8px 20px rgba(255, 20, 147, 0.6));
         }
 
         .service-card h3 {
@@ -458,21 +481,21 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🌿</div>
+                    <div class="service-icon"><img src="images/schamanism.jpg" alt="Schamanische Begleitung"></div>
                     <h3>Schamanische Begleitung</h3>
                     <p>Energetische Prozessbegleitung bei Lebensübergängen, Krisen und Neuanfängen. Rituale für Abschied, Transformation und Neubeginn. Seelenarbeit und spirituelle Orientierung.</p>
                     <p><strong>Für dich, wenn:</strong> Du in einer tiefen Lebenskrise steckst, einen wichtigen Übergang durchlebst oder spirituelle Begleitung suchst.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🏡</div>
+                    <div class="service-icon"><img src="images/fengshui.jpg" alt="Feng Shui Beratung"></div>
                     <h3>Feng Shui Beratung</h3>
                     <p>Energetische Raumgestaltung für Wohn- und Arbeitsräume. Ich analysiere die Energieflüsse in deinen Räumen und zeige dir, wie du durch bewusste Gestaltung mehr Klarheit, Harmonie und Lebenskraft schaffst.</p>
                     <p><strong>Für dich, wenn:</strong> Du dich in deinen Räumen nicht wohlfühlst, beruflich oder privat feststeckst oder einen Neuanfang brauchst.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">💼</div>
+                    <div class="service-icon"><img src="images/transformation.jpg" alt="Begleitung bei Lebensübergängen"></div>
                     <h3>Begleitung bei Lebensübergängen</h3>
                     <p>Ganzheitliche Prozessbegleitung bei beruflicher Neuorientierung, Karrierewechsel und wichtigen Lebensentscheidungen. Strukturierte Arbeit an Zielen, Klarheit und konkreten Schritten.</p>
                     <p><strong>Für dich, wenn:</strong> Du an einem beruflichen oder persönlichen Wendepunkt stehst und nicht weißt, wie es weitergehen soll.</p>
