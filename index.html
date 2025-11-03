@@ -339,6 +339,37 @@
             filter: drop-shadow(0 8px 20px rgba(255, 20, 147, 0.6));
         }
 
+        /* Zen Cat Image */
+        .zen-cat {
+            float: right;
+            width: 180px;
+            margin: 0 0 1rem 2rem;
+            text-align: center;
+        }
+
+        .zen-cat img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 20, 147, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
+        }
+
+        .zen-cat-caption {
+            font-size: 0.85rem;
+            color: #ffd700;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .zen-cat {
+                float: none;
+                margin: 2rem auto;
+                width: 150px;
+            }
+        }
+
         .service-card h3 {
             color: #ff1493;
             text-align: left;
@@ -598,6 +629,10 @@
 
         <!-- CTA Section -->
         <section id="contact" style="text-align: center;">
+            <div class="zen-cat">
+                <img src="images/lea2022.png" alt="Zen-Großmeisterin Lea ;-)">
+                <div class="zen-cat-caption">Zen-Großmeisterin Lea ;-)</div>
+            </div>
             <h2>Bereit für deine Wandlung?</h2>
             <p style="font-size: 1.2rem; max-width: 700px; margin: 2rem auto;">Lass uns sprechen. Schreib mir oder ruf an.</p>
             
