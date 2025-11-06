@@ -13,10 +13,10 @@
 
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #0a1628 0%, #1a3a52 50%, #0d2137 100%);
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
             min-height: 100vh;
             line-height: 1.6;
-            color: #e8f4f8;
+            color: #000000;
         }
 
         .container {
@@ -28,16 +28,19 @@
         header {
             text-align: center;
             margin-bottom: 40px;
-            background: rgba(10, 22, 40, 0.6);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            border: 2px solid rgba(232, 244, 248, 0.1);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
         }
 
         h1 {
-            color: #ff1493;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 300;
@@ -46,40 +49,45 @@
 
         .subtitle {
             font-size: 1.2em;
-            color: #a8d8ea;
+            color: #0d2137;
             margin-bottom: 20px;
         }
 
         .back-link {
             display: inline-block;
-            background: rgba(255, 20, 147, 0.2);
-            color: #ff1493;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            border: 2px solid rgba(255, 20, 147, 0.3);
+            border: 2px solid #B8860B;
             backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
         .back-link:hover {
-            background: rgba(255, 20, 147, 0.4);
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
 
         .faq-section {
-            background: rgba(26, 58, 82, 0.4);
+            background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(15px);
             border-radius: 20px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(232, 244, 248, 0.1);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
         }
 
         .faq-section h2 {
-            color: #ff1493;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 1.8em;
             margin-bottom: 25px;
             text-align: center;
@@ -88,10 +96,10 @@
         }
 
         .faq-item {
-            background: rgba(10, 22, 40, 0.6);
+            background: rgba(255, 255, 255, 0.6);
             border-radius: 15px;
             margin-bottom: 20px;
-            border: 1px solid rgba(255, 20, 147, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
             overflow: hidden;
             backdrop-filter: blur(5px);
             transition: all 0.3s ease;
@@ -99,8 +107,8 @@
 
         .faq-item:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
-            border-color: #ff1493;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
         }
 
         .faq-question {
@@ -111,18 +119,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(26, 58, 82, 0.3);
-            color: #e8f4f8;
+            background: rgba(255, 255, 255, 0.4);
+            color: #000000;
         }
 
         .faq-question:hover {
-            background: rgba(26, 58, 82, 0.5);
+            background: rgba(212, 175, 55, 0.1);
         }
 
         .faq-icon {
-            color: #ff1493;
+            color: #B8860B;
             font-size: 1.5em;
             transition: transform 0.3s ease;
+            font-weight: bold;
         }
 
         .faq-answer {
@@ -130,8 +139,8 @@
             max-height: 0;
             overflow: hidden;
             transition: all 0.3s ease;
-            background: rgba(26, 58, 82, 0.6);
-            color: #d0e8f2;
+            background: rgba(255, 255, 255, 0.3);
+            color: #000000;
         }
 
         .faq-answer.active {
@@ -148,24 +157,28 @@
         }
 
         .highlight {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.2), rgba(199, 21, 133, 0.3));
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
             padding: 15px;
             border-radius: 10px;
-            border-left: 4px solid #ff1493;
+            border-left: 4px solid #D4AF37;
             margin: 15px 0;
         }
 
         .contact-promo {
             text-align: center;
-            background: rgba(10, 22, 40, 0.6);
+            background: rgba(255, 255, 255, 0.6);
             border-radius: 15px;
             padding: 25px;
             margin-top: 40px;
-            border: 2px solid rgba(255, 20, 147, 0.3);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
         }
 
         .contact-promo h3 {
-            color: #ff1493;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 15px;
             font-size: 1.4em;
             font-weight: 300;
@@ -173,28 +186,33 @@
 
         .whatsapp-link {
             display: inline-block;
-            background: linear-gradient(135deg, #ff1493 0%, #c71585 100%);
-            color: white;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
             padding: 12px 25px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
             margin-top: 15px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4);
+            box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            border: 2px solid #B8860B;
         }
 
         .whatsapp-link:hover {
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
 
         footer {
             text-align: center;
             margin-top: 50px;
             padding: 20px;
-            color: #a8d8ea;
+            color: #000000;
             font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
         }
 
         @media (max-width: 768px) {
@@ -216,87 +234,64 @@
     <div class="container">
         <header>
             <h1>Häufig gestellte Fragen</h1>
-            <p class="subtitle">Alles, was du über meine energetische Begleitung wissen musst</p>
+            <p class="subtitle">Amy Lang - Die Wandlung | Energetische Begleitung</p>
             <a href="index.html" class="back-link">← Zurück zur Hauptseite</a>
         </header>
 
         <section class="faq-section">
-            <h2>Über die Arbeit & Angebote</h2>
+            <h2>Grundlegendes zur Begleitung</h2>
             
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was genau machst du? Was ist energetische Begleitung?
+                    Was ist energetische Begleitung genau?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Ich arbeite als Energetikerin im Rahmen des freien Gewerbes (österreichische Gewerbeordnung) und begleite Menschen auf drei Ebenen:</p>
-                    <p><strong>🌿 Schamanische Begleitung:</strong> Energetische Prozessarbeit bei Lebensübergängen, Krisen und Neuanfängen. Rituale für Transformation und spirituelle Orientierung.</p>
-                    <p><strong>🏡 Feng Shui Beratung:</strong> Analyse und Harmonisierung der Energieflüsse in deinen Räumen – damit du dich wohlfühlst und deine Ziele leichter erreichst.</p>
-                    <p><strong>💼 Begleitung bei Lebensübergängen:</strong> Ganzheitliche Unterstützung bei beruflicher Neuorientierung, Karrierewechsel und wichtigen Lebensentscheidungen.</p>
-                    <p>Mein Ansatz verbindet praktische Struktur mit spiritueller Tiefe. Ich arbeite nicht nur auf der mentalen Ebene, sondern beziehe auch die energetische und spirituelle Dimension mit ein.</p>
+                    <p>Energetische Begleitung ist keine Therapie und kein klassisches Coaching. Es ist eine Mischung aus:</p>
+                    <p><strong>Strukturierter Prozessbegleitung:</strong> Wir arbeiten konkret an deinen Zielen, Entscheidungen und nächsten Schritten.</p>
+                    <p><strong>Energetischer Arbeit:</strong> Ich schaue auf Blockaden, Muster und energetische Dynamiken, die dich zurückhalten.</p>
+                    <p><strong>Schamanischer Perspektive:</strong> Bei Bedarf nutzen wir Rituale, schamanische Reisen oder spirituelle Methoden für tiefere Transformation.</p>
+                    <p>Das Ziel: Klarheit, Handlungsfähigkeit, echte Veränderung.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was ist der Unterschied zwischen den drei Angeboten?
+                    Für wen ist diese Arbeit geeignet?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
+                    <p><strong>Du bist hier richtig, wenn:</strong></p>
+                    <p>• Du an einem Wendepunkt stehst (beruflich oder persönlich)<br>
+                    • Du bereit bist, hinzuschauen – ehrlich und ohne Ausreden<br>
+                    • Du konkrete Schritte gehen willst, nicht nur reden<br>
+                    • Du offen für spirituelle/energetische Perspektiven bist (aber nicht "dran glauben" musst)</p>
+                    
                     <div class="highlight">
-                        <p><strong>Schamanische Begleitung:</strong> Für tiefe Lebenskrisen, spirituelle Suchende, Menschen in großen Übergängen (Tod, Trennung, Neuanfang). Arbeit mit Ritualen, Seelenarbeit, energetischer Klärung.</p>
-                        <p><strong>Feng Shui Beratung:</strong> Für alle, die ihre Wohn- oder Arbeitsräume harmonisieren wollen. Du bekommst eine detaillierte Analyse und konkrete Empfehlungen zur Raumgestaltung.</p>
-                        <p><strong>Lebensübergänge:</strong> Für berufliche und persönliche Wendepunkte. Strukturierte Prozessbegleitung mit klaren Zielen und konkreten Schritten – mit energetischer Unterstützung.</p>
+                        <p><strong>Du bist hier NICHT richtig, wenn:</strong></p>
+                        <p>• Du schnelle Lösungen ohne eigenes Dazutun suchst<br>
+                        • Du hauptsächlich über Probleme sprechen willst, ohne zu handeln<br>
+                        • Du therapeutische Unterstützung bei psychischen Erkrankungen benötigst</p>
                     </div>
-                    <p>Die Angebote können auch kombiniert werden, z.B. Feng Shui für dein Home-Office plus Begleitung bei der Karriereneuorientierung.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie läuft eine schamanische Sitzung ab?
+                    Was ist der Unterschied zu Therapie oder Coaching?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Jede schamanische Sitzung ist individuell und richtet sich nach deinem Bedarf. Typische Elemente sind:</p>
-                    <p>• Energetische Analyse deiner aktuellen Situation<br>
-                    • Klärung von Blockaden und alten Mustern<br>
-                    • Rituale für Transformation (z.B. Abschied, Neubeginn)<br>
-                    • Arbeit mit schamanischen Techniken (Reisen, Visualisierung)<br>
-                    • Integration und konkrete Umsetzungsschritte</p>
-                    <p><strong>Wichtig:</strong> Schamanische Arbeit ersetzt keine Therapie! Sie ist eine spirituelle Begleitung und eignet sich für Menschen, die bereits grundsätzlich stabil sind.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie funktioniert eine Feng Shui Beratung?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Variante 1 - Vor Ort:</strong> Ich komme zu dir nach Hause oder ins Büro (Raum Wien/Steiermark) und analysiere die Energieflüsse in deinen Räumen. Du bekommst einen schriftlichen Bericht mit konkreten Empfehlungen.</p>
-                    <p><strong>Variante 2 - Online:</strong> Du schickst mir Grundrisspläne und Fotos. Ich erstelle eine detaillierte Analyse und wir besprechen die Empfehlungen per Video.</p>
-                    <p><strong>Was du bekommst:</strong> Konkrete, umsetzbare Vorschläge für Möbelplatzierung, Farbgestaltung, Raumnutzung – damit die Energie fließen kann und du dich wohlfühlst.</p>
-                    <p><strong>Preis:</strong> Ab 150€, abhängig von Größe und Umfang. Details klären wir im Erstgespräch.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Ist das Therapie oder Coaching?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Weder noch.</strong> Ich bin Energetikerin (freies Gewerbe in Österreich) und arbeite im Bereich der energetischen Begleitung und Prozessbegleitung.</p>
-                    <p><strong>Keine Therapie:</strong> Ich behandle keine psychischen Erkrankungen. Bei Depressionen, Traumata oder schweren Krisen brauchst du einen Therapeuten oder Psychiater.</p>
-                    <p><strong>Kein klassisches Coaching:</strong> Meine Arbeit geht tiefer. Ich beziehe nicht nur die mentale, sondern auch die energetische und spirituelle Ebene mit ein.</p>
-                    <p><strong>Was ich bin:</strong> Eine erfahrene Begleiterin für Menschen, die bereit sind für echte Transformation – auf allen Ebenen.</p>
+                    <p><strong>Therapie:</strong> Behandlung von psychischen Erkrankungen, Traumata, tiefgreifenden psychischen Problemen. Wird von approbierten Therapeuten durchgeführt.</p>
+                    <p><strong>Coaching:</strong> Fokus auf berufliche Ziele, Performance, Strategien. Meist strukturiert und zielorientiert.</p>
+                    <p><strong>Energetische Begleitung:</strong> Verbindung von strukturierter Arbeit UND energetischer/spiritueller Perspektive. Fokus auf Lebensübergänge, Transformation, ganzheitliche Entwicklung. Ich bin Energetikerin im Rahmen des freien Gewerbes – keine Therapeutin.</p>
+                    <p><strong>Wichtig:</strong> Bei psychischen Erkrankungen ist professionelle Therapie notwendig. Energetische Begleitung ersetzt keine medizinische oder therapeutische Behandlung.</p>
                 </div>
             </div>
         </section>
 
         <section class="faq-section">
-            <h2>Praktisches & Organisation</h2>
+            <h2>Ablauf und Praktisches</h2>
             
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
@@ -304,42 +299,104 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p><strong>Online-Sitzungen (Standard):</strong> 60 Minuten intensive Arbeit per Video (kMeet). Du brauchst nur einen ruhigen Ort, stabile Internetverbindung und Kopfhörer.</p>
-                    <p><strong>Ablauf:</strong> Wir starten mit einer kurzen Einstimmung, arbeiten dann fokussiert an deinem Thema und entwickeln konkrete nächste Schritte. Zwischen den Sitzungen setzt du um – in der nächsten Sitzung reflektieren wir und gehen weiter.</p>
-                    <p><strong>Feng Shui vor Ort:</strong> Dauer ca. 2-3 Stunden, je nach Größe der Räume. Danach bekommst du einen schriftlichen Bericht.</p>
+                    <p>Wir treffen uns per Video (über kMeet - sichere, schweizer Plattform). Eine Sitzung dauert 60 Minuten.</p>
+                    <p><strong>Typischer Ablauf:</strong></p>
+                    <p>• Check-in: Wo stehst du gerade? Was ist seit der letzten Sitzung passiert?<br>
+                    • Fokus: Woran arbeiten wir heute?<br>
+                    • Arbeit: Gespräch, energetische Arbeit, schamanische Methoden - je nach Bedarf<br>
+                    • Nächste Schritte: Was nimmst du mit? Was tust du bis zur nächsten Sitzung?</p>
+                    <p>Die Sitzungen sind intensiv, fokussiert und praxisnah. Kein "Labern" - sondern echte Arbeit.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was kosten die Sitzungen?
+                    Wie oft finden Sitzungen statt?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Einzelsitzungen:</strong> Nach Bedarf. Du buchst, wenn du eine Sitzung möchtest.</p>
+                    <p><strong>Transformations-Paket (6 Sitzungen):</strong> Üblicherweise alle 1-2 Wochen über 3 Monate verteilt. Wir vereinbaren den Rhythmus individuell.</p>
+                    <p><strong>Wichtig:</strong> Zwischen den Sitzungen arbeitest DU. Die Sitzungen sind der Rahmen - die eigentliche Transformation passiert in deinem Alltag.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Was passiert zwischen den Sitzungen?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Die Arbeit findet nicht nur in den Sitzungen statt. Du bekommst von mir:</p>
+                    <p>• Konkrete Aufgaben oder Übungen<br>
+                    • Reflexionsfragen<br>
+                    • Manchmal energetische Praktiken oder Rituale</p>
+                    <p><strong>Erreichbarkeit:</strong> Ich bin keine 24/7-Therapeutin. Bei Fragen antworte ich innerhalb von 48h (Werktags). In Krisen: Telefonseelsorge 142.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Kann ich auch vor Ort kommen oder ist es nur online?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Die meisten Sitzungen finden online statt (per Video). Das hat Vorteile:</p>
+                    <p>• Du bist in deiner gewohnten Umgebung<br>
+                    • Keine Anfahrt<br>
+                    • Flexiblere Termingestaltung</p>
+                    <p><strong>Feng Shui Beratung:</strong> Kann vor Ort oder per Grundriss-Analyse erfolgen - je nach Wunsch und Möglichkeit.</p>
+                    <p><strong>Schamanische Rituale:</strong> In seltenen Fällen kann es sinnvoll sein, sich persönlich zu treffen. Das besprechen wir individuell.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Kosten und Buchung</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Was kostet die Begleitung?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Einzelsitzung:</strong> 80€ (60 Min) - für alle Bereiche (Schamanische Arbeit, Feng Shui, Lebensübergänge)</p>
+                    <p><strong>Transformations-Paket:</strong> 450€ für 6 Sitzungen über 3 Monate (= 75€/Sitzung, du sparst 30€)</p>
+                    <p><strong>Feng Shui Beratung:</strong> Ab 150€ - je nach Umfang (Vor-Ort oder Grundriss-Analyse)</p>
+                    <p><strong>Zahlung:</strong> Im Voraus vor der (ersten) Sitzung. Mit der Zahlung wird der Termin verbindlich gebucht.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Was passiert, wenn ich einen Termin absagen muss?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
                     <div class="highlight">
-                        <p><strong>Einzelsitzung:</strong> 80€ für 60 Min (alle Bereiche)</p>
-                        <p><strong>Transformations-Paket:</strong> 450€ für 6 Sitzungen über 3 Monate (= 75€/Sitzung, du sparst 30€)</p>
-                        <p><strong>Feng Shui Beratung:</strong> Ab 150€ (individuell nach Umfang)</p>
-                        <p><strong>Erstgespräch:</strong> Kostenlos (20 Min)</p>
+                        <p><strong>Absage mindestens 48 Stunden vorher:</strong> Der Termin kann nach Verfügbarkeit nachgeholt werden.</p>
+                        <p><strong>Kurzfristige Absage (weniger als 48h) oder Nichterscheinen:</strong> Die Sitzung verfällt ersatzlos und wird nicht erstattet.</p>
                     </div>
-                    <p>Zahlung erfolgt im Voraus per Überweisung. Mit der Zahlung wird der Termin verbindlich gebucht.</p>
+                    <p>Warum? Weil ich dir den Termin freihalte und in dieser Zeit niemand anderen begleiten kann.</p>
+                    <p><strong>Notfälle:</strong> Bei echten Notfällen (Krankheit, Unfall, etc.) finden wir eine Lösung. Sprich mich einfach an.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Kann ich einen Termin absagen oder verschieben?
+                    Kann ich die Begleitung jederzeit beenden?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Ja, Termine können bis 48 Stunden vorher kostenfrei abgesagt oder verschoben werden. Bei kurzfristigerer Absage (weniger als 48h) verfällt die Sitzung ersatzlos.</p>
-                    <p><strong>Notfälle:</strong> Bei nachweisbaren Notfällen (Krankheit mit Attest, etc.) finden wir eine Lösung.</p>
+                    <p><strong>Einzelsitzungen:</strong> Du buchst nur, wenn du möchtest. Keine Verpflichtung.</p>
+                    <p><strong>Transformations-Paket:</strong> Ja, du kannst jederzeit beenden. Bereits bezahlte Sitzungen werden jedoch nicht rückerstattet. Die gebuchten Termine werden dir bis zum vereinbarten Ende angeboten.</p>
+                    <p>Wenn die Zusammenarbeit nicht funktioniert, sprechen wir das offen an und finden gemeinsam eine Lösung.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie buche ich eine Sitzung?
+                    Wie beginne ich?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
@@ -407,7 +464,7 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Ich speichere nur die notwendigsten Daten (Name, Kontaktdaten, Buchungsinformationen). Alle Daten werden DSGVO-konform behandelt.</p>
+                    <p>Ich speichere nur die notwendigsten Daten (Name, Kontaktdaten, Buchungsinformationen). Alle Daten werden DSGVO-konform und nach dem österreichischen Datenschutzgesetz (DSG) behandelt.</p>
                     <p>Du kannst jederzeit Auskunft über deine gespeicherten Daten verlangen oder deren Löschung beantragen.</p>
                 </div>
             </div>

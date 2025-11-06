@@ -13,10 +13,10 @@
 
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #0a1628 0%, #1a3a52 50%, #0d2137 100%);
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
             min-height: 100vh;
             line-height: 1.8;
-            color: #e8f4f8;
+            color: #000000;
         }
 
         .container {
@@ -28,16 +28,19 @@
         header {
             text-align: center;
             margin-bottom: 40px;
-            background: rgba(10, 22, 40, 0.6);
+            background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            border: 2px solid rgba(232, 244, 248, 0.1);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
+            border: 2px solid rgba(184, 134, 11, 0.3);
         }
 
         h1 {
-            color: #ff1493;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 300;
@@ -46,44 +49,49 @@
 
         .subtitle {
             font-size: 1.2em;
-            color: #a8d8ea;
+            color: #0d2137;
             margin-bottom: 20px;
         }
 
         .back-link {
             display: inline-block;
-            background: rgba(255, 20, 147, 0.2);
-            color: #ff1493;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            color: #000000;
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            border: 2px solid rgba(255, 20, 147, 0.3);
+            border: 2px solid #B8860B;
             backdrop-filter: blur(5px);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
         .back-link:hover {
-            background: rgba(255, 20, 147, 0.4);
+            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
 
         .agb-content {
-            background: rgba(26, 58, 82, 0.4);
+            background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(15px);
             border-radius: 20px;
             padding: 40px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(232, 244, 248, 0.1);
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
         }
 
         .agb-content h2 {
-            color: #ff1493;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 1.6em;
             margin-top: 30px;
             margin-bottom: 15px;
-            border-bottom: 2px solid rgba(255, 20, 147, 0.3);
+            border-bottom: 2px solid rgba(184, 134, 11, 0.3);
             padding-bottom: 8px;
             font-weight: 300;
         }
@@ -94,7 +102,7 @@
 
         .agb-content p {
             margin-bottom: 15px;
-            color: #d0e8f2;
+            color: #000000;
         }
 
         .agb-content ul {
@@ -104,37 +112,40 @@
 
         .agb-content li {
             margin-bottom: 10px;
-            color: #d0e8f2;
+            color: #000000;
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, rgba(255, 20, 147, 0.2), rgba(199, 21, 133, 0.3));
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid #ff1493;
+            border-left: 4px solid #D4AF37;
             margin: 20px 0;
         }
 
         .highlight-box strong {
-            color: #ff1493;
+            color: #B8860B;
             font-size: 1.1em;
         }
 
         .date-info {
             text-align: right;
             font-style: italic;
-            color: #a8d8ea;
+            color: #0d2137;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 2px solid rgba(255, 20, 147, 0.2);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
         }
 
         footer {
             text-align: center;
             margin-top: 50px;
             padding: 20px;
-            color: #a8d8ea;
+            color: #000000;
             font-size: 0.9em;
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-radius: 10px;
         }
 
         @media (max-width: 768px) {
@@ -181,66 +192,77 @@
                 <li>Mit der Zahlung wird der Termin verbindlich gebucht.</li>
             </ul>
 
-            <h2>4. Absagen und Terminverschiebung</h2>
+            <h2>4. Widerrufsrecht bei Fernabsatzverträgen</h2>
+            <div class="highlight-box">
+                <p><strong>Widerrufsbelehrung:</strong> Als Verbraucher haben Sie grundsätzlich ein gesetzliches Widerrufsrecht von 14 Tagen nach Vertragsabschluss.</p>
+                <p><strong>Vorzeitiges Erlöschen des Widerrufsrechts:</strong> Das Widerrufsrecht erlischt bei Dienstleistungen, wenn ich die Dienstleistung vollständig erbracht habe und mit der Ausführung erst begonnen habe, nachdem Sie Ihre ausdrückliche Zustimmung gegeben haben und gleichzeitig Ihre Kenntnis davon bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung durch mich verlieren.</p>
+                <p>Durch die Buchung einer Sitzung mit festem Termin und Ihre Zustimmung zum sofortigen Beginn der Leistungserbringung erlischt Ihr Widerrufsrecht mit Durchführung der gebuchten Sitzung.</p>
+            </div>
+
+            <h2>5. Absagen und Terminverschiebung</h2>
             <p><strong>Absagen durch den Klienten:</strong> Bei Absage eines Termins mindestens 48 Stunden vor der Sitzung kann der Termin nach Verfügbarkeit nachgeholt werden. Bei kurzfristigerer Absage oder Nichterscheinen verfällt die Sitzung ersatzlos.</p>
             
             <div class="highlight-box">
                 <strong>Bereits bezahlte Sitzungen:</strong> Bereits bezahlte Sitzungen werden nicht rückerstattet. Die Leistungspflicht besteht darin, die gebuchten Termine anzubieten und bereitzustehen.
             </div>
 
-            <h2>5. Kündigung</h2>
+            <h2>6. Kündigung</h2>
             <ul>
                 <li>Einzelsitzungen: Keine Kündigung nötig, Buchung erfolgt pro Sitzung.</li>
                 <li>Transformations-Paket: Kündigung jederzeit möglich, jedoch keine Rückerstattung bereits gezahlter Beträge. Die gebuchten Sitzungen werden bis zum vereinbarten Ende durchgeführt.</li>
                 <li>Bei außerordentlicher Kündigung durch die Energetikerin (z.B. bei mangelnder Mitarbeit, respektlosem Umgang) erfolgt keine Rückerstattung. Die bereits bezahlten Sitzungen werden nach Möglichkeit angeboten.</li>
             </ul>
 
-            <h2>6. Vertraulichkeit</h2>
+            <h2>7. Vertraulichkeit</h2>
             <ul>
                 <li>Alle Inhalte der Sitzungen werden streng vertraulich behandelt.</li>
                 <li>Ausnahme: Bei akuter Selbst- oder Fremdgefährdung bin ich verpflichtet, entsprechende Stellen zu informieren.</li>
             </ul>
 
-            <h2>7. Technische Voraussetzungen (bei Online-Sitzungen)</h2>
+            <h2>8. Technische Voraussetzungen (bei Online-Sitzungen)</h2>
             <ul>
                 <li>Der Klient ist verantwortlich für eine funktionierende Internetverbindung und geeignete technische Ausstattung.</li>
                 <li>Bei technischen Problemen auf Seiten des Klienten wird die Sitzung nach Möglichkeit nachgeholt, jedoch nicht erstattet.</li>
                 <li>Für Feng Shui Beratungen per Grundriss-Analyse: Der Klient liefert aussagekräftige Grundrisspläne und Fotos.</li>
             </ul>
 
-            <h2>8. Erreichbarkeit</h2>
+            <h2>9. Erreichbarkeit</h2>
             <ul>
                 <li>Ich bin als selbstständige Energetikerin nicht durchgehend erreichbar.</li>
                 <li>Anfragen werden innerhalb von 48 Stunden (an Werktagen) beantwortet.</li>
                 <li>In akuten Krisen wenden Sie sich bitte an die Telefonseelsorge (142 in Österreich) oder den Notruf.</li>
             </ul>
 
-            <h2>9. Eigenverantwortung und Mitarbeit</h2>
+            <h2>10. Eigenverantwortung und Mitarbeit</h2>
             <p>Energetische Begleitung ist ein Prozess, der aktive Mitarbeit und Eigenverantwortung erfordert. Der Erfolg hängt maßgeblich von der Bereitschaft des Klienten ab, die gelernten Methoden umzusetzen und zwischen den Sitzungen an seinen Zielen zu arbeiten.</p>
 
-            <h2>10. Abgrenzung zu Therapie und medizinischer Behandlung</h2>
+            <h2>11. Abgrenzung zu Therapie und medizinischer Behandlung</h2>
             <div class="highlight-box">
-                <p><strong>Wichtiger Hinweis:</strong> Energetische Begleitung, schamanische Arbeit und Feng Shui Beratung ersetzen keine psychotherapeutische oder medizinische Behandlung. </p>
+                <p><strong>Wichtiger Hinweis:</strong> Energetische Begleitung, schamanische Arbeit und Feng Shui Beratung ersetzen keine psychotherapeutische oder medizinische Behandlung.</p>
                 <p>Bei psychischen Erkrankungen, schweren Traumata oder medizinischen Beschwerden wenden Sie sich bitte an einen approbierten Psychotherapeuten, Psychiater oder Arzt.</p>
                 <p>Ich arbeite im Rahmen des freien Gewerbes der Energetik gemäß österreichischer Gewerbeordnung und übe keine heilkundlichen Tätigkeiten aus.</p>
             </div>
 
-            <h2>11. Haftung</h2>
+            <h2>12. Haftung</h2>
             <p>Ich hafte nicht für den Erfolg der energetischen Begleitung, da dieser von der aktiven Mitarbeit und Eigenverantwortung des Klienten abhängig ist. Ich übernehme keine Haftung für Entscheidungen, die der Klient aufgrund der Begleitgespräche trifft.</p>
             
             <p>Bei Feng Shui Beratungen: Die Umsetzung der Empfehlungen liegt in der Verantwortung des Klienten. Ich übernehme keine Haftung für bauliche Maßnahmen oder Veränderungen, die auf Basis meiner Beratung vorgenommen werden.</p>
+            
+            <p>Die Haftung für Vorsatz und grobe Fahrlässigkeit sowie bei Verletzung von Leben, Körper und Gesundheit bleibt hiervon unberührt.</p>
 
-            <h2>12. Urheberrecht</h2>
+            <h2>13. Urheberrecht</h2>
             <p>Alle von mir erstellten Unterlagen, Konzepte, Feng Shui Analysen und Rituale sind urheberrechtlich geschützt und dürfen nicht ohne meine Zustimmung weitergegeben oder kommerziell genutzt werden.</p>
 
-            <h2>13. Datenschutz</h2>
-            <p>Ich verpflichte mich zur Einhaltung der DSGVO. Personenbezogene Daten werden nur im für die Leistungserbringung notwendigen Umfang erhoben, verarbeitet und gespeichert. Weitere Informationen finden Sie in der separaten Datenschutzerklärung.</p>
+            <h2>14. Datenschutz</h2>
+            <p>Ich verpflichte mich zur Einhaltung der DSGVO (Datenschutz-Grundverordnung) und des österreichischen Datenschutzgesetzes (DSG). Personenbezogene Daten werden nur im für die Leistungserbringung notwendigen Umfang erhoben, verarbeitet und gespeichert. Weitere Informationen finden Sie in der separaten Datenschutzerklärung.</p>
 
-            <h2>14. Salvatorische Klausel</h2>
+            <h2>15. Salvatorische Klausel</h2>
             <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
 
-            <h2>15. Gewerbebezeichnung</h2>
+            <h2>16. Gewerbebezeichnung und Kontakt</h2>
             <p>Amy Lang ist als Energetikerin im Rahmen des freien Gewerbes gemäß § 5 Abs. 2 Gewerbeordnung tätig. Die Tätigkeit umfasst energetische Beratung und Begleitung ohne Ausübung der Heilkunde.</p>
+            
+            <p><strong>Kontakt:</strong> amylan@ik.me</p>
 
             <div class="date-info">
                 <p><strong>Stand:</strong> November 2025</p>
