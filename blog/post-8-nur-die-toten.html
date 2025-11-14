@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Nur die Toten haben keine Zeit" | Amy Lang Blog</title>
+    
+    <meta name="description" content="Warum Menschen, die ständig 'keine Zeit' haben, sich selbst belügen – und was wirklich dahintersteckt. Eine spirituell-philosophische Reise zur wahren Bedeutung von Zeit.">
+    <meta name="keywords" content="Zeitmanagement, Keine Zeit, Zeit als Philosophie, Selbstbestimmtes Leben, Coaching">
+    <meta name="author" content="Amy Lang">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(184, 134, 11, 0.1);
+            color: #000000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid #B8860B;
+            margin-bottom: 30px;
+        }
+
+        .back-link:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            transform: translateY(-2px);
+        }
+
+        .article {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 60px 50px;
+            border: 2px solid rgba(184, 134, 11, 0.2);
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
+            margin-bottom: 40px;
+        }
+
+        .article-meta {
+            text-align: center;
+            color: #666666;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 300;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        h2 {
+            color: #B8860B;
+            font-size: 2em;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        h3 {
+            color: #666666;
+            font-size: 1.5em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.15em;
+            margin-bottom: 25px;
+            color: #333333;
+            line-height: 1.9;
+        }
+
+        .lead {
+            font-size: 1.3em;
+            color: #666666;
+            font-style: italic;
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #D4AF37;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 10px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(197, 179, 88, 0.2));
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid #D4AF37;
+            margin: 40px 0;
+        }
+
+        .highlight-box strong {
+            color: #B8860B;
+            font-size: 1.2em;
+        }
+
+        .philosophy-box {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .philosophy-box h3 {
+            color: #B8860B;
+            margin-top: 0;
+        }
+
+        .story-box {
+            background: rgba(212, 175, 55, 0.08);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            border-left: 5px solid #C5B358;
+            font-style: italic;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            color: #333333;
+        }
+
+        strong {
+            color: #B8860B;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #B8860B;
+            text-align: center;
+            margin: 50px 0;
+            padding: 30px;
+            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            border-bottom: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .cta-box {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(184, 134, 11, 0.3);
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: #B8860B;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
+            color: #000000;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.6);
+        }
+
+        .dialogue {
+            padding-left: 30px;
+            border-left: 3px solid #C5B358;
+            margin: 25px 0;
+            font-style: italic;
+            color: #555555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #B8860B;
+        }
+
+        @media (max-width: 768px) {
+            .article {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Zurück zum Blog</a>
+        </header>
+
+        <article class="article">
+            <div class="article-meta">
+                November 2025 • 12 Min Lesezeit
+            </div>
+
+            <h1>"Nur die Toten haben keine Zeit"</h1>
+
+            <p class="lead">
+                Über die gefährlichste Lüge, die wir uns selbst erzählen – und wie fünf Minuten täglich dein Leben verändern können.
+            </p>
+
+            <p>Kennst du diese Menschen? Die, bei denen jeder zweite Satz beginnt mit: "Ich würde ja gerne, aber... ich habe einfach <strong>keine Zeit</strong>."</p>
+
+            <p>Sie sagen es beim Kaffee. Sie sagen es am Telefon. Sie tragen es wie ein Ehrenabzeichen vor sich her: "Ich bin so beschäftigt. Ich habe so viel um die Ohren. Keine Zeit, keine Zeit, keine Zeit."</p>
+
+            <p>Manchmal nicke ich verständnisvoll. Manchmal lächle ich höflich.</p>
+
+            <p>Aber wenn ich es wirklich nicht mehr hören kann, sage ich:</p>
+
+            <div class="quote">
+                "Nur die Toten haben 'keine Zeit'. Sie haben die Ewigkeit, ja, aber keine ZEIT.<br>
+                Du hingegen, meine Freundin, HAST Zeit.<br>
+                Du weißt nur nicht, was sie ist."
+            </div>
+
+            <p>Und dann wird es still.</p>
+
+            <h2>Das Mantra der Selbsttäuschung</h2>
+
+            <p>Menschen haben sich "Ich habe keine Zeit" zu ihrem Mantra gemacht. Nicht, weil es wahr ist. Sondern weil es praktisch ist.</p>
+
+            <p>Es macht einen guten Eindruck. Beschäftigt zu sein bedeutet wichtig zu sein, oder? Es hält Menschen auf Abstand – wer ständig "keine Zeit" hat, muss sich nicht erklären, nicht vertiefen, nicht wirklich präsent sein.</p>
+
+            <p>Und vor allem: Es ist die perfekte Ausrede. Für alles, was man nicht tun will. Für alles, was Angst macht. Für alles, was man aufgeschoben hat, bis man es vergessen kann.</p>
+
+            <div class="highlight-box">
+                <p><strong>Die Wahrheit ist:</strong> Wenn du ständig sagst "Ich habe keine Zeit", sägst du am Ast deines selbstbestimmten Lebens.</p>
+                
+                <p>Du gibst die Kontrolle ab. Du machst Zeit zu etwas Äußerem, das über dich bestimmt. Du wirst zum Opfer einer Ressource, die es eigentlich gar nicht gibt – zumindest nicht so, wie du denkst.</p>
+            </div>
+
+            <h2>Was ist Zeit überhaupt? Ein kleiner Exkurs</h2>
+
+            <p>Bevor wir weitergehen, lass uns kurz innehalten. Was ist eigentlich Zeit?</p>
+
+            <p>Nicht die Zeit auf der Uhr. Nicht die Minuten, die du zählst. Sondern: <strong>Zeit als Phänomen.</strong> Zeit als Erfahrung. Zeit als etwas, das du lebst.</p>
+
+            <h3>Die alten Griechen wussten es bereits</h3>
+
+            <p>Die Griechen hatten zwei Wörter für Zeit:</p>
+
+            <div class="philosophy-box">
+                <h3>Chronos und Kairos</h3>
+                
+                <p><strong>Chronos</strong> ist die messbare, lineare Zeit. Die Zeit der Uhren und Kalender. Die Zeit, die unaufhaltsam vorwärts tickt. Sekunde für Sekunde. Gleichförmig. Unbarmherzig.</p>
+                
+                <p><strong>Kairos</strong> hingegen ist der <em>rechte Augenblick</em>. Der qualitative Moment. Die Zeit, in der etwas Bedeutungsvolles geschieht. Der Moment, in dem sich alles verändert. Die Zeit, die man "beim Schopfe packt".</p>
+                
+                <p>Chronos ist: "Es ist 14:30 Uhr."<br>
+                Kairos ist: "Das war <em>der</em> Moment."</p>
+            </div>
+
+            <p>Wenn du sagst "Ich habe keine Zeit", meinst du Chronos. Du glaubst, die Uhr bestimmt dein Leben.</p>
+
+            <p>Aber du lebst in Kairos. In Momenten. In Qualität. In der Zeit, die nur du selbst erschaffst.</p>
+
+            <h3>Michael Ende und die gestohlene Zeit</h3>
+
+            <p>Erinnerst du dich an "Momo"? Michael Endes wunderbares Märchen über das kleine Mädchen und die grauen Herren, die den Menschen die Zeit stehlen?</p>
+
+            <p>Die grauen Herren überzeugen die Menschen davon, dass sie ihre Zeit "sparen" müssen. Zeit wird zur Ware. Zum Kapital. Etwas, das man hortet und verwaltet und niemals genug hat.</p>
+
+            <div class="philosophy-box">
+                <p>Aber die Weisheit des Buches ist: <strong>Zeit lässt sich nicht sparen.</strong> Je mehr die Menschen ihre Zeit "sparen", desto weniger haben sie. Weil sie aufhören, sie zu <em>leben</em>.</p>
+                
+                <p>Beppo, der Straßenkehrer, erklärt es Momo so:</p>
+                
+                <p style="font-style: italic; margin-left: 20px;">"Man darf nie an die ganze Straße auf einmal denken. Man muss immer nur an den nächsten Schritt denken, an den nächsten Atemzug, an den nächsten Besenstrich. Und immer wieder nur an den nächsten."</p>
+            </div>
+
+            <p>Zeit ist keine Ressource, die man besitzt. Zeit ist das, was du <strong>tust</strong>. Im Hier und Jetzt.</p>
+
+            <h3>Lola rennt – und die Zeit verzweigt sich</h3>
+
+            <p>Der Film "Lola rennt" spielt brilliant mit der Frage: Was ist Zeit? Lola hat 20 Minuten. 20 Minuten, um 100.000 Mark aufzutreiben und ihren Freund zu retten.</p>
+
+            <p>Aber der Film zeigt uns: Diese 20 Minuten verlaufen dreimal unterschiedlich. Drei Realitäten. Drei Ausgänge. Alles hängt davon ab, welche Entscheidungen Lola in welchem <em>Moment</em> trifft.</p>
+
+            <p>Die Botschaft? <strong>Zeit ist nicht linear. Zeit ist Möglichkeit.</strong> Jeder Augenblick öffnet neue Türen. Oder schließt sie. Du entscheidest.</p>
+
+            <div class="highlight-box">
+                <p><strong>Was diese Beispiele uns sagen:</strong> Zeit ist kein Feind, der dich jagt. Zeit ist kein Gefängnis, in dem du gefangen bist.</p>
+                
+                <p>Zeit ist das Medium, in dem du dein Leben gestaltest. Du hast sie. Immer. Solange du lebst.</p>
+            </div>
+
+            <h2>Die Illusion des Zeitmanagements</h2>
+
+            <p>Jetzt kommt der Teil, wo ich dir sage, was du vermutlich hören willst: Was ist mit all den Zeitmanagement-Methoden? Mit Eisenhower-Matrix, Pareto-Prinzip, Pomodoro-Technik?</p>
+
+            <p>Funktionieren die?</p>
+
+            <p>Die Antwort ist: <strong>Jein.</strong></p>
+
+            <h3>Eisenhower-Matrix: Wichtig vs. Dringend</h3>
+
+            <p>Die Eisenhower-Matrix teilt deine Aufgaben in vier Kategorien ein: wichtig und dringend, wichtig aber nicht dringend, dringend aber unwichtig, weder noch.</p>
+
+            <p><strong>Die Theorie:</strong> Du arbeitest das ab, was wichtig und dringend ist. Delegierst, was dringend aber unwichtig ist. Planst, was wichtig ist. Und ignorierst den Rest.</p>
+
+            <p><strong>Die Realität:</strong> In der Praxis ist fast alles irgendwie dringend. Oder fühlt sich so an. Und was ist schon "wichtig"? Für wen? Nach welchen Kriterien?</p>
+
+            <p>Die Matrix hilft, wenn du bereits weißt, was dir wichtig ist. Aber wenn du das nicht weißt, ist sie nur ein weiteres Tool, das dir vorgaukelt, du hättest dein Leben im Griff.</p>
+
+            <h3>Pareto-Prinzip: Die 80/20-Regel</h3>
+
+            <p>20% deines Aufwands bringen 80% deiner Ergebnisse. Klingt toll, oder?</p>
+
+            <p><strong>Das Problem:</strong> Wie findest du diese magischen 20%? Und was, wenn das, was dir wirklich wichtig ist, in den 80% steckt, die nach Pareto "ineffizient" sind?</p>
+
+            <p>Leben ist mehr als Effizienz. Manchmal sind die wichtigsten Dinge nicht die produktivsten.</p>
+
+            <h3>Pomodoro-Technik: 25 Minuten, dann Pause</h3>
+
+            <p>25 Minuten fokussiert arbeiten. 5 Minuten Pause. Wiederholen.</p>
+
+            <p><strong>Gut für:</strong> Prokrastination überwinden. Fokus aufbauen. Struktur im Chaos.</p>
+
+            <p><strong>Nicht gut für:</strong> Tiefe kreative Arbeit. Flow-Zustände. Dinge, die Zeit brauchen, um sich zu entfalten.</p>
+
+            <div class="highlight-box">
+                <p><strong>Was diese Methoden alle gemeinsam haben:</strong></p>
+                
+                <p>Sie behandeln Zeit wie eine Ressource, die man optimieren muss. Sie gehen davon aus, dass das Problem deine Organisation ist. Deine Planung. Deine Priorisierung.</p>
+                
+                <p>Aber das ist <strong>nicht</strong> das eigentliche Problem.</p>
+            </div>
+
+            <h2>Was dich wirklich abhält: Mein Senf dazu</h2>
+
+            <p>In 20 Jahren Arbeit mit Menschen habe ich etwas gelernt:</p>
+
+            <p>Wenn jemand ständig sagt "Ich habe keine Zeit", liegt es <strong>nie</strong> an der Zeit.</p>
+
+            <p>Es liegt an drei Dingen:</p>
+
+            <h3>1. Süchte – die Zeitfresser, über die niemand spricht</h3>
+
+            <p>Stoffgebundene Süchte. Alkohol. Drogen. Essen.</p>
+
+            <p>Aber viel häufiger: <strong>Verhaltensabhängigkeiten</strong>.</p>
+
+            <ul>
+                <li>Social Media. Stundenlanges Scrollen. "Nur mal kurz schauen" – und plötzlich ist eine Stunde weg.</li>
+                <li>Handy-Sucht. Jede Benachrichtigung. Jedes Ping. Jeder Impuls, das Display zu checken.</li>
+                <li>Netflix-Marathons. "Noch eine Folge" – bis es 3 Uhr morgens ist.</li>
+                <li>Perfektionismus. Der nie enden wollende Drang, alles noch besser, noch schöner, noch perfekter zu machen.</li>
+            </ul>
+
+            <p>Diese Süchte verschlingen deine Zeit. Nicht, weil sie böse sind. Sondern weil sie eine Leere füllen sollen, die sie nie füllen können.</p>
+
+            <p><strong>Solange du süchtig bist – an was auch immer – hast du keine Zeit. Weil deine Zeit bereits besetzt ist.</strong></p>
+
+            <h3>2. Negative Glaubenssätze – die Programme, die dich blockieren</h3>
+
+            <p>"Ich kann nicht reich werden. Ich habe keine Veranlagung dafür."</p>
+
+            <p>"Ich bin nicht kreativ. Das liegt mir einfach nicht."</p>
+
+            <p>"Erfolg ist für andere. Nicht für mich."</p>
+
+            <p>Diese Glaubenssätze – oft übernommen von den Eltern, der Kindheit, der Gesellschaft – sind wie unsichtbare Fesseln.</p>
+
+            <p>Sie halten dich davon ab, in dein volles Potenzial zu kommen. Sie flüstern dir zu: "Warum überhaupt anfangen? Du schaffst es sowieso nicht."</p>
+
+            <p>Und so investierst du deine Zeit in Dinge, die sicher sind. Die keine Veränderung bringen. Die dich genau da halten, wo du bist.</p>
+
+            <p><strong>Solange du diese Programmierungen in dir trägst, wirst du keine Zeit für das haben, was wirklich zählt. Weil du unbewusst glaubst, es wäre sowieso vergeblich.</strong></p>
+
+            <h3>3. Die fehlenden 5 Minuten – der Kern der Sache</h3>
+
+            <p>Und dann gibt es die Menschen, die eigentlich zufrieden sind. Sie mögen ihren Job. Ihr Privatleben läuft. Keine großen Probleme.</p>
+
+            <p>Aber sie haben trotzdem das Gefühl: <strong>"Ich habe keine Zeit für mich."</strong></p>
+
+            <p>Das sind die notorischen "Leider: Ich habe keine Zeit"-Sager.</p>
+
+            <p>Und hier ist der Knaller:</p>
+
+            <div class="story-box">
+                <p>Neulich sagte ich zu einer solchen Frau:</p>
+                
+                <p class="dialogue">"Solange du nicht die <em>eine</em> Sache – auch nur fünf Minuten lang täglich – in deinem Leben machst, für die du wirklich brennst, kannst du mit deinem Leben sonst noch so zufrieden sein: Du wirst <strong>niemals</strong> das Gefühl haben, dass du Zeit für dich hast."</p>
+                
+                <p>Sie schaute mich an. Still. Nachdenklich.</p>
+                
+                <p class="dialogue">"Weil", fuhr ich fort, "deine Gedanken – auch wenn du es nicht merkst – sind nicht bei der Sache, wenn du arbeitest. Und nicht wirklich präsent, wenn du privat mit anderen Menschen zusammen bist. Deine Gedanken kreisen unterbewusst um diese <em>eine</em> Sache, die du dir nicht erlaubst nachzugehen."</p>
+                
+                <p>"Ja!", rief sie aus. "Du hast Recht!"</p>
+                
+                <p>Ich lächelte. "Ja, ich weiß."</p>
+                
+                <p>Ihr Gesicht und ihre Augen trübten sich wieder. Sie seufzte.</p>
+                
+                <p class="dialogue">"Tja... Schöne Theorie..."</p>
+                
+                <p>Und sie blies wieder Trübsal, wie sie es schon so gewohnt war zu blasen.</p>
+                
+                <p>"Nein", sagte ich energisch. "<strong>Es ist keine Theorie, wenn du heute damit beginnst.</strong>"</p>
+            </div>
+
+            <h2>Die 5-Minuten-Regel: Dein Weg zurück</h2>
+
+            <p>Hör mir zu. Sehr genau.</p>
+
+            <div class="highlight-box">
+                <p><strong>Nimm dir 5 Minuten aus deinem Leben. Jeden Tag. Und fang an.</strong></p>
+                
+                <p>Fang damit an. Du musst es dir aber fest vornehmen. Und es wirklich jeden Tag machen.</p>
+                
+                <p>Sonst stehst du eines Tages wieder da und redest von meinen "schönen Theorien", die dir leider nichts bringen.</p>
+                
+                <p><strong>Umsetzen musst du es selbst.</strong></p>
+            </div>
+
+            <p>Mach es. Jeden Tag 5 Minuten. Aber konsequent.</p>
+
+            <p>Und wenn du noch nicht weißt, was es ist? Dann nimm dir 5 Minuten jeden Tag und begib dich an einen schönen Ort. Vielleicht fällt es dir dann ein, wenn du dir jeden Tag diese fünf Minuten gibst.</p>
+
+            <p><strong>Aber Achtung:</strong> Das müssen <em>qualitative</em> fünf Minuten sein. Und wirklich nur für das reserviert werden, wofür deine Seele brennt.</p>
+
+            <p>Nicht für Faulenzen. Nicht für "Mal kurz entspannen". Nicht für das, was du sonst auch noch gerne tun würdest.</p>
+
+            <p><strong>Ehre diese 5 Minuten. Halte sie hoch.</strong></p>
+
+            <h2>Was dann passiert</h2>
+
+            <p>Nach einer Weile wirst du merken, dass du <strong>mehr Zeit hast</strong>.</p>
+
+            <p>Nicht, weil der Tag länger geworden ist. Sondern weil Zeit Kopfsache ist.</p>
+
+            <p>Wenn du während deiner Arbeit – oder deiner Zeit mit anderen – nicht mehr darüber nachdenken musst, warum du noch immer nicht "damit" angefangen hast, dann wirst du dich auf deine Aktivitäten voll fokussieren können.</p>
+
+            <p>Und sie genießen.</p>
+
+            <p>Du wirst nie wieder das Gefühl haben, dass du keine Zeit hast.</p>
+
+            <div class="quote">
+                "Zeit ist nicht das, was du hast.<br>
+                Zeit ist das, was du tust.<br>
+                Im Hier. Im Jetzt. In diesen 5 Minuten."
+            </div>
+
+            <h2>Das Versprechen</h2>
+
+            <p>Ich verspreche dir nicht, dass diese 5 Minuten dein Leben über Nacht verändern.</p>
+
+            <p>Ich verspreche dir nicht, dass du plötzlich "genug Zeit" für alles hast.</p>
+
+            <p>Aber ich verspreche dir:</p>
+
+            <p><strong>Wenn du diese 5 Minuten täglich ehrst, wirst du aufhören, dich selbst zu belügen.</strong></p>
+
+            <p>Du wirst aufhören zu sagen: "Ich habe keine Zeit."</p>
+
+            <p>Du wirst anfangen zu sagen: "Ich habe mich entschieden, meine Zeit für das zu nutzen, was mir wirklich wichtig ist."</p>
+
+            <p>Und das, meine Freundin, ist der Unterschied zwischen einem gelebten Leben und einem verpassten.</p>
+
+            <div class="highlight-box">
+                <p><strong>Erinnerung:</strong> Nur die Toten haben keine Zeit. Sie haben die Ewigkeit, ja, aber keine Zeit.</p>
+                
+                <p>Du hingegen – du hast Zeit. Jetzt. In diesem Moment.</p>
+                
+                <p>Die Frage ist nicht: Hast du Zeit?<br>
+                Die Frage ist: <strong>Was tust du mit ihr?</strong></p>
+            </div>
+
+            <div class="cta-box">
+                <h3>Du erkennst dich wieder?</h3>
+                <p style="color: #666666; margin-bottom: 20px;">Im Coaching helfe ich dir, die Süchte, Glaubenssätze und Muster zu erkennen, die dich davon abhalten, dein Leben wirklich zu leben – und deine heiligen 5 Minuten zu finden.</p>
+                <a href="../index.html#kontakt" class="cta-button">Kostenloses Erstgespräch buchen</a>
+            </div>
+
+            <hr style="border: none; border-top: 2px solid rgba(184, 134, 11, 0.2); margin: 50px 0;">
+
+            <p style="text-align: center; color: #666666; font-style: italic;">
+                — Amy Lang
+            </p>
+        </article>
+
+        <footer>
+            <p><a href="index.html">← Zurück zum Blog</a> | <a href="../index.html">Startseite</a> | <a href="../datenschutz.html">Datenschutz</a></p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Wandlung</p>
+        </footer>
+    </div>
+</body>
+</html>
