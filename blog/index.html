@@ -82,9 +82,10 @@
 
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-bottom: 60px;
+            align-items: start;
         }
 
         .blog-card {
@@ -95,6 +96,13 @@
             border: 2px solid rgba(184, 134, 11, 0.2);
             box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
             transition: all 0.3s ease;
+            max-width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         .blog-card:hover {
@@ -266,44 +274,45 @@
                 <span style="background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 8px 20px; border-radius: 20px; font-size: 0.9em; font-weight: bold;">✨ Neuer Artikel</span>
             </div>
             
-            <!-- Liegende Acht Bild -->
+            <!-- Aggression Bild -->
             <div style="text-align: center; margin-bottom: 30px;">
-                <img src="images/infinity.jpg" alt="Unendlichkeitssymbol" style="width: 200px; height: auto; border-radius: 10px;">
+                <img src="images/image11.jpg" alt="Autoaggression" style="width: 200px; height: auto; border-radius: 10px;">
             </div>
             
             <h2 style="color: #B8860B; font-size: 2.5em; margin-bottom: 15px; text-align: center; font-weight: 300; line-height: 1.3;">
-                "Nur die Toten haben keine Zeit"
+                "Die Autoaggression, die du nicht siehst"
             </h2>
             
             <p style="color: #666666; text-align: center; font-size: 1.15em; margin-bottom: 30px; font-style: italic;">
-                Über die gefährlichste Lüge, die wir uns selbst erzählen
+                Wenn du Fremde besser behandelst als die Menschen, die dir am nächsten sind
             </p>
             
             <div style="text-align: center; color: #666666; font-size: 0.95em; margin-bottom: 25px;">
-                📅 14. November 2025 • ⏱️ 12 Min Lesezeit
+                📅 20. November 2025 • ⏱️ 10 Min Lesezeit
             </div>
             
             <p style="color: #333333; font-size: 1.15em; line-height: 1.8; margin-bottom: 25px;">
-                "Ich würde ja gerne, aber... ich habe einfach <strong>keine Zeit</strong>." Kennst du diese Menschen? Die, die es zu ihrem Mantra gemacht haben?
+                Eine Freundin sitzt im Café. Wir reden gerade über etwas Wichtiges. Eine fremde Person setzt sich an den Nebentisch. <strong>Was passiert?</strong>
             </p>
             
             <p style="color: #333333; font-size: 1.1em; line-height: 1.8; margin-bottom: 30px;">
-                Die Wahrheit ist: Sie haben Zeit. Sie wissen nur nicht, was Zeit wirklich ist. Und sie sägen am Ast ihres selbstbestimmten Lebens. In diesem Artikel erfährst du, warum "keine Zeit haben" eine Selbsttäuschung ist – und wie fünf Minuten täglich dein Leben verändern können.
+                Sie unterbricht sich mitten im Satz, wendet sich zur Fremden, ist übertrieben freundlich – und ignoriert mich komplett. Das ist nicht Höflichkeit. Das ist Selbstzerstörung, die sich auf andere überträgt. Ein subtiles Muster, das bei Hashimoto und Autoimmunerkrankungen besonders häufig auftritt.
             </p>
             
             <div style="background: rgba(212, 175, 55, 0.1); padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #D4AF37;">
                 <p style="color: #B8860B; font-weight: bold; margin-bottom: 15px; font-size: 1.1em;">🔑 Was dich in diesem Artikel erwartet:</p>
                 <ul style="color: #333333; font-size: 1.05em; line-height: 1.9; margin-left: 20px;">
-                    <li>Warum "Ich habe keine Zeit" das Mantra der Selbsttäuschung ist</li>
-                    <li>Was Zeit wirklich ist: Ein philosophischer Exkurs (Chronos, Kairos, Momo, Lola rennt)</li>
-                    <li>Warum Zeitmanagement-Methoden oft das falsche Problem behandeln</li>
-                    <li>Die 3 wahren Gründe: Süchte, Glaubenssätze und die fehlenden 5 Minuten</li>
-                    <li>Die 5-Minuten-Regel, die alles verändert</li>
+                    <li>Der "Behandlungs-Kompass": Wen behandelst du wie?</li>
+                    <li>Warum das Autoaggression ist (und nicht Höflichkeit)</li>
+                    <li>Die Verbindung zu Hashimoto und Autoimmunerkrankungen</li>
+                    <li>Wenn du die Person bist, die so behandelt wird</li>
+                    <li>Die 5 schwerwiegenden Konsequenzen dieses Musters</li>
+                    <li>Der Weg heraus: Konkrete Schritte zur Heilung</li>
                 </ul>
             </div>
             
             <div style="text-align: center; margin-top: 35px;">
-                <a href="post-8-nur-die-toten.html" style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
+                <a href="post-11-autoaggression-die-du-nicht-siehst.html" style="display: inline-block; background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); color: #000000; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
                     Jetzt lesen →
                 </a>
             </div>
@@ -314,27 +323,7 @@
             <p style="color: #666666; font-size: 1.1em;">Wöchentlich neue Gedanken zu Veränderung und Klarheit</p>
         </div>
 
-
-
-<div class="blog-grid">
-            <!-- Post 10 - 19. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image11.jpg" alt="Aggro" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 20. November 2025 • ⏱️ 10 Min</div>
-                    <h2 class="blog-title">"Die Autoaggression, die du nicht siehst"</h2>
-                    <p class="blog-excerpt">
-                        Wenn du Fremde besser behandelst als die Menschen, die dir am nächsten sind – das ist keine Höflichkeit. Das ist Selbstzerstörung, die sich auf andere überträgt.
-                    </p>
-                    <a href="post-11-autoaggression-die-du-nicht-siehst.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-
-
-
+        <!-- ALLE BLOG POSTS IN EINEM GRID -->
         <div class="blog-grid">
             <!-- Post 10 - 19. November 2025 -->
             <div class="blog-card">
@@ -468,6 +457,21 @@
                         Nicht jede Unzufriedenheit bedeutet, dass du etwas ändern musst. Aber manche Zeichen sind unmissverständlich.
                     </p>
                     <a href="post-2-5-zeichen.html" class="read-more">Weiterlesen →</a>
+                </div>
+            </div>
+
+            <!-- Post 1 - 21. September 2025 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="images/image1.jpg" alt="Berufliche Neuorientierung Blog">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">📅 21. September 2025 • ⏱️ 6 Min</div>
+                    <h2 class="blog-title">Warum die meisten Karrierewechsel scheitern<br><span style="font-size: 0.8em; color: #666666;">(und wie du es richtig machst)</span></h2>
+                    <p class="blog-excerpt">
+                        Ein Karrierewechsel ist mehr als ein neuer Job. Es ist eine Neuausrichtung dessen, wer du bist und sein willst.
+                    </p>
+                    <a href="post-1-karrierewechsel.html" class="read-more">Weiterlesen →</a>
                 </div>
             </div>
         </div>
