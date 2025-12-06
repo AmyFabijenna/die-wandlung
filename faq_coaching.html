@@ -164,6 +164,14 @@
             margin: 15px 0;
         }
 
+        .warning {
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.15));
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #dc3545;
+            margin: 15px 0;
+        }
+
         .contact-promo {
             text-align: center;
             background: rgba(255, 255, 255, 0.6);
@@ -179,8 +187,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            font-size: 1.5em;
             margin-bottom: 15px;
-            font-size: 1.4em;
             font-weight: 300;
         }
 
@@ -194,14 +202,14 @@
             font-weight: bold;
             margin-top: 15px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
             border: 2px solid #B8860B;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
         }
 
         .whatsapp-link:hover {
             background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
 
         footer {
@@ -233,177 +241,127 @@
 <body>
     <div class="container">
         <header>
-            <h1>Häufig gestellte Fragen</h1>
-            <p class="subtitle">Amy Lang - Die Wandlung | Energetische Begleitung</p>
+            <h1>Häufige Fragen</h1>
+            <p class="subtitle">Amy Lang - Die Wandlung | Energetische Impulsgebung</p>
             <a href="index.html" class="back-link">← Zurück zur Hauptseite</a>
         </header>
 
         <section class="faq-section">
-            <h2>Grundlegendes zur Begleitung</h2>
+            <h2>Was ist energetische Arbeit?</h2>
             
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was ist energetische Begleitung genau?
+                    Was genau macht eine Energetikerin?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Energetische Begleitung ist keine Therapie und kein klassisches Coaching. Es ist eine Mischung aus:</p>
-                    <p><strong>Strukturierter Prozessbegleitung:</strong> Wir arbeiten konkret an deinen Zielen, Entscheidungen und nächsten Schritten.</p>
-                    <p><strong>Energetischer Arbeit:</strong> Ich schaue auf Blockaden, Muster und energetische Dynamiken, die dich zurückhalten.</p>
-                    <p><strong>Schamanischer Perspektive:</strong> Bei Bedarf nutzen wir Rituale, schamanische Reisen oder spirituelle Methoden für tiefere Transformation.</p>
-                    <p>Das Ziel: Klarheit, Handlungsfähigkeit, echte Veränderung.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Für wen ist diese Arbeit geeignet?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Du bist hier richtig, wenn:</strong></p>
-                    <p>• Du an einem Wendepunkt stehst (beruflich oder persönlich)<br>
-                    • Du bereit bist, hinzuschauen – ehrlich und ohne Ausreden<br>
-                    • Du konkrete Schritte gehen willst, nicht nur reden<br>
-                    • Du offen für spirituelle/energetische Perspektiven bist (aber nicht "dran glauben" musst)</p>
-                    
-                    <div class="highlight">
-                        <p><strong>Du bist hier NICHT richtig, wenn:</strong></p>
-                        <p>• Du schnelle Lösungen ohne eigenes Dazutun suchst<br>
-                        • Du hauptsächlich über Probleme sprechen willst, ohne zu handeln<br>
-                        • Du therapeutische Unterstützung bei psychischen Erkrankungen benötigst</p>
+                    <p>Als Energetikerin arbeite ich auf der feinstofflichen Ebene. Das bedeutet: Ich unterstütze dich dabei, deinen Energiefluss zu harmonisieren und deine Selbstheilungskräfte zu aktivieren.</p>
+                    <p><strong>Meine Methoden umfassen:</strong></p>
+                    <p>• Schamanische Rituale und Zeremonien<br>
+                    • Feng Shui Raumenergetik<br>
+                    • Räucherungen und energetische Raumreinigung<br>
+                    • Energetische Prozessbegleitung bei Lebensübergängen<br>
+                    • Wissensvermittlung zu energetischen Techniken</p>
+                    <div class="warning">
+                        <p><strong>Wichtig:</strong> Energetische Arbeit ist keine Therapie, keine medizinische Behandlung und keine Lebensberatung im rechtlichen Sinne. Sie ersetzt keinen Arzt, Psychotherapeuten oder Lebens- und Sozialberater.</p>
                     </div>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was ist der Unterschied zu Therapie oder Coaching?
+                    Was unterscheidet dich von einem Therapeuten oder Lebensberater?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p><strong>Therapie:</strong> Behandlung von psychischen Erkrankungen, Traumata, tiefgreifenden psychischen Problemen. Wird von approbierten Therapeuten durchgeführt.</p>
-                    <p><strong>Coaching:</strong> Fokus auf berufliche Ziele, Performance, Strategien. Meist strukturiert und zielorientiert.</p>
-                    <p><strong>Energetische Begleitung:</strong> Verbindung von strukturierter Arbeit UND energetischer/spiritueller Perspektive. Fokus auf Lebensübergänge, Transformation, ganzheitliche Entwicklung. Ich bin Energetikerin im Rahmen des freien Gewerbes – keine Therapeutin.</p>
-                    <p><strong>Wichtig:</strong> Bei psychischen Erkrankungen ist professionelle Therapie notwendig. Energetische Begleitung ersetzt keine medizinische oder therapeutische Behandlung.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2>Ablauf und Praktisches</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie läuft eine Sitzung ab?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Wir treffen uns per Video (über kMeet - sichere, schweizer Plattform). Eine Sitzung dauert 60 Minuten.</p>
-                    <p><strong>Typischer Ablauf:</strong></p>
-                    <p>• Check-in: Wo stehst du gerade? Was ist seit der letzten Sitzung passiert?<br>
-                    • Fokus: Woran arbeiten wir heute?<br>
-                    • Arbeit: Gespräch, energetische Arbeit, schamanische Methoden - je nach Bedarf<br>
-                    • Nächste Schritte: Was nimmst du mit? Was tust du bis zur nächsten Sitzung?</p>
-                    <p>Die Sitzungen sind intensiv, fokussiert und praxisnah. Kein "Labern" - sondern echte Arbeit.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie oft finden Sitzungen statt?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Einzelsitzungen:</strong> Nach Bedarf. Du buchst, wenn du eine Sitzung möchtest.</p>
-                    <p><strong>Transformations-Paket (6 Sitzungen):</strong> Üblicherweise alle 1-2 Wochen über 3 Monate verteilt. Wir vereinbaren den Rhythmus individuell.</p>
-                    <p><strong>Wichtig:</strong> Zwischen den Sitzungen arbeitest DU. Die Sitzungen sind der Rahmen - die eigentliche Transformation passiert in deinem Alltag.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was passiert zwischen den Sitzungen?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Die Arbeit findet nicht nur in den Sitzungen statt. Du bekommst von mir:</p>
-                    <p>• Konkrete Aufgaben oder Übungen<br>
-                    • Reflexionsfragen<br>
-                    • Manchmal energetische Praktiken oder Rituale</p>
-                    <p><strong>Erreichbarkeit:</strong> Ich bin keine 24/7-Therapeutin. Bei Fragen antworte ich innerhalb von 48h (Werktags). In Krisen: Telefonseelsorge 142.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Kann ich auch vor Ort kommen oder ist es nur online?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Die meisten Sitzungen finden online statt (per Video). Das hat Vorteile:</p>
-                    <p>• Du bist in deiner gewohnten Umgebung<br>
-                    • Keine Anfahrt<br>
-                    • Flexiblere Termingestaltung</p>
-                    <p><strong>Feng Shui Beratung:</strong> Kann vor Ort oder per Grundriss-Analyse erfolgen - je nach Wunsch und Möglichkeit.</p>
-                    <p><strong>Schamanische Rituale:</strong> In seltenen Fällen kann es sinnvoll sein, sich persönlich zu treffen. Das besprechen wir individuell.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2>Kosten und Buchung</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was kostet die Begleitung?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Einzelsitzung:</strong> 80€ (60 Min) - für alle Bereiche (Schamanische Arbeit, Feng Shui, Lebensübergänge)</p>
-                    <p><strong>Transformations-Paket:</strong> 450€ für 6 Sitzungen über 3 Monate (= 75€/Sitzung, du sparst 30€)</p>
-                    <p><strong>Feng Shui Beratung:</strong> Ab 150€ - je nach Umfang (Vor-Ort oder Grundriss-Analyse)</p>
-                    <p><strong>Zahlung:</strong> Im Voraus vor der (ersten) Sitzung. Mit der Zahlung wird der Termin verbindlich gebucht.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was passiert, wenn ich einen Termin absagen muss?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
+                    <p><strong>Klare Abgrenzung:</strong></p>
+                    <p>• <strong>Psychotherapeuten</strong> behandeln psychische Erkrankungen mit wissenschaftlich anerkannten Methoden</p>
+                    <p>• <strong>Lebens- und Sozialberater</strong> (reglementiertes Gewerbe in Österreich) beraten bei Lebensproblemen und Krisen</p>
+                    <p>• <strong>Energetiker/innen</strong> arbeiten ausschließlich auf der feinstofflichen Ebene - ohne Diagnose, ohne Behandlung, ohne Beratung im klassischen Sinne</p>
                     <div class="highlight">
-                        <p><strong>Absage mindestens 48 Stunden vorher:</strong> Der Termin kann nach Verfügbarkeit nachgeholt werden.</p>
-                        <p><strong>Kurzfristige Absage (weniger als 48h) oder Nichterscheinen:</strong> Die Sitzung verfällt ersatzlos und wird nicht erstattet.</p>
+                        <p>Ich stelle keine Diagnosen, gebe keine Heilversprechen und behandle keine Krankheiten. Wenn du therapeutische oder medizinische Unterstützung brauchst, verweise ich dich an entsprechende Fachpersonen.</p>
                     </div>
-                    <p>Warum? Weil ich dir den Termin freihalte und in dieser Zeit niemand anderen begleiten kann.</p>
-                    <p><strong>Notfälle:</strong> Bei echten Notfällen (Krankheit, Unfall, etc.) finden wir eine Lösung. Sprich mich einfach an.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Kann ich die Begleitung jederzeit beenden?
+                    Muss ich an Energie "glauben"?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p><strong>Einzelsitzungen:</strong> Du buchst nur, wenn du möchtest. Keine Verpflichtung.</p>
-                    <p><strong>Transformations-Paket:</strong> Ja, du kannst jederzeit beenden. Bereits bezahlte Sitzungen werden jedoch nicht rückerstattet. Die gebuchten Termine werden dir bis zum vereinbarten Ende angeboten.</p>
-                    <p>Wenn die Zusammenarbeit nicht funktioniert, sprechen wir das offen an und finden gemeinsam eine Lösung.</p>
+                    <p>Nein. Du musst nicht "glauben" - aber Offenheit hilft.</p>
+                    <p><strong>Für schamanische Arbeit:</strong> Eine gewisse Bereitschaft, dich auf ungewohnte Erfahrungen einzulassen, ist wichtig.</p>
+                    <p><strong>Für Feng Shui:</strong> Du brauchst nicht an "Energie" zu glauben. Viele Menschen erleben einfach, dass sich etwas verändert, wenn sie ihre Räume anders gestalten - unabhängig von der Erklärung.</p>
+                    <p><strong>Für Prozessbegleitung:</strong> Hier geht es vor allem um Struktur und Impulse. Die energetische Komponente ist ein Zusatz, kein Muss.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Ablauf und Methoden</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Wie läuft eine energetische Sitzung ab?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Typischer Ablauf einer 60-Minuten-Sitzung:</strong></p>
+                    <p>• <strong>Ankommen (5-10 Min):</strong> Wir klären, wo du gerade stehst und was dich beschäftigt</p>
+                    <p>• <strong>Energetische Arbeit (40-45 Min):</strong> Je nach Anliegen arbeiten wir mit schamanischen Techniken, Visualisierungen oder Ritualen</p>
+                    <p>• <strong>Integration (5-10 Min):</strong> Ich gebe dir Impulse für den Alltag mit</p>
+                    <p>Die Sitzungen finden online per Video statt (kMeet - eine schweizer Plattform). Du brauchst einen ruhigen Ort, wo du ungestört bist.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie beginne ich?
+                    Was ist Feng Shui Raumenergetik?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Feng Shui ist die traditionelle chinesische Lehre von der Harmonisierung des Energieflusses (Qi) in Räumen. Ich praktiziere <strong>klassisches Kompass-Feng-Shui</strong> (Flying Stars).</p>
+                    <p><strong>Was ich anbiete:</strong></p>
+                    <p>• Analyse deiner Räume anhand von Grundriss, Baujahr und Himmelsrichtung</p>
+                    <p>• Empfehlungen zur Raumgestaltung</p>
+                    <p>• Schriftlicher Bericht mit konkreten Maßnahmen</p>
+                    <p><strong>Die Beratung kann vor Ort oder per Fernanalyse erfolgen.</strong></p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Was passiert bei schamanischer Arbeit?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Schamanische Arbeit ist eine jahrtausendealte Tradition, die mit veränderten Bewusstseinszuständen und symbolischen Reisen arbeitet.</p>
+                    <p><strong>Was ich anbiete:</strong></p>
+                    <p>• Schamanische Reisen (begleitet durch Trommelklänge)</p>
+                    <p>• Rituale für Übergänge und Abschlüsse</p>
+                    <p>• Räucherungen und Raumreinigungen</p>
+                    <p>• Arbeit mit Krafttieren und spirituellen Helfern</p>
+                    <div class="highlight">
+                        <p><strong>Wichtig:</strong> Schamanische Arbeit ist ein spirituelles Erfahrungsfeld, keine Therapie. Bei psychischen Vorerkrankungen oder wenn du Medikamente nimmst, die das Bewusstsein beeinflussen, sprich mich bitte vorher an.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Praktische Fragen</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Wie starte ich die Zusammenarbeit?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
                     <div class="highlight">
-                        <p><strong>Schritt 1:</strong> Schreib mir eine Nachricht: "Ich bin bereit" (per E-Mail: amylan@ik.me)</p>
-                        <p><strong>Schritt 2:</strong> Ich schicke dir 3 Fragen zur Vorbereitung</p>
-                        <p><strong>Schritt 3:</strong> Kostenloses Erstgespräch (20 Min) - wir klären, ob wir zusammenpassen</p>
+                        <p><strong>Schritt 1:</strong> Schreib mir eine Nachricht mit deinem Anliegen</p>
+                        <p><strong>Schritt 2:</strong> Ich schicke dir ein paar Fragen zur Vorbereitung</p>
+                        <p><strong>Schritt 3:</strong> Kostenloses Kennenlerngespräch (20 Min) - wir klären, ob energetische Arbeit für dein Anliegen geeignet ist</p>
                         <p><strong>Schritt 4:</strong> Wenn es passt, buchen wir deine erste Sitzung</p>
                     </div>
                 </div>
@@ -415,20 +373,39 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Nein. Ich arbeite nur mit Menschen, die wirklich bereit sind zu handeln. Nach dem Erstgespräch entscheide ich, ob wir zusammenpassen.</p>
-                    <p>Das ist keine Ablehnung deiner Person - sondern eine Frage der Passung und deiner Bereitschaft. Wenn ich spüre, dass du eine andere Form der Unterstützung brauchst (z.B. Therapie), sage ich dir das offen.</p>
+                    <p>Nein. Im Kennenlerngespräch prüfen wir gemeinsam, ob energetische Arbeit für dein Anliegen geeignet ist.</p>
+                    <p><strong>Ich nehme dich NICHT an, wenn:</strong></p>
+                    <p>• Du dich in einer akuten psychischen Krise befindest (hier brauchst du professionelle Hilfe)</p>
+                    <p>• Du eine Diagnose oder Behandlung suchst (dafür bin ich nicht ausgebildet)</p>
+                    <p>• Du nicht bereit bist, selbst aktiv zu werden</p>
+                    <p>Das ist keine Ablehnung deiner Person - sondern Verantwortung. Wenn ich merke, dass du andere Unterstützung brauchst, sage ich dir das offen.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Gibt es Ermäßigungen oder Ratenzahlung?
+                    Was kostet die Zusammenarbeit?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Das Transformations-Paket ist bereits günstiger als 6 Einzelsitzungen (du sparst 30€).</p>
-                    <p><strong>Ratenzahlung:</strong> Bei finanziellen Engpässen können wir im Einzelfall eine Ratenzahlung besprechen. Sprich mich einfach darauf an.</p>
-                    <p><strong>Sozialermäßigung:</strong> In Ausnahmefällen (Arbeitslosigkeit, etc.) kann ich nach Absprache einen reduzierten Preis anbieten. Kontaktiere mich dafür vor dem Erstgespräch.</p>
+                    <p><strong>Preise:</strong></p>
+                    <p>• <strong>Einzelsitzung (60 Min):</strong> 80€</p>
+                    <p>• <strong>6er-Paket:</strong> 450€ (= 75€/Sitzung)</p>
+                    <p>• <strong>Feng Shui Raumenergetik:</strong> ab 150€ (je nach Umfang)</p>
+                    <p>• <strong>Kennenlerngespräch:</strong> Kostenlos (20 Min)</p>
+                    <p>Alle Preise sind Endpreise. Als Kleinunternehmerin wird keine Umsatzsteuer ausgewiesen.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Gibt es Ermäßigungen?
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Das 6er-Paket ist bereits günstiger als 6 Einzelsitzungen (du sparst 30€).</p>
+                    <p><strong>Ratenzahlung:</strong> Bei finanziellen Engpässen können wir im Einzelfall eine Ratenzahlung besprechen.</p>
+                    <p><strong>Sozialermäßigung:</strong> In Ausnahmefällen (Arbeitslosigkeit, etc.) kann ich nach Absprache einen reduzierten Preis anbieten. Kontaktiere mich dafür vor dem Kennenlerngespräch.</p>
                 </div>
             </div>
         </section>
@@ -438,12 +415,12 @@
             
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Sind die Gespräche vertraulich?
+                    Sind die Sitzungen vertraulich?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
                     <p>Ja, absolut. Alle Inhalte unserer Gespräche werden streng vertraulich behandelt. Ich gebe keine Informationen an Dritte weiter.</p>
-                    <p><strong>Ausnahme:</strong> Bei akuter Selbst- oder Fremdgefährdung bin ich verpflichtet, entsprechende Stellen zu informieren.</p>
+                    <p><strong>Ausnahme:</strong> Bei Hinweisen auf akute Selbst- oder Fremdgefährdung werde ich dir dringend empfehlen, professionelle Hilfe zu suchen (Telefonseelsorge, Notruf, etc.).</p>
                 </div>
             </div>
 
@@ -453,8 +430,8 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Nein. Die Sitzungen werden nicht aufgezeichnet. Was in unseren Gesprächen passiert, bleibt zwischen uns.</p>
-                    <p>Ich mache mir während der Sitzung Notizen für meine eigene Dokumentation, aber diese sind nur für mich und werden vertraulich behandelt.</p>
+                    <p><strong>Nein.</strong> Die Sitzungen werden nicht aufgezeichnet. Was in unseren Gesprächen passiert, bleibt zwischen uns.</p>
+                    <p>Ich mache mir während der Sitzung kurze Notizen für meine eigene Dokumentation, aber diese sind nur für mich und werden vertraulich behandelt.</p>
                 </div>
             </div>
 
@@ -464,8 +441,9 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Ich speichere nur die notwendigsten Daten (Name, Kontaktdaten, Buchungsinformationen). Alle Daten werden DSGVO-konform und nach dem österreichischen Datenschutzgesetz (DSG) behandelt.</p>
+                    <p>Ich speichere nur die notwendigsten Daten (Name, Kontaktdaten, Buchungsinformationen). Alle Daten werden DSGVO-konform behandelt.</p>
                     <p>Du kannst jederzeit Auskunft über deine gespeicherten Daten verlangen oder deren Löschung beantragen.</p>
+                    <p>Mehr dazu in der <a href="datenschutz.html" style="color: #B8860B;">Datenschutzerklärung</a>.</p>
                 </div>
             </div>
         </section>
@@ -479,45 +457,42 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Nein. Der Erfolg der Begleitung hängt maßgeblich von deiner aktiven Mitarbeit und Umsetzung ab. Ich biete dir Struktur, Klarheit und energetische Unterstützung - aber die Arbeit musst du selbst leisten.</p>
-                    <p><strong>Was ich garantieren kann:</strong> Volle Aufmerksamkeit, ehrliches Feedback, strukturierte Begleitung und 20 Jahre Erfahrung.</p>
-                    <p><strong>Was du mitbringen musst:</strong> Bereitschaft zu handeln, Ehrlichkeit mit dir selbst, Offenheit für Veränderung.</p>
+                    <p><strong>Nein.</strong> Energetische Arbeit ist ein Erfahrungsfeld, kein garantierter Lösungsweg.</p>
+                    <p><strong>Was ich dir bieten kann:</strong></p>
+                    <p>• Volle Aufmerksamkeit und Präsenz</p>
+                    <p>• 20 Jahre Erfahrung mit energetischen Methoden</p>
+                    <p>• Ehrliche Impulse und einen sicheren Rahmen</p>
+                    <p><strong>Was du mitbringen musst:</strong></p>
+                    <p>• Offenheit für neue Erfahrungen</p>
+                    <p>• Bereitschaft, selbst aktiv zu werden</p>
+                    <p>• Eigenverantwortung für deine Entscheidungen</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was passiert, wenn die Begleitung nicht hilft?
+                    Was, wenn ich merke, dass ich etwas anderes brauche?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Wenn du nach 2-3 Sitzungen keine Fortschritte siehst, sollten wir das offen besprechen. Manchmal passt es einfach nicht - oder du brauchst eine andere Art der Unterstützung (z.B. Therapie).</p>
-                    <p>In diesem Fall helfe ich dir, die richtige Unterstützung zu finden und wir beenden die Zusammenarbeit einvernehmlich.</p>
+                    <p>Dann sag es mir. Ich bin ehrlich mit dir - und ich erwarte das auch von dir.</p>
+                    <p>Wenn sich herausstellt, dass du therapeutische oder medizinische Unterstützung brauchst, werde ich das offen ansprechen und dir empfehlen, entsprechende Fachpersonen aufzusuchen.</p>
+                    <p><strong>Hilfreiche Anlaufstellen in Österreich:</strong></p>
+                    <p>• <strong>Telefonseelsorge:</strong> 142 (kostenlos, 24/7)</p>
+                    <p>• <strong>Psychiatrische Soforthilfe Wien:</strong> 01/31330</p>
+                    <p>• <strong>Psychotherapie:</strong> Liste der Psychotherapeuten unter <a href="https://www.psychotherapie.at" target="_blank" style="color: #B8860B;">psychotherapie.at</a></p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was unterscheidet dich von anderen Energetiker/innen oder Coaches?
+                    Was unterscheidet dich von anderen Energetiker/innen?
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p><strong>Mein Ansatz:</strong> Ich bin keine "Feel-Good-Begleiterin". Ich sage dir, was ich sehe - auch wenn es unbequem ist. Ich bin strukturiert, pragmatisch, aber mit Tiefe.</p>
-                    <p><strong>Meine Erfahrung:</strong> 20 Jahre Arbeit mit Menschen in verschiedenen Kontexten. Ich kenne selbst große Veränderungen und Krisen. Ich praktiziere seit Jahren Schamanismus und habe umfangreiche Ausbildungen in energetischer Arbeit.</p>
-                    <p><strong>Mein Fokus:</strong> Konkrete Schritte, echte Transformation. Nicht nur spirituelles Gerede - sondern Verbindung von Energie UND Struktur.</p>
-                    <p>Ich arbeite nur mit Menschen, die wirklich bereit sind. Das bedeutet: Kleinere Klientenzahl, aber intensivere Arbeit.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Muss ich spirituell sein oder an Energie glauben?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Für die Begleitung bei Lebensübergängen: Nein. Du musst nicht spirituell sein. Die Arbeit ist praktisch und strukturiert - mit energetischer Komponente, die aber nicht im Vordergrund steht.</p>
-                    <p>Für schamanische Begleitung: Ja, eine gewisse Offenheit für spirituelle Arbeit ist wichtig. Du musst nicht "dran glauben", aber bereit sein, dich darauf einzulassen.</p>
-                    <p>Für Feng Shui: Du musst nicht an Energie "glauben" - viele erleben einfach, dass es funktioniert, wenn die Räume anders gestaltet sind.</p>
+                    <p><strong>Mein Ansatz:</strong> Ich bin klar und direkt. Ich sage dir, was ich wahrnehme - auch wenn es unbequem ist. Spiritualität und Struktur gehören für mich zusammen.</p>
+                    <p><strong>Meine Erfahrung:</strong> 20+ Jahre Arbeit mit Menschen. Ich kenne selbst große Veränderungen und Krisen. Ich praktiziere seit Jahren Schamanismus und habe umfangreiche Ausbildungen in energetischer Arbeit, Körperarbeit (Pilates, Tai Chi, Qi Gong, Yoga) und Feng Shui.</p>
+                    <p><strong>Mein Fokus:</strong> Ich arbeite nur mit Menschen, die wirklich bereit sind. Kleinere Klientenzahl, dafür intensivere Arbeit.</p>
                 </div>
             </div>
         </section>
@@ -531,11 +506,11 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Du brauchst:</p>
-                    <p>• Computer, Tablet oder Smartphone mit Kamera<br>
-                    • Stabile Internetverbindung<br>
-                    • Kopfhörer oder Headset (empfohlen für bessere Tonqualität)<br>
-                    • Einen ruhigen Ort, wo du ungestört bist</p>
+                    <p><strong>Du brauchst:</strong></p>
+                    <p>• Computer, Tablet oder Smartphone mit Kamera</p>
+                    <p>• Stabile Internetverbindung</p>
+                    <p>• Kopfhörer oder Headset (empfohlen für bessere Tonqualität)</p>
+                    <p>• Einen ruhigen Ort, wo du ungestört bist</p>
                     <p>Wir nutzen kMeet - eine sichere, schweizer Video-Plattform. Du brauchst keine App zu installieren, es funktioniert direkt im Browser.</p>
                 </div>
             </div>
@@ -547,7 +522,7 @@
                 </div>
                 <div class="faq-answer">
                     <p>Vor dem ersten Termin schicke ich dir einen Test-Link, damit wir die Technik prüfen können.</p>
-                    <p>Falls während einer Sitzung technische Probleme auftreten, versuchen wir, sie schnell zu lösen. Im Notfall wechseln wir zu Telefon oder verschieben den Termin - ohne dass dir Kosten entstehen.</p>
+                    <p>Falls während einer Sitzung technische Probleme auftreten, versuchen wir, sie schnell zu lösen. Im Notfall wechseln wir zu Telefon oder verschieben den Termin.</p>
                 </div>
             </div>
         </section>
@@ -561,7 +536,7 @@
         </div>
 
         <footer>
-            <p>Amy Lang - Die Wandlung | Energetische Begleitung & Transformation | © 2025 Alle Rechte vorbehalten</p>
+            <p>Amy Lang - Die Wandlung | Energetische Impulsgebung & Prozessbegleitung | © 2025 Alle Rechte vorbehalten</p>
         </footer>
     </div>
 
@@ -584,8 +559,10 @@
         document.addEventListener('DOMContentLoaded', function() {
             const firstFaq = document.querySelector('.faq-item');
             if (firstFaq) {
-                firstFaq.querySelector('.faq-answer').classList.add('active');
-                firstFaq.querySelector('.faq-icon').textContent = '−';
+                const answer = firstFaq.querySelector('.faq-answer');
+                const icon = firstFaq.querySelector('.faq-icon');
+                answer.classList.add('active');
+                icon.textContent = '−';
             }
         });
     </script>
