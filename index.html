@@ -43,7 +43,52 @@
             background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
         }
 
-        /* Blog Link - Oben Rechts */
+        /* Top Navigation Links - Oben Rechts */
+        .top-nav-container {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .top-nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        }
+
+        .top-nav-link:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .top-nav-link .nav-icon {
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .top-nav-link:hover .nav-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        /* Legacy support for blog-link class */
         .blog-link-container {
             position: absolute;
             top: 2rem;
@@ -84,6 +129,20 @@
 
         .blog-link:hover .blog-icon {
             transform: scale(1.2) rotate(5deg);
+        }
+
+        @media (max-width: 600px) {
+            .top-nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+                top: 1rem;
+                right: 1rem;
+            }
+            
+            .top-nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
         }
 
         /* Main Heading */
@@ -508,10 +567,14 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <div class="blog-link-container">
-            <a href="blog/index.html" class="blog-link" target="_blank">
-                <span class="blog-icon">✍️</span>
+        <div class="top-nav-container">
+            <a href="blog/index.html" class="top-nav-link" target="_blank">
+                <span class="nav-icon">✍️</span>
                 <span>Blog</span>
+            </a>
+            <a href="food-diary.html" class="top-nav-link">
+                <span class="nav-icon">🥗</span>
+                <span>Food Diary</span>
             </a>
         </div>
         
@@ -547,6 +610,9 @@
             
             <p><strong>Warum ich tue, was ich tue:</strong><br>
             Weil ich gesehen habe – an mir selbst und an vielen Menschen – dass Wandlung möglich ist. Dass wir nicht bleiben müssen, wo wir sind.</p>
+            
+            <p><strong>🌿 Meine rohvegane Reise:</strong><br>
+            Seit 2014 ernähre ich mich rohvegan – mit einer 5-jährigen Pause dazwischen. Diese Art der Ernährung ist für mich mehr als nur Essen: Sie ist Teil meiner ganzheitlichen Lebensweise und meines Weges zu körperlicher und geistiger Klarheit. In meinem <a href="food-diary.html" style="color: #B8860B; font-weight: 600;">Food Diary</a> teile ich meine täglichen Kreationen, Rezepte und Inspirationen.</p>
         </section>
 
         <!-- Services Section -->
@@ -698,7 +764,7 @@
             </div>
             
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-                <a href="mailto:amylan@ik.me" class="cta-button" style="display: inline-block;">
+                <a href="/cdn-cgi/l/email-protection#d9b8b4a0b5b8b799b0b2f7b4bc" class="cta-button" style="display: inline-block;">
                     <span class="cta-glow"></span>
                     <span class="cta-text">✉️ SCHREIB MIR</span>
                 </a>
@@ -726,12 +792,9 @@
             <a href="faq_coaching.html">FAQ</a> | 
             <a href="agb_coaching.html">AGB</a> | 
             <a href="datenschutz.html">Datenschutz</a> |
-            <a href="blog/index.html" target="_blank">Blog</a>
+            <a href="blog/index.html" target="_blank">Blog</a> |
+            <a href="food-diary.html">Food Diary</a>
         </p>
         <p style="margin-top: 1rem;">Amy Lang - Die Wandlung | Energetische Impulsgebung & Prozessbegleitung</p>
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">Energetikerin (Neue Selbständige gemäß § 2 Abs. 1 Z 4 GSVG)</p>
-        <p>© 2025 Alle Rechte vorbehalten</p>
-    </footer>
-
-</body>
-</html>
+        <p>© 2025 Alle Rechte vorbehalten<

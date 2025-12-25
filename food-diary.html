@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Diary | Amy Lang - Raw Vegan Journey</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="My raw vegan food diary - documenting my journey back to a 100% raw plant-based lifestyle with photos and recipes.">
+    <meta name="author" content="Amy Lang">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(245, 230, 232, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Header */
+        .header {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 200;
+            letter-spacing: 0.2em;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 8s ease infinite;
+            filter: drop-shadow(0 4px 8px rgba(184, 134, 11, 0.4));
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #555;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Day Entry */
+        .day-entry {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(184, 134, 11, 0.3);
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .day-date {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .day-weekday {
+            font-size: 1rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Meal Entry - Side by Side Layout */
+        .meal-entry {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.15);
+        }
+
+        .meal-entry:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        /* Image Container - adapts to image */
+        .meal-image-container {
+            flex-shrink: 0;
+        }
+
+        .meal-image {
+            max-width: 450px;
+            min-width: 250px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.25);
+            border: 3px solid #D4AF37;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .meal-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 50px rgba(184, 134, 11, 0.35);
+        }
+
+        /* Content Side */
+        .meal-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .meal-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .meal-time {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .meal-description {
+            color: #333;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-section h4 {
+            font-size: 1.1rem;
+            color: #B8860B;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .recipe-section ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-section li {
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #444;
+        }
+
+        .recipe-section li::before {
+            content: "🌿";
+            position: absolute;
+            left: 0;
+            font-size: 0.9rem;
+        }
+
+        .recipe-instructions {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 1.25rem;
+            border-radius: 15px;
+            border-left: 4px solid #D4AF37;
+            color: #444;
+        }
+
+        /* Golden Button Links */
+        .golden-link {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            margin-top: 0.5rem;
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            border: 2px solid #B8860B;
+            border-radius: 30px;
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            animation: shimmer 4s linear infinite;
+        }
+
+        .golden-link:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+            background-position: right center;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* Tags */
+        .meal-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            padding: 0.3rem 0.8rem;
+            background: rgba(184, 134, 11, 0.15);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #B8860B;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .meal-entry {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .meal-image-container {
+                text-align: center;
+            }
+
+            .meal-image {
+                max-width: 100%;
+                min-width: unset;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .header {
+                padding: 7rem 1rem 2rem;
+            }
+
+            .day-entry {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #B8860B;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Quick jump navigation */
+        .date-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            border: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .date-nav a {
+            padding: 0.5rem 1rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            border-radius: 25px;
+            color: #B8860B;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .date-nav a:hover,
+        .date-nav a.active {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 100%);
+            color: #000;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <a href="index.html" class="nav-link">← Back to Home</a>
+        <a href="blog/index.html" class="nav-link">📝 Blog</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>FOOD DIARY</h1>
+        <p class="subtitle">My raw vegan journey, one beautiful meal at a time 🌱</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Quick Date Navigation -->
+        <!-- 
+        ============================================================
+        HOW TO ADD NEW DATES TO THE QUICK NAVIGATION:
+        Copy and paste a new link for each new day you add:
+        <a href="#2025-12-25">Dec 25</a>
+        Make sure the href matches the id of your day-entry below!
+        ============================================================
+        -->
+        <nav class="date-nav">
+            <a href="#2025-12-24" class="active">Dec 24</a>
+            <!-- Add more date links here as you add more days -->
+        </nav>
+
+        <!-- 
+        ============================================================
+        HOW TO ADD A NEW DAY:
+        
+        1. Copy the entire <article class="day-entry"> block below
+        2. Paste it ABOVE the previous day (newest first)
+        3. Update the id="2025-12-24" to the new date
+        4. Update the date display text
+        5. Add your meal entries inside
+        
+        ============================================================
+        -->
+
+        <!-- Day Entry: December 24, 2025 -->
+        <article class="day-entry" id="2025-12-24">
+            <header class="day-header">
+                <h2 class="day-date">December 24, 2025</h2>
+                <span class="day-weekday">Wednesday</span>
+            </header>
+
+            <!-- 
+            ============================================================
+            HOW TO ADD A NEW MEAL ENTRY:
+            
+            1. Copy the entire <div class="meal-entry"> block below
+            2. Paste it after the previous meal
+            3. Update the image src to your new image file
+            4. Update the title, time, description, and recipe
+            5. Update the tags as needed
+            
+            IMAGE TIPS:
+            - Place your images in an "images/food/" folder
+            - Use descriptive filenames like "2025-12-24-breakfast-smoothie.jpg"
+            - The layout automatically adapts to portrait or landscape images
+            - Recommended: keep images under 1MB for fast loading
+            
+            ============================================================
+            -->
+
+            <!-- Meal 1 -->
+            <div class="meal-entry">
+                <div class="meal-image-container">
+                    <!-- Replace src with your image path -->
+                    <img src="images/food/2025-12-24-a.jpg" alt="Christmas Fruit Platter" class="meal-image">
+                    <img src="images/food/2025-12-24-b.jpg" alt="Christmas Fruit Platter" class="meal-image">
+                </div>
+                <div class="meal-content">
+                    <h3 class="meal-title">Christmas Eve Fruit Platter</h3>
+                    <span class="meal-time">🕐 20:00 PM</span>
+                    
+                    <p class="meal-description">
+                        Starting Christmas Eve with a vibrant fruit platter. The perfect way to celebrate the day with energy and lightness. The papaya were so creamy!
+                    </p>
+
+                    <div class="recipe-section">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 ripe papayas</li>
+                            <li>2 ripe kakhis</li>
+                            <li>1 cherimoya smoothie</li>
+                        </ul>
+
+                        <h4>Preparation of cherimoya smoothie:</h4>
+                        <div class="recipe-instructions">
+                            I scooped the ripe pulp out of the peel with a spoon, thinned the pulp and seeds with water, then rubbed it through a sieve until the pulp separated from the seeds as much as possible. I then blended the moist pulp until smooth. Enjoy!
+                        </div>
+                    </div>
+
+                    <div class="meal-tags">
+                        <span class="tag">raw</span>
+                        <span class="tag">vegan</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">high-energy</span>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Meal 2 -->
+            <div class="meal-entry">
+                <div class="meal-image-container">
+                    <!-- Replace src with your image path -->
+                    <img src="images/food/2025-12-24-d.jpg" alt="Buckwheat crackers" class="meal-image">
+                    <img src="images/food/2025-12-24-e.jpg" alt="Buckwheat crackers" class="meal-image">
+                    <img src="images/food/2025-12-24-f.jpg" alt="Buckwheat crackers" class="meal-image">
+                </div>
+                <div class="meal-content">
+                    <h3 class="meal-title">Christmas Eve Buckwheat Crackers with Avocado & Tomatoes</h3>
+                    <span class="meal-time">🕐 20:00 PM</span>
+                    
+                    <p class="meal-description">
+                        For the second course, I topped my homemade buckwheat crackers with creamy avocado and tomatoes. It was a wonderful finale to my marvelous raw food Christmas meal.
+                    </p>
+
+                    <div class="recipe-section">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>500 g organic buckwheat</li>
+                            <li>250 g chia seeds</li>
+                            <li>2 zucchini</li>
+                            <li>some sprouted oats</li>
+                            <li>pinch of salt</li>
+                            <li>olive oil</li>
+                            <li>osmosis filtered water</li>
+                        </ul>
+
+                        <h4>Preparation buckwheat crackers:</h4>
+                        <a href="https://www.youtube.com/shorts/5eRJiyiH9Jk" class="golden-link" target="_blank">🎬 Watch Video Tutorial</a>
+                    </div>
+
+                    <div class="meal-tags">
+                        <span class="tag">raw</span>
+                        <span class="tag">vegan</span>
+                        <span class="tag">dinner</span>
+                        <span class="tag">high-energy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            ============================================================
+            ADD MORE MEALS FOR THIS DAY HERE
+            Copy the meal-entry block above and paste here
+            ============================================================
+            -->
+
+        </article>
+
+
+
+
+ <!-- Day Entry: December 25, 2025 -->
+        <article class="day-entry" id="2025-12-24">
+            <header class="day-header">
+                <h2 class="day-date">December 24, 2025</h2>
+                <span class="day-weekday">Wednesday</span>
+            </header>
+
+            <!-- 
+            ============================================================
+            HOW TO ADD A NEW MEAL ENTRY:
+            
+            1. Copy the entire <div class="meal-entry"> block below
+            2. Paste it after the previous meal
+            3. Update the image src to your new image file
+            4. Update the title, time, description, and recipe
+            5. Update the tags as needed
+            
+            IMAGE TIPS:
+            - Place your images in an "images/food/" folder
+            - Use descriptive filenames like "2025-12-24-breakfast-smoothie.jpg"
+            - The layout automatically adapts to portrait or landscape images
+            - Recommended: keep images under 1MB for fast loading
+            
+            ============================================================
+            -->
+
+            <!-- Meal 1 -->
+            <div class="meal-entry">
+                <div class="meal-image-container">
+                    <!-- Replace src with your image path -->
+                    <img src="images/food/2025-12-25-a.jpg" alt="Banana kakhi smoothie" class="meal-image">
+                </div>
+                <div class="meal-content">
+                    <h3 class="meal-title">Banana-Kakhi-Smoothie</h3>
+                    <span class="meal-time">🕐 10:00 AM</span>
+                    
+                    <p class="meal-description">
+                        The ripe kakhis make the banana smoothie really creamy and sweet.
+                    </p>
+
+                    <div class="recipe-section">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>6 ripe bananas</li>
+                            <li>2 ripe kakhis</li>
+                        </ul>
+                    </div>
+
+                    <div class="meal-tags">
+                        <span class="tag">raw</span>
+                        <span class="tag">vegan</span>
+                        <span class="tag">smoothie</span>
+                        <span class="tag">high-energy</span>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Meal 2 -->
+            <div class="meal-entry">
+                <div class="meal-image-container">
+                    <!-- Replace src with your image path -->
+                    <img src="images/food/2025-12-25-b.jpg" alt="Kimchi with hempseed" class="meal-image">
+                </div>
+                <div class="meal-content">
+                    <h3 class="meal-title">Kimchi with hempseed dressing and buckwheat crackers</h3>
+                    <span class="meal-time">🕐 12:00 PM</span>
+                    
+                    <p class="meal-description">
+                        The ripe kakhis make the banana smoothie really creamy and sweet.
+                    </p>
+
+                    <div class="recipe-section">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>fresh kimchi</li>
+                            <li>hempseeds blended with osmosis filtered water</li>
+                            <li>buckwheat crackers</li>
+                        </ul>
+                        <a href="https://www.youtube.com/shorts/5eRJiyiH9Jk" class="golden-link" target="_blank">🎬 Watch Cracker Preparation</a>
+                    </div>
+
+                    <div class="meal-tags">
+                        <span class="tag">raw</span>
+                        <span class="tag">vegan</span>
+                        <span class="tag">kimchi</span>
+                        <span class="tag">high-energy</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+        <!-- 
+        ============================================================
+        ADD MORE DAYS HERE
+        
+        TEMPLATE FOR A NEW DAY:
+        
+        <article class="day-entry" id="2025-12-25">
+            <header class="day-header">
+                <h2 class="day-date">December 25, 2025</h2>
+                <span class="day-weekday">Thursday</span>
+            </header>
+
+            <div class="meal-entry">
+                <div class="meal-image-container">
+                    <img src="images/food/YOUR-IMAGE.jpg" alt="Description" class="meal-image">
+                </div>
+                <div class="meal-content">
+                    <h3 class="meal-title">Meal Name</h3>
+                    <span class="meal-time">🕐 TIME</span>
+                    
+                    <p class="meal-description">
+                        Your description here...
+                    </p>
+
+                    <div class="recipe-section">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Ingredient 1</li>
+                            <li>Ingredient 2</li>
+                        </ul>
+
+                        <h4>Preparation:</h4>
+                        <div class="recipe-instructions">
+                            Your instructions here...
+                        </div>
+                    </div>
+
+                    <div class="meal-tags">
+                        <span class="tag">raw</span>
+                        <span class="tag">vegan</span>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+        
+        ============================================================
+        -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="blog/index.html">Blog</a> | 
+            <a href="datenschutz.html">Privacy</a>
+        </p>
+        <p style="margin-top: 1rem;">© 2025 Amy Lang - Die Wandlung</p>
+    </footer>
+
+</body>
+</html>
