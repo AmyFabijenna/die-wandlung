@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Lang - Energetische Impulsgebung & Wandlung | Feng Shui, Schamanismus, Prozessbegleitung</title>
+    <title>Raw & Real | Verwandle deinen Körper, Energie & Ausstrahlung in 12 Wochen</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Energetische Impulsgebung bei Lebensübergängen: Feng Shui Raumenergetik, schamanische Prozessbegleitung, energetische Arbeit. 20+ Jahre Erfahrung. Kostenloses Kennenlerngespräch.">
-    <meta name="keywords" content="Energetikerin Österreich, Feng Shui Raumenergetik, schamanische Begleitung, Lebensübergänge, energetische Arbeit, Prozessbegleitung Graz">
+    <meta name="description" content="Raw & Real ist für Frauen 35+, die mühelos einen schlanken und starken Körper erreichen, 10 Jahre jünger aussehen und sich energiegeladen und strahlend fühlen wollen. Kein Diäten. Kein Burnout. Kein Bullshit.">
+    <meta name="keywords" content="Rohkost Coaching, Raw Food Coaching, Frauen 35+, Gewichtsabnahme, Anti-Aging, Energie Coaching, ganzheitliche Transformation">
     <meta name="author" content="Amy Lang">
     <meta name="robots" content="index, follow">
     
@@ -43,21 +43,20 @@
             background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
         }
 
-        /* Top Navigation Links - Oben Rechts */
-        .top-nav-container {
+        /* Language Switcher */
+        .language-switcher {
             position: absolute;
             top: 2rem;
             right: 2rem;
             z-index: 100;
             display: flex;
-            gap: 1rem;
+            gap: 0.5rem;
         }
 
-        .top-nav-link {
+        .lang-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
+            padding: 0.5rem 1rem;
             background: rgba(184, 134, 11, 0.1);
             border: 2px solid #B8860B;
             border-radius: 50px;
@@ -65,182 +64,89 @@
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 600;
-            letter-spacing: 1px;
             backdrop-filter: blur(10px);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
         }
 
-        .top-nav-link:hover {
+        .lang-link:hover, .lang-link.active {
             background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
             border-color: #D4AF37;
-            color: #000000;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
         }
 
-        .top-nav-link .nav-icon {
-            font-size: 1.1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .top-nav-link:hover .nav-icon {
-            transform: scale(1.2) rotate(5deg);
-        }
-
-        /* Legacy support for blog-link class */
-        .blog-link-container {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            z-index: 100;
-        }
-
-        .blog-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: rgba(184, 134, 11, 0.1);
-            border: 2px solid #B8860B;
-            border-radius: 50px;
-            color: #000000;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            backdrop-filter: blur(10px);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-        }
-
-        .blog-link:hover {
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            border-color: #D4AF37;
-            color: #000000;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
-        }
-
-        .blog-icon {
-            font-size: 1.1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .blog-link:hover .blog-icon {
-            transform: scale(1.2) rotate(5deg);
-        }
-
-        @media (max-width: 600px) {
-            .top-nav-container {
-                flex-direction: column;
-                gap: 0.5rem;
-                top: 1rem;
-                right: 1rem;
-            }
-            
-            .top-nav-link {
-                padding: 0.5rem 1rem;
-                font-size: 0.8rem;
-            }
-        }
-
-        /* Main Heading */
         h1 {
             font-size: clamp(3rem, 12vw, 8rem);
-            font-weight: 200;
-            letter-spacing: 0.3em;
-            margin: 0;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: gradientShift 8s ease infinite;
-            filter: drop-shadow(0 4px 8px rgba(184, 134, 11, 0.4)) drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
-            position: relative;
-        }
-
-        /* Subtitle */
-        .subtitle {
-            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-style: italic;
-            font-weight: 400;
-            margin: 1rem 0;
-            letter-spacing: 0.15em;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
         }
 
-        /* Tagline */
-        .tagline {
-            font-size: clamp(1rem, 2vw, 1.3rem);
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
             color: #000000;
-            max-width: 700px;
-            margin: 2rem auto 3rem;
-            line-height: 1.6;
-            font-weight: 400;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #000000;
         }
 
         /* CTA Button */
         .cta-button {
             position: relative;
             display: inline-block;
-            padding: 1.5rem 4rem;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #000;
+            padding: 1.5rem 3rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            color: #000000;
             text-decoration: none;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 25%, #E6D399 50%, #C5B358 75%, #D4AF37 100%);
-            background-size: 200% auto;
-            border: 3px solid #B8860B;
-            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-radius: 50px;
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.35), 0 4px 15px rgba(212, 175, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-            letter-spacing: 0.08em;
-            animation: pulse 3s ease-in-out infinite, shimmer 4s linear infinite;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-            transition: left 0.6s;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
+            box-shadow: 
+                0 10px 40px rgba(184, 134, 11, 0.3),
+                0 0 60px rgba(212, 175, 55, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            border: 2px solid rgba(212, 175, 55, 0.5);
         }
 
         .cta-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5), 0 8px 25px rgba(184, 134, 11, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-            border-color: #D4AF37;
-            background-position: right center;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 15px 60px rgba(184, 134, 11, 0.4),
+                0 0 80px rgba(212, 175, 55, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
         }
 
         .cta-glow {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(230, 211, 153, 0.4) 0%, transparent 70%);
-            transform: translate(-50%, -50%) scale(0);
-            border-radius: 50%;
-            transition: transform 0.6s ease;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            animation: glow-pulse 3s ease-in-out infinite;
+            pointer-events: none;
         }
 
-        .cta-button:hover .cta-glow {
-            transform: translate(-50%, -50%) scale(1.5);
+        @keyframes glow-pulse {
+            0%, 100% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 0.8; transform: scale(1.1); }
         }
 
         .cta-text {
@@ -248,540 +154,469 @@
             z-index: 1;
         }
 
-        /* Animations */
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 10px 40px rgba(184, 134, 11, 0.35), 0 4px 15px rgba(212, 175, 55, 0.3);
-            }
-            50% {
-                box-shadow: 0 10px 50px rgba(212, 175, 55, 0.5), 0 6px 20px rgba(184, 134, 11, 0.4);
-            }
-        }
-
-        @keyframes gradientShift {
-            0%, 100% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-        }
-
-        @keyframes shimmer {
-            0% { background-position: 0% center; }
-            100% { background-position: 200% center; }
-        }
-
-        /* Container */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
         }
 
-        /* Section Styling */
         section {
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(15px);
-            border-radius: 30px;
-            padding: 4rem 3rem;
-            margin-bottom: 4rem;
-            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
-            border: 2px solid rgba(184, 134, 11, 0.3);
-        }
-
-        /* Intro Section mit Foto */
-        #start {
-            position: relative;
-        }
-
-        .intro-image {
-            float: left;
-            width: 300px;
-            height: 400px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.3);
-            border: 3px solid #D4AF37;
-            margin-right: 2rem;
-            margin-bottom: 1rem;
-            shape-outside: margin-box;
-        }
-
-        .intro-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        #start h2 {
-            text-align: left;
-            margin-top: 0;
-        }
-
-        /* Responsive Design für Intro */
-        @media (max-width: 768px) {
-            .intro-image {
-                float: none;
-                width: 100%;
-                max-width: 300px;
-                height: 350px;
-                margin: 0 auto 2rem;
-                display: block;
-            }
-
-            #start h2 {
-                text-align: center;
-            }
+            margin-bottom: 5rem;
+            padding: 3rem 0;
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 2rem;
-            font-weight: 300;
-            letter-spacing: 0.1em;
             text-align: center;
-            filter: drop-shadow(0 2px 4px rgba(184, 134, 11, 0.2));
         }
 
         h3 {
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 4vw, 2rem);
+            margin-bottom: 1.5rem;
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
         }
 
         p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
             margin-bottom: 1.5rem;
             color: #000000;
-            font-size: 1.1rem;
         }
 
-        /* Services Grid */
-        .services-grid {
+        /* Testimonial Section */
+        .testimonial-hero {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 5rem 0;
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.15);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .testimonial-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 20px;
-            padding: 2.5rem;
-            border: 2px solid #D4AF37;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(184, 134, 11, 0.2);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: #B8860B;
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4), 0 0 30px rgba(184, 134, 11, 0.3);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            width: 120px;
-            height: 120px;
-            display: flex;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
             align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
-        .service-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #D4AF37;
-            filter: drop-shadow(0 4px 12px rgba(184, 134, 11, 0.4));
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover .service-icon img {
-            border-color: #B8860B;
-            transform: scale(1.05);
-            filter: drop-shadow(0 8px 20px rgba(212, 175, 55, 0.6));
-        }
-
-        /* Zen Cat Image */
-        .zen-cat {
-            float: right;
-            width: 180px;
-            margin: 0 0 1rem 2rem;
+        .testimonial-image {
             text-align: center;
         }
 
-        .zen-cat img {
+        .testimonial-image img {
             width: 100%;
-            height: auto;
-            border-radius: 15px;
-            border: 3px solid #D4AF37;
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
-        }
-
-        .zen-cat-caption {
-            font-size: 0.85rem;
-            color: #B8860B;
-            font-style: italic;
-            margin-top: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .zen-cat {
-                float: none;
-                margin: 2rem auto;
-                width: 150px;
-            }
-        }
-
-        .service-card h3 {
-            text-align: left;
-            margin-top: 0;
-        }
-
-        .service-card p {
-            font-size: 1rem;
-        }
-
-        /* Pricing */
-        .pricing-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .pricing-card {
-            background: rgba(255, 255, 255, 0.6);
+            max-width: 300px;
             border-radius: 20px;
-            padding: 2.5rem;
-            border: 2px solid #D4AF37;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(184, 134, 11, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border: 3px solid #D4AF37;
         }
 
-        .pricing-card.featured {
-            border: 3px solid #B8860B;
-            transform: scale(1.05);
-            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.4), 0 0 30px rgba(184, 134, 11, 0.2);
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(184, 134, 11, 0.1) 100%);
+        .testimonial-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .price {
-            font-size: 3rem;
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #000000;
+        }
+
+        .testimonial-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text strong {
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             font-weight: 700;
-            margin: 1rem 0;
         }
 
-        /* Testimonials */
-        .testimonial {
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .step {
             background: rgba(255, 255, 255, 0.5);
-            border-left: 4px solid #D4AF37;
-            padding: 2rem;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(184, 134, 11, 0.2);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing */
+        .pricing-hero {
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            margin: 4rem 0;
+            text-align: center;
+            border: 3px solid #D4AF37;
+            box-shadow: 
+                0 20px 60px rgba(184, 134, 11, 0.2),
+                0 0 80px rgba(212, 175, 55, 0.15);
+        }
+
+        .price-tag {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin: 2rem 0;
-            border-radius: 10px;
-            font-style: italic;
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
         }
 
-        .testimonial-author {
-            color: #B8860B;
-            font-style: normal;
-            font-weight: bold;
-            margin-top: 1rem;
+        .price-duration {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 2rem;
         }
 
-        /* Warning Box */
-        .disclaimer-box {
-            background: linear-gradient(135deg, rgba(220, 53, 69, 0.08), rgba(220, 53, 69, 0.12));
-            padding: 1.5rem;
+        .price-features {
+            list-style: none;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .price-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .price-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 15px;
-            border-left: 4px solid #dc3545;
-            margin: 2rem 0;
-            font-size: 0.95rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid rgba(212, 175, 55, 0.2);
         }
 
-        .disclaimer-box strong {
-            color: #dc3545;
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .faq-answer {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.8;
         }
 
         /* Footer */
         footer {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 3rem 2rem;
             text-align: center;
-            padding: 3rem;
-            color: #000000;
             font-size: 0.9rem;
-            background: rgba(255, 255, 255, 0.3);
-            border-top: 2px solid rgba(184, 134, 11, 0.3);
+            color: #666;
         }
 
         footer a {
             color: #B8860B;
             text-decoration: none;
-            margin: 0 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border-bottom: 2px solid transparent;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
             color: #D4AF37;
-            border-bottom-color: #D4AF37;
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
+            .testimonial-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+
             .container {
                 padding: 2rem 1rem;
             }
-            
-            section {
+
+            .pricing-hero {
                 padding: 2rem 1.5rem;
             }
-            
-            h2 {
-                font-size: 2rem;
+
+            .price-tag {
+                font-size: 3rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="index.html" class="lang-link">EN</a>
+        <a href="de.html" class="lang-link active">DE</a>
+    </div>
 
     <!-- Hero Section -->
     <div class="hero">
-        <div class="top-nav-container">
-            <a href="blog/index.html" class="top-nav-link" target="_blank">
-                <span class="nav-icon">✍️</span>
-                <span>Blog</span>
-            </a>
-            <a href="food-diary.html" class="top-nav-link">
-                <span class="nav-icon">🥗</span>
-                <span>Food Diary</span>
-            </a>
-        </div>
-        
-        <h1>DIE WANDLUNG</h1>
-        <p class="subtitle">Energetische Impulsgebung & Prozessbegleitung</p>
-        <p class="tagline">
-            Für Menschen in Übergängen – beruflich, persönlich, spirituell
+        <h1>Raw & Real</h1>
+        <p class="subtitle">
+            Für Frauen 35+, die mühelos einen schlanken und starken Körper erreichen,<br>
+            10 Jahre jünger aussehen und sich energiegeladen und strahlend fühlen wollen.
+        </p>
+        <p class="hero-tagline">
+            Kein Diäten. Kein Burnout. Kein Bullshit.
         </p>
         <a href="#contact" class="cta-button">
             <span class="cta-glow"></span>
-            <span class="cta-text">STARTE DEINE WANDLUNG</span>
+            <span class="cta-text">KOSTENLOSES ERSTGESPRÄCH BUCHEN</span>
         </a>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
-        <!-- Intro Section -->
-        <section id="start">
-            <div class="intro-image">
-                <img src="images/amy_im_wandel.jpg" alt="Amy Lang - Energetikerin">
-            </div>
-            <h2>Hi, ich bin Amy.</h2>
-            <p>Seit über 20 Jahren begleite ich Menschen auf ihrem Weg – als Energetikerin, Feng Shui Beraterin und schamanische Begleiterin. Was ich dabei entdeckt habe: Menschen brauchen keine fertigen Lösungen. Sie brauchen Impulse, Struktur und jemanden, der ihnen hilft, ihre eigenen Antworten zu finden und den Mut zu haben, sie zu leben.</p>
-            
-            <p><strong>Mein Ansatz:</strong> Strukturiert. Pragmatisch. Aber mit Tiefe. Ich arbeite auf der feinstofflichen Ebene und gebe dir Impulse für deinen Weg.</p>
-            
-            <p>Veränderung begleitet mich, seit ich denken kann. Mit 5 Jahren stand ich als Hochleistungsturnerin am Schwebebalken, mit 7 auf der Laufbahn – Sport lehrte mich früh: Wenn du etwas willst, musst du dranbleiben. Mit 10 Jahren erlebte ich die größte Veränderung meines Lebens: Wir zogen von Budapest nach Österreich. Von einer Metropole mit Millionen Menschen in ein 5000-Seelen-Dorf in der Steiermark. Ich verlor alles: meinen Sport, meine Freunde, meine Verwandten, meine Sprache, mein Leben, wie ich es kannte.</p>
-            
-            <p>Diese Erfahrung prägte mich. Sie lehrte mich, dass Veränderung wehtun kann – aber dass wir stärker sind, als wir denken.</p>
-            
-            <p>Mit 18 zog ich nach Vancouver und arbeitete mit der indigenen Bevölkerung in einer Befreiungsorganisation. Diese Zeit öffnete mir die Augen für Kulturen, Heilung und die spirituelle Dimension des Menschseins – und ebnete meinen Weg zum Schamanismus.</p>
-            
-            <p>Im Laufe der Jahre vertiefte ich mich in energetische Arbeit, Körperarbeit (Pilates, Yoga, Tai Chi, Qi Gong), Schamanismus, Feng Shui und spirituelle Praxis. Nicht, weil ich Zertifikate sammeln wollte – sondern weil ich verstehen wollte, wie echte, tiefe Transformation funktioniert.</p>
-            
-            <p><strong>Warum ich tue, was ich tue:</strong><br>
-            Weil ich gesehen habe – an mir selbst und an vielen Menschen – dass Wandlung möglich ist. Dass wir nicht bleiben müssen, wo wir sind.</p>
-            
-            <p><strong>🌿 Meine rohvegane Reise:</strong><br>
-            Seit 2014 ernähre ich mich rohvegan – mit einer 5-jährigen Pause dazwischen. Diese Art der Ernährung ist für mich mehr als nur Essen: Sie ist Teil meiner ganzheitlichen Lebensweise und meines Weges zu körperlicher und geistiger Klarheit. In meinem <a href="food-diary.html" style="color: #B8860B; font-weight: 600;">Food Diary</a> teile ich meine täglichen Kreationen, Rezepte und Inspirationen.</p>
-        </section>
-
-        <!-- Services Section -->
+        
+        <!-- About Amy Section -->
         <section>
-            <h2>Meine energetische Arbeit</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Ich arbeite auf drei Ebenen mit dir – je nachdem, wo du gerade stehst und was du brauchst.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><img src="images/shamanism.jpg" alt="Schamanische Begleitung"></div>
-                    <h3>Schamanische Begleitung</h3>
-                    <p>Energetische Prozessbegleitung bei Lebensübergängen und Neuanfängen. Rituale für Abschied, Transformation und Neubeginn. Arbeit mit schamanischen Techniken und spirituellen Ritualen.</p>
-                    <p><strong>Für dich, wenn:</strong> Du einen wichtigen Übergang durchlebst oder spirituelle Begleitung auf der feinstofflichen Ebene suchst.</p>
+            <h2>Lerne deine Coach kennen</h2>
+            <div class="testimonial-hero">
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="images/amy.jpg" alt="Amy Lang - Raw & Real Coach">
+                        <div class="testimonial-name">Amy Lang</div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p><strong>Ich lebe seit Jahren Rohkost – und ich habe jede Herausforderung selbst durchlebt, die du auch erleben wirst.</strong></p>
+                        
+                        <p>Ich weiß, wie es ist zu scheitern. Zu zweifeln. Wieder von vorne anzufangen.</p>
+                        
+                        <p>Deshalb bin ich gründlich. Ich lasse kein Detail aus. Weil ich selbst dort war.</p>
+                        
+                        <p>Wenn du mit mir arbeitest, bekommst du nicht nur Rezeptideen. Du bekommst jemanden, der mit dir geht – Schritt für Schritt, Herausforderung für Herausforderung – bis es funktioniert.</p>
+                        
+                        <p><strong>Mein Ansatz:</strong> Rohkost + Feng Shui + Seelenarbeit. Dein Körper, dein Raum, deine Energie – alles arbeitet zusammen.</p>
+                        
+                        <p>Ich übertrage meinen unerschütterlichen Glauben auf dich. Und plötzlich zweifelst du nicht mehr – du weißt einfach, dass es funktioniert.</p>
+                    </div>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon"><img src="images/fengshui.jpg" alt="Feng Shui Raumenergetik"></div>
-                    <h3>Feng Shui Raumenergetik</h3>
-                    <p>Energetische Analyse deiner Wohn- und Arbeitsräume nach klassischem Kompass-Feng-Shui (Flying Stars). Ich analysiere die Energieflüsse in deinen Räumen und gebe dir Empfehlungen für eine harmonischere Raumgestaltung.</p>
-                    <p><strong>Für dich, wenn:</strong> Du dich in deinen Räumen nicht wohlfühlst oder durch bewusste Raumgestaltung Veränderung anstoßen möchtest.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon"><img src="images/transformation.jpg" alt="Energetische Prozessbegleitung"></div>
-                    <h3>Energetische Prozessbegleitung</h3>
-                    <p>Impulsgebung bei beruflichen Wendepunkten und persönlichen Übergängen. Strukturierte Arbeit an deinen Zielen, kombiniert mit energetischer Unterstützung.</p>
-                    <p><strong>Für dich, wenn:</strong> Du an einem Wendepunkt stehst und Impulse für deinen nächsten Schritt suchst.</p>
-                </div>
-            </div>
-
-            <div class="disclaimer-box">
-                <p><strong>Wichtiger Hinweis:</strong> Energetische Arbeit ist keine Therapie, keine Lebensberatung und kein Ersatz für medizinische oder psychotherapeutische Behandlung. Ich stelle keine Diagnosen und gebe keine Heilversprechen. Bei psychischen Erkrankungen oder medizinischen Beschwerden wende dich bitte an entsprechende Fachpersonen.</p>
             </div>
         </section>
 
-        <!-- For Whom Section -->
+        <!-- Nicole's Testimonial -->
         <section>
-            <h2>Für wen ist diese Arbeit?</h2>
-            <p><strong>Du bist hier richtig, wenn:</strong></p>
-            <ul style="list-style: none; padding-left: 0;">
-                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;"><span style="font-weight: bold;">✓</span> Du an einem Wendepunkt stehst – beruflich oder persönlich</li>
-                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;"><span style="font-weight: bold;">✓</span> Du spürst, dass etwas nicht mehr stimmt und Veränderung brauchst</li>
-                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;"><span style="font-weight: bold;">✓</span> Du bereit bist, hinzuschauen – ehrlich und ohne Ausreden</li>
-                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;"><span style="font-weight: bold;">✓</span> Du offen für energetische und spirituelle Impulse bist</li>
-                <li style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;"><span style="font-weight: bold;">✓</span> Du selbst aktiv werden willst, nicht nur reden</li>
-            </ul>
-            
-            <p style="margin-top: 2rem;"><strong>Du bist hier NICHT richtig, wenn:</strong></p>
-            <ul style="list-style: none; padding-left: 0;">
-                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;">❌ Du therapeutische Unterstützung bei psychischen Erkrankungen benötigst</li>
-                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;">❌ Du schnelle Lösungen ohne eigenes Dazutun suchst</li>
-                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;">❌ Du hauptsächlich über Probleme sprechen willst, ohne selbst aktiv zu werden</li>
-                <li style="background: linear-gradient(135deg, #888888 0%, #A8A8A8 25%, #707070 50%, #999999 75%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 500; margin-bottom: 0.5rem;">❌ Du medizinische Diagnosen oder Behandlung suchst</li>
-            </ul>
+            <h2>Echte Ergebnisse, echte Frau</h2>
+            <div class="testimonial-hero">
+                <div class="testimonial-content">
+                    <div class="testimonial-image">
+                        <img src="images/nicole.jpg" alt="Nicole Vogt">
+                        <div class="testimonial-name">Nicole Vogt</div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p><strong>Ich habe viermal versucht, auf rohvegane Ernährung umzustellen. Jedes Mal bin ich gescheitert.</strong></p>
+                        
+                        <p>Mit drei kleinen Kindern, die weiterhin Gekochtes essen wollten, wusste ich nicht, wie ich meinen Weg gehen soll, ohne dass es zum Thema wird.</p>
+                        
+                        <p><strong>Dann kam Amy.</strong></p>
+                        
+                        <p>Sie hat mir nicht einfach einen Ernährungsplan gegeben. Sie hat mir gezeigt, wie ich meinen Weg gehe, während meine Familie ihren Weg geht – ganz natürlich, ohne Druck.</p>
+                        
+                        <p>Via WhatsApp (Montag bis Freitag) war sie immer da. Kein Detail war ihr zu klein. Jede Unsicherheit, jede Frage – sie hatte die Antwort. Nicht theoretisch. Praktisch.</p>
+                        
+                        <p>Als ich nicht wusste, wie ich für die Kinder koche und gleichzeitig selbst roh esse – sie hat mir gezeigt, wie es geht.</p>
+                        
+                        <p>Als ich zweifelte – sie hat mir ihren <strong>unerschütterlichen Glauben</strong> geschenkt. Dass es funktioniert. Dass ich es schaffe. Dass es leicht sein kann.</p>
+                        
+                        <p><strong>Drei Monate später:</strong></p>
+                        
+                        <p>Ich bin vitaler. Fokussierter. Mental klarer. Ich brauche weniger Schlaf, habe mehr Energie, und fühle mich wieder wie ich selbst.</p>
+                        
+                        <p><strong>Und dann kam der Moment, den ich nie erwartet hätte:</strong></p>
+                        
+                        <p>Alle in meiner Familie hatten eine Erkältung. Ich nicht.</p>
+                        
+                        <p>Mein Mann – der vorher dachte, Rohkost sei „zu extrem" – sah mich an und sagte: <strong>„Was machst du anders? Ich will das auch probieren."</strong></p>
+                        
+                        <p>Heute isst er von meinem Essen. Er fragt nach Rezepten. Er interessiert sich.</p>
+                        
+                        <p>Nicht, weil ich ihn überzeugt habe. Sondern weil er gesehen hat, wie gut es mir geht.</p>
+                        
+                        <p><strong>Amy überträgt ihren Glauben auf dich. Und plötzlich zweifelst du nicht mehr – du weißt einfach, dass es funktioniert.</strong></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Pricing Section -->
+        <!-- How It Works -->
+        <section>
+            <h2>Wie es funktioniert</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Kostenloses 20-Min-Gespräch</h3>
+                    <p>Wir prüfen, ob Raw & Real für dich passt. Nicht jede wird angenommen – das schützt uns beide.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>12 Wochen gemeinsam</h3>
+                    <p>12 x 60-Minuten-Calls + WhatsApp-Support Montag bis Freitag. Ich bin bei jedem Schritt an deiner Seite.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Komplette Transformation</h3>
+                    <p>Rohkost + Feng Shui + Seelenarbeit. Dein Körper, deine Energie und deine Ausstrahlung – verwandelt.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
         <section>
             <h2>Investition</h2>
-            
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <h3>Einzelsitzung</h3>
-                    <div class="price">80€</div>
-                    <p>60 Minuten energetische Arbeit per Video</p>
-                    <p>Für alle Bereiche: Schamanische Arbeit, Feng Shui oder Prozessbegleitung</p>
+            <div class="pricing-hero">
+                <h3>Raw & Real Transformation</h3>
+                <div class="price-tag">€3.000</div>
+                <div class="price-duration">12 Wochen | Komplette Transformation</div>
+                
+                <ul class="price-features">
+                    <li>✅ 12 x 60-Minuten private Coaching-Calls</li>
+                    <li>✅ WhatsApp-Support Montag–Freitag</li>
+                    <li>✅ Komplette Feng Shui Analyse deiner Wohnung</li>
+                    <li>✅ Rezeptvorschläge & Rohkost-Ideen</li>
+                    <li>✅ Food Combining Informationen</li>
+                    <li>✅ Schritt-für-Schritt-Unterstützung bei jeder Herausforderung</li>
+                    <li>✅ Kein Detail bleibt unbeachtet</li>
+                </ul>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    <strong>Rechtlicher Hinweis:</strong> Dies ist Lifestyle-Coaching und Erfahrungsaustausch, keine medizinische Behandlung, Ernährungstherapie oder Psychotherapie. Individuelle Ergebnisse variieren. Konsultiere immer deinen Arzt vor größeren Ernährungsumstellungen.
+                </p>
+                
+                <p style="margin-top: 2rem; color: #666; font-size: 1rem;">
+                    Pilot-Angebot für die ersten 3 Klientinnen: €1.500<br>
+                    <em>(Danach: €3.000)</em>
+                </p>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="#contact" class="cta-button">
+                        <span class="cta-glow"></span>
+                        <span class="cta-text">KOSTENLOSES ERSTGESPRÄCH BUCHEN</span>
+                    </a>
                 </div>
-
-                <div class="pricing-card featured">
-                    <h3>6er-Paket</h3>
-                    <div class="price">450€</div>
-                    <p>6 Sitzungen über 3 Monate</p>
-                    <p>= 75€/Sitzung (Du sparst 30€)</p>
-                    <p><strong>Für tiefere Prozessarbeit</strong></p>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Feng Shui Raumenergetik</h3>
-                    <div class="price">ab 150€</div>
-                    <p>Vor-Ort oder per Fernanalyse</p>
-                    <p>Energetische Analyse deiner Räume mit schriftlichem Bericht</p>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 2rem; font-size: 0.95rem; color: #666;">Alle Preise sind Endpreise. Als Kleinunternehmerin wird keine Umsatzsteuer ausgewiesen.</p>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="erstgespraech.html" class="cta-button" style="display: inline-block;">
-                    <span class="cta-glow"></span>
-                    <span class="cta-text">KOSTENLOSES KENNENLERNGESPRÄCH</span>
-                </a>
             </div>
         </section>
 
-        <!-- Qualifications -->
+        <!-- FAQ -->
         <section>
-            <h2>Mein Hintergrund</h2>
-            <p>Über 20 Jahre intensive Beschäftigung mit energetischer Arbeit, Körperarbeit und spiritueller Praxis:</p>
+            <h2>Häufig gestellte Fragen</h2>
             
-            <h3>Körperarbeit & Energie</h3>
-            <p>Pilates-Trainer-Zertifikat, Tai Chi (Lorenz Huber), Qi Gong (Wei Ling Yi), Yoga & Kundalini Yoga (Akos PrAkash Vörös, MariLou Zettl)</p>
-            
-            <h3>Schamanismus & Spirituelle Praxis</h3>
-            <p>Schamanismus (Dr. Ernestina Mazza, Akos PrAkash Vörös), Shamanism in Your Home (Odette Nightsky), Buddhistische Meditation (Béla F. Galló), Zahlreiche Enlightenment Intensives (Akos PrAkash Vörös, Esra Salman)</p>
-            
-            <h3>Raumenergetik</h3>
-            <p>Feng Shui Ausbildung (Hajnal Fény Diké) – Klassisches Kompass-Feng-Shui (Flying Stars)</p>
-            
-            <h3>Weitere Ausbildungen</h3>
-            <p>Enneagramm-Therapie, Die Lehre vom Sein (Roland), 20+ Jahre Erfahrung als DAF/DAZ Trainerin, Universitätsabschluss in Sprachen und Kommunikation</p>
-        </section>
-
-        <!-- Testimonials -->
-        <section>
-            <h2>Erfahrungsberichte</h2>
-            
-            <div class="testimonial">
-                "Nach 3 Monaten mit Amy hatte ich endlich die Klarheit, die ich brauchte: Ich kündigte meinen Job als Hilfsarbeiter und startete den Weg zur Karriere, von der ich jahrelang nur geträumt hatte. Mit ihrer Unterstützung fasste ich den Mut, alle notwendigen Schritte zu gehen und den Ausbildungsweg zu beginnen. Heute studiere ich Fahrzeugtechnik und bin meinem Ziel näher als je zuvor."
-                <div class="testimonial-author">– M., 28</div>
+            <div class="faq-item">
+                <div class="faq-question">Muss ich von Tag eins an 100% roh essen?</div>
+                <div class="faq-answer">Nein. Wir arbeiten Schritt für Schritt. Du entscheidest das Tempo. Ich habe selbst jede Herausforderung durchlebt – ich weiß, was funktioniert und was nicht.</div>
             </div>
 
-            <p><strong>Weitere Erfahrungen aus meiner Arbeit:</strong></p>
-            <ul>
-                <li>✓ Von beruflicher Erschöpfung zu einer erfüllenderen Tätigkeit</li>
-                <li>✓ Von Orientierungslosigkeit zu "Das ist mein Weg"</li>
-                <li>✓ Von Zweifel zu mutiger beruflicher Neuorientierung</li>
-                <li>✓ Von energetischer Blockade zu neuem Lebensfluss nach Feng Shui Raumenergetik</li>
-            </ul>
-            
-            <p style="font-size: 0.9rem; color: #666; margin-top: 2rem;"><em>Hinweis: Ergebnisse sind individuell und hängen von vielen Faktoren ab. Energetische Arbeit gibt keine Garantie für bestimmte Ergebnisse.</em></p>
+            <div class="faq-item">
+                <div class="faq-question">Was, wenn meine Familie Gekochtes isst?</div>
+                <div class="faq-answer">Ich zeige dir, wie du für sie kochst, während du selbst roh isst – ohne zwei getrennte Mahlzeiten zu machen. Nicole hat es mit drei Kindern geschafft. Du schaffst das auch.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Brauche ich Kochkenntnisse?</div>
+                <div class="faq-answer">Nein. Ich bringe dir alles bei. Von Food Combining bis zum Dörrgerät für rohes Brot. Alles, was du wissen musst.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Was, wenn ich wieder scheitere?</div>
+                <div class="faq-answer">Das wirst du nicht. Weil du diesmal nicht alleine bist. Ich bin gründlich. Ich lasse kein Detail aus. Und ich übertrage meinen Glauben auf dich – damit du weißt, dass es funktioniert.</div>
+            </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- Final CTA -->
         <section id="contact" style="text-align: center;">
-            <div class="zen-cat">
-                <img src="images/lea2022.png" alt="Zen-Großmeisterin Lea ;-)">
-                <div class="zen-cat-caption">Zen-Großmeisterin Lea ;-)</div>
-            </div>
-            <h2>Bereit für deine Wandlung?</h2>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 2rem auto;">Lass uns herausfinden, ob energetische Arbeit für dich geeignet ist.</p>
+            <h2>Bereit für deine Transformation?</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                Lass uns herausfinden, ob Raw & Real für dich passt.
+            </p>
             
             <div style="margin: 3rem 0;">
-                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">So geht's weiter:</p>
-                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.1rem;">
-                    <li>Schreib mir oder buche direkt ein Kennenlerngespräch</li>
-                    <li>Kostenloses Kennenlerngespräch (20 Min) – wir klären, ob es passt</li>
-                    <li>Wenn es passt, buchen wir deine erste Sitzung</li>
+                <p style="font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    So geht's weiter:
+                </p>
+                <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.2rem; line-height: 2;">
+                    <li>Buche dein kostenloses 20-Minuten-Gespräch</li>
+                    <li>Wir sprechen – ich prüfe, ob Raw & Real für dich passt</li>
+                    <li>Wenn es passt, starten wir deine Transformation</li>
                 </ol>
             </div>
             
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2rem 0;">
-                <a href="/cdn-cgi/l/email-protection#d9b8b4a0b5b8b799b0b2f7b4bc" class="cta-button" style="display: inline-block;">
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 3rem 0;">
+                <a href="mailto:amylan@ik.me" class="cta-button">
                     <span class="cta-glow"></span>
-                    <span class="cta-text">✉️ SCHREIB MIR</span>
+                    <span class="cta-text">✉️ EMAIL SCHREIBEN</span>
                 </a>
                 
-                <a href="https://wa.me/436812028329?text=Hallo%20Amy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20deine%20energetische%20Arbeit" class="cta-button" style="display: inline-block;">
+                <a href="https://wa.me/4368120283291?text=Hallo%20Amy%2C%20ich%20interessiere%20mich%20für%20Raw%20%26%20Real" class="cta-button">
                     <span class="cta-glow"></span>
                     <span class="cta-text">💬 WHATSAPP</span>
                 </a>
-                
-                <a href="erstgespraech.html" class="cta-button" style="display: inline-block;">
-                    <span class="cta-glow"></span>
-                    <span class="cta-text">📅 KENNENLERNGESPRÄCH BUCHEN</span>
-                </a>
             </div>
             
-            <p style="margin-top: 3rem; font-size: 0.9rem; color: #000000;">
-                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Hinweis:</strong> Im Kennenlerngespräch prüfen wir gemeinsam, ob energetische Arbeit für dein Anliegen geeignet ist. Nicht jeder wird angenommen – das dient dem Schutz beider Seiten.
+            <p style="margin-top: 3rem; font-size: 1rem; color: #666; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <strong style="background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.1rem;">Hinweis:</strong> 
+                Im kostenlosen Gespräch prüfen wir gemeinsam, ob Raw & Real für deine Situation geeignet ist. Nicht jede wird angenommen – das dient dem Schutz beider Seiten.
             </p>
         </section>
     </div>
@@ -789,12 +624,19 @@
     <!-- Footer -->
     <footer>
         <p>
-            <a href="faq_coaching.html">FAQ</a> | 
-            <a href="agb_coaching.html">AGB</a> | 
-            <a href="datenschutz.html">Datenschutz</a> |
-            <a href="blog/index.html" target="_blank">Blog</a> |
+            <a href="faq-de.html">FAQ</a> | 
+            <a href="termin-buchen.html">Termin buchen</a> | 
+            <a href="agb-de.html">AGB</a> | 
+            <a href="datenschutz-de.html">Datenschutz</a> |
+            <a href="blog/index.html">Blog</a> |
             <a href="food-diary.html">Food Diary</a>
         </p>
-        <p style="margin-top: 1rem;">Amy Lang - Die Wandlung | Energetische Impulsgebung & Prozessbegleitung</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Energetikerin (Neue Selbständige gemäß § 2 Abs. 1 Z 4 GSVG)</p>
-        <p>© 2025 Alle Rechte vorbehalten<
+        <p style="margin-top: 1rem;">Amy Lang - Raw & Real | Ganzheitliches Lifestyle Coaching</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Neue Selbständige (§ 2 Abs. 1 Z 4 GSVG) | Österreich</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; max-width: 800px; margin-left: auto; margin-right: auto; color: #666;">
+            <strong>Disclaimer:</strong> Raw & Real bietet Lifestyle-Coaching und Erfahrungsaustausch über Rohkost, Feng Shui und ganzheitliche Praktiken. Dies ist KEINE medizinische Behandlung, Ernährungstherapie, Psychotherapie oder ein Ersatz für professionelle medizinische Beratung. Amy Lang hat keine medizinische oder ernährungswissenschaftliche Ausbildung. Individuelle Ergebnisse können variieren. Konsultiere immer deinen Arzt vor größeren Ernährungs- oder Lebensstil-Änderungen.
+        </p>
+        <p style="margin-top: 1rem;">© 2025 Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>

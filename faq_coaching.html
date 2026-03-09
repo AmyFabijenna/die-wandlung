@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Häufig gestellte Fragen | Amy Lang - Energetische Begleitung & Wandlung</title>
+    <title>FAQ - Häufig gestellte Fragen | Raw & Real | Amy Lang</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
@@ -18,13 +13,7 @@
             line-height: 1.6;
             color: #000000;
         }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -35,7 +24,6 @@
             box-shadow: 0 8px 32px rgba(184, 134, 11, 0.2);
             border: 2px solid rgba(184, 134, 11, 0.3);
         }
-
         h1 {
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
@@ -46,13 +34,7 @@
             font-weight: 300;
             letter-spacing: 2px;
         }
-
-        .subtitle {
-            font-size: 1.2em;
-            color: #0d2137;
-            margin-bottom: 20px;
-        }
-
+        .subtitle { font-size: 1.2em; color: #0d2137; margin-bottom: 20px; }
         .back-link {
             display: inline-block;
             background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
@@ -66,13 +48,11 @@
             backdrop-filter: blur(5px);
             box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
-
         .back-link:hover {
             background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
         }
-
         .faq-section {
             background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(15px);
@@ -82,7 +62,6 @@
             box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
             border: 2px solid rgba(184, 134, 11, 0.3);
         }
-
         .faq-section h2 {
             background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
@@ -94,124 +73,30 @@
             font-weight: 300;
             letter-spacing: 1px;
         }
-
         .faq-item {
             background: rgba(255, 255, 255, 0.6);
             border-radius: 15px;
-            margin-bottom: 20px;
-            border: 2px solid rgba(184, 134, 11, 0.3);
-            overflow: hidden;
-            backdrop-filter: blur(5px);
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-            border-color: #D4AF37;
-        }
-
-        .faq-question {
-            padding: 20px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1.1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.4);
-            color: #000000;
-        }
-
-        .faq-question:hover {
-            background: rgba(212, 175, 55, 0.1);
-        }
-
-        .faq-icon {
-            color: #B8860B;
-            font-size: 1.5em;
-            transition: transform 0.3s ease;
-            font-weight: bold;
-        }
-
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.3);
-            color: #000000;
-        }
-
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 2000px;
-        }
-
-        .faq-answer p {
-            margin-bottom: 15px;
-        }
-
-        .faq-answer p:last-child {
-            margin-bottom: 0;
-        }
-
-        .highlight {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.2));
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #D4AF37;
-            margin: 15px 0;
-        }
-
-        .warning {
-            background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.15));
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #dc3545;
-            margin: 15px 0;
-        }
-
-        .contact-promo {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 15px;
             padding: 25px;
-            margin-top: 40px;
-            border: 2px solid rgba(184, 134, 11, 0.3);
-            box-shadow: 0 8px 32px rgba(184, 134, 11, 0.15);
-        }
-
-        .contact-promo h3 {
-            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            font-weight: 300;
-        }
-
-        .whatsapp-link {
-            display: inline-block;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            color: #000000;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #B8860B;
             transition: all 0.3s ease;
-            border: 2px solid #B8860B;
-            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
         }
-
-        .whatsapp-link:hover {
-            background: linear-gradient(135deg, #CFB53B 0%, #D4AF37 50%, #E6D399 100%);
+        .faq-item:hover {
+            box-shadow: 0 5px 20px rgba(184, 134, 11, 0.2);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
-
+        .faq-item h3 {
+            color: #B8860B;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .faq-item p {
+            color: #000000;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
         footer {
             text-align: center;
             margin-top: 50px;
@@ -222,349 +107,170 @@
             border-top: 2px solid rgba(184, 134, 11, 0.3);
             border-radius: 10px;
         }
-
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+        footer a:hover { color: #B8860B; }
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-            
-            .faq-section {
-                padding: 20px;
-            }
+            .container { padding: 10px; }
+            h1 { font-size: 2em; }
+            .faq-section { padding: 20px; }
+            .faq-item { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Häufige Fragen</h1>
-            <p class="subtitle">Amy Lang - Die Wandlung | Energetische Impulsgebung</p>
-            <a href="index.html" class="back-link">← Zurück zur Hauptseite</a>
+            <h1>Häufig gestellte Fragen</h1>
+            <p class="subtitle">Alles, was du über Raw & Real wissen musst</p>
+            <a href="de.html" class="back-link">← Zurück zur Startseite</a>
         </header>
 
-        <section class="faq-section">
-            <h2>Was ist energetische Arbeit?</h2>
+        <div class="faq-section">
+            <h2>Über das Programm</h2>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was genau macht eine Energetikerin?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Als Energetikerin arbeite ich auf der feinstofflichen Ebene. Das bedeutet: Ich unterstütze dich dabei, deinen Energiefluss zu harmonisieren und deine Selbstheilungskräfte zu aktivieren.</p>
-                    <p><strong>Meine Methoden umfassen:</strong></p>
-                    <p>• Schamanische Rituale und Zeremonien<br>
-                    • Feng Shui Raumenergetik<br>
-                    • Räucherungen und energetische Raumreinigung<br>
-                    • Energetische Prozessbegleitung bei Lebensübergängen<br>
-                    • Wissensvermittlung zu energetischen Techniken</p>
-                    <div class="warning">
-                        <p><strong>Wichtig:</strong> Energetische Arbeit ist keine Therapie, keine medizinische Behandlung und keine Lebensberatung im rechtlichen Sinne. Sie ersetzt keinen Arzt, Psychotherapeuten oder Lebens- und Sozialberater.</p>
-                    </div>
-                </div>
+                <h3>Muss ich von Tag eins an 100% roh essen?</h3>
+                <p>Nein. Wir arbeiten Schritt für Schritt. Du entscheidest das Tempo. Ich habe selbst jede Herausforderung durchlebt – ich weiß, was funktioniert und was nicht. Manche stellen schnell um, andere langsam. Beides funktioniert.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was unterscheidet dich von einem Therapeuten oder Lebensberater?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Klare Abgrenzung:</strong></p>
-                    <p>• <strong>Psychotherapeuten</strong> behandeln psychische Erkrankungen mit wissenschaftlich anerkannten Methoden</p>
-                    <p>• <strong>Lebens- und Sozialberater</strong> (reglementiertes Gewerbe in Österreich) beraten bei Lebensproblemen und Krisen</p>
-                    <p>• <strong>Energetiker/innen</strong> arbeiten ausschließlich auf der feinstofflichen Ebene - ohne Diagnose, ohne Behandlung, ohne Beratung im klassischen Sinne</p>
-                    <div class="highlight">
-                        <p>Ich stelle keine Diagnosen, gebe keine Heilversprechen und behandle keine Krankheiten. Wenn du therapeutische oder medizinische Unterstützung brauchst, verweise ich dich an entsprechende Fachpersonen.</p>
-                    </div>
-                </div>
+                <h3>Was, wenn meine Familie Gekochtes isst?</h3>
+                <p>Ich zeige dir, wie du für sie kochst, während du selbst roh isst – ohne zwei getrennte Mahlzeiten zu machen. Nicole hat es mit drei Kindern geschafft. Du schaffst das auch. Die meisten meiner Klientinnen haben Familien, die Gekochtes essen. Es ist absolut machbar.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Muss ich an Energie "glauben"?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Nein. Du musst nicht "glauben" - aber Offenheit hilft.</p>
-                    <p><strong>Für schamanische Arbeit:</strong> Eine gewisse Bereitschaft, dich auf ungewohnte Erfahrungen einzulassen, ist wichtig.</p>
-                    <p><strong>Für Feng Shui:</strong> Du brauchst nicht an "Energie" zu glauben. Viele Menschen erleben einfach, dass sich etwas verändert, wenn sie ihre Räume anders gestalten - unabhängig von der Erklärung.</p>
-                    <p><strong>Für Prozessbegleitung:</strong> Hier geht es vor allem um Struktur und Impulse. Die energetische Komponente ist ein Zusatz, kein Muss.</p>
-                </div>
+                <h3>Brauche ich Kochkenntnisse oder spezielle Ausrüstung?</h3>
+                <p>Keine speziellen Kenntnisse nötig. Ich bringe dir alles von Grund auf bei. Ausrüstung: Irgendwann willst du ein Dörrgerät (für rohes Brot/Cracker) und einen guten Mixer, aber wir können mit dem starten, was du zuhause hast.</p>
             </div>
-        </section>
 
-        <section class="faq-section">
-            <h2>Ablauf und Methoden</h2>
+            <div class="faq-item">
+                <h3>Was, wenn ich wieder scheitere?</h3>
+                <p>Das wirst du nicht. Weil du diesmal nicht alleine bist. Ich bin gründlich. Ich lasse kein Detail aus. Und ich übertrage meinen Glauben auf dich – damit du weißt, dass es funktioniert. Jede Herausforderung, die du erlebst, habe ich auch erlebt. Ich kenne die Lösungen.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Über die Unterstützung</h2>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie läuft eine energetische Sitzung ab?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Typischer Ablauf einer 60-Minuten-Sitzung:</strong></p>
-                    <p>• <strong>Ankommen (5-10 Min):</strong> Wir klären, wo du gerade stehst und was dich beschäftigt</p>
-                    <p>• <strong>Energetische Arbeit (40-45 Min):</strong> Je nach Anliegen arbeiten wir mit schamanischen Techniken, Visualisierungen oder Ritualen</p>
-                    <p>• <strong>Integration (5-10 Min):</strong> Ich gebe dir Impulse für den Alltag mit</p>
-                    <p>Die Sitzungen finden online per Video statt (kMeet - eine schweizer Plattform). Du brauchst einen ruhigen Ort, wo du ungestört bist.</p>
-                </div>
+                <h3>Wie funktioniert der WhatsApp-Support?</h3>
+                <p>Montag bis Freitag kannst du mir Nachrichten schicken – Fragen, Fotos von deinen Mahlzeiten, Schwierigkeiten, Erfolge – alles. Ich antworte innerhalb von 24 Stunden (meist viel schneller). Es ist wie eine Coach in der Tasche zu haben.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was ist Feng Shui Raumenergetik?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Feng Shui ist die traditionelle chinesische Lehre von der Harmonisierung des Energieflusses (Qi) in Räumen. Ich praktiziere <strong>klassisches Kompass-Feng-Shui</strong> (Flying Stars).</p>
-                    <p><strong>Was ich anbiete:</strong></p>
-                    <p>• Analyse deiner Räume anhand von Grundriss, Baujahr und Himmelsrichtung</p>
-                    <p>• Empfehlungen zur Raumgestaltung</p>
-                    <p>• Schriftlicher Bericht mit konkreten Maßnahmen</p>
-                    <p><strong>Die Beratung kann vor Ort oder per Fernanalyse erfolgen.</strong></p>
-                </div>
+                <h3>Was passiert in den 12 Calls?</h3>
+                <p>Jeder Call dauert 60 Minuten. Wir arbeiten deine spezifischen Herausforderungen durch, ich beantworte deine Fragen, wir überprüfen deinen Fortschritt und planen die nächsten Schritte. Jeder Call ist auf deine aktuelle Situation zugeschnitten.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was passiert bei schamanischer Arbeit?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Schamanische Arbeit ist eine jahrtausendealte Tradition, die mit veränderten Bewusstseinszuständen und symbolischen Reisen arbeitet.</p>
-                    <p><strong>Was ich anbiete:</strong></p>
-                    <p>• Schamanische Reisen (begleitet durch Trommelklänge)</p>
-                    <p>• Rituale für Übergänge und Abschlüsse</p>
-                    <p>• Räucherungen und Raumreinigungen</p>
-                    <p>• Arbeit mit Krafttieren und spirituellen Helfern</p>
-                    <div class="highlight">
-                        <p><strong>Wichtig:</strong> Schamanische Arbeit ist ein spirituelles Erfahrungsfeld, keine Therapie. Bei psychischen Vorerkrankungen oder wenn du Medikamente nimmst, die das Bewusstsein beeinflussen, sprich mich bitte vorher an.</p>
-                    </div>
-                </div>
+                <h3>Was, wenn ich einen Call verschieben muss?</h3>
+                <p>Sag mir einfach mindestens 24 Stunden vorher Bescheid und wir finden einen neuen Termin. Das Leben passiert – ich verstehe das.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="faq-section">
+        <div class="faq-section">
+            <h2>Über Feng Shui & Seelenarbeit</h2>
+            
+            <div class="faq-item">
+                <h3>Was ist in der Feng Shui Analyse enthalten?</h3>
+                <p>Eine komplette Analyse deiner Wohnung – Raum für Raum, Familienmitglied für Familienmitglied. Du bekommst einen detaillierten Bericht mit konkreten Optimierungsvorschlägen, die du sofort umsetzen kannst. Das hilft, einen Raum zu schaffen, der deine Transformation unterstützt.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Was ist "Seelenarbeit" genau?</h3>
+                <p>Es ist die innere Arbeit, die über Ernährung hinausgeht. Wir arbeiten an Zweifeln, Glaubenssätzen, emotionalen Blockaden – was auch immer dich zurückhält. Einige meiner Werkzeuge stammen aus schamanischer Praxis, aber du musst an nichts Bestimmtes glauben. Es ist praktisch, nicht theoretisch.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Muss ich an Feng Shui oder Schamanismus glauben, damit es funktioniert?</h3>
+                <p>Nein. Die Rohkost allein wird deinen Körper transformieren. Feng Shui und Seelenarbeit sind Werkzeuge, die den Prozess unterstützen. Nutze, was für dich passt, lass weg, was nicht passt.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
             <h2>Praktische Fragen</h2>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Wie starte ich die Zusammenarbeit?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <div class="highlight">
-                        <p><strong>Schritt 1:</strong> Schreib mir eine Nachricht mit deinem Anliegen</p>
-                        <p><strong>Schritt 2:</strong> Ich schicke dir ein paar Fragen zur Vorbereitung</p>
-                        <p><strong>Schritt 3:</strong> Kostenloses Kennenlerngespräch (20 Min) - wir klären, ob energetische Arbeit für dein Anliegen geeignet ist</p>
-                        <p><strong>Schritt 4:</strong> Wenn es passt, buchen wir deine erste Sitzung</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Nimmst du jede/n als Klient/in an?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Nein. Im Kennenlerngespräch prüfen wir gemeinsam, ob energetische Arbeit für dein Anliegen geeignet ist.</p>
-                    <p><strong>Ich nehme dich NICHT an, wenn:</strong></p>
-                    <p>• Du dich in einer akuten psychischen Krise befindest (hier brauchst du professionelle Hilfe)</p>
-                    <p>• Du eine Diagnose oder Behandlung suchst (dafür bin ich nicht ausgebildet)</p>
-                    <p>• Du nicht bereit bist, selbst aktiv zu werden</p>
-                    <p>Das ist keine Ablehnung deiner Person - sondern Verantwortung. Wenn ich merke, dass du andere Unterstützung brauchst, sage ich dir das offen.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was kostet die Zusammenarbeit?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Preise:</strong></p>
-                    <p>• <strong>Einzelsitzung (60 Min):</strong> 80€</p>
-                    <p>• <strong>6er-Paket:</strong> 450€ (= 75€/Sitzung)</p>
-                    <p>• <strong>Feng Shui Raumenergetik:</strong> ab 150€ (je nach Umfang)</p>
-                    <p>• <strong>Kennenlerngespräch:</strong> Kostenlos (20 Min)</p>
-                    <p>Alle Preise sind Endpreise. Als Kleinunternehmerin wird keine Umsatzsteuer ausgewiesen.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Gibt es Ermäßigungen?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Das 6er-Paket ist bereits günstiger als 6 Einzelsitzungen (du sparst 30€).</p>
-                    <p><strong>Ratenzahlung:</strong> Bei finanziellen Engpässen können wir im Einzelfall eine Ratenzahlung besprechen.</p>
-                    <p><strong>Sozialermäßigung:</strong> In Ausnahmefällen (Arbeitslosigkeit, etc.) kann ich nach Absprache einen reduzierten Preis anbieten. Kontaktiere mich dafür vor dem Kennenlerngespräch.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2>Vertraulichkeit und Datenschutz</h2>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Sind die Sitzungen vertraulich?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Ja, absolut. Alle Inhalte unserer Gespräche werden streng vertraulich behandelt. Ich gebe keine Informationen an Dritte weiter.</p>
-                    <p><strong>Ausnahme:</strong> Bei Hinweisen auf akute Selbst- oder Fremdgefährdung werde ich dir dringend empfehlen, professionelle Hilfe zu suchen (Telefonseelsorge, Notruf, etc.).</p>
-                </div>
+                <h3>Welche Ergebnisse kann ich erwarten?</h3>
+                <p>Ergebnisse variieren erheblich individuell. Viele meiner Klientinnen berichten von mehr Energie, besserem Schlaf, klarerer Haut und natürlicher Gewichtsabnahme, wenn der Körper bereit ist. Der Fokus liegt auf nachhaltigen Lebensstil-Veränderungen, nicht auf schnellen Fixes. Deine Ergebnisse hängen von deinem Ausgangspunkt, deinem Engagement und deinen individuellen Umständen ab.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Werden die Sitzungen aufgezeichnet?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Nein.</strong> Die Sitzungen werden nicht aufgezeichnet. Was in unseren Gesprächen passiert, bleibt zwischen uns.</p>
-                    <p>Ich mache mir während der Sitzung kurze Notizen für meine eigene Dokumentation, aber diese sind nur für mich und werden vertraulich behandelt.</p>
-                </div>
+                <h3>Werde ich die ganze Zeit hungrig sein?</h3>
+                <p>Nein. Rohkost hat viel Volumen, wenig Kalorien. Du wirst mehr Volumen essen als vorher, aber weniger Kalorien. Die meisten Klientinnen sind überrascht, wie viel sie essen können. Ich zeige dir, wie du genug isst, um satt zu sein.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was passiert mit meinen Daten?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Ich speichere nur die notwendigsten Daten (Name, Kontaktdaten, Buchungsinformationen). Alle Daten werden DSGVO-konform behandelt.</p>
-                    <p>Du kannst jederzeit Auskunft über deine gespeicherten Daten verlangen oder deren Löschung beantragen.</p>
-                    <p>Mehr dazu in der <a href="datenschutz.html" style="color: #B8860B;">Datenschutzerklärung</a>.</p>
-                </div>
+                <h3>Was ist mit sozialen Situationen und auswärts essen?</h3>
+                <p>Wir arbeiten an Strategien für Restaurants, Partys und Familientreffen. Es ist absolut machbar. Die meisten meiner Klientinnen halten ein Sozialleben, während sie roh essen. Du musst nur wissen wie.</p>
             </div>
-        </section>
 
-        <section class="faq-section">
-            <h2>Ergebnisse und Erwartungen</h2>
+            <div class="faq-item">
+                <h3>Ist das teuer (Lebensmittelkosten)?</h3>
+                <p>Rohkost kann so günstig oder teuer sein, wie du es machst. Saisonales Obst und Gemüse ist erschwinglich. Exotische Superfoods sind optional. Ich zeige dir, wie du das mit jedem Budget machst.</p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Investition & Zahlung</h2>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Kann ich Garantie für Ergebnisse erwarten?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Nein.</strong> Energetische Arbeit ist ein Erfahrungsfeld, kein garantierter Lösungsweg.</p>
-                    <p><strong>Was ich dir bieten kann:</strong></p>
-                    <p>• Volle Aufmerksamkeit und Präsenz</p>
-                    <p>• 20 Jahre Erfahrung mit energetischen Methoden</p>
-                    <p>• Ehrliche Impulse und einen sicheren Rahmen</p>
-                    <p><strong>Was du mitbringen musst:</strong></p>
-                    <p>• Offenheit für neue Erfahrungen</p>
-                    <p>• Bereitschaft, selbst aktiv zu werden</p>
-                    <p>• Eigenverantwortung für deine Entscheidungen</p>
-                </div>
+                <h3>Warum der Pilot-Preis von €1.500?</h3>
+                <p>Ich baue Fallstudien und Testimonials auf. Die ersten 3 Klientinnen bekommen den Pilot-Preis. Danach kostet es €3.000. Gleiche Unterstützung, gleiche Ergebnisse. Wenn du das liest und das Pilot-Angebot noch verfügbar ist, buche jetzt.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was, wenn ich merke, dass ich etwas anderes brauche?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Dann sag es mir. Ich bin ehrlich mit dir - und ich erwarte das auch von dir.</p>
-                    <p>Wenn sich herausstellt, dass du therapeutische oder medizinische Unterstützung brauchst, werde ich das offen ansprechen und dir empfehlen, entsprechende Fachpersonen aufzusuchen.</p>
-                    <p><strong>Hilfreiche Anlaufstellen in Österreich:</strong></p>
-                    <p>• <strong>Telefonseelsorge:</strong> 142 (kostenlos, 24/7)</p>
-                    <p>• <strong>Psychiatrische Soforthilfe Wien:</strong> 01/31330</p>
-                    <p>• <strong>Psychotherapie:</strong> Liste der Psychotherapeuten unter <a href="https://www.psychotherapie.at" target="_blank" style="color: #B8860B;">psychotherapie.at</a></p>
-                </div>
+                <h3>Kann ich in Raten zahlen?</h3>
+                <p>Ja. Für das €3.000-Programm kannst du 3 x €1.000 monatlich zahlen. Für den Pilot-Preis (€1.500) ist die Zahlung im Voraus fällig.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was unterscheidet dich von anderen Energetiker/innen?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Mein Ansatz:</strong> Ich bin klar und direkt. Ich sage dir, was ich wahrnehme - auch wenn es unbequem ist. Spiritualität und Struktur gehören für mich zusammen.</p>
-                    <p><strong>Meine Erfahrung:</strong> 20+ Jahre Arbeit mit Menschen. Ich kenne selbst große Veränderungen und Krisen. Ich praktiziere seit Jahren Schamanismus und habe umfangreiche Ausbildungen in energetischer Arbeit, Körperarbeit (Pilates, Tai Chi, Qi Gong, Yoga) und Feng Shui.</p>
-                    <p><strong>Mein Fokus:</strong> Ich arbeite nur mit Menschen, die wirklich bereit sind. Kleinere Klientenzahl, dafür intensivere Arbeit.</p>
-                </div>
+                <h3>Gibt es eine Rückerstattungsregelung?</h3>
+                <p>Wenn du nach dem ersten Call das Gefühl hast, dass es nichts für dich ist, kannst du stornieren und bekommst eine volle Rückerstattung. Nach dem ersten Call gibt es keine Rückerstattung – aber ich hatte noch nie jemanden, der aufgehört hat. Wenn du richtig unterstützt wirst, hast du Erfolg.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="faq-section">
-            <h2>Technische Fragen</h2>
+        <div class="faq-section">
+            <h2>Über Amy</h2>
             
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Welche technischen Voraussetzungen brauche ich?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p><strong>Du brauchst:</strong></p>
-                    <p>• Computer, Tablet oder Smartphone mit Kamera</p>
-                    <p>• Stabile Internetverbindung</p>
-                    <p>• Kopfhörer oder Headset (empfohlen für bessere Tonqualität)</p>
-                    <p>• Einen ruhigen Ort, wo du ungestört bist</p>
-                    <p>Wir nutzen kMeet - eine sichere, schweizer Video-Plattform. Du brauchst keine App zu installieren, es funktioniert direkt im Browser.</p>
-                </div>
+                <h3>Was unterscheidet dich von anderen Coaches?</h3>
+                <p>Ich bin gründlich. Ich lebe seit Jahren Rohkost und habe jede Herausforderung selbst erlebt, die du auch erleben wirst. Ich gebe dir keinen Plan und verschwinde – ich gehe mit dir, bis es funktioniert. Und ich kombiniere Rohkost mit Feng Shui und Seelenarbeit, was die meisten Coaches nicht tun.</p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    Was, wenn ich technische Probleme habe?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Vor dem ersten Termin schicke ich dir einen Test-Link, damit wir die Technik prüfen können.</p>
-                    <p>Falls während einer Sitzung technische Probleme auftreten, versuchen wir, sie schnell zu lösen. Im Notfall wechseln wir zu Telefon oder verschieben den Termin.</p>
-                </div>
+                <h3>Was ist dein Hintergrund?</h3>
+                <p>Ich praktiziere seit 2014 rohe vegane Ernährung (mit einigen Pausen). Ich habe klassisches Kompass Feng Shui, Schamanismus und verschiedene Körperarbeits-Praktiken studiert. Aber wichtiger als Credentials: Ich habe das selbst gelebt. Ich weiß, was funktioniert, weil ich es selbst gemacht habe.</p>
             </div>
-        </section>
+        </div>
 
-        <div class="contact-promo">
-            <h3>Hast du weitere Fragen?</h3>
-            <p>Ich beantworte gerne alle deine Fragen persönlich. Kontaktiere mich einfach!</p>
-            <a href="mailto:amylan@ik.me" class="whatsapp-link">
-                ✉️ Schreib mir
-            </a>
+        <div class="faq-section">
+            <h2>Noch Fragen?</h2>
+            
+            <div class="faq-item">
+                <p style="text-align: center; font-size: 1.1em;">
+                    Wenn deine Frage hier nicht beantwortet wird, <a href="mailto:amylan@ik.me" style="color: #B8860B; font-weight: bold;">schreib mir eine Email</a> oder <a href="https://wa.me/4368120283291" style="color: #B8860B; font-weight: bold;">schreib mir auf WhatsApp</a>.
+                </p>
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="de.html#contact" class="back-link">Kostenloses Erstgespräch buchen</a>
+                </p>
+            </div>
         </div>
 
         <footer>
-            <p>Amy Lang - Die Wandlung | Energetische Impulsgebung & Prozessbegleitung | © 2025 Alle Rechte vorbehalten</p>
+            <p>
+                <a href="de.html">Startseite</a> | <a href="blog/index.html">Blog</a> | <a href="food-diary.html">Food Diary</a> | 
+                <a href="faq-de.html">FAQ</a> | 
+                <a href="agb-de.html">AGB</a> | 
+                <a href="datenschutz-de.html">Datenschutz</a>
+            </p>
+            <p style="margin-top: 10px;">© 2025 Amy Lang - Raw & Real | Ganzheitliches Lifestyle Coaching</p>
         </footer>
     </div>
-
-    <script>
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            const answer = faqItem.querySelector('.faq-answer');
-            const icon = element.querySelector('.faq-icon');
-            
-            if (answer.classList.contains('active')) {
-                answer.classList.remove('active');
-                icon.textContent = '+';
-            } else {
-                answer.classList.add('active');
-                icon.textContent = '−';
-            }
-        }
-
-        // Open first FAQ item by default
-        document.addEventListener('DOMContentLoaded', function() {
-            const firstFaq = document.querySelector('.faq-item');
-            if (firstFaq) {
-                const answer = firstFaq.querySelector('.faq-answer');
-                const icon = firstFaq.querySelector('.faq-icon');
-                answer.classList.add('active');
-                icon.textContent = '−';
-            }
-        });
-    </script>
 </body>
 </html>
