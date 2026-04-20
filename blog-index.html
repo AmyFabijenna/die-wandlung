@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Raw & Real - Transformation & Wahrheit</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Erfahrungsberichte, Einsichten und Wahrheiten über Körpertransformation, Rohkost-Lifestyle und echte Wandlung. Raw & Real Blog von Amy Lang.">
+    <meta name="keywords" content="Körpertransformation Blog, Rohkost Erfahrungen, Gewicht verlieren ohne Diät, natürliche Transformation, Raw Food Blog, ganzheitliche Gesundheit">
+    <meta name="author" content="Amy Lang">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gorawandreal.com/blog/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gorawandreal.com/blog/">
+    <meta property="og:title" content="Blog - Raw & Real | Transformation & Wahrheit">
+    <meta property="og:description" content="Erfahrungsberichte, Einsichten und Wahrheiten über Körpertransformation, Rohkost-Lifestyle und echte Wandlung.">
+    <meta property="og:site_name" content="Raw & Real">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="de">
+    <link rel="alternate" hreflang="de" href="https://gorawandreal.com/blog/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+            color: #000000;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lang-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .lang-link:hover, .lang-link.active {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
+        }
+
+        h1 {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #000000;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #000000;
+        }
+
+        /* Scroll Arrow */
+        .scroll-arrow {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #D4AF37;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Blog Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: left;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: #000;
+            display: block;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.15);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.25);
+            border-color: #D4AF37;
+        }
+
+        .blog-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-card h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .blog-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            color: #B8860B;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:after {
+            content: '→';
+            margin-left: 0.5rem;
+            transition: margin-left 0.3s ease;
+        }
+
+        .blog-card:hover .read-more:after {
+            margin-left: 1rem;
+        }
+
+        /* Coming Soon Card */
+        .coming-soon {
+            opacity: 0.5;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        footer a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #D4AF37;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .scroll-arrow {
+                bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher & Navigation -->
+    <div class="language-switcher">
+        <a href="../de.html" class="lang-link">HOME</a>
+        <a href="index.html" class="lang-link active" style="border-color: #D4AF37;">BLOG</a>
+        <a href="http://gorawandreal.com" class="lang-link">EN</a>
+        <a href="http://amyfabijenna.github.io/transzformacio/" class="lang-link">HU</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Blog</h1>
+        <p class="subtitle">
+            Wahre Geschichten über Transformation, Körper und die Reise zu dir selbst.
+        </p>
+        <p class="hero-tagline">
+            Keine Filter. Keine Beschönigung. Nur Wahrheit.
+        </p>
+        <div class="scroll-arrow">↓</div>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="container">
+        <section>
+            <h2>Aktuelle Artikel</h2>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <a href="warum-verliere-ich-kein-gewicht.html" class="blog-card">
+                    <span class="blog-date">April 2026</span>
+                    <h3>Warum verliere ich kein Gewicht – obwohl ich doch alles richtig mache?</h3>
+                    <p class="blog-excerpt">
+                        Du isst gesund. Du bewegst dich. Du verzichtest auf Süßes. Und trotzdem: Die Waage bewegt sich nicht. Kennst du das Gefühl, wenn du morgens vor dem Spiegel stehst und denkst: "Was mache ich falsch?"
+                    </p>
+                    <span class="read-more">Weiterlesen</span>
+                </a>
+
+                <!-- Coming Soon Cards -->
+                <div class="blog-card coming-soon">
+                    <span class="blog-date">Demnächst</span>
+                    <h3>Weitere Geschichten folgen...</h3>
+                    <p class="blog-excerpt">
+                        Neue Einsichten über echte Transformation, Rohkost-Lifestyle und den Weg zu dir selbst.
+                    </p>
+                </div>
+
+                <div class="blog-card coming-soon">
+                    <span class="blog-date">Demnächst</span>
+                    <h3>Mehr ist unterwegs...</h3>
+                    <p class="blog-excerpt">
+                        Wahrheiten, Erfahrungen und praktische Einblicke in die Welt der Körpertransformation.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="../faq_coaching.html">FAQ</a> | 
+            <a href="../erstgespraech.html">Termin buchen</a> | 
+            <a href="../agb_coaching.html">AGB</a> | 
+            <a href="../datenschutz.html">Datenschutz</a> |
+            <a href="index.html">Blog</a>
+        </p>
+        <p style="margin-top: 1rem;">Amy Lang - Raw & Real | Ganzheitliches Lifestyle Coaching</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Neue Selbständige (§ 2 Abs. 1 Z 4 GSVG) | Österreich</p>
+        <p style="margin-top: 1rem;">© 2025 Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for arrow
+        document.querySelector('.scroll-arrow').addEventListener('click', function() {
+            document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
