@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Amy Lang - Coaching & Wandlung</title>
+    <title>Blog | Raw & Real - Transformation & Wahrheit</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Erfahrungsberichte, Einsichten und Wahrheiten über Körpertransformation, Rohkost-Lifestyle und echte Wandlung. Raw & Real Blog von Amy Lang.">
+    <meta name="keywords" content="Körpertransformation Blog, Rohkost Erfahrungen, Gewicht verlieren ohne Diät, natürliche Transformation, Raw Food Blog, ganzheitliche Gesundheit">
+    <meta name="author" content="Amy Lang">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gorawandreal.com/blog/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gorawandreal.com/blog/">
+    <meta property="og:title" content="Blog - Raw & Real | Transformation & Wahrheit">
+    <meta property="og:description" content="Erfahrungsberichte, Einsichten und Wahrheiten über Körpertransformation, Rohkost-Lifestyle und echte Wandlung.">
+    <meta property="og:site_name" content="Raw & Real">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="de">
+    <link rel="alternate" hreflang="de" href="https://gorawandreal.com/blog/">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="apple-touch-icon" href="../favicon.png">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Insights zu beruflicher Neuorientierung, persönlicher Entwicklung und Life-Coaching. Von Amy Lang.">
-    <meta name="keywords" content="Life Coaching Blog, Berufliche Neuorientierung, Persönliche Entwicklung, Karrierewechsel, Veränderung">
-    <meta name="author" content="Amy Lang">
     
     <style>
         * {
@@ -29,588 +44,324 @@
             min-height: 100vh;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: flex;
+            gap: 0.5rem;
         }
 
-        header {
-            text-align: center;
-            padding: 60px 20px 40px;
-            background: rgba(255, 255, 255, 0.7);
+        .lang-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: rgba(184, 134, 11, 0.1);
+            border: 2px solid #B8860B;
+            border-radius: 50px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
             backdrop-filter: blur(10px);
-            border-radius: 30px;
-            margin-bottom: 60px;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .lang-link:hover, .lang-link.active {
+            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            background: linear-gradient(135deg, #f5e6e8 0%, #ffe4e9 50%, #f5e6e8 100%);
         }
 
         h1 {
-            font-size: 3.5em;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-weight: 300;
-            letter-spacing: 3px;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
         }
 
         .subtitle {
-            font-size: 1.2em;
-            color: #666666;
-            margin-bottom: 30px;
-        }
-
-        .back-home {
-            display: inline-block;
-            background: rgba(184, 134, 11, 0.1);
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
             color: #000000;
-            padding: 10px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: 2px solid #B8860B;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .back-home:hover {
-            background: linear-gradient(135deg, #D4AF37 0%, #CFB53B 50%, #C5B358 100%);
-            transform: translateY(-2px);
+        .hero-tagline {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 500;
+            margin: 2rem 0;
+            color: #000000;
         }
 
+        /* Scroll Arrow */
+        .scroll-arrow {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #D4AF37;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Blog Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+
+        /* Blog Grid */
         .blog-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
-            align-items: start;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin: 3rem 0;
         }
 
         .blog-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 20px;
-            overflow: hidden;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.2);
-            transition: all 0.3s ease;
-            max-width: 100%;
-        }
-
-        @media (max-width: 1024px) {
-            .blog-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            padding: 2.5rem;
+            text-align: left;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: #000;
+            display: block;
+            box-shadow: 0 10px 40px rgba(184, 134, 11, 0.15);
         }
 
         .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(184, 134, 11, 0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(184, 134, 11, 0.25);
             border-color: #D4AF37;
         }
 
-        .blog-image {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(197, 179, 88, 0.3));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4em;
-            overflow: hidden;
-        }
-
-        .blog-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .blog-content {
-            padding: 30px;
-        }
-
         .blog-date {
-            color: #666666;
-            font-size: 0.9em;
-            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .blog-title {
-            color: #B8860B;
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            font-weight: 400;
+        .blog-card h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
             line-height: 1.3;
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #C5B358 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .blog-excerpt {
-            color: #333333;
-            font-size: 1.05em;
+            font-size: 1.1rem;
             line-height: 1.7;
-            margin-bottom: 20px;
+            color: #333;
+            margin-bottom: 1.5rem;
         }
 
         .read-more {
-            display: inline-block;
-            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
-            color: #000000;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .read-more:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-        }
-
-        .coming-soon {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 60px 40px;
-            text-align: center;
-            border: 2px solid rgba(184, 134, 11, 0.2);
-            margin-bottom: 40px;
-        }
-
-        .coming-soon h2 {
+            display: inline-flex;
+            align-items: center;
             color: #B8860B;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .coming-soon p {
-            color: #666666;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        .newsletter-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            gap: 10px;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px 20px;
-            border-radius: 25px;
-            border: 2px solid rgba(184, 134, 11, 0.3);
-            background: rgba(255, 255, 255, 0.8);
-            color: #000000;
-            font-size: 1em;
-        }
-
-        .newsletter-form input::placeholder {
-            color: #999999;
-        }
-
-        .newsletter-form button {
-            padding: 15px 30px;
-            border-radius: 25px;
-            border: none;
-            background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%);
-            color: #000000;
-            font-weight: bold;
-            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
             transition: all 0.3s ease;
         }
 
-        .newsletter-form button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        .read-more:after {
+            content: '→';
+            margin-left: 0.5rem;
+            transition: margin-left 0.3s ease;
         }
 
+        .blog-card:hover .read-more:after {
+            margin-left: 1rem;
+        }
+
+        /* Coming Soon Card */
+        .coming-soon {
+            opacity: 0.5;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        /* Footer */
         footer {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
             text-align: center;
-            padding: 40px 20px;
-            color: #666666;
-            font-size: 0.9em;
+            border-top: 1px solid rgba(184, 134, 11, 0.2);
         }
 
         footer a {
-            color: #666666;
+            color: #000000;
             text-decoration: none;
+            margin: 0 0.8rem;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #B8860B;
+            color: #D4AF37;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
+            .language-switcher {
+                top: 1rem;
+                right: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hero {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
             }
 
             .blog-grid {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .newsletter-form {
-                flex-direction: column;
+            .scroll-arrow {
+                bottom: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📖 Blog</h1>
-            <p class="subtitle">Gedanken zu Veränderung, Klarheit und echten Schritten</p>
-            <a href="../index.html" class="back-home">← Zurück zur Hauptseite</a>
-        </header>
-
-        
-        <div style="text-align: center; margin: 60px 0 40px 0;">
-            <h2 style="color: #B8860B; font-size: 2em; font-weight: 300;">Alle Artikel</h2>
-            <p style="color: #666666; font-size: 1.1em;">Wöchentlich neue Gedanken zu Veränderung und Klarheit</p>
-        </div>
-
-        <!-- ALLE BLOG POSTS IN EINEM GRID -->
-        <div class="blog-grid">
-
-
-
-
-
- <!-- Post 17 - 04. Februar 2026 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image17.jpg" alt="Durchbruch" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 04. Februar 2026 • ⏱️ 15 Min</div>
-                    <h2 class="blog-title">"Der undefinierbare Schleim"</h2>
-                    <p class="blog-excerpt">
-                        Oder: Wie man sieben Jahre lang auf einen scharfen Verstand wartet
-                    </p>
-                    <a href="post-17-die-narzisstin.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>   
-
-
-
-
-
-
-
-            <!-- Post 16 - 15. Dezember 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image16.jpg" alt="Durchbruch" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 15. Dezember 2025 • ⏱️ 25 Min</div>
-                    <h2 class="blog-title">"Bloß nicht erfolgreich werden!"</h2>
-                    <p class="blog-excerpt">
-                        Über die Angst vor dem Gelingen
-                    </p>
-                    <a href="post-16-bloss-nicht-erfolgreich-werden.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>   
-
-
-
-
-
-            <!-- Post 15 - 15. Dezember 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image15.jpg" alt="Koloss" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 15. Dezember 2025 • ⏱️ 7 Min</div>
-                    <h2 class="blog-title">"Warum kontaktierst du mich, wenn du kein echtes Interesse hast?"</h2>
-                    <p class="blog-excerpt">
-                        Über wahres Interesse an unseren Mitmenschen
-                    </p>
-                    <a href="post-15-warum-kontaktierst-du-mich.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>   
-
-
-
-
-
-
-
-
-
-            <!-- Post 14 - 8. Dezember 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image14.jpg" alt="Schlafende" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 8. Dezember 2025 • ⏱️ 9 Min</div>
-                    <h2 class="blog-title">"Die Schlafenden"</h2>
-                    <p class="blog-excerpt">
-                        Über echte Freundschaft – und Menschen, die sie nie verstanden zu haben scheinen
-                    </p>
-                    <a href="post-14-die-schlafenden.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>    
-
-
-
-
-            <!-- Post 13 - 27. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image13.jpg" alt="Einzelgängerin" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 27. November 2025 • ⏱️ 20 Min</div>
-                    <h2 class="blog-title">"Die Einzelgängerin"</h2>
-                    <p class="blog-excerpt">
-                        Eine Erzählung über Schein, Sucht und die Lügen, die wir glauben wollen
-                    </p>
-                    <a href="post-13-die-einzelgaengerin.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>    
-
-
-
-
-
-            <!-- Post 12 - 19. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image12.jpg" alt="Selbstdisziplin" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
-                    <h2 class="blog-title">"Selbstdisziplin"</h2>
-                    <p class="blog-excerpt">
-                        „Strebe nach Höherem!" – und ich tat es. Sechs Jahre vegane Rohkost, extreme Arten von Fasten, sportliche Höchstleistungen. Was mich diese Zeit gelehrt hat über den Unterschied zwischen Ambition, die trägt, und Ambition, die zu viel wird.
-                    </p>
-                    <a href="post-12-selbstdisziplin.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>     
-
-
-
-
-
-
-            <!-- Post 11 - 19. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image11.jpg" alt="Knockout" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
-                    <h2 class="blog-title">"Die Autoaggression, die du nicht siehst"</h2>
-                    <p class="blog-excerpt">
-                        Wenn du Fremde besser behandelst als die Menschen, die dir am nächsten sind
-                    </p>
-                    <a href="post-11-autoaggression-die-du-nicht-siehst.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>    
-
-
-
-
-
-
-
-            <!-- Post 10 - 19. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image10.jpg" alt="Wachstum" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 19. November 2025 • ⏱️ 15 Min</div>
-                    <h2 class="blog-title">"Hashimoto: Wenn die Aggression nach innen geht"</h2>
-                    <p class="blog-excerpt">
-                        Krankheiten sind mehr als nur Fehlfunktionen des Körpers. Sie sind Botschaften. Symbole. Spiegel dessen, was in der Seele geschieht. Hashimoto spricht über Entwicklung und Wachstum.
-                    </p>
-                    <a href="post-10-hashimoto-aggression.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 9 - 19. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image9.jpg" alt="Warten" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 19. November 2025 • ⏱️ 12 Min</div>
-                    <h2 class="blog-title">"Die "Keine Zeit"-Lüge"</h2>
-                    <p class="blog-excerpt">
-                        Wenn Menschen sagen "Ich habe keine Zeit", sprechen sie selten über Zeit. Sie sprechen über Prioritäten. Über Wert. Über die Frage, wofür und für wen ihr Herz schlägt.
-                    </p>
-                    <a href="post-9-die-keine-zeit-luege.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 8 - 14. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/infinity.jpg" alt="Unendlichkeitssymbol" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 14. November 2025 • ⏱️ 12 Min</div>
-                    <h2 class="blog-title">"Nur die Toten haben keine Zeit"</h2>
-                    <p class="blog-excerpt">
-                        Die gefährlichste Lüge, die wir uns selbst erzählen – und wie fünf Minuten täglich dein Leben verändern können.
-                    </p>
-                    <a href="post-8-nur-die-toten.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 7 - 2. November 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image7.jpg" alt="Du weißt bereits, was du willst">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 2. November 2025 • ⏱️ 8 Min</div>
-                    <h2 class="blog-title">Du weißt bereits, was du willst<br><span style="font-size: 0.7em; color: #666666;">(du traust dich nur nicht, es zu sagen)</span></h2>
-                    <p class="blog-excerpt">
-                        Die Antwort ist da. Sie war schon immer da. Du hast sie nur unter Schichten von "sollte", "müsste" und "was werden die anderen denken" begraben.
-                    </p>
-                    <a href="post-7-du-weisst-es-bereits.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 6 - 26. Oktober 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image6.jpg" alt="Was ich in 20 Jahren gelernt habe">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 26. Oktober 2025 • ⏱️ 9 Min</div>
-                    <h2 class="blog-title">Was ich in 20 Jahren Arbeit mit Menschen gelernt habe</h2>
-                    <p class="blog-excerpt">
-                        Manche Dinge lernt man nicht aus Büchern. Man lernt sie, indem man zusieht, zuhört und begleitet.
-                    </p>
-                    <a href="post-6-20-jahre.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 5 - 19. Oktober 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image5.jpg" alt="Du brauchst keine Motivation. Du brauchst Struktur.">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 19. Oktober 2025 • ⏱️ 7 Min</div>
-                    <h2 class="blog-title">Du brauchst keine Motivation.<br><span style="font-size: 0.9em; color: #666666;">Du brauchst Struktur.</span></h2>
-                    <p class="blog-excerpt">
-                        Motivation ist wie Wetter. Sie kommt und geht. Struktur ist wie ein Haus. Sie hält, auch wenn es stürmt.
-                    </p>
-                    <a href="post-5-struktur.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 4 - 12. Oktober 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image4.jpg" alt="Warum wir unsere eigenen Antworten verstecken">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 12. Oktober 2025 • ⏱️ 7 Min</div>
-                    <h2 class="blog-title">Warum wir unsere eigenen Antworten verstecken</h2>
-                    <p class="blog-excerpt">
-                        Die Antworten sind schon da. Wir haben sie nur unter Schichten von "Sollte", "Müsste" und "Was werden die anderen denken" begraben.
-                    </p>
-                    <a href="post-4-inneres-wissen.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 3 - 5. Oktober 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image3.jpg" alt="Warum ich manche Menschen als Klienten ablehne">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 5. Oktober 2025 • ⏱️ 8 Min</div>
-                    <h2 class="blog-title">Warum ich manche Menschen als Klienten ablehne</h2>
-                    <p class="blog-excerpt">
-                        Es ist keine Frage von "gut genug sein". Es ist eine Frage von Bereitschaft.
-                    </p>
-                    <a href="post-3-ablehnung.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 2 - 28. September 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image2.jpg" alt="5 Zeichen, dass du bereit für eine Veränderung bist">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 28. September 2025 • ⏱️ 7 Min</div>
-                    <h2 class="blog-title">5 Zeichen, dass du bereit für eine Veränderung bist</h2>
-                    <p class="blog-excerpt">
-                        Nicht jede Unzufriedenheit bedeutet, dass du etwas ändern musst. Aber manche Zeichen sind unmissverständlich.
-                    </p>
-                    <a href="post-2-5-zeichen.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-
-            <!-- Post 1 - 21. September 2025 -->
-            <div class="blog-card">
-                <div class="blog-image">
-                    <img src="images/image1.jpg" alt="Berufliche Neuorientierung Blog">
-                </div>
-                <div class="blog-content">
-                    <div class="blog-date">📅 21. September 2025 • ⏱️ 6 Min</div>
-                    <h2 class="blog-title">Warum die meisten Karrierewechsel scheitern<br><span style="font-size: 0.8em; color: #666666;">(und wie du es richtig machst)</span></h2>
-                    <p class="blog-excerpt">
-                        Ein Karrierewechsel ist mehr als ein neuer Job. Es ist eine Neuausrichtung dessen, wer du bist und sein willst.
-                    </p>
-                    <a href="post-1-karrierewechsel.html" class="read-more">Weiterlesen →</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- =========================================== -->
-        <!-- NEWSLETTER SECTION - KOPIERBARER BEREICH -->
-        <!-- =========================================== -->
-        <div class="coming-soon">
-            <h2>Möchtest du keinen Artikel verpassen?</h2>
-            <p>Ich schreibe über berufliche Neuorientierung, Lebensentscheidungen und was es wirklich braucht, um Veränderung umzusetzen.</p>
-            <p style="color: #333333; font-size: 1em;">Jeden Samstag ein neuer Artikel. Kein Spam. Keine Floskeln.</p>
-            
-            <!-- Google Forms Newsletter Anmeldung -->
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSen6GLWokClyYMElmfx1OQLRGHF-PNdPLOyFBYE3aj_dLf6nA/viewform?usp=header" 
-                   target="_blank" 
-                   style="display: inline-block; 
-                          background: linear-gradient(135deg, #D4AF37 0%, #C5B358 100%); 
-                          color: #000000; 
-                          padding: 18px 50px; 
-                          border-radius: 50px; 
-                          text-decoration: none; 
-                          font-size: 1.2em; 
-                          font-weight: bold; 
-                          transition: all 0.3s ease; 
-                          box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">
-                    📧 Jetzt für Newsletter anmelden
-                </a>
-            </div>
-            
-            <p style="margin-top: 20px; font-size: 0.9em; color: #7a9fb0;">
-                Einfach das Formular ausfüllen und du erhältst Benachrichtigungen über neue Artikel.
-            </p>
-        </div>
-        <!-- =========================================== -->
-        <!-- ENDE NEWSLETTER SECTION -->
-        <!-- =========================================== -->
-
-        <footer>
-            <p><a href="../index.html">Startseite</a> | <a href="../datenschutz.html">Datenschutz</a> | <a href="../agb_coaching.html">AGB</a></p>
-            <p style="margin-top: 10px;">© 2025 Amy Lang - Coaching & Wandlung</p>
-        </footer>
+    <!-- Language Switcher & Navigation -->
+    <div class="language-switcher">
+        <a href="../de.html" class="lang-link">HOME</a>
+        <a href="index.html" class="lang-link active" style="border-color: #D4AF37;">BLOG</a>
+        <a href="http://gorawandreal.com" class="lang-link">EN</a>
+        <a href="http://amyfabijenna.github.io/transzformacio/" class="lang-link">HU</a>
     </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Blog</h1>
+        <p class="subtitle">
+            Wahre Geschichten über Transformation, Körper und die Reise zu dir selbst.
+        </p>
+        <p class="hero-tagline">
+            Keine Filter. Keine Beschönigung. Nur Wahrheit.
+        </p>
+        <div class="scroll-arrow">↓</div>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="container">
+        <section>
+            <h2>Aktuelle Artikel</h2>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <a href="warum-verliere-ich-kein-gewicht.html" class="blog-card">
+                    <span class="blog-date">April 2026</span>
+                    <h3>Warum verliere ich kein Gewicht – obwohl ich doch alles richtig mache?</h3>
+                    <p class="blog-excerpt">
+                        Du isst gesund. Du bewegst dich. Du verzichtest auf Süßes. Und trotzdem: Die Waage bewegt sich nicht. Kennst du das Gefühl, wenn du morgens vor dem Spiegel stehst und denkst: "Was mache ich falsch?"
+                    </p>
+                    <span class="read-more">Weiterlesen</span>
+                </a>
+
+                <!-- Coming Soon Cards -->
+                <div class="blog-card coming-soon">
+                    <span class="blog-date">Demnächst</span>
+                    <h3>Weitere Geschichten folgen...</h3>
+                    <p class="blog-excerpt">
+                        Neue Einsichten über echte Transformation, Rohkost-Lifestyle und den Weg zu dir selbst.
+                    </p>
+                </div>
+
+                <div class="blog-card coming-soon">
+                    <span class="blog-date">Demnächst</span>
+                    <h3>Mehr ist unterwegs...</h3>
+                    <p class="blog-excerpt">
+                        Wahrheiten, Erfahrungen und praktische Einblicke in die Welt der Körpertransformation.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="../faq_coaching.html">FAQ</a> | 
+            <a href="../erstgespraech.html">Termin buchen</a> | 
+            <a href="../agb_coaching.html">AGB</a> | 
+            <a href="../datenschutz.html">Datenschutz</a> |
+            <a href="index.html">Blog</a>
+        </p>
+        <p style="margin-top: 1rem;">Amy Lang - Raw & Real | Ganzheitliches Lifestyle Coaching</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Neue Selbständige (§ 2 Abs. 1 Z 4 GSVG) | Österreich</p>
+        <p style="margin-top: 1rem;">© 2025 Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for arrow
+        document.querySelector('.scroll-arrow').addEventListener('click', function() {
+            document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
