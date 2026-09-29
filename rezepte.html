@@ -134,6 +134,16 @@
   ol.steps li::marker{color:var(--gold-deep);font-weight:800}
   .tip{margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,243,201,.55);border:1px solid rgba(184,137,44,.3);font-size:.92rem}
   .tip b{color:#7d5f16}
+  .tag.gold{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.5)}
+  .gourmet{margin-top:14px;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,rgba(255,243,201,.7),rgba(250,221,227,.55));border:1px solid rgba(184,137,44,.35)}
+  .gourmet h4{margin-top:0 !important}
+  .g-note{font-size:.9rem;color:#5b4a22;margin-bottom:4px}
+  .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;text-align:left;margin-top:8px}
+  .principle{padding:22px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.95)}
+  .principle h3{font-size:1.1rem;margin-bottom:6px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .principle p{font-size:.95rem;color:#4d4752}
+  .principle.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(255,243,201,.75),rgba(255,255,255,.85) 55%,rgba(250,221,227,.7))}
+  @media (max-width:980px){.principles{grid-template-columns:1fr}}
   .empty{text-align:center;padding:40px;color:var(--muted);display:none}
 
   .footer{padding:30px;background:var(--obsidian-glass);border-radius:28px;border:1px solid rgba(222,184,88,.6);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28);position:relative;overflow:hidden;text-align:center}
@@ -168,10 +178,11 @@
   <p class="eyebrow">LEBENDIGE KÜCHE · REZEPTE VON AMY</p>
   <h1>Essen, das lebt,<br/><span class="gold-text">schenkt Leben weiter.</span></h1>
   <p class="wisdom-line">Farbe, Frische und die ganze Weisheit der Natur — so einfach zubereitet, dass sie in deinen echten Alltag passt.</p>
-  <p class="header-subtitle">Hier findest du meine liebsten Rohkost-Rezepte: von der sonnigen Gazpacho über knusprige Cracker aus dem Dörrgerät bis zur cremigen Schokoladentorte. Und weil so viele von euch mich fragen, wie man sich im Arbeitsalltag lebendig versorgt, gibt es eine eigene, große Sammlung für unterwegs und für den Job.</p>
+  <p class="header-subtitle">Hier findest du meine liebsten Rohkost-Rezepte: von der sonnigen Gazpacho über knusprige Cracker aus dem Dörrgerät bis zur cremigen Schokoladentorte. Jedes Rezept schmeckt pur und mild — wer es kräftiger mag, findet Salz, Gewürze, Knoblauch und Ingwer jeweils in der Gourmet-Variante. Und weil so viele von euch mich fragen, wie man sich im Arbeitsalltag lebendig versorgt, gibt es eine eigene, große Sammlung für unterwegs und für den Job.</p>
   <div class="badges">
     <span class="star-badge">✦ 100 % pflanzlich</span>
     <span class="star-badge">✦ Roh &amp; lebendig</span>
+    <span class="star-badge">✦ Ohne Öl &amp; ohne Essig</span>
     <span class="star-badge">✦ Ohne Backofen</span>
     <span class="star-badge">✦ Alltagstauglich</span>
   </div>
@@ -191,7 +202,7 @@
       <strong>Das Prinzip: einmal vorbereiten, die ganze Woche genießen</strong>
       <p>Das Dörrgerät ist deine stille Helferin. Am Wochenende läuft es über Nacht, und am Montag hast du Brot, Cracker, Kekse und Chips für viele Tage. Dazu zwei, drei Dips im Schraubglas, geschnittenes Gemüse in einer Box — und du greifst morgens nur noch zu.</p>
       <div class="week">
-        <div class="day"><b>Samstag</b>Cracker, Brot und Bananensticks ins Dörrgerät, Nüsse einweichen</div>
+        <div class="day"><b>Samstag</b>Cracker, Brot und Bananensticks ins Dörrgerät, Hanfherzencreme ansetzen</div>
         <div class="day"><b>Sonntag</b>Zwei Dips mixen, Energiebällchen rollen, Gemüse schneiden</div>
         <div class="day"><b>Mo – Mi</b>Brot mit Aufstrich, Sticks mit Dip, eine süße Kleinigkeit</div>
         <div class="day"><b>Mittwoch</b>Frischer Nachschub: Salat im Glas oder Lasagne für zwei Tage</div>
@@ -249,9 +260,39 @@
   <p class="empty" id="empty">Zu dieser Suche habe ich noch kein Rezept — probier eine andere Zutat.</p>
 </section>
 
-<section class="pad glass" style="text-align:center">
-  <h2>Grundwissen für deine lebendige Küche</h2>
-  <p class="section-intro" style="margin-bottom:10px"><b>Dörren:</b> Alle Dörrzeiten gelten für 42 °C, damit Enzyme und Vitalstoffe erhalten bleiben. <b>Aktivieren:</b> Nüsse und Saaten 6–12 Stunden in Wasser einweichen, abspülen und nach Bedarf trocken dörren. <b>Buchweizen keimen:</b> 30 Minuten einweichen, gut spülen und 1–2 Tage keimen lassen, bis kleine Schwänzchen sichtbar sind. <b>Tasse:</b> eine Tasse entspricht etwa 240 ml.</p>
+<section class="pad glass" id="prinzipien">
+  <h2>Die Grundlagen meiner lebendigen Küche</h2>
+  <p class="section-intro">Einfache, reine Zutaten, die für sich selbst sprechen dürfen. So bleibt jedes Gericht leicht bekömmlich und schmeckt auch ohne kräftige Würzung.</p>
+  <div class="principles">
+    <article class="principle wide">
+      <h3>✦ Fermentierte Hanfherzencreme — statt Öl, Sahne und Käse</h3>
+      <p>Geschälte Hanfherzen <b>ohne Einweichen</b> mit einem Schuss Wasser zu einer glatten, dicken Creme pürieren, in ein sauberes Glas füllen und bei Raumtemperatur <b>etwa einen Tag</b> stehen lassen. Sie wird leicht säuerlich, frisch und fein käsig — und macht Dressings rund, Dips cremig und Füllungen seidig. <b>Alternative:</b> Macadamianüsse, 4 Stunden eingeweicht und genauso verarbeitet, ergeben eine besonders milde, buttrige Creme.</p>
+    </article>
+    <article class="principle">
+      <h3>Ohne Öl, ohne Essig</h3>
+      <p>Statt Öl verwende ich Hanfherzencreme, Avocado, Tahini oder Mandelmus. Für Säure sorgen Zitrone, Limette oder Orange.</p>
+    </article>
+    <article class="principle">
+      <h3>Schnittlauch statt Knoblauch</h3>
+      <p>Schnittlauch ist mein Standard, Bärlauch die wunderbare Frühlingsvariante. Frische Kräuter wie Basilikum, Petersilie, Dill oder Minze gehören immer dazu.</p>
+    </article>
+    <article class="principle">
+      <h3>Gourmet-Variante</h3>
+      <p>Salz, Gewürze, Knoblauch, Ingwer, Zimt, Kurkuma und Tamari sind bei jedem Rezept als optionale Gourmet-Variante aufgeführt. Wo ein Gericht erst durch sie seinen Charakter bekommt, ist das eigens vermerkt.</p>
+    </article>
+    <article class="principle">
+      <h3>Dörren bei 42 °C</h3>
+      <p>Alle Dörrzeiten gelten für 42 °C, damit die Lebendigkeit der Zutaten erhalten bleibt.</p>
+    </article>
+    <article class="principle">
+      <h3>Aktivieren &amp; Keimen</h3>
+      <p>Nüsse und Saaten 6–12 Stunden einweichen und abspülen. Buchweizen 30 Minuten einweichen, spülen und 1–2 Tage keimen lassen, bis kleine Schwänzchen sichtbar sind.</p>
+    </article>
+    <article class="principle">
+      <h3>Maße</h3>
+      <p>Eine Tasse entspricht etwa 240 ml, ein EL etwa 15 ml, ein TL etwa 5 ml.</p>
+    </article>
+  </div>
 </section>
 
 <section class="pad glass" style="text-align:center">
@@ -287,500 +328,596 @@ const CATS = [
 const CATNAME = Object.fromEntries(CATS);
 
 /* ---------- Rezepte ----------
-   r(kategorie, titel, beschreibung, zutaten "a|b", schritte "a|b", tipp, optionen)
-   optionen: j = "o" (ohne Kühlung) / "k" (Kühltasche), h = 1 (Einhand), d = Haltbarkeit */
+   r(kategorie, titel, beschreibung, zutaten "a|b", schritte "a|b", optionen)
+   optionen: gm = Gourmet-Zutaten "a|b", g = 1 (Gourmet-Variante empfohlen), tip,
+             j = "o" (ohne Kühlung) / "k" (Kühltasche), h = 1 (Einhand), d = Haltbarkeit */
 const D = [];
-function r(c,t,desc,z,s,tip,o){ D.push(Object.assign({c,t,desc,z:z.split("|"),s:s.split("|"),tip},o||{})); }
+function r(c,t,desc,z,s,o){ o=o||{}; D.push(Object.assign({},o,{c,t,desc,z:z.split("|"),s:s.split("|"),gm:o.gm?o.gm.split("|"):[]})); }
+const HC="fermentierte Hanfherzencreme (oder Macadamia-Creme)";
 
-/* ===== FÜR DEN JOB – eigene Kreationen ===== */
+/* ===== GRUNDREZEPT ===== */
+r("dip","Fermentierte Hanfherzencreme (Grundrezept)","Die Seele meiner Küche: Sie ersetzt Öl, Sahne und Käse, macht Dressings rund, Dips cremig und Füllungen seidig.",
+"1 Tasse geschälte Hanfherzen (nicht einweichen)|ein Schuss Wasser, etwa ¼ Tasse|Alternative: 1 Tasse Macadamianüsse, 4 Stunden eingeweicht und abgespült",
+"Hanfherzen ohne Einweichen mit einem Schuss Wasser im Mixer zu einer glatten, dicken Creme pürieren — so wenig Wasser wie möglich, so viel wie nötig.|In ein sauberes Glas füllen und den Deckel nur locker auflegen.|Etwa einen Tag bei Raumtemperatur stehen lassen. Die Creme wird dabei leicht säuerlich, frisch und bekommt einen feinen, käsigen Charakter.|Danach verschlossen im Kühlschrank aufbewahren.",
+{tip:"Setz sie am besten zweimal pro Woche an, dann ist immer ein Glas bereit. Mit Macadamia wird sie besonders mild und buttrig.",j:"k",d:"3–4 Tage"});
+
+/* ===== FÜR DEN JOB ===== */
 r("job","Dörrbrot-Sandwich mit Sonnenblumen-Aufstrich","Das lebendige Gegenstück zur klassischen Jausensemmel — sättigend, herzhaft, krümelfrei.",
-"2 Scheiben Rohkost-Brot mit Kräutern (siehe Brote & Cracker)|3 EL Sonnenblumenkern-Aufstrich|einige Gurkenscheiben|1 Handvoll Sprossen oder Rucola|1 Tomate in Scheiben (erst in der Pause auflegen)",
-"Aufstrich dick auf beide Brotscheiben streichen — er schützt das Brot vor Feuchtigkeit.|Gurke und Sprossen dazwischenlegen und zuklappen.|In Butterbrotpapier wickeln, Tomate separat in einer kleinen Dose mitnehmen.",
-"Bereite zwei Sandwiches gleichzeitig vor — das zweite hält im Kühlschrank bis zum nächsten Tag.",{j:"k",h:1,d:"1–2 Tage"});
+"2 Scheiben Rohkost-Brot mit Kräutern (siehe Brote & Cracker)|3 EL Sonnenblumenkern-Aufstrich|einige Gurkenscheiben|1 Handvoll Sprossen oder Rucola|1 Tomate (erst in der Pause auflegen)",
+"Aufstrich dick auf beide Brotscheiben streichen — er schützt das Brot vor Feuchtigkeit.|Gurke und Sprossen dazwischenlegen und zuklappen.|In Butterbrotpapier wickeln, die Tomate separat in einer kleinen Dose mitnehmen.",
+{gm:"eine Prise Salz|frisch gemahlener Pfeffer",tip:"Bereite gleich zwei Sandwiches vor — das zweite hält im Kühlschrank bis zum nächsten Tag.",j:"k",h:1,d:"1–2 Tage"});
 r("job","Gemüsesticks-Box mit drei Dips","Knackig, bunt und schnell gepackt — die Box, die den Nachmittag rettet.",
-"2 Karotten|1 Stück Gurke|1 rote Paprika|3 Stangen Staudensellerie|einige Kohlrabi-Stifte|je 3 EL Hummus, Guacamole und Cashew-Sour-Cream",
-"Gemüse in fingerlange Stifte schneiden.|Senkrecht in eine hohe Box oder ein breites Schraubglas stellen.|Die Dips in kleine Gläschen oder Silikonförmchen füllen und dazupacken.",
-"Karotten- und Selleriestifte bleiben in einem Glas mit etwas Wasser im Kühlschrank bis zu vier Tage knackig.",{j:"k",d:"3–4 Tage"});
-r("job","Cremige Hanfsauce","Nussig, zitronig und reich an wertvollem Eiweiß — die Sauce für alles Fermentierte.",
-"½ Tasse geschälte Hanfsamen|Saft von 1 Zitrone|1 kleine Knoblauchzehe|1 EL Hefeflocken|½ TL Salz|1 TL Senf (roh)|ca. ½ Tasse Wasser|frischer Dill oder Schnittlauch",
-"Alle Zutaten außer den Kräutern im Mixer cremig pürieren.|Mit Wasser auf eine dicke, gießfähige Konsistenz bringen.|Kräuter fein hacken und unterrühren.",
-"Hält 5 Tage im Schraubglas. Wunderbar auch über Blattsalat oder als Brotaufstrich.",{j:"k",d:"5 Tage"});
+"2 Karotten|1 Stück Gurke|1 rote Paprika|3 Stangen Staudensellerie|einige Kohlrabistifte|je 3 EL Zucchini-Hummus, Guacamole und Hanf-Sour-Cream",
+"Gemüse in fingerlange Stifte schneiden.|Senkrecht in eine hohe Box oder ein breites Schraubglas stellen.|Die Dips in kleine Gläschen füllen und dazupacken.",
+{tip:"Karotten- und Selleriestifte bleiben in einem Glas mit etwas Wasser im Kühlschrank bis zu vier Tage knackig.",j:"k",d:"3–4 Tage"});
+r("job","Cremige Hanfsauce","Frisch, zitronig und reich an wertvollem Eiweiß — die Sauce für alles Fermentierte, für Salate und Gemüsesticks.",
+"½ Tasse "+HC+"|Saft von ½ Zitrone|3–4 EL Wasser|1 kleines Bund Schnittlauch oder frischer Dill",
+"Hanfherzencreme mit Zitronensaft und Wasser glatt rühren, bis sie gießfähig ist.|Schnittlauch oder Dill fein schneiden und unterrühren.",
+{gm:"1 kleine Knoblauchzehe oder 3 Blätter Bärlauch|eine Prise Salz|Pfeffer",tip:"Wunderbar auch über Blattsalat oder als Brotaufstrich.",j:"k",d:"3 Tage"});
 r("job","Sauerkraut-Bowl mit Hanfsauce","Fermentiertes, Knackiges und Cremiges in einer Box — stärkt und sättigt lange.",
-"1 Tasse Sauerkraut (roh)|1 Karotte, geraspelt|½ Apfel, gewürfelt|1 Handvoll Sonnenblumenkerne, aktiviert|3 EL Hanfsauce|1 Handvoll Babyspinat",
+"1 Tasse Sauerkraut (siehe Käse & Fermentiertes)|1 Karotte, geraspelt|½ Apfel, gewürfelt|1 Handvoll Sonnenblumenkerne, aktiviert|3 EL cremige Hanfsauce|1 Handvoll Babyspinat",
 "Spinat als Bett in die Box legen.|Sauerkraut, Karotte und Apfel nebeneinander anordnen.|Hanfsauce in ein Extragläschen füllen und in der Pause darübergeben.|Mit Sonnenblumenkernen bestreuen.",
-"Der Apfel bringt eine sanfte Süße, die das Sauerkraut wunderbar rund macht.",{j:"k",d:"2 Tage"});
-r("job","Kimchi-Wrap mit Hanfsauce","Pikant, frisch und in einer Hand zu halten.",
-"1 Leinsamen-Tortilla|3 EL Kimchi|2 EL Hanfsauce|½ Avocado in Streifen|Gurkenstreifen|einige Salatblätter",
+{gm:"einige Kümmelsamen",tip:"Der Apfel bringt eine sanfte Süße, die das Sauerkraut wunderbar rund macht.",j:"k",d:"2 Tage"});
+r("job","Kimchi-Wrap mit Hanfsauce","Frisch-säuerlich und in einer Hand zu halten.",
+"1 Leinsamen-Tortilla|3 EL Kimchi (siehe Käse & Fermentiertes)|2 EL cremige Hanfsauce|½ Avocado in Streifen|Gurkenstreifen|einige Salatblätter",
 "Tortilla mit Hanfsauce bestreichen.|Salat, Kimchi, Avocado und Gurke darauflegen.|Fest einrollen und in Butterbrotpapier wickeln.",
-"Einen Tropfen Zitrone auf die Avocado — dann bleibt sie bis zur Pause schön grün.",{j:"k",h:1,d:"1 Tag"});
+{tip:"Einen Tropfen Zitrone auf die Avocado — dann bleibt sie bis zur Pause schön grün.",j:"k",h:1,d:"1 Tag"});
 r("job","Gedörrte Bananensticks","Süß wie Karamell, handlich wie ein Schokoriegel.",
-"4 reife Bananen|Saft von ½ Zitrone|optional: Zimt oder Kakaopulver",
-"Bananen längs vierteln.|Mit Zitronensaft bestreichen und nach Wunsch bestäuben.|Bei 42 °C 12–16 Stunden dörren, bis sie zäh-weich sind.",
-"In einem Glas aufbewahrt halten sie wochenlang.",{j:"o",h:1,d:"mehrere Wochen"});
-r("job","Knusprige Apfelchips mit Zimt","Das knackige Knabbervergnügen für zwischendurch.",
-"4 süße Äpfel|1 TL Zimt|Saft von ½ Zitrone",
-"Äpfel mit der Mandoline in hauchdünne Scheiben hobeln.|Mit Zitronensaft beträufeln und mit Zimt bestäuben.|Bei 42 °C 10–14 Stunden dörren, bis sie knusprig sind.",
-"Luftdicht verschlossen bleiben sie knusprig.",{j:"o",h:1,d:"mehrere Wochen"});
-r("job","Grünkohl-Chips mit Käse-Würze","Salzig, knusprig und voller Grünkraft — das Chipspackerl in lebendig.",
-"1 Bund Grünkohl|½ Tasse Cashews, eingeweicht|1 rote Paprika|2 EL Hefeflocken|1 EL Zitronensaft|½ TL Salz|1 Prise Paprikapulver",
-"Grünkohl von den Stielen zupfen und in mundgerechte Stücke reißen.|Übrige Zutaten zu einer dicken Creme mixen.|Die Blätter damit einmassieren und locker auf Dörrgitter legen.|Bei 42 °C 10–12 Stunden dörren.",
-"Mach gleich die doppelte Menge — sie sind schneller aufgegessen, als du denkst.",{j:"o",h:1,d:"2 Wochen"});
-r("job","Zucchini-Kräuter-Chips","Leicht, würzig und herrlich knusprig.",
-"2 Zucchini|1 EL Olivenöl|1 TL italienische Kräuter|½ TL Salz|1 Prise Knoblauchpulver",
-"Zucchini hauchdünn hobeln.|Mit Öl und Gewürzen vorsichtig vermengen.|Bei 42 °C 10–12 Stunden dörren.",
-"",{j:"o",h:1,d:"2 Wochen"});
-r("job","Tomaten-Chips mit Oregano","Konzentriertes Sommeraroma zum Knabbern.",
-"6 feste Tomaten|1 TL Oregano|½ TL Salz|1 TL Olivenöl",
-"Tomaten in 5 mm dünne Scheiben schneiden.|Mit Öl, Oregano und Salz würzen.|Bei 42 °C 12–18 Stunden dörren, bis sie knusprig brechen.",
-"",{j:"o",h:1,d:"2 Wochen"});
-r("job","Tamari-Mandeln","Der würzige Nussmoment, der dich durch den Nachmittag trägt.",
-"2 Tassen Mandeln, aktiviert|2 EL Tamari oder Kokosaminos|½ TL geräuchertes Paprikapulver",
-"Aktivierte Mandeln mit Tamari und Paprika vermengen.|30 Minuten ziehen lassen.|Bei 42 °C 12–24 Stunden dörren, bis sie durch und durch knackig sind.",
-"Eine Handvoll in ein kleines Glas — passt in jede Jackentasche.",{j:"o",h:1,d:"4 Wochen"});
-r("job","Gewürzte Kürbis- und Sonnenblumenkerne","Salzig, knackig, sättigend.",
-"1 Tasse Kürbiskerne|1 Tasse Sonnenblumenkerne|1 EL Tamari|1 TL Currypulver|1 Prise Chili",
-"Kerne 6 Stunden einweichen und abspülen.|Mit Tamari und Gewürzen mischen.|Bei 42 °C 12–18 Stunden dörren.",
-"",{j:"o",h:1,d:"4 Wochen"});
+"4 reife Bananen|Saft von ½ Zitrone|optional: etwas Kakaopulver",
+"Bananen längs vierteln.|Mit Zitronensaft bestreichen und nach Wunsch mit Kakao bestäuben.|Bei 42 °C 12–16 Stunden dörren, bis sie zäh-weich sind.",
+{gm:"Zimt zum Bestäuben",tip:"In einem Glas aufbewahrt halten sie wochenlang.",j:"o",h:1,d:"mehrere Wochen"});
+r("job","Knusprige Apfelchips","Das knackige Knabbervergnügen für zwischendurch.",
+"4 süße Äpfel|Saft von ½ Zitrone",
+"Äpfel mit der Mandoline in hauchdünne Scheiben hobeln.|Mit Zitronensaft beträufeln.|Bei 42 °C 10–14 Stunden dörren, bis sie knusprig sind.",
+{gm:"1 TL Zimt",tip:"Luftdicht verschlossen bleiben sie knusprig.",j:"o",h:1,d:"mehrere Wochen"});
+r("job","Grünkohl-Chips mit Paprikacreme","Knusprig und voller Grünkraft — das Chipspackerl in lebendig.",
+"1 Bund Grünkohl|½ Tasse "+HC+"|1 rote Paprika|Saft von ½ Zitrone",
+"Grünkohl von den Stielen zupfen und in mundgerechte Stücke reißen.|Hanfherzencreme, Paprika und Zitrone zu einer dicken Creme mixen.|Die Blätter damit einmassieren und locker auf Dörrgitter legen.|Bei 42 °C 10–12 Stunden dörren.",
+{gm:"½ TL Salz|1 TL geräuchertes Paprikapulver|1 Knoblauchzehe",tip:"Mach gleich die doppelte Menge — sie sind schneller aufgegessen, als du denkst.",j:"o",h:1,d:"2 Wochen"});
+r("job","Zucchini-Kräuter-Chips","Leicht und herrlich knusprig.",
+"2 Zucchini|Saft von ½ Zitrone|frischer Thymian oder Schnittlauch, sehr fein geschnitten",
+"Zucchini hauchdünn hobeln.|Mit Zitronensaft und Kräutern vorsichtig vermengen.|Bei 42 °C 10–12 Stunden dörren.",
+{gm:"½ TL Salz|Knoblauchpulver|getrocknete italienische Kräuter",g:1,j:"o",h:1,d:"2 Wochen"});
+r("job","Tomaten-Chips mit Basilikum","Konzentriertes Sommeraroma zum Knabbern.",
+"6 feste, reife Tomaten|1 Handvoll frisches Basilikum, fein geschnitten",
+"Tomaten in 5 mm dünne Scheiben schneiden.|Mit Basilikum bestreuen.|Bei 42 °C 12–18 Stunden dörren, bis sie knusprig brechen.",
+{gm:"getrockneter Oregano|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
+r("job","Knusprige Dörrmandeln","Der nussige Moment, der dich durch den Nachmittag trägt.",
+"2 Tassen Mandeln",
+"Mandeln 12 Stunden einweichen und gut abspülen.|Bei 42 °C 12–24 Stunden dörren, bis sie durch und durch knackig sind.",
+{gm:"2 EL Tamari vor dem Dörren untermischen|½ TL geräuchertes Paprikapulver",tip:"Mit der Gourmet-Variante werden daraus würzige Tamari-Mandeln. Eine Handvoll in ein kleines Glas — passt in jede Jackentasche.",j:"o",h:1,d:"4 Wochen"});
+r("job","Knusperkerne","Knackig und sättigend.",
+"1 Tasse Kürbiskerne|1 Tasse Sonnenblumenkerne|Saft von ½ Zitrone",
+"Kerne 6 Stunden einweichen und abspülen.|Mit Zitronensaft mischen.|Bei 42 °C 12–18 Stunden dörren.",
+{gm:"1 EL Tamari|1 TL Currypulver|eine Prise Chili",j:"o",h:1,d:"4 Wochen"});
 r("job","Lebendiges Studentenfutter","Die bunte Mischung für die Schürzentasche.",
 "½ Tasse aktivierte Mandeln|½ Tasse Walnüsse|¼ Tasse Kürbiskerne|¼ Tasse Rosinen|¼ Tasse Maulbeeren|2 EL Kakaonibs|2 EL Kokoschips",
 "Alles in einer großen Schüssel vermischen.|Portionsweise in kleine Gläser oder Stoffsäckchen füllen.",
-"",{j:"o",h:1,d:"4 Wochen"});
+{j:"o",h:1,d:"4 Wochen"});
 r("job","Nori-Snackröllchen mit Avocado","Mini-Sushi für die Hand — erfrischend und sättigend.",
-"2 Nori-Blätter|1 Avocado|½ Gurke|1 Karotte|Sprossen|1 TL Tamari",
-"Nori-Blätter vierteln.|Avocado mit Tamari zerdrücken und auf jedes Viertel streichen.|Gemüsestifte und Sprossen darauflegen und zu Tütchen oder Röllchen einrollen.",
-"Erst am Morgen rollen, dann bleibt das Nori knackig.",{j:"k",h:1,d:"1 Tag"});
+"2 Nori-Blätter|1 Avocado|½ Gurke|1 Karotte|Sprossen|1 Spritzer Zitrone",
+"Nori-Blätter vierteln.|Avocado mit Zitrone zerdrücken und auf jedes Viertel streichen.|Gemüsestifte und Sprossen darauflegen und zu Tütchen oder Röllchen einrollen.",
+{gm:"ein paar Tropfen Tamari in die Avocado",tip:"Erst am Morgen rollen, dann bleibt das Nori knackig.",j:"k",h:1,d:"1 Tag"});
 r("job","Sushi-Bowl im Glas","Alles, was du an Sushi liebst, geschichtet im Schraubglas.",
-"1 Tasse Blumenkohl-Reis mit 1 TL Apfelessig|½ Avocado|Gurkenwürfel|Karottenstreifen|1 EL Sesam|1 Nori-Blatt, zerzupft|Dressing: 1 EL Tamari, 1 TL Ingwer, 1 TL Limettensaft",
-"Dressing unten ins Glas geben.|Gurke und Karotte darüberschichten, dann den Blumenkohl-Reis.|Avocado, Sesam und Nori ganz oben.|In der Pause durchschütteln oder in eine Schale stürzen.",
-"",{j:"k",d:"1 Tag"});
+"1 Tasse Blumenkohl-Reis mit 1 TL Zitronensaft|½ Avocado|Gurkenwürfel|Karottenstreifen|1 EL Sesam|1 Nori-Blatt, zerzupft|Dressing: 1 EL "+HC+" und 1 TL Limettensaft",
+"Dressing unten ins Glas geben.|Gurke und Karotte darüberschichten, dann den Blumenkohl-Reis.|Avocado, Sesam und Nori ganz oben.|In der Pause in eine Schale stürzen und mischen.",
+{gm:"1 EL Tamari ins Dressing|1 TL frisch geriebener Ingwer",j:"k",d:"1 Tag"});
 r("job","Salat im Schraubglas","Das Dressing wartet unten, das Grün bleibt oben frisch — bis zum ersten Bissen.",
-"3 EL Dressing nach Wahl|Gurke, Paprika, Karotte, Radieschen|Kirschtomaten|1 Handvoll Sonnenblumenkerne|Blattsalat oder Babyspinat",
-"Dressing ganz unten ins Glas.|Darauf die festen Gemüse, dann Tomaten und Kerne.|Ganz oben die zarten Blätter.|Gut verschließen und aufrecht transportieren.",
-"Ein 1-Liter-Glas macht richtig satt und hält im Kühlschrank drei Tage.",{j:"k",d:"3 Tage"});
+"3 EL cremige Hanfsauce|Gurke, Paprika, Karotte, Radieschen|Kirschtomaten|1 Handvoll Sonnenblumenkerne|Blattsalat oder Babyspinat",
+"Hanfsauce ganz unten ins Glas.|Darauf die festen Gemüse, dann Tomaten und Kerne.|Ganz oben die zarten Blätter.|Gut verschließen und aufrecht transportieren.",
+{gm:"eine Prise Salz und Pfeffer ins Dressing",tip:"Ein 1-Liter-Glas macht richtig satt und hält im Kühlschrank drei Tage.",j:"k",d:"3 Tage"});
 r("job","Zucchini-Spaghetti im Glas mit Marinara","Pasta-Gefühl für die Mittagspause.",
-"1 große Zucchini, spiralisiert|½ Tasse Marinara-Sauce|½ Tasse Walnuss-Pilz-Hackfleisch|frisches Basilikum|1 EL Mandel-Parmesan",
-"Sauce unten ins Glas.|Hackfleisch darauf, dann die Zucchini-Nudeln.|Basilikum und Parmesan obenauf.|Vor dem Essen in eine Schale stürzen und mischen.",
-"",{j:"k",d:"2 Tage"});
+"1 große Zucchini, spiralisiert|½ Tasse Marinara-Sauce|½ Tasse Walnuss-Pilz-Hackfleisch|frisches Basilikum|1 EL Mandelbrösel",
+"Sauce unten ins Glas.|Hackfleisch darauf, dann die Zucchini-Nudeln.|Basilikum und Mandelbrösel obenauf.|Vor dem Essen in eine Schale stürzen und mischen.",
+{gm:"getrockneter Oregano|eine Prise Salz über die Mandelbrösel",j:"k",d:"2 Tage"});
 r("job","Gurkenschiffchen mit Kräuter-Frischkäse","Kühl, cremig, erfrischend.",
-"2 Mini-Gurken|4 EL Kräuter-Frischkäse|Kresse oder Schnittlauch|Paprikapulver",
-"Gurken längs halbieren und die Kerne mit einem Teelöffel herausschaben.|Mit Frischkäse füllen.|Mit Kresse und Paprika bestreuen.",
-"",{j:"k",h:1,d:"1–2 Tage"});
+"2 Mini-Gurken|4 EL Kräuter-Frischkäse|Kresse oder Schnittlauch",
+"Gurken längs halbieren und die Kerne mit einem Teelöffel herausschaben.|Mit Frischkäse füllen.|Mit Kresse oder Schnittlauch bestreuen.",
+{gm:"Paprikapulver zum Bestäuben|eine Prise Salz",j:"k",h:1,d:"1–2 Tage"});
 r("job","Paprika-Boote mit Walnussfüllung","Herzhaft, knackig und ohne Besteck zu essen.",
-"2 Spitzpaprika|1 Tasse Walnuss-Pilz-Hackfleisch|2 EL Guacamole|Koriander",
-"Paprika längs halbieren und entkernen.|Mit Walnussfüllung befüllen.|Einen Klecks Guacamole und Koriander darauf.",
-"",{j:"k",h:1,d:"2 Tage"});
+"2 Spitzpaprika|1 Tasse Walnuss-Pilz-Hackfleisch|2 EL Guacamole|Koriander oder Petersilie",
+"Paprika längs halbieren und entkernen.|Mit Walnussfüllung befüllen.|Einen Klecks Guacamole und frische Kräuter darauf.",
+{j:"k",h:1,d:"2 Tage"});
 r("job","Falafel-Box mit Tahini","Sättigende Bällchen, frisches Gemüse und ein cremiger Dip.",
-"6 Rohkost-Falafel|Gurken- und Tomatenwürfel|einige Salatblätter|3 EL Tahini-Sauce|Petersilie",
+"6 Rohkost-Falafel|Gurken- und Tomatenwürfel|einige Salatblätter|3 EL Tahini mit Zitronensaft und Wasser glatt gerührt|Petersilie",
 "Salat in die Box legen.|Falafel und Gemüse daneben anordnen.|Tahini-Sauce separat mitnehmen.|In der Pause Falafel mit Gemüse in ein Salatblatt wickeln.",
-"",{j:"k",h:1,d:"4 Tage"});
+{gm:"Knoblauch und eine Prise Salz in die Tahini-Sauce",j:"k",h:1,d:"4 Tage"});
 r("job","Hummus-Wrap","Cremig, frisch und handlich.",
 "1 Leinsamen-Tortilla|3 EL Zucchini-Hummus|geraspelte Karotte|Rotkohl, fein geschnitten|Sprossen|1 Handvoll Rucola",
 "Tortilla dick mit Hummus bestreichen.|Gemüse darauflegen.|Fest einrollen und schräg halbieren.",
-"",{j:"k",h:1,d:"1 Tag"});
+{j:"k",h:1,d:"1 Tag"});
 r("job","Pizzaschnitten zum Mitnehmen","Ein Stück Pizza für die Pause — ganz ohne Backofen.",
-"1 Rohkost-Pizzaboden|4 EL Marinara-Sauce|Cashew-Mozzarella|Oliven|getrocknete Tomaten|Oregano",
-"Pizzaboden mit Marinara bestreichen.|Mit Mozzarella, Oliven und Tomaten belegen.|Bei 42 °C noch 2 Stunden antrocknen, damit der Belag fest wird.|In Stücke schneiden und einzeln einpacken.",
-"Durch das kurze Nachdörren tropft nichts und die Stücke lassen sich gut in der Hand halten.",{j:"k",h:1,d:"3 Tage"});
+"1 Rohkost-Pizzaboden|4 EL Marinara-Sauce|Macadamia-Frischkäse|getrocknete Tomaten (ungesalzen), eingeweicht|frisches Basilikum",
+"Pizzaboden mit Marinara bestreichen.|Mit Frischkäse und Tomaten belegen.|Bei 42 °C noch 2 Stunden antrocknen, damit der Belag fest wird.|In Stücke schneiden, mit Basilikum belegen und einzeln einpacken.",
+{gm:"schwarze Oliven|getrockneter Oregano",tip:"Durch das kurze Nachdörren tropft nichts und die Stücke lassen sich gut in der Hand halten.",j:"k",h:1,d:"3 Tage"});
 r("job","Mini-Quiche-Törtchen","Die Quiche im Handformat — perfekt für die Jausenbox.",
 "Boden und Füllung der Rohkost-Quiche (siehe Pizza, Quiche & Hauptgerichte)|12 Silikon-Muffinförmchen",
 "Bodenmasse in die Förmchen drücken und einen kleinen Rand formen.|Füllung einfüllen.|Bei 42 °C 6–8 Stunden dörren, bis die Oberfläche fest ist.|Aus den Förmchen lösen und kühl lagern.",
-"",{j:"k",h:1,d:"4 Tage"});
+{gm:"die Gourmet-Gewürze der Quiche",j:"k",h:1,d:"4 Tage"});
 r("job","Rote-Bete-Salat im Glas","Leuchtend, erdig und kräftigend.",
-"1 Rote Bete, geraspelt|1 Apfel, geraspelt|1 EL Meerrettich, frisch gerieben|2 EL Walnüsse|1 EL Olivenöl|1 EL Apfelessig|Salz",
-"Rote Bete und Apfel mischen.|Mit Öl, Essig, Meerrettich und Salz abschmecken.|In ein Glas füllen und Walnüsse obenauf streuen.",
-"Durchgezogen schmeckt er am zweiten Tag noch besser.",{j:"k",d:"3 Tage"});
-r("job","Fermentierte Karottensticks","Knackig-säuerlich und voller lebendiger Kulturen.",
-"500 g Karotten|500 ml Wasser|1 EL Salz|2 Knoblauchzehen|1 Stück Ingwer|Dill",
-"Salz im Wasser auflösen.|Karotten in Sticks schneiden und senkrecht ins Glas stellen.|Knoblauch, Ingwer und Dill dazu, mit Salzlake übergießen, bis alles bedeckt ist.|5–7 Tage bei Raumtemperatur fermentieren, dann kühl stellen.",
-"Mit Hanfsauce als Dip ein Traum.",{j:"k",h:1,d:"4 Wochen"});
-r("job","Cashew-Joghurt im Glas","Cremig-frisch, mit Beeren und Granola geschichtet.",
-"1 Tasse Cashews, eingeweicht|½ Tasse Wasser|1 Probiotika-Kapsel|1 EL Zitronensaft|Beeren und Granola zum Schichten",
-"Cashews mit Wasser und Zitrone sehr cremig mixen.|Probiotika einrühren und abgedeckt 8–12 Stunden warm stehen lassen.|Im Glas mit Beeren und Granola schichten, Granola erst morgens dazugeben.",
-"",{j:"k",d:"4 Tage"});
-r("job","Rohes Apfelmus mit Zimt","Wie aus Omas Küche — nur frisch gemixt.",
-"3 Äpfel|2 Datteln|½ TL Zimt|1 EL Zitronensaft|etwas Wasser",
+"1 Rote Bete, geraspelt|1 Apfel, geraspelt|2 EL Walnüsse|2 EL "+HC+"|Saft von ½ Zitrone|Schnittlauch",
+"Rote Bete und Apfel mischen.|Hanfherzencreme mit Zitrone verrühren und unterheben.|In ein Glas füllen, Walnüsse und Schnittlauch obenauf.",
+{gm:"1 EL frisch geriebener Meerrettich|eine Prise Salz",tip:"Durchgezogen schmeckt er am zweiten Tag noch besser.",j:"k",d:"3 Tage"});
+r("job","Fermentierte Karottensticks","Knackig-säuerlich und voller lebendiger Kulturen — ganz ohne Salzlake.",
+"500 g Karotten|ca. 500 ml frisch gepresster Selleriesaft (aus 1 Staudensellerie)|1 Handvoll frischer Dill",
+"Karotten in Sticks schneiden und senkrecht in ein sauberes Bügelglas stellen.|Dill dazwischen stecken und mit Selleriesaft übergießen, bis alles bedeckt ist.|Mit einem kleinen Glas beschweren und 3–5 Tage bei Raumtemperatur fermentieren, dann kühl stellen.",
+{gm:"klassische Lake: 1 EL Salz in 500 ml Wasser statt Selleriesaft|2 Knoblauchzehen|1 Scheibe Ingwer",tip:"Mit cremiger Hanfsauce als Dip ein Traum.",j:"k",h:1,d:"4 Wochen"});
+r("job","Hanf-Joghurt im Glas","Cremig-frisch, mit Beeren und Granola geschichtet.",
+"½ Tasse fermentierte Hanfherzencreme|3–4 EL Wasser|1 Spritzer Zitrone|Beeren und Rohkost-Granola zum Schichten",
+"Hanfherzencreme mit Wasser und Zitrone zu einer joghurtartigen Konsistenz rühren.|Im Glas mit Beeren schichten.|Granola erst morgens obenauf geben, damit es knusprig bleibt.",
+{gm:"etwas Vanille",j:"k",d:"3 Tage"});
+r("job","Rohes Apfelmus","Wie aus Omas Küche — nur frisch gemixt.",
+"3 Äpfel|2 Datteln|1 EL Zitronensaft|etwas Wasser",
 "Äpfel entkernen und grob schneiden.|Mit allen Zutaten im Mixer zu einem Mus pürieren.|In ein Glas füllen.",
-"",{j:"k",d:"2 Tage"});
+{gm:"½ TL Zimt",j:"k",d:"2 Tage"});
 r("job","Gefüllte Datteln","Die kleinste Mahlzeit der Welt — und eine der glücklichsten.",
-"12 Medjool-Datteln|4 EL Mandelmus|12 Walnusshälften|1 Prise Meersalz|optional: Kakaonibs",
-"Datteln längs aufschneiden und entkernen.|Mit Mandelmus füllen und eine Walnuss hineindrücken.|Mit einer Prise Salz oder Kakaonibs krönen.",
-"",{j:"o",h:1,d:"1 Woche"});
+"12 Medjool-Datteln|4 EL Mandelmus|12 Walnusshälften|optional: Kakaonibs",
+"Datteln längs aufschneiden und entkernen.|Mit Mandelmus füllen und eine Walnuss hineindrücken.|Nach Wunsch mit Kakaonibs krönen.",
+{gm:"eine Prise Meersalzflocken",j:"o",h:1,d:"1 Woche"});
 r("job","Buchweizen-Nuss-Riegel","Knusprig, sättigend und gut verpackbar.",
-"1 Tasse gekeimter, gedörrter Buchweizen|½ Tasse Mandeln, gehackt|½ Tasse Datteln|2 EL Mandelmus|2 EL Kokosraspeln|1 Prise Salz",
+"1 Tasse gekeimter, gedörrter Buchweizen|½ Tasse Mandeln, gehackt|½ Tasse Datteln|2 EL Mandelmus|2 EL Kokosraspeln",
 "Datteln mit Mandelmus zu einer Paste verarbeiten.|Buchweizen, Mandeln und Kokos unterkneten.|In eine Form drücken, 4 Stunden dörren oder kühlen und in Riegel schneiden.",
-"Einzeln in Butterbrotpapier gewickelt überstehen sie jede Handtasche.",{j:"o",h:1,d:"2 Wochen"});
+{gm:"eine Prise Salz|Vanille",tip:"Einzeln in Butterbrotpapier gewickelt überstehen sie jede Handtasche.",j:"o",h:1,d:"2 Wochen"});
 r("job","Dattel-Kokos-Energiebällchen","Der schnelle Energieschub für die Pause.",
-"1 Tasse Datteln|1 Tasse Kokosraspeln|½ Tasse Cashews|1 TL Vanille|1 Prise Salz",
-"Cashews im Food Processor fein hacken.|Datteln, Kokos, Vanille und Salz dazugeben, bis die Masse klebt.|Zu Bällchen rollen und in Kokos wälzen.",
-"",{j:"o",h:1,d:"2 Wochen"});
-r("job","Zitronen-Cashew-Bällchen","Frisch und sonnig — wie ein kleiner Urlaub.",
-"1 Tasse Cashews|½ Tasse Kokosraspeln|6 Datteln|Abrieb und Saft von 1 Bio-Zitrone|1 Prise Salz",
+"1 Tasse Datteln|1 Tasse Kokosraspeln|½ Tasse Macadamianüsse oder Mandeln",
+"Nüsse im Food Processor fein hacken.|Datteln und Kokos dazugeben, bis die Masse klebt.|Zu Bällchen rollen und in Kokos wälzen.",
+{gm:"1 TL Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
+r("job","Zitronen-Macadamia-Bällchen","Frisch und sonnig — wie ein kleiner Urlaub.",
+"1 Tasse Macadamianüsse|½ Tasse Kokosraspeln|6 Datteln|Abrieb und Saft von 1 Bio-Zitrone",
 "Alles im Food Processor zu einer formbaren Masse verarbeiten.|Bällchen rollen und kühl stellen.",
-"",{j:"o",h:1,d:"1 Woche"});
-r("job","Karottenkuchen-Bällchen","Der Geschmack von Karottenkuchen in Snackgröße.",
-"1 Karotte, fein geraspelt|½ Tasse Walnüsse|½ Tasse Datteln|½ Tasse Kokosraspeln|1 TL Zimt|½ TL Ingwer|1 Prise Muskat",
-"Walnüsse fein hacken.|Datteln und Gewürze dazu verarbeiten.|Karotte und Kokos unterkneten und Bällchen formen.",
-"",{j:"k",h:1,d:"4 Tage"});
-r("job","Schoko-Orangen-Bällchen","Weihnachtlich, fruchtig, tröstlich.",
+{gm:"eine Prise Salz",j:"o",h:1,d:"1 Woche"});
+r("job","Karottenkuchen-Bällchen","Karottenkuchen in Snackgröße.",
+"1 Karotte, fein geraspelt|½ Tasse Walnüsse|½ Tasse Datteln|½ Tasse Kokosraspeln|Abrieb von ½ Bio-Orange",
+"Walnüsse fein hacken.|Datteln und Orangenabrieb dazu verarbeiten.|Karotte und Kokos unterkneten und Bällchen formen.",
+{gm:"1 TL Zimt|½ TL Ingwer|eine Prise Muskat",g:1,j:"k",h:1,d:"4 Tage"});
+r("job","Schoko-Orangen-Bällchen","Fruchtig, schokoladig, tröstlich.",
 "1 Tasse Haselnüsse|½ Tasse Datteln|3 EL Kakaopulver|Abrieb von 1 Bio-Orange|2 EL Orangensaft",
 "Haselnüsse fein hacken.|Restliche Zutaten dazugeben und verarbeiten.|Bällchen rollen und in Kakao wälzen.",
-"",{j:"o",h:1,d:"1 Woche"});
+{gm:"eine Prise Zimt|ein Hauch Vanille",j:"o",h:1,d:"1 Woche"});
 r("job","Mango-Fruchtleder","Wie Fruchtgummi, nur aus reiner Frucht.",
 "2 reife Mangos|1 Banane|Saft von ½ Limette",
-"Alles glatt pürieren.|3–4 mm dünn auf Dörrfolie streichen.|Bei 42 °C 8–12 Stunden dörren.|Samt Backpapier in Streifen schneiden und einrollen.",
-"Funktioniert genauso mit Erdbeeren, Himbeeren oder Äpfeln.",{j:"o",h:1,d:"4 Wochen"});
+"Alles glatt pürieren.|3–4 mm dünn auf Dörrfolie streichen.|Bei 42 °C 8–12 Stunden dörren.|Samt Folie in Streifen schneiden und einrollen.",
+{tip:"Funktioniert genauso mit Erdbeeren, Himbeeren oder Äpfeln.",j:"o",h:1,d:"4 Wochen"});
 r("job","Gedörrte Mangostreifen","Süß, zäh, sonnig.",
 "3 reife Mangos",
 "Mangos schälen und in 5 mm dicke Streifen schneiden.|Bei 42 °C 12–16 Stunden dörren.",
-"",{j:"o",h:1,d:"mehrere Wochen"});
+{j:"o",h:1,d:"mehrere Wochen"});
 r("job","Knusper-Müsliriegel mit Äpfeln","Fruchtig-nussig und schön knackig.",
-"1 Tasse Rohkost-Granola|½ Tasse getrocknete Apfelstücke|½ Tasse Datteln|2 EL Mandelmus|1 TL Zimt",
+"1 Tasse Rohkost-Granola|½ Tasse gedörrte Apfelstücke|½ Tasse Datteln|2 EL Mandelmus",
 "Datteln mit Mandelmus zu einer Paste verarbeiten.|Granola und Apfelstücke unterkneten.|Flach drücken, 8 Stunden dörren und in Riegel schneiden.",
-"",{j:"o",h:1,d:"2 Wochen"});
-r("job","Buchweizen-Knäckebrot-Sandwich mit Mandel-Feta","Salzig, mediterran und knusprig.",
-"4 Italienische Kräuter-Cracker|3 EL Mandel-Feta|Tomatenscheiben|Gurke|Oliven",
-"Mandel-Feta und Gemüse separat einpacken.|In der Pause Cracker bestreichen und belegen — so bleiben sie knusprig.",
-"",{j:"k",h:1,d:"3 Tage"});
+{gm:"1 TL Zimt",j:"o",h:1,d:"2 Wochen"});
+r("job","Knäckebrot-Sandwich mit Mandel-Frischkäse","Mediterran und knusprig.",
+"4 Italienische Kräuter-Cracker|3 EL Mandel-Frischkäse|Tomatenscheiben|Gurke|frisches Basilikum",
+"Frischkäse und Gemüse separat einpacken.|In der Pause Cracker bestreichen und belegen — so bleiben sie knusprig.",
+{gm:"schwarze Oliven|eine Prise Salz und Oregano",j:"k",h:1,d:"3 Tage"});
 
-/* ===== Aus dem Rohkost-Rezeptbuch ===== */
-/* Tacos & Wraps */
+/* ===== Tacos & Wraps ===== */
 r("wrap","Knusprige Taco-Shells","Außen knusprig, flexibel genug zum Befüllen.",
-"2 Tassen goldener Leinsamen, gemahlen|1 Tasse Maisgries, über Nacht eingeweicht|1 Tasse Wasser|1 TL Kreuzkümmel|1 TL Paprikapulver|½ TL Meersalz|1 Knoblauchzehe, gepresst",
-"Leinsamen mit Maisgries vermischen.|Gewürze und Wasser dazugeben, 10 Minuten quellen lassen.|2 mm dünn in 15-cm-Kreisen auf Dörrfolie streichen.|Bei 42 °C 4–5 Stunden dörren, wenden, weitere 2–3 Stunden.|Über ein Gitter oder eine umgedrehte Muffinform legen und 2 Stunden weiterdörren.",
-"Nicht ganz austrocknen — die Shells sollen sich noch leicht biegen lassen.");
+"2 Tassen goldener Leinsamen, gemahlen|1 Tasse Maisgries, über Nacht eingeweicht|1 Tasse Wasser|1 EL Schnittlauch, fein geschnitten",
+"Leinsamen mit Maisgries vermischen.|Wasser und Schnittlauch dazugeben, 10 Minuten quellen lassen.|2 mm dünn in 15-cm-Kreisen auf Dörrfolie streichen.|Bei 42 °C 4–5 Stunden dörren, wenden, weitere 2–3 Stunden.|Über ein Gitter oder eine umgedrehte Muffinform legen und 2 Stunden weiterdörren.",
+{gm:"1 TL Kreuzkümmel|1 TL Paprikapulver|½ TL Salz|1 Knoblauchzehe",tip:"Nicht ganz austrocknen — die Shells sollen sich noch leicht biegen lassen."});
 r("wrap","Walnuss-Pilz-Hackfleisch","Die herzhafte Füllung für Tacos, Pizza und Wraps.",
-"2 Tassen Walnüsse, aktiviert|1 Tasse Champignons, fein gewürfelt|2 EL Tamari oder Kokosaminos|1 EL Olivenöl|1 TL Kreuzkümmel|1 TL geräuchertes Paprikapulver|½ TL Chiliflocken|1 Knoblauchzehe|Salz",
-"Walnüsse grob im Food Processor hacken.|Champignons fein würfeln.|Alles gut verkneten.|Mindestens 30 Minuten marinieren, gern über Nacht.",
-"Hält 5 Tage im Kühlschrank.",{j:"k",d:"5 Tage"});
-r("wrap","Sonnenblumen-Taco-Meat","Günstiger als die Walnuss-Variante und genauso köstlich.",
-"2 Tassen Sonnenblumenkerne, aktiviert|½ Tasse getrocknete Tomaten, eingeweicht|2 EL Tamari|1 TL Kreuzkümmel|1 TL Koriander, gemahlen|1 TL Paprikapulver|½ TL Cayennepfeffer|1 kleine Zwiebel",
-"Kerne und Tomaten grob hacken.|Zwiebel fein würfeln und unterheben.|Würzen und 30 Minuten ziehen lassen.","",{j:"k",d:"4 Tage"});
-r("wrap","Collard-Green-Wraps","Große Blätter als knackige Hülle.",
+"2 Tassen Walnüsse, aktiviert|1 Tasse Champignons, fein gewürfelt|2 EL getrocknete Tomaten (ungesalzen), eingeweicht|1 EL Zitronensaft|Petersilie oder Schnittlauch",
+"Walnüsse grob im Food Processor hacken.|Tomaten sehr fein hacken, Champignons fein würfeln.|Alles gut verkneten.|Mindestens 30 Minuten ziehen lassen, gern über Nacht.",
+{gm:"2 EL Tamari|1 TL Kreuzkümmel|1 TL geräuchertes Paprikapulver|½ TL Chiliflocken|1 Knoblauchzehe",g:1,tip:"Hält 5 Tage im Kühlschrank.",j:"k",d:"5 Tage"});
+r("wrap","Sonnenblumen-Taco-Füllung","Günstiger als die Walnuss-Variante und genauso köstlich.",
+"2 Tassen Sonnenblumenkerne, aktiviert|½ Tasse getrocknete Tomaten (ungesalzen), eingeweicht|1 kleine Zwiebel|frischer Koriander oder Petersilie",
+"Kerne und Tomaten grob hacken.|Zwiebel fein würfeln und unterheben.|Kräuter dazugeben und 30 Minuten ziehen lassen.",
+{gm:"2 EL Tamari|1 TL Kreuzkümmel|1 TL gemahlener Koriander|1 TL Paprikapulver|½ TL Cayennepfeffer",g:1,j:"k",d:"4 Tage"});
+r("wrap","Blätter-Wraps","Große Kohl- oder Mangoldblätter als knackige Hülle.",
 "Große Kohl- oder Mangoldblätter|Walnuss-Pilz-Hackfleisch|Guacamole|Salsa|geraspelter Rotkohl|Sprossen",
 "Den dicken Stiel flach schneiden.|Blatt ausbreiten und in der Mitte belegen.|Seiten einschlagen und wie eine Frühlingsrolle aufrollen.",
-"Für unterwegs in Butterbrotpapier wickeln.",{j:"k",h:1,d:"1 Tag"});
+{tip:"Für unterwegs in Butterbrotpapier wickeln.",j:"k",h:1,d:"1 Tag"});
 r("wrap","Leinsamen-Tortillas","Die flexible Basis für jeden Wrap.",
-"2 Tassen goldene Leinsamen, gemahlen|1 Tasse Wasser|½ TL Salz|½ TL Knoblauchpulver|optional: frische Kräuter",
+"2 Tassen goldene Leinsamen, gemahlen|1 Tasse Wasser|frische Kräuter, fein gehackt",
 "Alles vermischen und 15 Minuten quellen lassen.|In 20-cm-Kreisen dünn ausstreichen.|Bei 42 °C 4 Stunden dörren, wenden, weitere 2 Stunden.",
-"Gerollt lassen sie sich gut aufbewahren.",{j:"o",d:"1 Woche"});
-r("wrap","Pikante Paprika-Füllung","Bunt, frisch und leicht scharf.",
-"2 rote Paprika|1 gelbe Paprika|½ Tasse Mais vom Kolben|1 Avocado|Saft von 1 Limette|1 TL Kreuzkümmel|Koriander|Salz und Chili",
-"Paprika fein würfeln und mit Mais mischen.|Limette und Gewürze unterheben.|Avocado vorsichtig unterziehen.","");
+{gm:"½ TL Salz|½ TL Knoblauchpulver",tip:"Gerollt lassen sie sich gut aufbewahren.",j:"o",d:"1 Woche"});
+r("wrap","Paprika-Mais-Füllung","Bunt und frisch.",
+"2 rote Paprika|1 gelbe Paprika|½ Tasse Mais vom Kolben|1 Avocado|Saft von 1 Limette|Koriander oder Schnittlauch",
+"Paprika fein würfeln und mit Mais mischen.|Limette und Kräuter unterheben.|Avocado vorsichtig unterziehen.",
+{gm:"1 TL Kreuzkümmel|Chili|eine Prise Salz"});
 r("wrap","Zucchini-Wraps","Hauchdünne Zucchinibahnen als frischer Wrap.",
-"2 große Zucchini|1 TL Olivenöl|Salz",
-"Zucchini längs dünn hobeln.|Leicht salzen, 15 Minuten ziehen lassen und abtupfen.|Mit Öl beträufeln und befüllen.","Frisch verwenden, nicht dörren.");
-r("wrap","Kokos-Curry-Wrap-Füllung","Exotisch-cremig mit frischem Ingwer.",
-"1 Tasse junges Kokosfleisch|1 Karotte, geraspelt|1 Zucchini in Julienne|½ Tasse Rotkohl|2 EL Mandelmus|1 EL Limettensaft|1 TL Currypulver|1 TL Ingwer|Tamari",
-"Kokosfleisch in Streifen schneiden und mit Gemüse mischen.|Mandelmus, Limette, Curry, Ingwer und Tamari verrühren.|Sauce untermischen.","",{j:"k",d:"2 Tage"});
-r("wrap","Mango-Avocado-Taco-Füllung","Süß-scharf — ein echtes Highlight.",
-"1 reife Mango|1 Avocado|½ rote Zwiebel|1 Jalapeño|Saft von 1 Limette|Koriander|Salz",
-"Mango und Avocado würfeln.|Mit Zwiebel und Jalapeño mischen.|Limette und Koriander unterheben und salzen.","");
+"2 große Zucchini|Saft von ½ Zitrone",
+"Zucchini längs dünn hobeln.|Mit Zitronensaft beträufeln und 15 Minuten ziehen lassen, dann werden sie geschmeidig.|Abtupfen und befüllen.",
+{gm:"eine Prise Salz zum Weichmachen",tip:"Frisch verwenden, nicht dörren."});
+r("wrap","Kokos-Curry-Füllung","Exotisch-cremig.",
+"1 Tasse junges Kokosfleisch|1 Karotte, geraspelt|1 Zucchini in feinen Streifen|½ Tasse Rotkohl|2 EL Mandelmus|1 EL Limettensaft",
+"Kokosfleisch in Streifen schneiden und mit Gemüse mischen.|Mandelmus mit Limettensaft und etwas Wasser verrühren.|Sauce untermischen.",
+{gm:"1 TL Currypulver|1 TL frischer Ingwer|1 EL Tamari",g:1,j:"k",d:"2 Tage"});
+r("wrap","Mango-Avocado-Taco-Füllung","Süß und frisch — ein echtes Highlight.",
+"1 reife Mango|1 Avocado|½ rote Zwiebel|Saft von 1 Limette|Koriander",
+"Mango und Avocado würfeln.|Mit fein gewürfelter Zwiebel mischen.|Limette und Koriander unterheben.",
+{gm:"1 Jalapeño|eine Prise Salz"});
 
-/* Dips */
+/* ===== Dips & Aufstriche ===== */
 r("dip","Guacamole","Der Klassiker, cremig und frisch.",
-"3 reife Avocados|Saft von 1 Limette|1 kleine rote Zwiebel|1 Tomate, entkernt|Koriander|½ Jalapeño|Salz und Pfeffer",
-"Avocados zerdrücken.|Sofort Limettensaft untermischen.|Restliche Zutaten unterheben und abschmecken.",
-"Folie direkt auf die Oberfläche legen — so hält sie einen Tag.",{j:"k",d:"1 Tag"});
-r("dip","Cashew-Sour-Cream","Säuerlich-cremig, passt überall dazu.",
-"1 Tasse Cashews, 4 Std. eingeweicht|½ Tasse Wasser|2 EL Zitronensaft|1 EL Apfelessig|½ TL Salz",
-"Cashews abspülen.|Alles im Hochleistungsmixer cremig pürieren.",
-"Hält 5–7 Tage und wird mit der Zeit noch aromatischer.",{j:"k",d:"5–7 Tage"});
-r("dip","Rohkost-Salsa","Sonnenreife Tomaten mit Feuer.",
-"4 reife Tomaten|1 rote Zwiebel|1 Jalapeño|Saft von 1 Limette|Koriander|1 Knoblauchzehe|Salz",
-"Alles fein würfeln und vermischen.|30 Minuten kühl ziehen lassen und abschmecken.","",{j:"k",d:"2 Tage"});
+"3 reife Avocados|Saft von 1 Limette|1 kleine rote Zwiebel|1 Tomate, entkernt|Koriander oder Schnittlauch",
+"Avocados zerdrücken.|Sofort Limettensaft untermischen.|Restliche Zutaten fein würfeln und unterheben.",
+{gm:"½ Jalapeño|1 Knoblauchzehe|Salz und Pfeffer",tip:"Folie direkt auf die Oberfläche legen — so hält sie einen Tag.",j:"k",d:"1 Tag"});
+r("dip","Hanf-Sour-Cream","Säuerlich-cremig, passt überall dazu.",
+"½ Tasse "+HC+"|Saft von ½ Zitrone|2 EL Wasser|Schnittlauch, fein geschnitten",
+"Hanfherzencreme mit Zitrone und Wasser glatt rühren.|Schnittlauch unterheben.",
+{gm:"eine Prise Salz",tip:"Wird mit jedem Tag etwas aromatischer.",j:"k",d:"3 Tage"});
+r("dip","Rohkost-Salsa","Sonnenreife Tomaten, frisch und fruchtig.",
+"4 reife Tomaten|1 rote Zwiebel|Saft von 1 Limette|Koriander oder Petersilie",
+"Alles fein würfeln und vermischen.|30 Minuten kühl ziehen lassen.",
+{gm:"1 Jalapeño|1 Knoblauchzehe|Salz",j:"k",d:"2 Tage"});
 r("dip","Zucchini-Hummus","Zucchini statt Kichererbsen — genauso cremig, aber roh.",
-"1 Tasse Zucchini, geschält|½ Tasse Tahini|2 Knoblauchzehen|Saft von 1–2 Zitronen|2 EL Olivenöl|1 TL Kreuzkümmel|Salz|Paprikapulver",
-"Alles cremig pürieren.|Mit Salz und Zitrone abschmecken.|Mit Paprika, Öl und Petersilie garnieren.","",{j:"k",d:"4 Tage"});
-r("dip","Babaganoush","Nicht klassisch geröstet, aber überraschend köstlich.",
-"1 große Aubergine|2 EL Tahini|1 Knoblauchzehe|Saft von 1 Zitrone|1 EL Olivenöl|Salz|Petersilie",
-"Aubergine würfeln und 30 Minuten mit Salz marinieren.|Mit den übrigen Zutaten pürieren.","",{j:"k",d:"3 Tage"});
+"1 Tasse Zucchini, geschält|½ Tasse Tahini|Saft von 1–2 Zitronen|1 Handvoll Bärlauch oder Schnittlauch|Petersilie zum Garnieren",
+"Alles cremig pürieren.|Mit Zitrone abschmecken.|Mit Petersilie garnieren.",
+{gm:"2 Knoblauchzehen statt Bärlauch|1 TL Kreuzkümmel|Salz|Paprikapulver zum Bestäuben",j:"k",d:"4 Tage"});
+r("dip","Paprika-Walnuss-Creme","Tiefrot, nussig und leicht süß.",
+"2 rote Paprika|1 Tasse Walnüsse|3 getrocknete Tomaten (ungesalzen), eingeweicht|Saft von ½ Zitrone|1 Dattel",
+"Alles im Mixer zu einer groben Creme pürieren.|30 Minuten ziehen lassen.",
+{gm:"1 TL Kreuzkümmel|eine Prise Chili|Salz",j:"k",d:"4 Tage"});
 r("dip","Sonnenblumenkern-Aufstrich","Der unkomplizierte Alltagsaufstrich.",
-"1 Tasse Sonnenblumenkerne, eingeweicht|2 EL Zitronensaft|1 Knoblauchzehe|1 TL Tamari|2 EL Wasser|frische Kräuter",
-"Alles cremig mixen.|Mit Salz abschmecken.","",{j:"k",d:"5 Tage"});
+"1 Tasse Sonnenblumenkerne, eingeweicht|2 EL Zitronensaft|2–3 EL Wasser|frische Kräuter, am liebsten Schnittlauch",
+"Kerne mit Zitrone und Wasser cremig mixen.|Kräuter unterheben.",
+{gm:"1 TL Tamari|1 Knoblauchzehe|eine Prise Salz",j:"k",d:"5 Tage"});
 
-/* Brote & Cracker */
+/* ===== Brote & Cracker ===== */
 r("brot","Buchweizen-Basis-Cracker","Das Grundrezept für unzählige Varianten.",
-"2 Tassen gekeimter Buchweizen|½ Tasse goldene Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Karotte, gerieben|1 TL Salz|1 TL Knoblauchpulver|½ Tasse Wasser",
-"Buchweizen grob zerkleinern.|Alles vermischen und 15 Minuten quellen lassen.|3 mm dünn ausstreichen.|Bei 42 °C 4 Stunden dörren, wenden, in Stücke brechen und 6–8 Stunden weiterdörren.","",{j:"o",h:1,d:"4 Wochen"});
+"2 Tassen gekeimter Buchweizen|½ Tasse goldene Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Karotte, gerieben|2 EL Schnittlauch|½ Tasse Wasser",
+"Buchweizen grob zerkleinern.|Alles vermischen und 15 Minuten quellen lassen.|3 mm dünn ausstreichen.|Bei 42 °C 4 Stunden dörren, wenden, in Stücke brechen und 6–8 Stunden weiterdörren.",
+{gm:"1 TL Salz|1 TL Knoblauchpulver",j:"o",h:1,d:"4 Wochen"});
 r("brot","Italienische Kräuter-Cracker","Mediterran duftend.",
-"2 Tassen gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|2 EL italienische Kräuter|2 EL Olivenöl|1 TL Salz|1 TL Knoblauchpulver|½ TL Pfeffer|½ Tasse Wasser",
-"Buchweizen grob zerkleinern und alles vermischen.|Dünn ausstreichen.|10–12 Stunden dörren, nach 4 Stunden wenden.","",{j:"o",h:1,d:"4 Wochen"});
+"2 Tassen gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|1 Handvoll frisches Basilikum|1 EL frischer Rosmarin und Thymian|2 getrocknete Tomaten (ungesalzen)|½ Tasse Wasser",
+"Buchweizen grob zerkleinern, Kräuter und Tomaten fein hacken, alles vermischen.|Dünn ausstreichen.|10–12 Stunden dörren, nach 4 Stunden wenden.",
+{gm:"2 EL getrocknete italienische Kräuter|1 TL Salz|1 TL Knoblauchpulver|Pfeffer",j:"o",h:1,d:"4 Wochen"});
 r("brot","Zwiebel-Cracker","Schmecken wie Röstzwiebeln — nur roh.",
-"2 große Zwiebeln|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne, gemahlen|2 EL Tamari|1 TL Salz",
-"Zwiebeln pürieren.|Mit den übrigen Zutaten vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"2 große Zwiebeln|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne, gemahlen",
+"Zwiebeln pürieren.|Mit den übrigen Zutaten vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"2 EL Tamari|eine Prise Salz",j:"o",h:1,d:"4 Wochen"});
 r("brot","Tomaten-Basilikum-Cracker","Sommer in Crackerform.",
-"1 Tasse frische Tomaten|1 Tasse getrocknete Tomaten, eingeweicht|1 Tasse Leinsamen, gemahlen|½ Tasse Basilikum|1 Knoblauchzehe|1 TL Salz|1 TL Oregano",
-"Tomaten mit Basilikum und Knoblauch pürieren.|Leinsamen und Gewürze untermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
-r("brot","Karotten-Kurkuma-Cracker","Goldgelb und ein echter Hingucker.",
-"2 große Karotten, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 TL Kurkuma|½ TL Ingwer|1 TL Salz|½ Tasse Wasser",
-"Alles vermischen und 15 Minuten quellen lassen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Tasse frische Tomaten|1 Tasse getrocknete Tomaten (ungesalzen), eingeweicht|1 Tasse Leinsamen, gemahlen|½ Tasse Basilikum",
+"Tomaten mit Basilikum pürieren.|Leinsamen untermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 Knoblauchzehe|1 TL Oregano|1 TL Salz",j:"o",h:1,d:"4 Wochen"});
+r("brot","Karotten-Cracker","Leuchtend orange und fein süßlich.",
+"2 große Karotten, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|½ Tasse Wasser",
+"Alles vermischen und 15 Minuten quellen lassen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 TL Kurkuma für goldene Farbe|½ TL Ingwer|1 TL Salz",j:"o",h:1,d:"4 Wochen"});
 r("brot","Mohn-Cracker","Perfekt zu Dips.",
-"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|3 EL Blaumohn|1 TL Salz|½ TL Zwiebelpulver|½ Tasse Wasser",
-"Buchweizen grob zerkleinern und alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|3 EL Blaumohn|½ Tasse Wasser",
+"Buchweizen grob zerkleinern und alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 TL Salz|½ TL Zwiebelpulver",j:"o",h:1,d:"4 Wochen"});
 r("brot","Rote-Bete-Cracker","In wunderschönem Pink.",
-"1 Rote Bete, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Walnüsse, gehackt|1 TL Salz|½ TL Kümmel|½ Tasse Wasser",
-"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Rote Bete, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Walnüsse, gehackt|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 TL Salz|½ TL Kümmel",j:"o",h:1,d:"4 Wochen"});
 r("brot","Rohkost-Brot mit Kräutern","Echte Brotkonsistenz: außen knusprig, innen weich.",
-"1 Tasse gekeimter Buchweizen|1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Leinsamen, gemahlen|½ Tasse Flohsamenschalen|1 Zucchini, gerieben|1 EL Olivenöl|1 TL Salz|2 EL Rosmarin und Thymian|1 Tasse Wasser",
-"Buchweizen und Kerne grob hacken.|Zucchini, Leinsamen, Flohsamen und Gewürze untermischen.|Wasser und Öl dazu, 30 Minuten quellen lassen.|2 cm dick zu einem Laib formen.|Bei 42 °C 12 Stunden dörren, wenden, weitere 10–12 Stunden.",
-"Die Grundlage für jedes Job-Sandwich.",{j:"o",h:1,d:"1 Woche"});
+"1 Tasse gekeimter Buchweizen|1 Tasse Sonnenblumenkerne, aktiviert|¾ Tasse Leinsamen, gemahlen|¼ Tasse Chiasamen|1 Zucchini, gerieben|2 EL fermentierte Hanfherzencreme|2 EL frischer Rosmarin und Thymian|1 Tasse Wasser",
+"Buchweizen und Kerne grob hacken.|Zucchini, Leinsamen, Chia, Hanfherzencreme und Kräuter untermischen.|Wasser dazu und 30 Minuten quellen lassen.|2 cm dick zu einem Laib formen und in Scheiben vorschneiden.|Bei 42 °C 12 Stunden dörren, wenden, weitere 10–12 Stunden.",
+{gm:"1 TL Salz",tip:"Die Grundlage für jedes Job-Sandwich.",j:"o",h:1,d:"1 Woche"});
 r("brot","Mandel-Leinsamen-Cracker","Fein, zart und nussig.",
-"1 Tasse aktivierte Mandeln, gemahlen|1 Tasse goldene Leinsamen, gemahlen|½ TL Salz|½ TL Rosmarin|½ Tasse Wasser",
-"Alles vermischen und quellen lassen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Tasse aktivierte Mandeln, gemahlen|1 Tasse goldene Leinsamen, gemahlen|1 TL frischer Rosmarin|½ Tasse Wasser",
+"Alles vermischen und quellen lassen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"½ TL Salz",j:"o",h:1,d:"4 Wochen"});
 r("brot","Knusprige Grissini","Toll als Snack oder zu Suppen.",
-"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|2 EL Olivenöl|1 TL Salz|1 TL Rosmarin|½ TL Knoblauchpulver|½ Tasse Wasser",
-"Zu einem festen Teig verarbeiten.|Zu 1 cm dicken Stangen rollen.|12–14 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
-r("brot","Spinat-Cracker","Intensiv grün und voller Nährstoffe.",
-"2 Tassen Spinat|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Knoblauchzehe|1 TL Salz|Saft von ½ Zitrone",
-"Spinat mit Knoblauch und Zitrone pürieren.|Leinsamen und Kerne untermischen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
-r("brot","Sesam-Cracker","Knusprig wie asiatische Sesam-Snacks.",
-"1 Tasse Sesam, weiß und schwarz|½ Tasse Leinsamen, gemahlen|1 TL Salz|½ Tasse Wasser",
-"Sesam kurz im Mixer anbrechen.|Mit Leinsamen, Salz und Wasser mischen.|Sehr dünn ausstreichen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
-r("brot","Oliven-Rosmarin-Cracker","Mediterran und aromatisch.",
-"1 Tasse schwarze Oliven, gehackt|1 Tasse Leinsamen, gemahlen|½ Tasse Walnüsse, gemahlen|2 EL Rosmarin|1 TL Salz|½ Tasse Wasser",
-"Alles vermischen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
-r("brot","Kokos-Cracker süß-salzig","Zu süßen Aufstrichen oder pur.",
-"1 Tasse Kokosraspeln|1 Tasse Leinsamen, gemahlen|2 EL Dattelpüree|½ TL Salz|½ TL Zimt|½ Tasse Kokosmilch",
-"Alles vermischen, 15 Minuten quellen lassen.|Dünn ausstreichen und 10 Stunden dörren.","",{j:"o",h:1,d:"3 Wochen"});
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|2 EL fermentierte Hanfherzencreme|1 TL frischer Rosmarin|½ Tasse Wasser",
+"Zu einem festen Teig verarbeiten.|Zu 1 cm dicken Stangen rollen.|12–14 Stunden dörren.",
+{gm:"1 TL Salz|½ TL Knoblauchpulver",j:"o",h:1,d:"4 Wochen"});
+r("brot","Spinat-Cracker","Intensiv grün und voller Kraft.",
+"2 Tassen Spinat|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Handvoll Bärlauch oder Schnittlauch|Saft von ½ Zitrone",
+"Spinat mit Bärlauch und Zitrone pürieren.|Leinsamen und Kerne untermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 Knoblauchzehe|1 TL Salz",j:"o",h:1,d:"4 Wochen"});
+r("brot","Sesam-Cracker","Knusprig und nussig.",
+"1 Tasse Sesam, weiß und schwarz|½ Tasse Leinsamen, gemahlen|½ Tasse Wasser",
+"Sesam kurz im Mixer anbrechen.|Mit Leinsamen und Wasser mischen.|Sehr dünn ausstreichen und 8–10 Stunden dörren.",
+{gm:"1 TL Salz",j:"o",h:1,d:"4 Wochen"});
+r("brot","Walnuss-Rosmarin-Cracker","Mediterran und aromatisch.",
+"1 Tasse Walnüsse, gemahlen|1 Tasse Leinsamen, gemahlen|2 EL frischer Rosmarin|2 getrocknete Tomaten (ungesalzen), gehackt|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"½ Tasse schwarze Oliven, gehackt|eine Prise Salz",j:"o",h:1,d:"4 Wochen"});
+r("brot","Kokos-Cracker","Zu süßen Aufstrichen oder pur.",
+"1 Tasse Kokosraspeln|1 Tasse Leinsamen, gemahlen|2 EL Dattelpüree|½ Tasse Kokosmilch aus jungem Kokosfleisch",
+"Alles vermischen, 15 Minuten quellen lassen.|Dünn ausstreichen und 10 Stunden dörren.",
+{gm:"½ TL Zimt|eine Prise Salz",j:"o",h:1,d:"3 Wochen"});
 r("brot","Pizza-Cracker","Schmecken wie Pizza-Chips.",
-"1 Tasse Leinsamen, gemahlen|½ Tasse getrocknete Tomaten, püriert|1 TL Oregano|1 TL Basilikum|½ TL Knoblauchpulver|1 TL Salz|½ Tasse Wasser",
-"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Tasse Leinsamen, gemahlen|½ Tasse getrocknete Tomaten (ungesalzen), püriert|1 Handvoll frisches Basilikum|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.",
+{gm:"1 TL Oregano|½ TL Knoblauchpulver|1 TL Salz",g:1,j:"o",h:1,d:"4 Wochen"});
 
-/* Pizza, Quiche & Hauptgerichte */
+/* ===== Pizza, Quiche & Hauptgerichte ===== */
 r("haupt","Rohkost-Quiche mit Spinat und Champignons","Nussiger Boden, goldene Füllung — ein Festessen, das auch am nächsten Tag in der Jausenbox glänzt.",
-"Boden: 1 Tasse Walnüsse|½ Tasse Sonnenblumenkerne, aktiviert|½ Tasse goldene Leinsamen, gemahlen|1 EL Olivenöl|½ TL Salz|½ TL Thymian|2–3 EL Wasser|Füllung: 1½ Tassen Cashews, 4 Std. eingeweicht|1 kleine Zucchini|½ Tasse Wasser|3 EL Hefeflocken|1 EL Zitronensaft|½ TL Kurkuma|½ TL Kala Namak (Schwarzsalz)|1 Prise Muskat|1 Knoblauchzehe|Einlage: 1 Tasse Champignons, in Scheiben, mit 1 EL Tamari mariniert|2 Handvoll Babyspinat, fein geschnitten|3 Frühlingszwiebeln|Kirschtomaten zum Belegen",
-"Für den Boden Walnüsse und Kerne im Food Processor krümelig hacken, Leinsamen, Öl, Gewürze und Wasser dazugeben, bis die Masse zusammenhält.|In eine Tarteform (ca. 22 cm) drücken und einen Rand formen. Bei 42 °C 4 Stunden vordörren.|Für die Füllung alle Zutaten im Hochleistungsmixer seidig pürieren. Kala Namak verleiht den typischen, eiähnlichen Quiche-Geschmack.|Champignons abtropfen lassen und mit Spinat und Frühlingszwiebeln unter die Creme heben.|Füllung auf den Boden streichen und halbierte Kirschtomaten hineindrücken.|Bei 42 °C weitere 6–8 Stunden dörren, bis die Oberfläche fest und leicht gebräunt ist.|Vor dem Anschneiden 1 Stunde kühlen.",
-"Lauwarm direkt aus dem Dörrgerät ist sie ein Gedicht. Im Kühlschrank hält sie 4 Tage — ein Stück in der Jausenbox macht jede Mittagspause festlich.",{j:"k",d:"4 Tage"});
+"Boden: 1 Tasse Walnüsse|½ Tasse Sonnenblumenkerne, aktiviert|½ Tasse goldene Leinsamen, gemahlen|1 TL frischer Thymian|2–3 EL Wasser|Füllung: 1½ Tassen "+HC+"|1 kleine Zucchini|Saft von ½ Zitrone|3 EL Schnittlauch|Einlage: 1 Tasse Champignons in Scheiben, 30 Minuten in Zitronensaft mariniert|2 Handvoll Babyspinat, fein geschnitten|3 Frühlingszwiebeln|Kirschtomaten zum Belegen",
+"Für den Boden Walnüsse und Kerne im Food Processor krümelig hacken, Leinsamen, Thymian und Wasser dazugeben, bis die Masse zusammenhält.|In eine Tarteform (ca. 22 cm) drücken und einen Rand formen. Bei 42 °C 4 Stunden vordörren.|Für die Füllung Hanfherzencreme, Zucchini und Zitrone im Mixer seidig pürieren und den Schnittlauch unterheben.|Champignons abtropfen lassen und mit Spinat und Frühlingszwiebeln unter die Creme heben.|Füllung auf den Boden streichen und halbierte Kirschtomaten hineindrücken.|Bei 42 °C weitere 6–8 Stunden dörren, bis die Oberfläche fest und leicht gebräunt ist.|Vor dem Anschneiden 1 Stunde kühlen.",
+{gm:"½ TL Kala Namak (Schwarzsalz) für den typischen Quiche-Geschmack|½ TL Kurkuma für die goldene Farbe|eine Prise Muskat|1 Knoblauchzehe|1 EL Tamari für die Champignons",tip:"Lauwarm direkt aus dem Dörrgerät ist sie ein Gedicht. Im Kühlschrank hält sie 4 Tage — ein Stück in der Jausenbox macht jede Mittagspause festlich.",j:"k",d:"4 Tage"});
 r("haupt","Rohkost-Pizzaboden","Lässt sich gut vorbereiten und einfrieren.",
-"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Zucchini, gerieben und ausgedrückt|1 TL Salz|1 TL Oregano|1 TL Basilikum|½ Tasse Wasser",
-"Buchweizen und Kerne zerkleinern.|Zucchini, Gewürze, Leinsamen und Wasser untermischen.|25 cm rund auf Dörrfolie ausbreiten.|4 Stunden dörren, wenden, weitere 4–6 Stunden.","",{j:"o",d:"1 Woche"});
-r("haupt","Marinara-Sauce","Frisch am besten, hält aber 5 Tage.",
-"2 Tassen frische Tomaten|½ Tasse getrocknete Tomaten, eingeweicht|1 Knoblauchzehe|2 EL Olivenöl|1 TL Oregano|1 TL Basilikum|Salz",
-"Alles im Mixer pürieren — etwas Textur darf bleiben.|Mit Salz abschmecken.","",{j:"k",d:"5 Tage"});
-r("haupt","Cashew-Mozzarella","Schnittfest und herrlich cremig.",
-"1 Tasse Cashews, eingeweicht|¼ Tasse Wasser|2 EL Zitronensaft|1 Knoblauchzehe|½ TL Salz|2 EL Flohsamenschalen",
-"Alles außer Flohsamen cremig pürieren.|Flohsamen unterrühren.|Mindestens 1 Stunde kühlen, dann schneiden oder krümeln.","",{j:"k",d:"5 Tage"});
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Zucchini, gerieben und ausgedrückt|1 Handvoll frisches Basilikum|½ Tasse Wasser",
+"Buchweizen und Kerne zerkleinern.|Zucchini, Basilikum, Leinsamen und Wasser untermischen.|25 cm rund auf Dörrfolie ausbreiten.|4 Stunden dörren, wenden, weitere 4–6 Stunden.",
+{gm:"1 TL Salz|1 TL Oregano",j:"o",d:"1 Woche"});
+r("haupt","Marinara-Sauce","Frisch am besten, hält aber 4 Tage.",
+"2 Tassen frische Tomaten|½ Tasse getrocknete Tomaten (ungesalzen), eingeweicht|1 Handvoll frisches Basilikum|1 Dattel",
+"Alles im Mixer pürieren — etwas Textur darf bleiben.",
+{gm:"1 Knoblauchzehe|1 TL Oregano|Salz",j:"k",d:"4 Tage"});
+r("haupt","Macadamia-Frischkäse","Mild, buttrig und streichzart — der Pizzakäse der lebendigen Küche.",
+"1 Tasse Macadamianüsse, 4 Stunden eingeweicht|3–4 EL Wasser|1 EL Zitronensaft",
+"Macadamia mit Wasser und Zitrone sehr cremig pürieren.|In ein sauberes Glas füllen und wie die Hanfherzencreme etwa einen Tag bei Raumtemperatur stehen lassen.|Kühl stellen, dann wird er fester.",
+{gm:"eine Prise Salz|1 Knoblauchzehe",j:"k",d:"4 Tage"});
 r("haupt","Klassische Rohkost-Pizza","Die Königin der Rohkostküche.",
-"1 Pizzaboden|½ Tasse Marinara|Cashew-Mozzarella|Tomaten|Basilikum|Oliven|Kapern",
-"Boden mit Marinara bestreichen.|Mit Mozzarella, Tomaten, Oliven und Kapern belegen.|Mit Basilikum vollenden.","");
+"1 Pizzaboden|½ Tasse Marinara|Macadamia-Frischkäse|Tomaten|Champignons|Basilikum|Rucola",
+"Boden mit Marinara bestreichen.|Mit Frischkäse, Tomaten und Champignons belegen.|Mit Basilikum und Rucola vollenden.",
+{gm:"schwarze Oliven|getrockneter Oregano"});
 r("haupt","Zucchini-Nudeln mit Avocado-Pesto","Cremig, grün und blitzschnell.",
-"3 Zucchini|2 Avocados|1 Tasse Basilikum|½ Tasse Pinienkerne|2 Knoblauchzehen|Saft von 1 Zitrone|3 EL Olivenöl|Salz|Kirschtomaten",
-"Zucchini spiralisieren.|Pesto-Zutaten pürieren, Öl langsam einlaufen lassen.|Mit den Nudeln vermengen und garnieren.","",{j:"k",d:"1 Tag"});
+"3 Zucchini|2 Avocados|1 Tasse Basilikum|½ Tasse Pinienkerne|1 Handvoll Bärlauch oder Schnittlauch|Saft von 1 Zitrone|Kirschtomaten",
+"Zucchini spiralisieren.|Avocado, Basilikum, Pinienkerne, Bärlauch und Zitrone cremig pürieren.|Mit den Nudeln vermengen und mit Tomaten garnieren.",
+{gm:"2 Knoblauchzehen|Salz|Pfeffer",j:"k",d:"1 Tag"});
 r("haupt","Karotten-Nudeln mit Tahini-Sauce","Süß, nussig und sonnig orange.",
-"4 große Karotten|3 EL Tahini|2 EL Zitronensaft|1 Knoblauchzehe|2 EL Wasser|1 TL Tamari|½ TL Ingwer|Sesam",
-"Karotten zu Nudeln verarbeiten.|Sauce cremig mixen.|Vermengen und mit Sesam bestreuen.","",{j:"k",d:"2 Tage"});
+"4 große Karotten|3 EL Tahini|2 EL Zitronensaft|2–3 EL Wasser|1 Dattel|Sesam",
+"Karotten zu Nudeln verarbeiten.|Tahini, Zitrone, Wasser und Dattel cremig mixen.|Vermengen und mit Sesam bestreuen.",
+{gm:"1 Knoblauchzehe|1 TL Tamari|½ TL frischer Ingwer",j:"k",d:"2 Tage"});
 r("haupt","Gefüllte Paprika","Bunt und herzhaft.",
-"4 große Paprika|1 Tasse Walnuss-Pilz-Hackfleisch|1 Tomate|½ Avocado|Koriander|Cashew-Sour-Cream",
-"Paprika halbieren und entkernen.|Hackfleisch mit Tomate und Koriander mischen und einfüllen.|Mit Avocado und Sour Cream toppen.","",{j:"k",h:1,d:"2 Tage"});
+"4 große Paprika|1 Tasse Walnuss-Pilz-Hackfleisch|1 Tomate|½ Avocado|Koriander oder Petersilie|Hanf-Sour-Cream",
+"Paprika halbieren und entkernen.|Hackfleisch mit gewürfelter Tomate und Kräutern mischen und einfüllen.|Mit Avocado und Sour Cream toppen.",
+{j:"k",h:1,d:"2 Tage"});
 r("haupt","Rohkost-Lasagne","Schicht für Schicht ein Genuss — über Nacht durchgezogen noch besser.",
-"2 große Zucchini|Marinara-Sauce|Ricotta: 1 Tasse Cashews, eingeweicht, 2 EL Zitronensaft, 1 Knoblauchzehe, ½ TL Salz, 2 EL Hefeflocken|2 Tassen Spinat mit 1 EL Olivenöl und Salz",
-"Zucchini längs dünn hobeln, salzen, 15 Minuten ziehen lassen und abtupfen.|Ricotta cremig mixen.|Spinat marinieren.|Schichten: Zucchini, Marinara, Ricotta, Spinat — wiederholen.|Mindestens 1 Stunde ziehen lassen.",
-"In Portionen geschnitten passt sie perfekt in die Tupperbox.",{j:"k",d:"3 Tage"});
+"2 große Zucchini|Marinara-Sauce|Ricotta: 1 Tasse "+HC+", 2 EL Zitronensaft, 2 EL Schnittlauch|2 Tassen Spinat, mit einem Spritzer Zitrone mariniert|frisches Basilikum",
+"Zucchini längs dünn hobeln.|Ricotta-Zutaten verrühren.|Schichten: Zucchini, Marinara, Ricotta, Spinat — wiederholen.|Mit Basilikum belegen und mindestens 1 Stunde ziehen lassen.",
+{gm:"Salz zum Weichmachen der Zucchini|1 Knoblauchzehe in den Ricotta|Oregano in die Marinara",tip:"In Portionen geschnitten passt sie perfekt in die Tupperbox.",j:"k",d:"3 Tage"});
 r("haupt","Blumenkohl-Reis","Universelle Basis als Reis-Ersatz.",
-"1 Blumenkohl|1 EL Olivenöl|Salz|optional: Kurkuma, Kräuter",
-"Röschen im Food Processor reisartig hacken.|Mit Öl, Salz und Gewürzen mischen.","",{j:"k",d:"3 Tage"});
-r("haupt","Curry auf Blumenkohl-Reis","Cremig und wärmend gewürzt.",
-"Blumenkohl-Reis|1 Paprika|1 Karotte|1 Zucchini|½ Tasse Erbsen|Sauce: ½ Tasse Cashews, 1 Tomate, 1 EL Currypulver, 1 TL Kurkuma, 1 Knoblauchzehe, ½ Tasse Wasser, Salz",
-"Sauce cremig pürieren.|Gemüse klein schneiden und mit Sauce mischen.|Auf Blumenkohl-Reis servieren.","",{j:"k",d:"2 Tage"});
-r("haupt","Pilz-Stroganoff","Samtig und würzig.",
-"2 Tassen Champignons|Sauce: 1 Tasse Cashews, ½ Tasse Wasser, 2 EL Tamari, 1 EL Zitronensaft, 1 TL Paprikapulver, 1 Knoblauchzehe|Zucchini-Nudeln",
-"Champignons mit Tamari 30 Minuten marinieren.|Sauce cremig mixen und vermengen.|Auf Zucchini-Nudeln servieren.","");
-r("haupt","Sushi-Rollen","Mit Ingwer und Wasabi ein Fest.",
-"Nori-Blätter|Blumenkohl-Reis mit 1 EL Apfelessig|Avocado, Gurke, Karotte, Paprika in Streifen|Tamari zum Dippen",
-"Nori auf die Matte legen und dünn mit Reis belegen.|Gemüse in die Mitte legen.|Fest aufrollen und schneiden.","",{j:"k",h:1,d:"1 Tag"});
+"1 Blumenkohl|1 Spritzer Zitrone|frische Kräuter",
+"Röschen im Food Processor reisartig hacken.|Mit Zitrone und Kräutern mischen.",
+{gm:"eine Prise Salz|½ TL Kurkuma für goldenen Reis",j:"k",d:"3 Tage"});
+r("haupt","Gemüse-Curry auf Blumenkohl-Reis","Cremig und wärmend.",
+"Blumenkohl-Reis|1 Paprika|1 Karotte|1 Zucchini|½ Tasse frische Erbsen|Sauce: ½ Tasse "+HC+", 1 Tomate, ½ Tasse junges Kokosfleisch, ½ Tasse Wasser|Koriander",
+"Sauce cremig pürieren.|Gemüse klein schneiden und mit der Sauce mischen.|Auf Blumenkohl-Reis servieren und mit Koriander bestreuen.",
+{gm:"1 EL Currypulver|1 TL Kurkuma|1 TL frischer Ingwer|1 Knoblauchzehe|Salz",g:1,j:"k",d:"2 Tage"});
+r("haupt","Pilz-Stroganoff","Samtig und herzhaft.",
+"2 Tassen Champignons, in Zitronensaft mariniert|Sauce: ½ Tasse "+HC+", ½ rote Paprika, 3 EL Wasser|Zucchini-Nudeln|Petersilie",
+"Champignons 30 Minuten marinieren.|Sauce cremig mixen und vermengen.|Auf Zucchini-Nudeln servieren.",
+{gm:"2 EL Tamari für die Pilze|1 TL Paprikapulver|1 Knoblauchzehe",g:1});
+r("haupt","Sushi-Rollen","Ein kleines Fest.",
+"Nori-Blätter|Blumenkohl-Reis mit 1 EL Zitronensaft und 1 EL "+HC+"|Avocado, Gurke, Karotte, Paprika in Streifen",
+"Nori auf die Matte legen und dünn mit Reis belegen.|Gemüse in die Mitte legen.|Fest aufrollen und schneiden.",
+{gm:"Tamari zum Dippen|frischer Ingwer|Wasabi",j:"k",h:1,d:"1 Tag"});
 r("haupt","Mediterrane Buddha-Bowl","Alles Gute in einer Schale.",
-"Blumenkohl-Reis|Falafel|Hummus|Tabbouleh|Gurke|Tomaten|Oliven|Tahini-Dressing",
-"Reis als Basis in die Schale geben.|Komponenten rundherum anrichten.|Mit Tahini beträufeln.","",{j:"k",d:"2 Tage"});
+"Blumenkohl-Reis|Rohkost-Falafel|Zucchini-Hummus|Tabbouleh|Gurke|Tomaten|Tahini mit Zitrone",
+"Reis als Basis in die Schale geben.|Komponenten rundherum anrichten.|Mit Tahini beträufeln.",
+{gm:"schwarze Oliven",j:"k",d:"2 Tage"});
 r("haupt","Rohkost-Falafel","Außen knusprig, innen saftig.",
-"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|½ Tasse Petersilie|½ Tasse Koriander|2 Knoblauchzehen|1 TL Kreuzkümmel|1 TL Koriander, gemahlen|Saft von ½ Zitrone|Salz",
-"Alles zu einer formbaren Masse verarbeiten.|Bällchen formen.|6–8 Stunden dörren.","",{j:"k",h:1,d:"5 Tage"});
+"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|½ Tasse Petersilie|½ Tasse Koriander|1 Handvoll Bärlauch oder Schnittlauch|Saft von ½ Zitrone",
+"Alles zu einer formbaren Masse verarbeiten.|Bällchen formen.|6–8 Stunden dörren.",
+{gm:"1 TL Kreuzkümmel|1 TL gemahlener Koriander|2 Knoblauchzehen|Salz",g:1,j:"k",h:1,d:"5 Tage"});
 r("haupt","Pad Thai","Nussig, frisch und exotisch.",
-"Zucchini-Nudeln von 2 Zucchini|1 Karotte|1 Paprika|½ Tasse Rotkohl|Sauce: 3 EL Mandelmus, 2 EL Tamari, 1 EL Limettensaft, 1 TL Ingwer, 1 Knoblauchzehe, 1 Dattel, 2 EL Wasser|Koriander und gehackte Mandeln",
-"Sauce cremig mixen.|Gemüse und Nudeln vermengen.|Sauce darübergeben und toppen.","",{j:"k",d:"1 Tag"});
+"Zucchini-Nudeln von 2 Zucchini|1 Karotte|1 Paprika|½ Tasse Rotkohl|Sauce: 3 EL Mandelmus, 1 EL Limettensaft, 1 Dattel, 2–3 EL Wasser|Koriander und gehackte Mandeln",
+"Sauce cremig mixen.|Gemüse und Nudeln vermengen.|Sauce darübergeben und toppen.",
+{gm:"2 EL Tamari|1 TL frischer Ingwer|1 Knoblauchzehe|Chili",g:1,j:"k",d:"1 Tag"});
 r("haupt","Rohkost-Burger-Patties","Im großen Salatblatt als Burger.",
-"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|1 Karotte, gerieben|½ Zwiebel|1 EL Tamari|1 TL Paprikapulver|½ TL Kreuzkümmel|Salz",
-"Kerne und Nüsse grob hacken.|Mit Gemüse und Gewürzen mischen und Patties formen.|4–6 Stunden pro Seite dörren.","",{j:"k",h:1,d:"4 Tage"});
+"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|1 Karotte, gerieben|½ Zwiebel|frische Petersilie",
+"Kerne und Nüsse grob hacken.|Mit Gemüse und Kräutern mischen und Patties formen.|4–6 Stunden pro Seite dörren.",
+{gm:"1 EL Tamari|1 TL Paprikapulver|½ TL Kreuzkümmel|Salz",j:"k",h:1,d:"4 Tage"});
 r("haupt","Pilz-Walnuss-Bolognese","Kräftig und aromatisch.",
-"2 Tassen Champignons|1 Tasse Walnüsse|1 Tasse getrocknete Tomaten, eingeweicht|2 Tomaten|1 Karotte|1 Stange Sellerie|2 Knoblauchzehen|2 EL Olivenöl|Oregano, Basilikum, Salz",
-"Tomaten mit Knoblauch pürieren.|Pilze und Walnüsse grob hacken.|Alles mischen, 30 Minuten marinieren.|Auf Zucchini-Nudeln servieren.","",{j:"k",d:"3 Tage"});
+"2 Tassen Champignons|1 Tasse Walnüsse|1 Tasse getrocknete Tomaten (ungesalzen), eingeweicht|2 Tomaten|1 Karotte|1 Stange Sellerie|frisches Basilikum",
+"Tomaten pürieren.|Pilze, Walnüsse, Karotte und Sellerie grob hacken.|Alles mischen und 30 Minuten ziehen lassen.|Auf Zucchini-Nudeln servieren.",
+{gm:"2 Knoblauchzehen|Oregano|Salz",j:"k",d:"3 Tage"});
 r("haupt","Frühlingsrollen im Salatblatt","Frisch, knackig, kräuterduftend.",
-"Salatblätter oder Reispapier|Karotte, Gurke, Avocado, Mango in Streifen|Minze|Koriander|Dip: Mandelmus, Tamari, Limette, Ingwer",
-"Gemüse und Kräuter auf das Blatt legen.|Seiten einschlagen und fest rollen.|Mit Dip servieren.","Für 100 % roh Salatblätter statt Reispapier verwenden.",{j:"k",h:1,d:"1 Tag"});
+"Große Salatblätter|Karotte, Gurke, Avocado, Mango in Streifen|Minze|Koriander|Dip: 2 EL Mandelmus, 1 EL Limettensaft, 2 EL Wasser",
+"Gemüse und Kräuter auf das Blatt legen.|Seiten einschlagen und fest rollen.|Mit Dip servieren.",
+{gm:"Tamari und frischer Ingwer in den Dip",j:"k",h:1,d:"1 Tag"});
 
-/* Suppen */
+/* ===== Suppen ===== */
 r("suppe","Gazpacho","Der spanische Sommerklassiker.",
-"4 reife Tomaten|1 Gurke|1 rote Paprika|1 kleine rote Zwiebel|2 Knoblauchzehen|3 EL Olivenöl|2 EL Rotweinessig|Salz und Pfeffer|Basilikum",
-"Gemüse grob würfeln und nicht zu glatt pürieren.|Abschmecken und 2 Stunden kühlen.|Mit Basilikum und Öl servieren.","In einer Thermosflasche wird sie zur Trinksuppe für die Pause.",{j:"k",d:"2 Tage"});
-r("suppe","Karotten-Ingwer-Suppe","Samtig, wärmend, goldfarben.",
-"4 große Karotten|1 Avocado|2 TL Ingwer|1 Knoblauchzehe|2 Tassen Wasser|2 EL Olivenöl|1 TL Kurkuma|Salz|Kürbiskerne",
-"Alles im Hochleistungsmixer cremig pürieren.|Leicht anwärmen (unter 42 °C) oder kalt servieren.|Mit Kürbiskernen garnieren.","",{j:"k",d:"1 Tag"});
+"4 reife Tomaten|1 Gurke|1 rote Paprika|1 kleine rote Zwiebel|Saft von ½ Zitrone|2 EL "+HC+"|Basilikum",
+"Gemüse grob würfeln und nicht zu glatt pürieren.|Zitrone und Hanfherzencreme einmixen und 2 Stunden kühlen.|Mit Basilikum servieren.",
+{gm:"2 Knoblauchzehen|Salz und Pfeffer",tip:"In einer Thermosflasche wird sie zur Trinksuppe für die Pause.",j:"k",d:"2 Tage"});
+r("suppe","Karotten-Avocado-Suppe","Samtig und goldfarben.",
+"4 große Karotten|1 Avocado|2 Tassen Wasser|Saft von ½ Orange|Schnittlauch|Kürbiskerne",
+"Alles außer Schnittlauch und Kernen im Mixer cremig pürieren.|Kalt oder handwarm (unter 42 °C) servieren.|Mit Schnittlauch und Kürbiskernen garnieren.",
+{gm:"2 TL frischer Ingwer|1 TL Kurkuma|Salz",j:"k",d:"1 Tag"});
 r("suppe","Thai-Kokos-Suppe","Leicht angewärmt noch aromatischer.",
-"1 Tasse Kokosmilch aus jungem Kokosfleisch|1 Tasse Wasser|1 Karotte|1 Zucchini|½ Tasse Champignons|2 EL Tamari|1 TL Ingwer|1 TL rohe Currypaste|Saft von 1 Limette|Koriander",
-"Kokosmilch mit Wasser, Tamari, Ingwer und Curry mixen.|Gemüse fein schneiden und hineingeben.|Mit Limette abschmecken und mit Koriander garnieren.","");
+"1 Tasse Kokosmilch aus jungem Kokosfleisch|1 Tasse Wasser|1 Karotte|1 Zucchini|½ Tasse Champignons|Saft von 1 Limette|Koriander",
+"Kokosmilch mit Wasser und Limette mixen.|Gemüse fein schneiden und hineingeben.|Mit Koriander garnieren.",
+{gm:"2 EL Tamari|1 TL frischer Ingwer|1 TL rohe Currypaste|Chili",g:1});
 
-/* Salate */
+/* ===== Salate ===== */
 r("salat","Tabbouleh","Kräuterfrisch und zitronig.",
-"1 Tasse Blumenkohl-Reis|1 Tasse Petersilie|½ Tasse Minze|2 Tomaten|1 Gurke|3 Frühlingszwiebeln|3 EL Olivenöl|Saft von 1 Zitrone|Salz",
-"Kräuter und Gemüse fein hacken.|Alles mischen und abschmecken.|30 Minuten ziehen lassen.","",{j:"k",d:"3 Tage"});
-r("salat","Caesar-Salat","Cremig, salzig, knackig.",
-"1 Romana-Salat|Dressing: ½ Tasse Cashews, 2 EL Zitronensaft, 1 EL Kapern, 1 Knoblauchzehe, 1 EL Hefeflocken, 3 EL Wasser, Salz, Pfeffer|Parmesan: Mandeln, Hefeflocken, Salz",
-"Dressing cremig mixen.|Salat damit vermengen.|Mit Mandel-Parmesan bestreuen.","");
+"1 Tasse Blumenkohl-Reis|1 Tasse Petersilie|½ Tasse Minze|2 Tomaten|1 Gurke|3 Frühlingszwiebeln|Saft von 1 Zitrone|2 EL "+HC,
+"Kräuter und Gemüse fein hacken.|Zitrone mit Hanfherzencreme verrühren und alles mischen.|30 Minuten ziehen lassen.",
+{gm:"Salz|Pfeffer",j:"k",d:"3 Tage"});
+r("salat","Caesar-Salat","Cremig, knackig, frisch.",
+"1 Romana-Salat|Dressing: ½ Tasse "+HC+", 2 EL Zitronensaft, 3 EL Wasser, 2 EL Schnittlauch|Mandelbrösel: Mandeln im Mixer grob gemahlen",
+"Dressing glatt rühren.|Salat damit vermengen.|Mit Mandelbröseln bestreuen.",
+{gm:"1 Knoblauchzehe ins Dressing|Salz und Pfeffer|eine Prise Salz in die Mandelbrösel"});
 r("salat","Thai-Salat mit Mango","Knackiger Kohl mit tropischer Süße.",
-"4 Tassen Weiß- und Rotkohl|1 Mango|1 Paprika|½ Tasse Koriander|¼ Tasse Minze|Dressing: 2 EL Mandelmus, 2 EL Limettensaft, 1 EL Tamari, 1 TL Ingwer, 1 Dattel|gehackte Mandeln",
-"Kohl fein schneiden, mit Mango, Paprika und Kräutern mischen.|Dressing mixen und unterheben.|Mit Mandeln toppen.","Kohlsalate werden in der Box mit der Zeit nur besser.",{j:"k",d:"3 Tage"});
+"4 Tassen Weiß- und Rotkohl|1 Mango|1 Paprika|½ Tasse Koriander|¼ Tasse Minze|Dressing: 2 EL Mandelmus, 2 EL Limettensaft, 1 Dattel, 2 EL Wasser|gehackte Mandeln",
+"Kohl fein schneiden, mit Mango, Paprika und Kräutern mischen.|Dressing mixen und unterheben.|Mit Mandeln toppen.",
+{gm:"1 EL Tamari|1 TL frischer Ingwer|Chili",tip:"Kohlsalate werden in der Box mit der Zeit nur besser.",j:"k",d:"3 Tage"});
 r("salat","Spinat-Erdbeer-Salat","Sommerlich süß und nussig.",
-"4 Tassen Babyspinat|1 Tasse Erdbeeren|½ Tasse Walnüsse|¼ rote Zwiebel|Dressing: 3 EL Olivenöl, 1 EL Balsamico, 1 TL Dattelpüree, Salz, Pfeffer",
-"Alles in eine Schüssel geben.|Dressing kurz vor dem Servieren unterheben.","");
+"4 Tassen Babyspinat|1 Tasse Erdbeeren|½ Tasse Walnüsse|¼ rote Zwiebel|Dressing: 4 Erdbeeren, 2 EL "+HC+", 1 EL Zitronensaft",
+"Salat, Erdbeeren, Walnüsse und Zwiebel in eine Schüssel geben.|Dressing-Zutaten mixen und kurz vor dem Servieren unterheben.",
+{gm:"frisch gemahlener Pfeffer"});
 r("salat","Gurkensalat mit Dill","Cremig und erfrischend.",
-"2 Gurken|½ rote Zwiebel|3 EL Dill|3 EL Cashew-Sour-Cream|1 EL Zitronensaft|Salz und Pfeffer",
-"Gurken und Zwiebel dünn schneiden.|Dressing mischen und mit Dill unterheben.","");
+"2 Gurken|½ rote Zwiebel|3 EL Dill|3 EL Hanf-Sour-Cream|1 EL Zitronensaft",
+"Gurken und Zwiebel dünn schneiden.|Sour Cream mit Zitrone und Dill verrühren und unterheben.",
+{gm:"Salz und Pfeffer"});
 r("salat","Avocado-Tomaten-Salat","Einfach und vollkommen.",
-"2 Avocados|4 Tomaten|½ rote Zwiebel|Koriander|2 EL Olivenöl|1 EL Limettensaft|Salz und Pfeffer",
-"Avocado und Tomaten würfeln und mischen.|Zwiebel und Koriander unterheben.|Mit Dressing beträufeln.","");
-r("salat","Krautsalat (Coleslaw)","Cremig-knackig, ideal zum Vorbereiten.",
-"3 Tassen Weißkohl|1 Karotte|2 Frühlingszwiebeln|Dressing: ½ Tasse Cashews, 2 EL Apfelessig, 1 EL Dattelpüree, 1 TL roher Senf, Salz, Pfeffer",
-"Gemüse fein schneiden.|Dressing cremig mixen und untermischen.|30 Minuten ziehen lassen.","",{j:"k",d:"4 Tage"});
+"2 Avocados|4 Tomaten|½ rote Zwiebel|Koriander oder Basilikum|1 EL Limettensaft",
+"Avocado und Tomaten würfeln und mischen.|Zwiebel und Kräuter unterheben.|Mit Limettensaft beträufeln.",
+{gm:"Salz und Pfeffer"});
+r("salat","Krautsalat","Cremig-knackig, ideal zum Vorbereiten.",
+"3 Tassen Weißkohl|1 Karotte|2 Frühlingszwiebeln|Dressing: ½ Tasse "+HC+", 2 EL Zitronensaft, 1 Dattel, 2 EL Wasser",
+"Gemüse fein schneiden.|Dressing cremig mixen und untermischen.|30 Minuten ziehen lassen.",
+{gm:"Salz|Pfeffer|Kümmel",j:"k",d:"4 Tage"});
 
-/* Snacks, Kekse & Riegel */
+/* ===== Snacks, Kekse & Riegel ===== */
 r("snack","Schoko-Dattel-Kekse","Außen knusprig, innen weich — wie echte Cookies.",
-"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|3 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz|optional: Kakaonibs",
-"Mandeln fein mahlen, Datteln dazu verarbeiten.|Kakao, Öl und Salz untermischen.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|3 EL Kakaopulver|optional: Kakaonibs",
+"Mandeln fein mahlen, Datteln dazu verarbeiten.|Kakao untermischen.|Kekse formen und 8–10 Stunden dörren.",
+{gm:"eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 r("snack","Kokos-Makronen","Zart und duftend.",
-"2 Tassen Kokosraspeln|½ Tasse Dattelpüree|2 EL Kokosöl|1 TL Vanille|1 Prise Salz",
-"Alles vermischen und Häufchen setzen.|10–12 Stunden dörren.|Optional die Unterseite in Rohschokolade tauchen.","",{j:"o",h:1,d:"2 Wochen"});
+"2 Tassen Kokosraspeln|½ Tasse Dattelpüree|2 EL Mandelmus",
+"Alles vermischen und Häufchen setzen.|10–12 Stunden dörren.",
+{gm:"1 TL Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 r("snack","Buchweizen-Rosinen-Cookies","Wie Haferkekse, nur lebendig.",
-"1 Tasse gekeimter Buchweizen|½ Tasse Rosinen|½ Tasse Walnüsse|3 EL Dattelpüree|1 TL Zimt|½ TL Vanille|1 Prise Salz",
-"Buchweizen grob zerkleinern und alles vermischen.|Flache Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse gekeimter Buchweizen|½ Tasse Rosinen|½ Tasse Walnüsse|3 EL Dattelpüree",
+"Buchweizen grob zerkleinern und alles vermischen.|Flache Kekse formen und 8–10 Stunden dörren.",
+{gm:"1 TL Zimt|½ TL Vanille",j:"o",h:1,d:"2 Wochen"});
 r("snack","Mandelmus-Kekse","Mit Gabelmuster wie früher.",
-"1 Tasse Mandelmus|½ Tasse Dattelpüree|½ Tasse gekeimter Buchweizen, gemahlen|1 TL Vanille|1 Prise Salz",
-"Mandelmus mit Dattelpüree cremig rühren.|Buchweizenmehl und Vanille untermischen.|Kekse formen, mit Gabel eindrücken und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse Mandelmus|½ Tasse Dattelpüree|½ Tasse gekeimter Buchweizen, gemahlen",
+"Mandelmus mit Dattelpüree cremig rühren.|Buchweizenmehl untermischen.|Kekse formen, mit der Gabel eindrücken und 8–10 Stunden dörren.",
+{gm:"1 TL Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 r("snack","Mohn-Zitronen-Kekse","Frisch und fein.",
-"1 Tasse Mandeln, gemahlen|3 EL Blaumohn|3 EL Dattelpüree|Abrieb von 1 Bio-Zitrone|1 EL Zitronensaft|1 EL Kokosöl",
-"Alles verkneten.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
-r("snack","Bananen-Walnuss-Kekse","Nur fünf Zutaten — super einfach.",
-"2 reife Bananen|1 Tasse Walnüsse|½ Tasse Kokosraspeln|½ TL Zimt|optional: Rosinen",
-"Bananen zerdrücken und alles mischen.|Häufchen setzen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"1 Woche"});
+"1 Tasse Mandeln, gemahlen|3 EL Blaumohn|3 EL Dattelpüree|Abrieb von 1 Bio-Zitrone|1 EL Zitronensaft|1 EL Mandelmus",
+"Alles verkneten.|Kekse formen und 8–10 Stunden dörren.",
+{j:"o",h:1,d:"2 Wochen"});
+r("snack","Bananen-Walnuss-Kekse","Nur wenige Zutaten — super einfach.",
+"2 reife Bananen|1 Tasse Walnüsse|½ Tasse Kokosraspeln|optional: Rosinen",
+"Bananen zerdrücken und alles mischen.|Häufchen setzen und 10–12 Stunden dörren.",
+{gm:"½ TL Zimt",j:"o",h:1,d:"1 Woche"});
 r("snack","Rohkost-Brownies","Kein Dörren nötig — sofort genussfertig.",
-"1 Tasse Walnüsse|1 Tasse Medjool-Datteln|4 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz|optional: Kakaonibs",
-"Walnüsse fein hacken, Datteln dazu verarbeiten.|Kakao, Öl und Salz untermischen.|2 cm dick in eine Form drücken, 1 Stunde kühlen und in Quadrate schneiden.",
-"Ein Brownie in der Jausenbox ist das beste Versprechen für die Nachmittagspause.",{j:"o",h:1,d:"1 Woche"});
+"1 Tasse Walnüsse|1 Tasse Medjool-Datteln|4 EL Kakaopulver|optional: Kakaonibs",
+"Walnüsse fein hacken, Datteln dazu verarbeiten.|Kakao untermischen.|2 cm dick in eine Form drücken, 1 Stunde kühlen und in Quadrate schneiden.",
+{gm:"eine Prise Meersalz|Vanille",tip:"Ein Brownie in der Jausenbox ist das beste Versprechen für die Nachmittagspause.",j:"o",h:1,d:"1 Woche"});
 r("snack","Energie-Riegel mit Buchweizen","Perfekt für unterwegs.",
-"1 Tasse gekeimter, getrockneter Buchweizen|½ Tasse Datteln|½ Tasse Mandeln|2 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz",
-"Mandeln und Buchweizen grob hacken.|Datteln, Kakao und Öl cremig verarbeiten.|Alles verbinden, in Riegelform pressen und kühlen.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse gekeimter, gedörrter Buchweizen|½ Tasse Datteln|½ Tasse Mandeln|2 EL Kakaopulver|1 EL Mandelmus",
+"Mandeln und Buchweizen grob hacken.|Datteln, Kakao und Mandelmus cremig verarbeiten.|Alles verbinden, in Riegelform pressen und kühlen.",
+{gm:"eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 r("snack","Zimtschnecken","Ein Hauch von Bäckerei.",
-"Teig: 1 Tasse gekeimter Buchweizen, ½ Tasse Datteln, 1 EL Kokosöl|Füllung: 3 EL Mandelmus, 2 EL Dattelpüree, 1 TL Zimt, Rosinen",
-"Teig verarbeiten und zwischen Backpapier ausrollen.|Füllung verteilen, aufrollen und in Scheiben schneiden.|4–6 Stunden dörren.","",{j:"o",h:1,d:"1 Woche"});
+"Teig: 1 Tasse gekeimter Buchweizen, ½ Tasse Datteln, 1 EL Mandelmus|Füllung: 3 EL Mandelmus, 2 EL Dattelpüree, Rosinen",
+"Teig verarbeiten und zwischen Backpapier ausrollen.|Füllung verteilen, aufrollen und in Scheiben schneiden.|4–6 Stunden dörren.",
+{gm:"1–2 TL Zimt in die Füllung|Vanille in den Teig",g:1,j:"o",h:1,d:"1 Woche"});
 r("snack","Mandel-Dattel-Riegel","Pur und ehrlich.",
-"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|½ Tasse Kokosraspeln|1 TL Vanille|1 Prise Salz",
-"Mandeln grob hacken, Datteln pürieren.|Alles verkneten, in Form pressen, kühlen und schneiden.","",{j:"o",h:1,d:"2 Wochen"});
-r("snack","Superfood-Bällchen","Klein, kraftvoll, köstlich.",
-"½ Tasse Datteln|½ Tasse Mandeln|2 EL Hanfsamen|2 EL Chiasamen|2 EL Kakaopulver|1 EL Maca|1 EL Kokosöl",
-"Alles im Food Processor verarbeiten.|Bällchen formen und in Kokos, Kakao oder Hanf wälzen.","",{j:"o",h:1,d:"2 Wochen"});
-r("snack","Apfel-Zimt-Kekse","Herbstlich und warm im Geschmack.",
-"1 Tasse getrocknete Apfelringe, eingeweicht|1 Tasse aktivierte Mandeln|½ Tasse Rosinen|1 TL Zimt|¼ TL Muskat|2 EL Kokosöl",
-"Mandeln mahlen, Äpfel und Rosinen hacken.|Alles verkneten, Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
-r("snack","Haselnuss-Schoko-Kugeln","Wie Rocher — nur roh.",
-"1 Tasse Haselnüsse, aktiviert|½ Tasse Datteln|3 EL Kakaopulver|1 EL Haselnussmus|1 Prise Salz|Kakao zum Wälzen",
-"Haselnüsse fein hacken.|Übrige Zutaten dazu verarbeiten.|Kugeln formen und in Kakao wälzen.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|½ Tasse Kokosraspeln",
+"Mandeln grob hacken, Datteln pürieren.|Alles verkneten, in Form pressen, kühlen und schneiden.",
+{gm:"1 TL Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
+r("snack","Hanf-Kakao-Bällchen","Klein, kraftvoll, köstlich.",
+"½ Tasse Datteln|½ Tasse Mandeln|3 EL Hanfherzen|2 EL Chiasamen|2 EL Kakaopulver",
+"Alles im Food Processor verarbeiten.|Bällchen formen und in Kokos, Kakao oder Hanfherzen wälzen.",
+{gm:"Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
+r("snack","Apfel-Rosinen-Kekse","Herbstlich und fruchtig.",
+"1 Tasse gedörrte Apfelringe, eingeweicht|1 Tasse aktivierte Mandeln|½ Tasse Rosinen|1 EL Mandelmus",
+"Mandeln mahlen, Äpfel und Rosinen hacken.|Alles verkneten, Kekse formen und 8–10 Stunden dörren.",
+{gm:"1 TL Zimt|¼ TL Muskat",j:"o",h:1,d:"2 Wochen"});
+r("snack","Haselnuss-Schoko-Kugeln","Wie Pralinen — nur roh.",
+"1 Tasse Haselnüsse, aktiviert|½ Tasse Datteln|3 EL Kakaopulver|1 EL Haselnussmus|Kakao zum Wälzen",
+"Haselnüsse fein hacken.|Übrige Zutaten dazu verarbeiten.|Kugeln formen und in Kakao wälzen.",
+{gm:"eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 r("snack","Ingwer-Kekse","Weihnachtlich und würzig.",
-"1 Tasse Mandeln, gemahlen|½ Tasse Datteln|2 TL frischer Ingwer|1 TL Zimt|½ TL Muskat|¼ TL Nelken|1 EL Kokosöl",
-"Alles verarbeiten.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse Mandeln, gemahlen|½ Tasse Datteln|Abrieb von ½ Bio-Orange",
+"Alles verarbeiten.|Kekse formen und 8–10 Stunden dörren.",
+{gm:"2 TL frischer Ingwer|1 TL Zimt|½ TL Muskat|¼ TL Nelken",g:1,j:"o",h:1,d:"2 Wochen"});
 r("snack","Kokos-Dattel-Konfekt","Kleine Glücksmomente.",
-"1 Tasse Kokosraspeln|½ Tasse Datteln|2 EL Kokosöl|1 TL Vanille|1 Prise Salz|optional: Rohschokolade",
-"Datteln pürieren und mit Kokos, Öl und Vanille verkneten.|Stücke formen, nach Wunsch in Schokolade tauchen und kühlen.","",{j:"o",h:1,d:"2 Wochen"});
+"1 Tasse Kokosraspeln|½ Tasse Datteln|1 EL Mandelmus|Kakaopulver zum Bestäuben",
+"Datteln pürieren und mit Kokos und Mandelmus verkneten.|Stücke formen, mit Kakao bestäuben und kühlen.",
+{gm:"1 TL Vanille|eine Prise Salz",j:"o",h:1,d:"2 Wochen"});
 
-/* Torten & Desserts */
+/* ===== Torten & Desserts ===== */
 r("torte","Schoko-Avocado-Mousse","So cremig, dass niemand die Avocado schmeckt.",
-"2 reife Avocados|4 EL Kakaopulver|4 Medjool-Datteln|1 TL Vanille|1 Prise Salz|Beeren",
-"Datteln mit wenig Wasser pürieren.|Alles cremig mixen und 1 Stunde kühlen.|Im Glas mit Beeren servieren.","Im Schraubglas auch ein wunderbares Job-Dessert.",{j:"k",d:"2 Tage"});
+"2 reife Avocados|4 EL Kakaopulver|4 Medjool-Datteln|Beeren",
+"Datteln mit wenig Wasser pürieren.|Alles cremig mixen und 1 Stunde kühlen.|Im Glas mit Beeren servieren.",
+{gm:"1 TL Vanille|eine Prise Salz",tip:"Im Schraubglas auch ein wunderbares Job-Dessert.",j:"k",d:"2 Tage"});
 r("torte","Bananen-Eis (Nice Cream)","Die einfachste Eiscreme der Welt.",
 "4 gefrorene Bananen|optional: 2 EL Kakao, 1 Tasse gefrorene Beeren oder 2 EL Mandelmus",
-"Bananen im Mixer cremig pürieren.|Nach Wunsch variieren und sofort genießen.","");
+"Bananen im Mixer cremig pürieren.|Nach Wunsch variieren und sofort genießen.",
+{gm:"Vanille|eine Prise Zimt"});
 r("torte","Tortenboden (Grundrezept)","Die Basis für alle Torten.",
-"1 Tasse Walnüsse oder Mandeln|1 Tasse Medjool-Datteln|2 EL Kakaopulver (optional)|1 Prise Salz",
-"Nüsse fein hacken.|Datteln dazu verarbeiten, bis die Masse zusammenhält.|In eine 20–22-cm-Springform drücken und kühlen.","");
-r("torte","Beeren-Cashew-Torte","Wie Käsekuchen — komplett roh.",
-"Tortenboden ohne Kakao|2 Tassen Cashews, eingeweicht|½ Tasse Kokosmilch|¼ Tasse Kokosöl|¼ Tasse Dattelpüree|2 Tassen gemischte Beeren|1 TL Vanille|frische Beeren",
-"Füllung cremig mixen, Beeren einmixen.|Auf den Boden gießen und mindestens 4 Stunden einfrieren.|30 Minuten vor dem Servieren herausnehmen und dekorieren.","");
+"1 Tasse Walnüsse oder Mandeln|1 Tasse Medjool-Datteln|2 EL Kakaopulver (optional)",
+"Nüsse fein hacken.|Datteln dazu verarbeiten, bis die Masse zusammenhält.|In eine 20–22-cm-Springform drücken und kühlen.",
+{gm:"eine Prise Salz"});
+r("torte","Beeren-Macadamia-Torte","Wie Käsekuchen — komplett roh.",
+"Tortenboden ohne Kakao|2 Tassen Macadamianüsse, eingeweicht|½ Tasse Kokosmilch aus jungem Kokosfleisch|¼ Tasse Dattelpüree|2 Tassen gemischte Beeren|Saft von ½ Zitrone|frische Beeren",
+"Macadamia, Kokosmilch, Dattelpüree und Zitrone cremig mixen, dann die Beeren einmixen.|Auf den Boden gießen und mindestens 4 Stunden einfrieren.|30 Minuten vor dem Servieren herausnehmen und dekorieren.",
+{gm:"1 TL Vanille"});
 r("torte","Schokoladentorte","Tief, dunkel, verführerisch.",
-"Tortenboden mit Kakao|2 Tassen Cashews|½ Tasse Kokosmilch|½ Tasse Dattelpüree|4 EL Kakao|3 EL Kokosöl|1 TL Vanille|1 Prise Salz|Kakaonibs und Himbeeren",
-"Füllung cremig mixen.|Auf den Boden gießen und 4 Stunden einfrieren.|Mit Nibs und Himbeeren dekorieren.","");
+"Tortenboden mit Kakao|2 Tassen Macadamianüsse, eingeweicht|½ Tasse Kokosmilch aus jungem Kokosfleisch|½ Tasse Dattelpüree|4 EL Kakao|Kakaonibs und Himbeeren",
+"Füllung cremig mixen.|Auf den Boden gießen und 4 Stunden einfrieren.|Mit Nibs und Himbeeren dekorieren.",
+{gm:"1 TL Vanille|eine Prise Salz"});
 r("torte","Mango-Kokos-Torte","Tropisch und erfrischend.",
-"Boden: 1 Tasse Macadamia, 1 Tasse Kokosraspeln, ½ Tasse Datteln|2 Mangos|1 Tasse junges Kokosfleisch|¼ Tasse Kokosöl|2 EL Dattelpüree",
-"Boden in die Form drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren und mit Mango dekorieren.","");
+"Boden: 1 Tasse Macadamia, 1 Tasse Kokosraspeln, ½ Tasse Datteln|2 Mangos|1 Tasse junges Kokosfleisch|2 EL Dattelpüree|Saft von ½ Limette",
+"Boden in die Form drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren und mit Mango dekorieren.",
+{gm:"Vanille"});
 r("torte","Tiramisu","Italienischer Traum in lebendig.",
-"Mandel-Dattel-Riegel in Stücken|Cold-Brew oder Löwenzahnwurzel-Tee|Creme: 2 Tassen Cashews, ½ Tasse Kokosmilch, 3 EL Dattelpüree, 2 TL Vanille|Kakaopulver",
-"Riegelstücke kurz eintauchen.|Creme mixen.|Schichten und 4 Stunden kühlen.|Großzügig mit Kakao bestäuben.","");
+"Mandel-Dattel-Riegel in Stücken|Tränke: 4 Datteln und 1 EL Kakao mit 1 Tasse Wasser gemixt|Creme: 2 Tassen Macadamianüsse, eingeweicht, ½ Tasse Kokosmilch aus jungem Kokosfleisch, 3 EL Dattelpüree|Kakaopulver",
+"Riegelstücke kurz in die Tränke tauchen.|Creme cremig mixen.|Schichten und 4 Stunden kühlen.|Großzügig mit Kakao bestäuben.",
+{gm:"2 TL Vanille in die Creme"});
 r("torte","Bananen-Karamell-Torte","Karamellig-süß mit Bananenschmelz.",
-"Tortenboden|Karamell: 1 Tasse Medjool-Datteln, 3 EL Mandelmus, 2 EL Kokosöl, 1 TL Vanille, 1 Prise Salz|3 Bananen|Rohschokolade",
-"Karamell cremig pürieren und auf den Boden streichen.|Bananenscheiben darauflegen und Schokolade darüberraspeln.|2 Stunden kühlen.","");
-r("torte","Roher Apfelkuchen","Mit Zimtstreuseln.",
-"Boden: 1 Tasse Mandeln, 1 Tasse Datteln, 1 TL Zimt|4 Äpfel|2 EL Zitronensaft|2 EL Dattelpüree|1 TL Zimt|½ TL Muskat|¼ TL Ingwer|Streusel: ½ Tasse Mandeln, 2 EL Kokosöl, 1 EL Dattelpüree, ½ TL Zimt",
-"Boden in die Form drücken.|Äpfel dünn schneiden und marinieren.|Fächerförmig auflegen, Streusel darüber.|2 Stunden ziehen lassen.","");
+"Tortenboden|Karamell: 1 Tasse Medjool-Datteln, 3 EL Mandelmus, 3 EL Wasser|3 Bananen|Kakaopulver",
+"Karamell cremig pürieren und auf den Boden streichen.|Bananenscheiben darauflegen und mit Kakao bestäuben.|2 Stunden kühlen.",
+{gm:"1 TL Vanille|eine Prise Salz ins Karamell"});
+r("torte","Roher Apfelkuchen","Mit knusprigen Streuseln.",
+"Boden: 1 Tasse Mandeln, 1 Tasse Datteln|4 Äpfel|2 EL Zitronensaft|2 EL Dattelpüree|Streusel: ½ Tasse Mandeln, 2 Datteln, 1 EL Mandelmus",
+"Boden in die Form drücken.|Äpfel dünn schneiden und mit Zitrone und Dattelpüree marinieren.|Fächerförmig auflegen, Streusel darüber.|2 Stunden ziehen lassen.",
+{gm:"1 TL Zimt|½ TL Muskat|¼ TL Ingwer"});
 r("torte","Chia-Pudding","Über Nacht gequollen, morgens gekrönt.",
-"½ Tasse Chiasamen|2 Tassen Mandelmilch|2 EL Dattelpüree|1 TL Vanille|Früchte, Nüsse, Kokos",
-"Alles vermischen und mehrmals umrühren.|Über Nacht quellen lassen.|Mit Toppings servieren.","",{j:"k",d:"3 Tage"});
-r("torte","Kokos-Panna-Cotta","Zart und seidig.",
-"1 Dose Kokosmilch oder gemixtes Kokosfleisch|3 EL Dattelpüree|1 TL Vanille|2 EL Flohsamenschalen",
-"Mixen, Flohsamen einrühren.|In Förmchen 4 Stunden fest werden lassen.|Stürzen und mit Beeren servieren.","");
+"½ Tasse Chiasamen|2 Tassen Mandel- oder Hanfmilch|2 EL Dattelpüree|Früchte, Nüsse, Kokos",
+"Alles vermischen und mehrmals umrühren.|Über Nacht quellen lassen.|Mit Toppings servieren.",
+{gm:"1 TL Vanille",j:"k",d:"3 Tage"});
+r("torte","Kokoscreme mit Beeren","Zart und seidig.",
+"1 Tasse junges Kokosfleisch|½ Tasse Macadamianüsse, eingeweicht|3 EL Dattelpüree|Beeren",
+"Kokosfleisch, Macadamia und Dattelpüree sehr cremig mixen.|In Gläser füllen und 2 Stunden kühlen.|Mit Beeren servieren.",
+{gm:"1 TL Vanille",j:"k",d:"2 Tage"});
 r("torte","Himbeertörtchen","Kleine rosa Kunstwerke.",
-"Boden je Törtchen: ½ Tasse Mandeln, ¼ Tasse Kokos, 3 Datteln|1 Tasse Cashews|½ Tasse Himbeeren|2 EL Kokosöl|2 EL Dattelpüree",
-"Böden in Förmchen drücken.|Füllung mixen und verteilen.|2 Stunden einfrieren und mit Himbeeren garnieren.","",{j:"k",h:1,d:"3 Tage"});
+"Boden je Törtchen: ½ Tasse Mandeln, ¼ Tasse Kokos, 3 Datteln|1 Tasse Macadamianüsse, eingeweicht|½ Tasse Himbeeren|2 EL Dattelpüree",
+"Böden in Förmchen drücken.|Füllung mixen und verteilen.|2 Stunden einfrieren und mit Himbeeren garnieren.",
+{j:"k",h:1,d:"3 Tage"});
 r("torte","Zitronentarte","Erfrischend sauer-süß.",
-"Boden: 1 Tasse Mandeln, ½ Tasse Kokos, ½ Tasse Datteln|1 Tasse Cashews|¼ Tasse Kokosöl|½ Tasse Zitronensaft|Abrieb von 2 Zitronen|¼ Tasse Dattelpüree|¼ TL Kurkuma",
-"Boden in die Tarteform drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren.","");
+"Boden: 1 Tasse Mandeln, ½ Tasse Kokos, ½ Tasse Datteln|1 Tasse Macadamianüsse, eingeweicht|½ Tasse Zitronensaft|Abrieb von 2 Bio-Zitronen|¼ Tasse Dattelpüree|½ Tasse junges Kokosfleisch",
+"Boden in die Tarteform drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren.",
+{gm:"¼ TL Kurkuma für sonnengelbe Farbe"});
 r("torte","Erdbeertorte","Rosa, fruchtig, festlich.",
-"Tortenboden|2 Tassen Cashews|1 Tasse Erdbeeren|¼ Tasse Kokosöl|3 EL Dattelpüree|1 TL Vanille|Erdbeerhälften",
-"Füllung cremig mixen und auf den Boden gießen.|4 Stunden einfrieren und dekorieren.","");
-r("torte","Rohschokolade","Echte Schokolade ohne Kompromisse.",
-"½ Tasse Kakaobutter|¼ Tasse Kakaopulver|3 EL Dattelpüree oder Kokosblütenzucker|1 TL Vanille|1 Prise Salz|optional: Nüsse, Früchte, Meersalzflocken",
-"Kakaobutter im Wasserbad unter 42 °C schmelzen.|Übrige Zutaten einrühren.|In Formen gießen, toppen und fest werden lassen.","",{j:"k",h:1,d:"4 Wochen"});
+"Tortenboden|2 Tassen Macadamianüsse, eingeweicht|1 Tasse Erdbeeren|3 EL Dattelpüree|½ Tasse junges Kokosfleisch|Erdbeerhälften",
+"Füllung cremig mixen und auf den Boden gießen.|4 Stunden einfrieren und dekorieren.",
+{gm:"1 TL Vanille"});
+r("torte","Schoko-Täfelchen","Schokoladig und zartschmelzend — ganz ohne Kakaobutter.",
+"½ Tasse Mandelmus|4 EL Kakaopulver|4 EL Dattelpüree|optional: Nüsse, gedörrte Früchte",
+"Alles glatt verrühren.|Etwa 1 cm dick in eine mit Backpapier ausgelegte Form streichen und nach Wunsch belegen.|Mindestens 2 Stunden einfrieren und in Stücke brechen.",
+{gm:"Vanille|Meersalzflocken obenauf",tip:"Direkt aus dem Gefrierfach am knackigsten."});
 
-/* Käse & Fermentiertes */
-r("kaese","Cashew-Käse (Grundrezept)","Mit Fermentation entsteht echter Käsegeschmack.",
-"2 Tassen Cashews, 4–8 Std. eingeweicht|½ Tasse Wasser|2 EL Zitronensaft|1 Knoblauchzehe|½ TL Salz|2 EL Hefeflocken|optional: 1 Probiotika-Kapsel",
-"Alles cremig mixen.|Für fermentierten Käse Probiotika einrühren.|In ein Käsetuch wickeln und 24–48 Stunden fermentieren.|Kühl lagern.","",{j:"k",d:"1 Woche"});
+/* ===== Käse & Fermentiertes ===== */
 r("kaese","Kräuter-Frischkäse","Der Aufstrich fürs Dörrbrot.",
-"Cashew-Käse-Grundrezept|3 EL Schnittlauch, Dill, Petersilie|½ TL Zwiebelpulver",
-"Käse zubereiten.|Kräuter fein hacken und unterheben.","",{j:"k",d:"5 Tage"});
-r("kaese","Mandel-Feta","Perfekt für griechische Salate.",
-"1 Tasse Mandeln, blanchiert und eingeweicht|¼ Tasse Wasser|3 EL Zitronensaft|1 TL Salz|1 EL Olivenöl|½ TL Oregano",
-"Mandeln mit Wasser, Zitrone und Salz cremig mixen.|In eine Form drücken und 4 Stunden kühlen.|Mit Öl und Oregano servieren.","",{j:"k",d:"5 Tage"});
-r("kaese","Macadamia-Brie","Cremig wie echter Brie.",
-"1 Tasse Macadamia, eingeweicht|¼ Tasse Wasser|1 EL Zitronensaft|½ TL Salz|1 Probiotika-Kapsel|optional: Aktivkohle",
-"Cremig mixen und Probiotika einrühren.|Rund formen und 24–48 Stunden fermentieren.|Optional mit Aktivkohle bestäuben und kühl reifen lassen.","");
-r("kaese","Sauerkraut","Voller lebendiger Kulturen.",
-"1 Kopf Weißkohl|1 EL Salz|optional: Kümmel, Wacholder",
-"Kohl fein hobeln und mit Salz 10 Minuten kneten.|Fest ins Bügelglas drücken, bis Flüssigkeit alles bedeckt.|Beschweren und 5–7 Tage fermentieren, täglich Gase ablassen.|Kühl aufbewahren.",
-"Mit Hanfsauce wird daraus eine sättigende Jause.",{j:"k",d:"mehrere Monate"});
-r("kaese","Einfaches Kimchi","Scharf, säuerlich, belebend.",
-"1 Chinakohl|2 EL Salz|3 Knoblauchzehen|2 TL Ingwer|2 EL Gochugaru|1 Bund Frühlingszwiebeln|1 Karotte",
-"Kohl vierteln und 2 Stunden salzen.|Abspülen und ausdrücken.|Paste aus Knoblauch, Ingwer und Chili herstellen, Gemüse untermischen.|Kohlblätter einreiben, ins Glas pressen und 3–5 Tage fermentieren.","",{j:"k",d:"mehrere Monate"});
+"1 Tasse "+HC+"|3 EL Schnittlauch, Dill und Petersilie|1 Spritzer Zitrone",
+"Kräuter fein hacken.|Mit der Hanfherzencreme und Zitrone verrühren.",
+{gm:"1 Knoblauchzehe oder Bärlauch|eine Prise Salz|½ TL Zwiebelpulver",j:"k",d:"3 Tage"});
+r("kaese","Mandel-Frischkäse","Weiß, mild und schnittfest — herrlich zu Tomaten.",
+"1 Tasse blanchierte Mandeln, 8 Stunden eingeweicht|¼ Tasse Wasser|2 EL Zitronensaft",
+"Mandeln mit Wasser und Zitrone sehr cremig mixen.|In ein sauberes Glas füllen und einen Tag bei Raumtemperatur fermentieren lassen.|In eine kleine Form drücken und 4 Stunden kühlen.",
+{gm:"1 TL Salz für den Feta-Charakter|½ TL Oregano",j:"k",d:"4 Tage"});
+r("kaese","Macadamia-Käselaib","Cremig innen, mit zarter Rinde außen.",
+"1 Tasse Macadamianüsse, eingeweicht|3 EL Wasser|1 EL Zitronensaft|frische Kräuter zum Wälzen",
+"Macadamia mit Wasser und Zitrone cremig mixen.|Im sauberen Glas 1–2 Tage bei Raumtemperatur fermentieren lassen.|Rund formen, in Kräutern wälzen und bei 42 °C 6 Stunden dörren, bis sich eine Rinde bildet.|Kühl weiterreifen lassen.",
+{gm:"eine Prise Salz|frisch gemahlener Pfeffer",j:"k",d:"1 Woche"});
+r("kaese","Sauerkraut","Voller lebendiger Kulturen — auf Wunsch ganz ohne Salz.",
+"1 Kopf Weißkohl|1 Tasse frisch gepresster Selleriesaft",
+"Kohl fein hobeln und kräftig kneten, bis er Saft zieht.|Fest ins Bügelglas drücken und mit Selleriesaft auffüllen, bis alles bedeckt ist.|Beschweren und 5–7 Tage fermentieren, täglich kurz öffnen.|Kühl aufbewahren.",
+{gm:"klassisch: 1 EL Salz statt Selleriesaft einkneten|Kümmel|Wacholder",tip:"Mit cremiger Hanfsauce wird daraus eine sättigende Jause.",j:"k",d:"mehrere Wochen"});
+r("kaese","Einfaches Kimchi","Säuerlich und belebend.",
+"1 Chinakohl|1 Karotte|1 Bund Frühlingszwiebeln|1 Birne|1 Tasse frisch gepresster Selleriesaft",
+"Kohl in Stücke schneiden und kräftig kneten.|Karotte in Streifen, Frühlingszwiebeln in Ringe schneiden, die Birne pürieren.|Alles vermengen, fest ins Glas pressen und mit Selleriesaft bedecken.|3–5 Tage fermentieren, dann kühl stellen.",
+{gm:"2 EL Salz zum Einsalzen des Kohls|3 Knoblauchzehen|2 TL Ingwer|2 EL Gochugaru (koreanisches Chili)",g:1,j:"k",d:"mehrere Wochen"});
 
-/* Frühstück & Smoothies */
+/* ===== Frühstück & Smoothies ===== */
+r("morgen","Hanfmilch","In einer Minute gemixt, ganz ohne Abseihen.",
+"3 EL Hanfherzen|1 Tasse Wasser|1 Dattel",
+"Alles im Mixer 30 Sekunden pürieren.|Sofort genießen oder im Kühlschrank aufbewahren.",
+{gm:"Vanille",tip:"Für Mandelmilch 1 Tasse eingeweichte Mandeln mit 3 Tassen Wasser mixen und durch ein Tuch abseihen.",j:"k",d:"2 Tage"});
 r("morgen","Buchweizen-Porridge","Cremig mit Biss.",
-"1 Tasse gekeimter Buchweizen|1 Banane|½ Tasse Pflanzenmilch|1 TL Zimt|Beeren, Nüsse, Samen",
-"Grob pürieren, damit Textur bleibt.|Mit Zimt abschmecken und toppen.","",{j:"k",d:"1 Tag"});
+"1 Tasse gekeimter Buchweizen|1 Banane|½ Tasse Hanfmilch|Beeren, Nüsse, Samen",
+"Grob pürieren, damit Textur bleibt.|Mit Toppings servieren.",
+{gm:"1 TL Zimt",j:"k",d:"1 Tag"});
 r("morgen","Overnight-Chia","Das Frühstück, das über Nacht von selbst entsteht.",
-"3 EL Chiasamen|1 Tasse Pflanzenmilch|1 EL Dattelpüree|½ TL Vanille|Toppings",
-"Alles mischen.|Über Nacht quellen lassen.|Morgens toppen.","Direkt im Schraubglas angesetzt, wandert es ohne Umfüllen in die Tasche.",{j:"k",d:"2 Tage"});
+"3 EL Chiasamen|1 Tasse Hanf- oder Mandelmilch|1 EL Dattelpüree|Toppings",
+"Alles mischen.|Über Nacht quellen lassen.|Morgens toppen.",
+{gm:"½ TL Vanille",tip:"Direkt im Schraubglas angesetzt, wandert es ohne Umfüllen in die Tasche.",j:"k",d:"2 Tage"});
 r("morgen","Grüner Power-Smoothie","Grüne Kraft im Glas.",
-"2 Handvoll Spinat|1 gefrorene Banane|1 Tasse Pflanzenmilch|1 EL Mandelmus|1 TL Spirulina|1 Dattel",
-"Alles cremig mixen.","In der Thermosflasche bleibt er bis Mittag frisch.",{j:"k",d:"1 Tag"});
+"2 Handvoll Spinat|1 gefrorene Banane|1 Tasse Hanfmilch|1 EL Mandelmus|1 Dattel",
+"Alles cremig mixen.",
+{tip:"In der Thermosflasche bleibt er bis Mittag frisch.",j:"k",d:"1 Tag"});
 r("morgen","Beeren-Smoothie-Bowl","Bunt wie ein Sommermorgen.",
-"1 Tasse gefrorene Beeren|1 gefrorene Banane|½ Tasse Pflanzenmilch|Beeren, Granola, Kokos, Chia",
-"Dick pürieren.|In eine Schale geben und dekorieren.","");
+"1 Tasse gefrorene Beeren|1 gefrorene Banane|½ Tasse Hanfmilch|Beeren, Granola, Kokos, Chia",
+"Dick pürieren.|In eine Schale geben und dekorieren.");
 r("morgen","Tropischer Smoothie","Urlaub im Glas.",
-"1 Tasse gefrorene Mango|½ Tasse Ananas|1 Banane|1 Tasse Kokosmilch|optional: 1 TL Kurkuma",
-"Alles cremig mixen und sofort genießen.","");
+"1 Tasse gefrorene Mango|½ Tasse Ananas|1 Banane|1 Tasse Kokosmilch aus jungem Kokosfleisch",
+"Alles cremig mixen und sofort genießen.",
+{gm:"1 TL Kurkuma|ein Stück frischer Ingwer"});
 r("morgen","Rohkost-Granola","Wird beim Abkühlen noch knuspriger.",
-"1 Tasse gekeimter Buchweizen|½ Tasse Kokosraspeln|½ Tasse Mandeln|¼ Tasse Kürbiskerne|¼ Tasse Sonnenblumenkerne|2 EL Dattelpüree|1 EL Kokosöl|1 TL Zimt|½ TL Vanille|1 Prise Salz",
-"Trockene Zutaten mischen.|Dattelpüree, Öl und Gewürze leicht erwärmen und untermischen.|12–16 Stunden dörren und mehrmals wenden.","",{j:"o",h:1,d:"4 Wochen"});
+"1 Tasse gekeimter Buchweizen|½ Tasse Kokosraspeln|½ Tasse Mandeln|¼ Tasse Kürbiskerne|¼ Tasse Sonnenblumenkerne|3 EL Dattelpüree|1 EL Mandelmus",
+"Trockene Zutaten mischen.|Dattelpüree und Mandelmus verrühren und untermischen.|12–16 Stunden dörren und mehrmals wenden.",
+{gm:"1 TL Zimt|½ TL Vanille|eine Prise Salz",j:"o",h:1,d:"4 Wochen"});
 
 /* ---------- Baukasten ---------- */
-const B1=["Rohkost-Brot mit Kräutern","Zwiebel-Cracker","Leinsamen-Tortilla","Italienische Kräuter-Cracker","Collard-Green-Blatt","Nori-Blatt","Gemüsesticks","Zucchini-Nudeln im Glas"];
-const B2=["Sonnenblumenkern-Aufstrich","Zucchini-Hummus","Kräuter-Frischkäse","Guacamole","Walnuss-Pilz-Hackfleisch","Mandel-Feta mit Tomate","Sauerkraut mit Hanfsauce","Kimchi mit Avocado"];
-const B3=["Rohkost-Brownie","Gedörrte Bananensticks","Dattel-Kokos-Energiebällchen","Tamari-Mandeln","Apfelchips mit Zimt","Gefüllte Datteln","Mango-Fruchtleder","Grünkohl-Chips"];
+const B1=["Rohkost-Brot mit Kräutern","Zwiebel-Cracker","Leinsamen-Tortilla","Italienische Kräuter-Cracker","Mangold- oder Kohlblatt","Nori-Blatt","Gemüsesticks","Zucchini-Nudeln im Glas"];
+const B2=["Sonnenblumenkern-Aufstrich","Zucchini-Hummus","Kräuter-Frischkäse","Guacamole","Hanfherzencreme mit Schnittlauch","Walnuss-Pilz-Hackfleisch","Mandel-Frischkäse mit Tomate","Sauerkraut mit Hanfsauce","Kimchi mit Avocado"];
+const B3=["Rohkost-Brownie","Gedörrte Bananensticks","Dattel-Kokos-Energiebällchen","Knusprige Dörrmandeln","Knusprige Apfelchips","Gefüllte Datteln","Mango-Fruchtleder","Grünkohl-Chips"];
 const fill=(id,a)=>document.getElementById(id).innerHTML=a.map(x=>"<li>"+x+"</li>").join("");
 fill("b1",B1);fill("b2",B2);fill("b3",B3);
 const pick=a=>a[Math.floor(Math.random()*a.length)];
@@ -809,13 +946,19 @@ function render(){
     if(cat==="job"){ if(!isJob(x))return false;
       if(sub==="o"&&x.j!=="o")return false; if(sub==="k"&&x.j!=="k")return false; if(sub==="h"&&!x.h)return false; }
     else if(cat!=="all"&&x.c!==cat) return false;
-    if(q){const hay=(x.t+" "+x.desc+" "+x.z.join(" ")).toLowerCase(); if(!hay.includes(q))return false;}
+    if(q){const hay=(x.t+" "+x.desc+" "+x.z.join(" ")+" "+x.gm.join(" ")).toLowerCase(); if(!hay.includes(q))return false;}
     return true;});
   if(cat==="job") list.sort((a,b)=>(b.c==="job")-(a.c==="job"));
   document.getElementById("grid").innerHTML=list.map(card).join("");
   document.getElementById("empty").style.display=list.length?"none":"block";
   const label=cat==="all"?"Rezepte":(CATNAME[cat]||"").replace("★ ","");
   document.getElementById("count").textContent=list.length+" "+(list.length===1?"Rezept":"Rezepte")+(cat!=="all"?" · "+label:"");
+}
+function gour(x){
+  if(!x.gm.length) return "";
+  return '<div class="gourmet"><h4>✦ Gourmet-Variante</h4>'+
+    (x.g?'<p class="g-note">Für dieses Gericht empfiehlt sich die Gourmet-Variante — erst mit diesen Aromen entfaltet es seinen typischen Charakter.</p>':'<p class="g-note">Schmeckt auch pur. Für die Gourmetküche nach Belieben ergänzen:</p>')+
+    '<ul class="gold-list">'+x.gm.map(i=>"<li>"+i+"</li>").join("")+'</ul></div>';
 }
 function card(x){
   const tags=[];
@@ -824,12 +967,13 @@ function card(x){
   if(x.j==="k") tags.push('<span class="tag">Kühltasche</span>');
   if(x.h) tags.push('<span class="tag">Einhand-Snack</span>');
   if(x.d) tags.push('<span class="tag">Hält '+x.d+'</span>');
+  if(x.g) tags.push('<span class="tag gold">✦ Gourmet empfohlen</span>');
   return '<article class="recipe'+(x.c==="job"?" job":"")+'"><div class="recipe-top"></div><div class="recipe-body">'+
     '<div class="r-cat">'+(CATNAME[x.c]||"").replace("★ ","")+'</div><h3>'+x.t+'</h3>'+
     '<p class="r-desc">'+x.desc+'</p><div class="tags">'+tags.join("")+'</div>'+
     '<details><summary>✦ Rezept öffnen</summary><div class="r-inner"><h4>Zutaten</h4><ul class="gold-list">'+
     x.z.map(i=>"<li>"+i+"</li>").join("")+'</ul><h4>Zubereitung</h4><ol class="steps">'+
-    x.s.map(i=>"<li>"+i+"</li>").join("")+'</ol>'+(x.tip?'<div class="tip"><b>Amys Tipp:</b> '+x.tip+'</div>':"")+
+    x.s.map(i=>"<li>"+i+"</li>").join("")+'</ol>'+gour(x)+(x.tip?'<div class="tip"><b>Amys Tipp:</b> '+x.tip+'</div>':"")+
     '</div></details></div></article>';
 }
 if(location.hash==="#job-rezepte") setCat("job"); else render();
