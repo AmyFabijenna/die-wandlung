@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rezepte · Lebendige Küche | Die Wandlung · Raw &amp; Real</title>
+<meta content="Lebendige Rohkost-Rezepte von Amy Dorothy Ronja Lang: Suppen, Salate, Dips, Cracker, Pizza, Quiche, Desserts, Fermentiertes und eine große Sammlung an Jausen für unterwegs und für den Job." name="description"/>
+<meta content="Rohkost Rezepte, vegane Rohkost, Jause für die Arbeit, Rohkost für unterwegs, Meal Prep Rohkost, Rohkost Quiche, Energiebällchen, Cracker dörren, lebendige Ernährung" name="keywords"/>
+<meta content="Amy Dorothy Ronja Lang" name="author"/>
+<link href="https://die-wandlung.eu/rezepte.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Lebendige Küche · Rezepte von Amy" property="og:title"/>
+<meta content="Rohkost-Rezepte voller Farbe und Frische — und über hundert Möglichkeiten, dich im Arbeitsalltag lebendig zu versorgen." property="og:description"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+<style>
+  :root {
+    --ink:#26262c; --muted:#5b555f; --gold:#b8892c; --gold-deep:#8f6317; --gold-light:#ecd07e; --gold-shine:#fff3c9;
+    --quartz:#f0bcc6; --quartz-light:#fadde3; --quartz-shine:#fff3f5; --obsidian:#0d0d12; --pearl:#e7ebf3;
+    --paper:rgba(255,255,255,.68); --shadow:0 18px 55px rgba(38,38,52,.13); --radius:28px;
+    --metal-gold:linear-gradient(110deg,var(--gold-deep) 0%,#d9b355 30%,var(--gold-shine) 50%,#cfa440 68%,var(--gold-deep) 100%);
+    --metal-gold-soft:linear-gradient(135deg,#a97e22 0%,#e6c76e 40%,var(--gold-shine) 55%,#d3ab48 72%,#9a6f1c 100%);
+    --metal-gold-text:linear-gradient(110deg,#6e4c10 0%,#a1761c 32%,#c2952e 50%,#8d6316 70%,#6e4c10 100%);
+    --obsidian-glass:linear-gradient(150deg,#0a0a0f 0%,#17171e 34%,#33323e 48%,#14141a 60%,#060609 100%);
+    --metal-silver:linear-gradient(110deg,#99a2b2 0%,#dde3ed 34%,#ffffff 47%,#fff4d6 53%,#cdd4e0 66%,#8d95a5 100%);
+    --metal-quartz-ring:linear-gradient(135deg,#dd9dab 0%,var(--quartz-shine) 45%,#eeb3c0 60%,#cf8d9c 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Avenir Next",Avenir,"Inter","Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.72;
+    background:
+      radial-gradient(circle at 12% 8%,rgba(255,255,255,.85),transparent 22%),
+      radial-gradient(circle at 78% 18%,rgba(255,243,245,.75),transparent 26%),
+      radial-gradient(circle at 30% 62%,rgba(255,255,255,.5),transparent 24%),
+      radial-gradient(circle at 90% 78%,rgba(255,240,243,.6),transparent 28%),
+      linear-gradient(150deg,#eeb4c0 0%,#f8d7de 16%,var(--quartz-shine) 32%,#f1c0ca 50%,#fbe2e7 66%,#ecafbc 84%,#f7d3da 100%);
+    background-attachment:fixed;min-height:100vh}
+  a{color:inherit}
+  .container{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:20px 0 56px}
+
+  .top-navigation{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 20px;margin-bottom:22px;border-radius:22px;background:var(--obsidian-glass);border:1px solid rgba(222,184,88,.55);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28),inset 0 0 22px rgba(230,199,110,.08);flex-wrap:wrap;position:relative;overflow:hidden}
+  .top-navigation::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 44%,rgba(255,255,255,.14) 50%,transparent 56%);pointer-events:none}
+  .brand-mark{position:relative;font-size:.88rem;font-weight:700;letter-spacing:.16em;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none}
+  .brand-mark span{background:var(--metal-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .top-nav-links{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+  .top-nav-links a{text-decoration:none;padding:8px 13px;border-radius:999px;font-size:.88rem;font-weight:650;background:var(--metal-silver);-webkit-background-clip:text;background-clip:text;color:transparent;border:1px solid rgba(222,184,88,.35)}
+  .top-nav-links a:hover,.top-nav-links a.active{background:var(--metal-gold-soft);-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#241d0e;color:#241d0e;box-shadow:inset 0 1px 0 rgba(255,255,255,.55);border-color:rgba(143,99,23,.5)}
+  .nav-sep{width:1px;background:rgba(222,184,88,.35);margin:4px 2px}
+
+  header,section,footer{margin-bottom:34px}
+  header,.glass{background:var(--paper);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.85);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(240,188,198,.45);border-radius:var(--radius)}
+  header{text-align:center;padding:clamp(42px,7vw,76px) clamp(22px,6vw,72px);position:relative;overflow:hidden}
+  header::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-140px;top:-170px;background:radial-gradient(circle at 35% 35%,rgba(255,243,201,.4),rgba(236,208,126,.12) 55%,transparent 75%)}
+  header::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.5) 50%,transparent 58%);pointer-events:none}
+  .eyebrow{position:relative;z-index:1;font-size:.8rem;text-transform:uppercase;letter-spacing:.2em;font-weight:750;color:#7d5f16;margin-bottom:18px}
+  h1{position:relative;z-index:1;font-size:clamp(2.45rem,7vw,5rem);line-height:1.03;letter-spacing:-.045em;font-weight:620;max-width:940px;margin:0 auto 22px}
+  .gold-text{background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(96,66,12,.3))}
+  .wisdom-line{position:relative;z-index:1;font-size:clamp(1.12rem,2.5vw,1.55rem);line-height:1.45;max-width:820px;margin:0 auto 22px;font-weight:540}
+  .header-subtitle{position:relative;z-index:1;max-width:800px;margin:0 auto;font-size:clamp(1.02rem,2.1vw,1.2rem);color:#4a444e}
+  .badges{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;gap:5px 14px;margin:24px auto 0}
+  .star-badge{display:inline-flex;align-items:center;gap:8px;font-size:.92rem;font-weight:700;color:#6d5218}
+  .cta-row{position:relative;z-index:1;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .cta-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border-radius:999px;text-decoration:none;font-weight:780;letter-spacing:.02em;color:#241d0e;border:1px solid rgba(143,99,23,.45);background:var(--metal-gold-soft);box-shadow:0 12px 30px rgba(150,110,35,.28),inset 0 1px 0 rgba(255,255,255,.65),inset 0 -2px 4px rgba(120,84,15,.28);transition:transform .25s ease,box-shadow .25s ease;cursor:pointer;font-family:inherit;font-size:1rem}
+  .cta-button:hover{transform:translateY(-2px)}
+  .cta-button.secondary{background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.55);box-shadow:0 8px 24px rgba(170,100,118,.2),inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 4px rgba(180,105,122,.28)}
+
+  h2{text-align:center;font-size:clamp(1.9rem,5vw,3.1rem);line-height:1.12;letter-spacing:-.035em;font-weight:620;margin-bottom:16px}
+  .section-intro{max-width:800px;margin:0 auto 28px;text-align:center;font-size:1.06rem;color:#4d4752}
+  .pad{padding:clamp(26px,5vw,52px)}
+
+  /* Obsidian-Bühne für die Job-Kategorie */
+  .obsidian{padding:clamp(30px,6vw,64px);background:var(--obsidian-glass);border-radius:34px;border:1px solid rgba(222,184,88,.6);box-shadow:0 24px 70px rgba(10,10,18,.4),inset 0 1px 0 rgba(255,244,214,.3),inset 0 0 34px rgba(230,199,110,.07);overflow:hidden;position:relative}
+  .obsidian::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.09) 46%,rgba(255,255,255,.16) 49%,rgba(255,255,255,.05) 53%,transparent 62%),linear-gradient(115deg,transparent 68%,rgba(255,255,255,.06) 74%,transparent 80%);pointer-events:none}
+  .obsidian::after{content:"";position:absolute;inset:auto -110px -150px auto;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(236,208,126,.22),transparent 70%);pointer-events:none}
+  .obsidian > *{position:relative;z-index:1}
+  .obsidian h2{background:var(--metal-gold-soft);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .obsidian .section-intro,.obsidian p{color:var(--pearl)}
+  .job-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:10px}
+  .job-card{padding:24px;border-radius:22px;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(230,199,110,.4);box-shadow:inset 0 1px 0 rgba(255,244,214,.22)}
+  .job-card strong{display:block;font-size:1.18rem;line-height:1.3;margin-bottom:8px;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .job-card p{font-size:.98rem}
+  .job-card.wide{grid-column:1/-1;background:linear-gradient(135deg,rgba(230,199,110,.2),rgba(255,255,255,.07) 55%,rgba(240,188,198,.13));border-color:rgba(230,199,110,.55)}
+  .week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px}
+  .day{padding:12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.3);font-size:.9rem;color:var(--pearl)}
+  .day b{display:block;color:var(--gold-light);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+
+  /* Baukasten */
+  .builder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+  .builder-col{padding:22px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(230,199,110,.4)}
+  .builder-col h3{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:10px}
+  .builder-col ul{list-style:none}
+  .builder-col li{color:var(--pearl);padding:4px 0 4px 22px;position:relative;font-size:.95rem}
+  .builder-col li::before{content:"✦";position:absolute;left:0;color:var(--gold-light)}
+  .combo{margin-top:22px;text-align:center}
+  .combo-result{margin:18px auto 0;max-width:820px;min-height:86px;padding:22px 26px;border-radius:22px;background:linear-gradient(135deg,rgba(230,199,110,.22),rgba(255,255,255,.08) 55%,rgba(240,188,198,.14));border:1px solid rgba(230,199,110,.55);font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--pearl);line-height:1.5}
+  .combo-result em{font-style:normal;background:linear-gradient(110deg,#dcb453,var(--gold-shine) 50%,#d3a63e);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:750}
+
+  /* Filter */
+  .filter-wrap{position:sticky;top:10px;z-index:20;padding:16px 18px;margin-bottom:22px;background:linear-gradient(160deg,rgba(255,250,251,.97),rgba(252,236,240,.97)) !important}
+  .search{width:100%;padding:13px 18px;border-radius:999px;border:1px solid rgba(184,137,44,.35);background:rgba(255,255,255,.88);font:inherit;font-size:1rem;color:var(--ink);outline:none;box-shadow:inset 0 1px 3px rgba(60,40,50,.08)}
+  .search:focus{border-color:var(--gold)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .chip{border:1px solid rgba(184,137,44,.32);background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(250,221,227,.6));padding:7px 14px;border-radius:999px;font:inherit;font-size:.88rem;font-weight:680;color:#4a3d22;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.9);transition:all .2s ease}
+  .chip:hover{border-color:rgba(143,99,23,.6)}
+  .chip.on{background:var(--metal-gold-soft);color:#241d0e;border-color:rgba(120,84,15,.55);box-shadow:0 6px 16px rgba(150,110,35,.25),inset 0 1px 0 rgba(255,255,255,.6)}
+  .chip.star{background:var(--obsidian-glass);color:var(--gold-light);border-color:rgba(222,184,88,.6)}
+  .chip.star.on{background:var(--metal-gold-soft);color:#241d0e}
+  .subchips{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed rgba(184,137,44,.35)}
+  .subchips.show{display:flex}
+  .count{margin-top:10px;font-size:.86rem;color:var(--muted);font-weight:600}
+
+  /* Rezeptkarten */
+  .recipe-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+  .recipe{border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.86),rgba(250,231,235,.6));border:1px solid rgba(184,137,44,.28);box-shadow:0 12px 34px rgba(45,45,60,.08),inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(240,188,198,.4);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .recipe:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(150,110,35,.16),inset 0 1px 0 rgba(255,255,255,.95)}
+  .recipe-top{height:8px;background:var(--metal-gold-soft)}
+  .recipe.job .recipe-top{background:var(--obsidian-glass);border-bottom:1px solid rgba(222,184,88,.6)}
+  .recipe-body{padding:20px 22px 22px}
+  .r-cat{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:#7d5f16}
+  .recipe h3{font-size:1.22rem;line-height:1.28;margin:4px 0 8px;background:var(--metal-gold-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .r-desc{font-size:.94rem;color:#4d4752;margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .tag{font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(184,137,44,.3);color:#5d4a1c}
+  .tag.dark{background:#17171e;color:var(--gold-light);border-color:rgba(222,184,88,.5)}
+  details summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:750;font-size:.9rem;color:#241d0e;background:linear-gradient(135deg,#ecb2be 0%,var(--quartz-shine) 45%,#f6ccd4 60%,#e19fae 100%);border:1px solid rgba(199,124,140,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.85)}
+  details summary::-webkit-details-marker{display:none}
+  details[open] summary{background:var(--metal-gold-soft);border-color:rgba(143,99,23,.5)}
+  .r-inner{margin-top:16px}
+  .r-inner h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#7d5f16;margin:12px 0 6px}
+  .gold-list{list-style:none}
+  .gold-list li{position:relative;padding-left:22px;margin:5px 0;font-size:.95rem}
+  .gold-list li::before{content:"✦";position:absolute;left:0;top:0;color:var(--gold-deep)}
+  ol.steps{padding-left:22px}
+  ol.steps li{margin:6px 0;font-size:.95rem}
+  ol.steps li::marker{color:var(--gold-deep);font-weight:800}
+  .tip{margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,243,201,.55);border:1px solid rgba(184,137,44,.3);font-size:.92rem}
+  .tip b{color:#7d5f16}
+  .empty{text-align:center;padding:40px;color:var(--muted);display:none}
+
+  .footer{padding:30px;background:var(--obsidian-glass);border-radius:28px;border:1px solid rgba(222,184,88,.6);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,244,214,.28);position:relative;overflow:hidden;text-align:center}
+  .footer::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.08) 49%,transparent 58%);pointer-events:none}
+  .footer > *{position:relative}
+  .footer p{color:#c9cfdb;font-size:.86rem;max-width:900px;margin:0 auto 10px}
+  .footer-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:22px}
+  .footer-button{text-decoration:none;border:1px solid rgba(230,199,110,.65);border-radius:999px;padding:9px 16px;font-size:.9rem;font-weight:650;color:var(--pearl);background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(230,199,110,.06));transition:background .25s ease,color .25s ease}
+  .footer-button:hover{background:var(--metal-gold-soft);color:#241d0e}
+
+  @media (max-width:980px){.recipe-grid,.job-grid,.builder{grid-template-columns:repeat(2,minmax(0,1fr))}.week{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (max-width:680px){.recipe-grid,.job-grid,.builder{grid-template-columns:1fr}.top-navigation{justify-content:center;text-align:center}.container{width:min(100% - 20px,1180px)}.filter-wrap{position:static}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="top-navigation">
+  <a class="brand-mark" href="index.html">DIE <span>WANDLUNG</span> · RAW &amp; REAL</a>
+  <div class="top-nav-links">
+    <a href="index.html">Startseite</a>
+    <a href="blog/index.html">Blog</a>
+    <a class="active" href="rezepte.html">Rezepte</a>
+    <span class="nav-sep"></span>
+    <a href="https://gorawandreal.com/recipes.html" lang="en">EN</a>
+    <a class="active" href="rezepte.html">DE</a>
+    <a href="http://amyfabijenna.github.io/transzformacio/receptek.html" lang="hu">HU</a>
+  </div>
+</nav>
+
+<header>
+  <p class="eyebrow">LEBENDIGE KÜCHE · REZEPTE VON AMY</p>
+  <h1>Essen, das lebt,<br/><span class="gold-text">schenkt Leben weiter.</span></h1>
+  <p class="wisdom-line">Farbe, Frische und die ganze Weisheit der Natur — so einfach zubereitet, dass sie in deinen echten Alltag passt.</p>
+  <p class="header-subtitle">Hier findest du meine liebsten Rohkost-Rezepte: von der sonnigen Gazpacho über knusprige Cracker aus dem Dörrgerät bis zur cremigen Schokoladentorte. Und weil so viele von euch mich fragen, wie man sich im Arbeitsalltag lebendig versorgt, gibt es eine eigene, große Sammlung für unterwegs und für den Job.</p>
+  <div class="badges">
+    <span class="star-badge">✦ 100 % pflanzlich</span>
+    <span class="star-badge">✦ Roh &amp; lebendig</span>
+    <span class="star-badge">✦ Ohne Backofen</span>
+    <span class="star-badge">✦ Alltagstauglich</span>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button" href="#job">Für unterwegs &amp; den Job</a>
+    <a class="cta-button secondary" href="#rezepte">Alle Rezepte entdecken</a>
+  </div>
+</header>
+
+<!-- ======================= FÜR DEN JOB ======================= -->
+<section class="obsidian" id="job">
+  <h2>Für unterwegs &amp; für den Job</h2>
+  <p class="section-intro">Wer den ganzen Tag an der Kasse sitzt, im Geschäft steht, pendelt oder von Termin zu Termin eilt, kann nicht immer nur Obst essen — und muss es auch nicht. Diese Sammlung ist für alle, die sich in einer kurzen Pause mit etwas Sättigendem, Herzhaftem oder Süßem versorgen möchten: genauso selbstverständlich wie mit einem Wurstsemmerl, nur lebendig.</p>
+
+  <div class="job-grid">
+    <article class="job-card wide">
+      <strong>Das Prinzip: einmal vorbereiten, die ganze Woche genießen</strong>
+      <p>Das Dörrgerät ist deine stille Helferin. Am Wochenende läuft es über Nacht, und am Montag hast du Brot, Cracker, Kekse und Chips für viele Tage. Dazu zwei, drei Dips im Schraubglas, geschnittenes Gemüse in einer Box — und du greifst morgens nur noch zu.</p>
+      <div class="week">
+        <div class="day"><b>Samstag</b>Cracker, Brot und Bananensticks ins Dörrgerät, Nüsse einweichen</div>
+        <div class="day"><b>Sonntag</b>Zwei Dips mixen, Energiebällchen rollen, Gemüse schneiden</div>
+        <div class="day"><b>Mo – Mi</b>Brot mit Aufstrich, Sticks mit Dip, eine süße Kleinigkeit</div>
+        <div class="day"><b>Mittwoch</b>Frischer Nachschub: Salat im Glas oder Lasagne für zwei Tage</div>
+        <div class="day"><b>Do – Fr</b>Cracker-Vorrat, Fermentiertes mit Hanfsauce, Brownies</div>
+      </div>
+    </article>
+    <article class="job-card">
+      <strong>Ohne Kühlschrank</strong>
+      <p>Gedörrtes Brot, Cracker, Kekse, Energiebällchen, Nüsse, Obstleder und Chips halten den ganzen Tag in der Tasche. Diese Rezepte tragen das Zeichen „ohne Kühlung“.</p>
+    </article>
+    <article class="job-card">
+      <strong>Mit Kühltasche oder Personalkühlschrank</strong>
+      <p>Dips, Lasagne, Salate im Glas, Fermentiertes und Cremiges fühlen sich in der Kühle am wohlsten. Ein kleiner Kühlakku reicht meist bis zur Mittagspause.</p>
+    </article>
+    <article class="job-card">
+      <strong>Einhand-Snacks für kurze Pausen</strong>
+      <p>Wenn nur fünf Minuten bleiben: Bällchen, Riegel, gefüllte Datteln, Nori-Röllchen und Sandwiches, die nicht krümeln und nicht tropfen.</p>
+    </article>
+  </div>
+
+  <h2 style="margin-top:48px">Dein Jausen-Baukasten</h2>
+  <p class="section-intro">Wähle eine Basis, etwas zum Bestreichen oder Füllen und eine Kleinigkeit dazu. Allein aus diesen drei Spalten entstehen über fünfhundert Kombinationen — du wirst dich so schnell nicht wiederholen.</p>
+  <div class="builder">
+    <div class="builder-col"><h3>1 · Basis</h3><ul id="b1"></ul></div>
+    <div class="builder-col"><h3>2 · Aufstrich &amp; Füllung</h3><ul id="b2"></ul></div>
+    <div class="builder-col"><h3>3 · Dazu &amp; Süßes</h3><ul id="b3"></ul></div>
+  </div>
+  <div class="combo">
+    <button class="cta-button" id="comboBtn" type="button">✦ Überrasch mich mit meiner Jause</button>
+    <div class="combo-result" id="combo">Drück auf den Knopf, und ich stelle dir eine Jause für morgen zusammen.</div>
+  </div>
+  <div class="cta-row">
+    <a class="cta-button secondary" href="#rezepte" onclick="setCat('job')">Alle Job-Rezepte ansehen</a>
+  </div>
+</section>
+
+<!-- ======================= REZEPTE ======================= -->
+<section class="pad glass" id="rezepte">
+  <h2>Alle Rezepte</h2>
+  <p class="section-intro">Such nach einer Zutat, die gerade in deiner Küche wartet, oder stöbere durch die Kategorien. Ein Klick auf „Rezept öffnen“ zeigt dir Zutaten und Zubereitung.</p>
+
+  <div class="filter-wrap glass">
+    <input class="search" id="search" placeholder="Suche nach Rezept oder Zutat … z. B. Walnuss, Zucchini, Kakao" type="search"/>
+    <div class="chips" id="chips"></div>
+    <div class="chips subchips" id="subchips">
+      <button class="chip on" data-sub="all" type="button">Alle Job-Rezepte</button>
+      <button class="chip" data-sub="o" type="button">Ohne Kühlung</button>
+      <button class="chip" data-sub="k" type="button">Mit Kühltasche</button>
+      <button class="chip" data-sub="h" type="button">Einhand-Snack</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <div class="recipe-grid" id="grid"></div>
+  <p class="empty" id="empty">Zu dieser Suche habe ich noch kein Rezept — probier eine andere Zutat.</p>
+</section>
+
+<section class="pad glass" style="text-align:center">
+  <h2>Grundwissen für deine lebendige Küche</h2>
+  <p class="section-intro" style="margin-bottom:10px"><b>Dörren:</b> Alle Dörrzeiten gelten für 42 °C, damit Enzyme und Vitalstoffe erhalten bleiben. <b>Aktivieren:</b> Nüsse und Saaten 6–12 Stunden in Wasser einweichen, abspülen und nach Bedarf trocken dörren. <b>Buchweizen keimen:</b> 30 Minuten einweichen, gut spülen und 1–2 Tage keimen lassen, bis kleine Schwänzchen sichtbar sind. <b>Tasse:</b> eine Tasse entspricht etwa 240 ml.</p>
+</section>
+
+<section class="pad glass" style="text-align:center">
+  <h2>Lust auf mehr als Rezepte?</h2>
+  <p class="section-intro">Wenn du spürst, dass lebendige Ernährung ein fester Teil deines Lebens werden darf — mit Begleitung, die zu deinem Alltag, deiner Familie und deinem Job passt — dann lass uns sprechen.</p>
+  <div class="cta-row">
+    <a class="cta-button" href="index.html#contact">Kostenloses Erstgespräch</a>
+    <a class="cta-button secondary" href="https://wa.me/4368120283291?text=Hallo%20Amy%2C%20ich%20habe%20deine%20Rezepte%20entdeckt">WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-buttons">
+    <a class="footer-button" href="index.html">Startseite</a>
+    <a class="footer-button" href="erstgespraech.html">Beratungstermin buchen</a>
+    <a class="footer-button" href="faq_coaching.html">FAQ</a>
+    <a class="footer-button" href="agb_coaching.html">AGB</a>
+    <a class="footer-button" href="datenschutz.html">Datenschutz</a>
+  </div>
+  <p>Die Rezepte dienen der allgemeinen Bildung und Inspiration. Medizinische Diagnose und Behandlung, Psychotherapie und reglementierte Ernährungsberatung werden von den gesetzlich dazu befugten Berufen erbracht.</p>
+  <p>© 2026 Amy Dorothy Ronja Lang — Die Wandlung · Raw &amp; Real. Alle Rechte vorbehalten.</p>
+</footer>
+</div>
+
+<script>
+/* ---------- Kategorien ---------- */
+const CATS = [
+  ["job","★ Für unterwegs & den Job"],
+  ["suppe","Suppen"],["salat","Salate"],["dip","Dips & Aufstriche"],
+  ["wrap","Tacos & Wraps"],["brot","Brote & Cracker"],["haupt","Pizza, Quiche & Hauptgerichte"],
+  ["snack","Snacks, Kekse & Riegel"],["torte","Torten & Desserts"],["kaese","Käse & Fermentiertes"],["morgen","Frühstück & Smoothies"]
+];
+const CATNAME = Object.fromEntries(CATS);
+
+/* ---------- Rezepte ----------
+   r(kategorie, titel, beschreibung, zutaten "a|b", schritte "a|b", tipp, optionen)
+   optionen: j = "o" (ohne Kühlung) / "k" (Kühltasche), h = 1 (Einhand), d = Haltbarkeit */
+const D = [];
+function r(c,t,desc,z,s,tip,o){ D.push(Object.assign({c,t,desc,z:z.split("|"),s:s.split("|"),tip},o||{})); }
+
+/* ===== FÜR DEN JOB – eigene Kreationen ===== */
+r("job","Dörrbrot-Sandwich mit Sonnenblumen-Aufstrich","Das lebendige Gegenstück zur klassischen Jausensemmel — sättigend, herzhaft, krümelfrei.",
+"2 Scheiben Rohkost-Brot mit Kräutern (siehe Brote & Cracker)|3 EL Sonnenblumenkern-Aufstrich|einige Gurkenscheiben|1 Handvoll Sprossen oder Rucola|1 Tomate in Scheiben (erst in der Pause auflegen)",
+"Aufstrich dick auf beide Brotscheiben streichen — er schützt das Brot vor Feuchtigkeit.|Gurke und Sprossen dazwischenlegen und zuklappen.|In Butterbrotpapier wickeln, Tomate separat in einer kleinen Dose mitnehmen.",
+"Bereite zwei Sandwiches gleichzeitig vor — das zweite hält im Kühlschrank bis zum nächsten Tag.",{j:"k",h:1,d:"1–2 Tage"});
+r("job","Gemüsesticks-Box mit drei Dips","Knackig, bunt und schnell gepackt — die Box, die den Nachmittag rettet.",
+"2 Karotten|1 Stück Gurke|1 rote Paprika|3 Stangen Staudensellerie|einige Kohlrabi-Stifte|je 3 EL Hummus, Guacamole und Cashew-Sour-Cream",
+"Gemüse in fingerlange Stifte schneiden.|Senkrecht in eine hohe Box oder ein breites Schraubglas stellen.|Die Dips in kleine Gläschen oder Silikonförmchen füllen und dazupacken.",
+"Karotten- und Selleriestifte bleiben in einem Glas mit etwas Wasser im Kühlschrank bis zu vier Tage knackig.",{j:"k",d:"3–4 Tage"});
+r("job","Cremige Hanfsauce","Nussig, zitronig und reich an wertvollem Eiweiß — die Sauce für alles Fermentierte.",
+"½ Tasse geschälte Hanfsamen|Saft von 1 Zitrone|1 kleine Knoblauchzehe|1 EL Hefeflocken|½ TL Salz|1 TL Senf (roh)|ca. ½ Tasse Wasser|frischer Dill oder Schnittlauch",
+"Alle Zutaten außer den Kräutern im Mixer cremig pürieren.|Mit Wasser auf eine dicke, gießfähige Konsistenz bringen.|Kräuter fein hacken und unterrühren.",
+"Hält 5 Tage im Schraubglas. Wunderbar auch über Blattsalat oder als Brotaufstrich.",{j:"k",d:"5 Tage"});
+r("job","Sauerkraut-Bowl mit Hanfsauce","Fermentiertes, Knackiges und Cremiges in einer Box — stärkt und sättigt lange.",
+"1 Tasse Sauerkraut (roh)|1 Karotte, geraspelt|½ Apfel, gewürfelt|1 Handvoll Sonnenblumenkerne, aktiviert|3 EL Hanfsauce|1 Handvoll Babyspinat",
+"Spinat als Bett in die Box legen.|Sauerkraut, Karotte und Apfel nebeneinander anordnen.|Hanfsauce in ein Extragläschen füllen und in der Pause darübergeben.|Mit Sonnenblumenkernen bestreuen.",
+"Der Apfel bringt eine sanfte Süße, die das Sauerkraut wunderbar rund macht.",{j:"k",d:"2 Tage"});
+r("job","Kimchi-Wrap mit Hanfsauce","Pikant, frisch und in einer Hand zu halten.",
+"1 Leinsamen-Tortilla|3 EL Kimchi|2 EL Hanfsauce|½ Avocado in Streifen|Gurkenstreifen|einige Salatblätter",
+"Tortilla mit Hanfsauce bestreichen.|Salat, Kimchi, Avocado und Gurke darauflegen.|Fest einrollen und in Butterbrotpapier wickeln.",
+"Einen Tropfen Zitrone auf die Avocado — dann bleibt sie bis zur Pause schön grün.",{j:"k",h:1,d:"1 Tag"});
+r("job","Gedörrte Bananensticks","Süß wie Karamell, handlich wie ein Schokoriegel.",
+"4 reife Bananen|Saft von ½ Zitrone|optional: Zimt oder Kakaopulver",
+"Bananen längs vierteln.|Mit Zitronensaft bestreichen und nach Wunsch bestäuben.|Bei 42 °C 12–16 Stunden dörren, bis sie zäh-weich sind.",
+"In einem Glas aufbewahrt halten sie wochenlang.",{j:"o",h:1,d:"mehrere Wochen"});
+r("job","Knusprige Apfelchips mit Zimt","Das knackige Knabbervergnügen für zwischendurch.",
+"4 süße Äpfel|1 TL Zimt|Saft von ½ Zitrone",
+"Äpfel mit der Mandoline in hauchdünne Scheiben hobeln.|Mit Zitronensaft beträufeln und mit Zimt bestäuben.|Bei 42 °C 10–14 Stunden dörren, bis sie knusprig sind.",
+"Luftdicht verschlossen bleiben sie knusprig.",{j:"o",h:1,d:"mehrere Wochen"});
+r("job","Grünkohl-Chips mit Käse-Würze","Salzig, knusprig und voller Grünkraft — das Chipspackerl in lebendig.",
+"1 Bund Grünkohl|½ Tasse Cashews, eingeweicht|1 rote Paprika|2 EL Hefeflocken|1 EL Zitronensaft|½ TL Salz|1 Prise Paprikapulver",
+"Grünkohl von den Stielen zupfen und in mundgerechte Stücke reißen.|Übrige Zutaten zu einer dicken Creme mixen.|Die Blätter damit einmassieren und locker auf Dörrgitter legen.|Bei 42 °C 10–12 Stunden dörren.",
+"Mach gleich die doppelte Menge — sie sind schneller aufgegessen, als du denkst.",{j:"o",h:1,d:"2 Wochen"});
+r("job","Zucchini-Kräuter-Chips","Leicht, würzig und herrlich knusprig.",
+"2 Zucchini|1 EL Olivenöl|1 TL italienische Kräuter|½ TL Salz|1 Prise Knoblauchpulver",
+"Zucchini hauchdünn hobeln.|Mit Öl und Gewürzen vorsichtig vermengen.|Bei 42 °C 10–12 Stunden dörren.",
+"",{j:"o",h:1,d:"2 Wochen"});
+r("job","Tomaten-Chips mit Oregano","Konzentriertes Sommeraroma zum Knabbern.",
+"6 feste Tomaten|1 TL Oregano|½ TL Salz|1 TL Olivenöl",
+"Tomaten in 5 mm dünne Scheiben schneiden.|Mit Öl, Oregano und Salz würzen.|Bei 42 °C 12–18 Stunden dörren, bis sie knusprig brechen.",
+"",{j:"o",h:1,d:"2 Wochen"});
+r("job","Tamari-Mandeln","Der würzige Nussmoment, der dich durch den Nachmittag trägt.",
+"2 Tassen Mandeln, aktiviert|2 EL Tamari oder Kokosaminos|½ TL geräuchertes Paprikapulver",
+"Aktivierte Mandeln mit Tamari und Paprika vermengen.|30 Minuten ziehen lassen.|Bei 42 °C 12–24 Stunden dörren, bis sie durch und durch knackig sind.",
+"Eine Handvoll in ein kleines Glas — passt in jede Jackentasche.",{j:"o",h:1,d:"4 Wochen"});
+r("job","Gewürzte Kürbis- und Sonnenblumenkerne","Salzig, knackig, sättigend.",
+"1 Tasse Kürbiskerne|1 Tasse Sonnenblumenkerne|1 EL Tamari|1 TL Currypulver|1 Prise Chili",
+"Kerne 6 Stunden einweichen und abspülen.|Mit Tamari und Gewürzen mischen.|Bei 42 °C 12–18 Stunden dörren.",
+"",{j:"o",h:1,d:"4 Wochen"});
+r("job","Lebendiges Studentenfutter","Die bunte Mischung für die Schürzentasche.",
+"½ Tasse aktivierte Mandeln|½ Tasse Walnüsse|¼ Tasse Kürbiskerne|¼ Tasse Rosinen|¼ Tasse Maulbeeren|2 EL Kakaonibs|2 EL Kokoschips",
+"Alles in einer großen Schüssel vermischen.|Portionsweise in kleine Gläser oder Stoffsäckchen füllen.",
+"",{j:"o",h:1,d:"4 Wochen"});
+r("job","Nori-Snackröllchen mit Avocado","Mini-Sushi für die Hand — erfrischend und sättigend.",
+"2 Nori-Blätter|1 Avocado|½ Gurke|1 Karotte|Sprossen|1 TL Tamari",
+"Nori-Blätter vierteln.|Avocado mit Tamari zerdrücken und auf jedes Viertel streichen.|Gemüsestifte und Sprossen darauflegen und zu Tütchen oder Röllchen einrollen.",
+"Erst am Morgen rollen, dann bleibt das Nori knackig.",{j:"k",h:1,d:"1 Tag"});
+r("job","Sushi-Bowl im Glas","Alles, was du an Sushi liebst, geschichtet im Schraubglas.",
+"1 Tasse Blumenkohl-Reis mit 1 TL Apfelessig|½ Avocado|Gurkenwürfel|Karottenstreifen|1 EL Sesam|1 Nori-Blatt, zerzupft|Dressing: 1 EL Tamari, 1 TL Ingwer, 1 TL Limettensaft",
+"Dressing unten ins Glas geben.|Gurke und Karotte darüberschichten, dann den Blumenkohl-Reis.|Avocado, Sesam und Nori ganz oben.|In der Pause durchschütteln oder in eine Schale stürzen.",
+"",{j:"k",d:"1 Tag"});
+r("job","Salat im Schraubglas","Das Dressing wartet unten, das Grün bleibt oben frisch — bis zum ersten Bissen.",
+"3 EL Dressing nach Wahl|Gurke, Paprika, Karotte, Radieschen|Kirschtomaten|1 Handvoll Sonnenblumenkerne|Blattsalat oder Babyspinat",
+"Dressing ganz unten ins Glas.|Darauf die festen Gemüse, dann Tomaten und Kerne.|Ganz oben die zarten Blätter.|Gut verschließen und aufrecht transportieren.",
+"Ein 1-Liter-Glas macht richtig satt und hält im Kühlschrank drei Tage.",{j:"k",d:"3 Tage"});
+r("job","Zucchini-Spaghetti im Glas mit Marinara","Pasta-Gefühl für die Mittagspause.",
+"1 große Zucchini, spiralisiert|½ Tasse Marinara-Sauce|½ Tasse Walnuss-Pilz-Hackfleisch|frisches Basilikum|1 EL Mandel-Parmesan",
+"Sauce unten ins Glas.|Hackfleisch darauf, dann die Zucchini-Nudeln.|Basilikum und Parmesan obenauf.|Vor dem Essen in eine Schale stürzen und mischen.",
+"",{j:"k",d:"2 Tage"});
+r("job","Gurkenschiffchen mit Kräuter-Frischkäse","Kühl, cremig, erfrischend.",
+"2 Mini-Gurken|4 EL Kräuter-Frischkäse|Kresse oder Schnittlauch|Paprikapulver",
+"Gurken längs halbieren und die Kerne mit einem Teelöffel herausschaben.|Mit Frischkäse füllen.|Mit Kresse und Paprika bestreuen.",
+"",{j:"k",h:1,d:"1–2 Tage"});
+r("job","Paprika-Boote mit Walnussfüllung","Herzhaft, knackig und ohne Besteck zu essen.",
+"2 Spitzpaprika|1 Tasse Walnuss-Pilz-Hackfleisch|2 EL Guacamole|Koriander",
+"Paprika längs halbieren und entkernen.|Mit Walnussfüllung befüllen.|Einen Klecks Guacamole und Koriander darauf.",
+"",{j:"k",h:1,d:"2 Tage"});
+r("job","Falafel-Box mit Tahini","Sättigende Bällchen, frisches Gemüse und ein cremiger Dip.",
+"6 Rohkost-Falafel|Gurken- und Tomatenwürfel|einige Salatblätter|3 EL Tahini-Sauce|Petersilie",
+"Salat in die Box legen.|Falafel und Gemüse daneben anordnen.|Tahini-Sauce separat mitnehmen.|In der Pause Falafel mit Gemüse in ein Salatblatt wickeln.",
+"",{j:"k",h:1,d:"4 Tage"});
+r("job","Hummus-Wrap","Cremig, frisch und handlich.",
+"1 Leinsamen-Tortilla|3 EL Zucchini-Hummus|geraspelte Karotte|Rotkohl, fein geschnitten|Sprossen|1 Handvoll Rucola",
+"Tortilla dick mit Hummus bestreichen.|Gemüse darauflegen.|Fest einrollen und schräg halbieren.",
+"",{j:"k",h:1,d:"1 Tag"});
+r("job","Pizzaschnitten zum Mitnehmen","Ein Stück Pizza für die Pause — ganz ohne Backofen.",
+"1 Rohkost-Pizzaboden|4 EL Marinara-Sauce|Cashew-Mozzarella|Oliven|getrocknete Tomaten|Oregano",
+"Pizzaboden mit Marinara bestreichen.|Mit Mozzarella, Oliven und Tomaten belegen.|Bei 42 °C noch 2 Stunden antrocknen, damit der Belag fest wird.|In Stücke schneiden und einzeln einpacken.",
+"Durch das kurze Nachdörren tropft nichts und die Stücke lassen sich gut in der Hand halten.",{j:"k",h:1,d:"3 Tage"});
+r("job","Mini-Quiche-Törtchen","Die Quiche im Handformat — perfekt für die Jausenbox.",
+"Boden und Füllung der Rohkost-Quiche (siehe Pizza, Quiche & Hauptgerichte)|12 Silikon-Muffinförmchen",
+"Bodenmasse in die Förmchen drücken und einen kleinen Rand formen.|Füllung einfüllen.|Bei 42 °C 6–8 Stunden dörren, bis die Oberfläche fest ist.|Aus den Förmchen lösen und kühl lagern.",
+"",{j:"k",h:1,d:"4 Tage"});
+r("job","Rote-Bete-Salat im Glas","Leuchtend, erdig und kräftigend.",
+"1 Rote Bete, geraspelt|1 Apfel, geraspelt|1 EL Meerrettich, frisch gerieben|2 EL Walnüsse|1 EL Olivenöl|1 EL Apfelessig|Salz",
+"Rote Bete und Apfel mischen.|Mit Öl, Essig, Meerrettich und Salz abschmecken.|In ein Glas füllen und Walnüsse obenauf streuen.",
+"Durchgezogen schmeckt er am zweiten Tag noch besser.",{j:"k",d:"3 Tage"});
+r("job","Fermentierte Karottensticks","Knackig-säuerlich und voller lebendiger Kulturen.",
+"500 g Karotten|500 ml Wasser|1 EL Salz|2 Knoblauchzehen|1 Stück Ingwer|Dill",
+"Salz im Wasser auflösen.|Karotten in Sticks schneiden und senkrecht ins Glas stellen.|Knoblauch, Ingwer und Dill dazu, mit Salzlake übergießen, bis alles bedeckt ist.|5–7 Tage bei Raumtemperatur fermentieren, dann kühl stellen.",
+"Mit Hanfsauce als Dip ein Traum.",{j:"k",h:1,d:"4 Wochen"});
+r("job","Cashew-Joghurt im Glas","Cremig-frisch, mit Beeren und Granola geschichtet.",
+"1 Tasse Cashews, eingeweicht|½ Tasse Wasser|1 Probiotika-Kapsel|1 EL Zitronensaft|Beeren und Granola zum Schichten",
+"Cashews mit Wasser und Zitrone sehr cremig mixen.|Probiotika einrühren und abgedeckt 8–12 Stunden warm stehen lassen.|Im Glas mit Beeren und Granola schichten, Granola erst morgens dazugeben.",
+"",{j:"k",d:"4 Tage"});
+r("job","Rohes Apfelmus mit Zimt","Wie aus Omas Küche — nur frisch gemixt.",
+"3 Äpfel|2 Datteln|½ TL Zimt|1 EL Zitronensaft|etwas Wasser",
+"Äpfel entkernen und grob schneiden.|Mit allen Zutaten im Mixer zu einem Mus pürieren.|In ein Glas füllen.",
+"",{j:"k",d:"2 Tage"});
+r("job","Gefüllte Datteln","Die kleinste Mahlzeit der Welt — und eine der glücklichsten.",
+"12 Medjool-Datteln|4 EL Mandelmus|12 Walnusshälften|1 Prise Meersalz|optional: Kakaonibs",
+"Datteln längs aufschneiden und entkernen.|Mit Mandelmus füllen und eine Walnuss hineindrücken.|Mit einer Prise Salz oder Kakaonibs krönen.",
+"",{j:"o",h:1,d:"1 Woche"});
+r("job","Buchweizen-Nuss-Riegel","Knusprig, sättigend und gut verpackbar.",
+"1 Tasse gekeimter, gedörrter Buchweizen|½ Tasse Mandeln, gehackt|½ Tasse Datteln|2 EL Mandelmus|2 EL Kokosraspeln|1 Prise Salz",
+"Datteln mit Mandelmus zu einer Paste verarbeiten.|Buchweizen, Mandeln und Kokos unterkneten.|In eine Form drücken, 4 Stunden dörren oder kühlen und in Riegel schneiden.",
+"Einzeln in Butterbrotpapier gewickelt überstehen sie jede Handtasche.",{j:"o",h:1,d:"2 Wochen"});
+r("job","Dattel-Kokos-Energiebällchen","Der schnelle Energieschub für die Pause.",
+"1 Tasse Datteln|1 Tasse Kokosraspeln|½ Tasse Cashews|1 TL Vanille|1 Prise Salz",
+"Cashews im Food Processor fein hacken.|Datteln, Kokos, Vanille und Salz dazugeben, bis die Masse klebt.|Zu Bällchen rollen und in Kokos wälzen.",
+"",{j:"o",h:1,d:"2 Wochen"});
+r("job","Zitronen-Cashew-Bällchen","Frisch und sonnig — wie ein kleiner Urlaub.",
+"1 Tasse Cashews|½ Tasse Kokosraspeln|6 Datteln|Abrieb und Saft von 1 Bio-Zitrone|1 Prise Salz",
+"Alles im Food Processor zu einer formbaren Masse verarbeiten.|Bällchen rollen und kühl stellen.",
+"",{j:"o",h:1,d:"1 Woche"});
+r("job","Karottenkuchen-Bällchen","Der Geschmack von Karottenkuchen in Snackgröße.",
+"1 Karotte, fein geraspelt|½ Tasse Walnüsse|½ Tasse Datteln|½ Tasse Kokosraspeln|1 TL Zimt|½ TL Ingwer|1 Prise Muskat",
+"Walnüsse fein hacken.|Datteln und Gewürze dazu verarbeiten.|Karotte und Kokos unterkneten und Bällchen formen.",
+"",{j:"k",h:1,d:"4 Tage"});
+r("job","Schoko-Orangen-Bällchen","Weihnachtlich, fruchtig, tröstlich.",
+"1 Tasse Haselnüsse|½ Tasse Datteln|3 EL Kakaopulver|Abrieb von 1 Bio-Orange|2 EL Orangensaft",
+"Haselnüsse fein hacken.|Restliche Zutaten dazugeben und verarbeiten.|Bällchen rollen und in Kakao wälzen.",
+"",{j:"o",h:1,d:"1 Woche"});
+r("job","Mango-Fruchtleder","Wie Fruchtgummi, nur aus reiner Frucht.",
+"2 reife Mangos|1 Banane|Saft von ½ Limette",
+"Alles glatt pürieren.|3–4 mm dünn auf Dörrfolie streichen.|Bei 42 °C 8–12 Stunden dörren.|Samt Backpapier in Streifen schneiden und einrollen.",
+"Funktioniert genauso mit Erdbeeren, Himbeeren oder Äpfeln.",{j:"o",h:1,d:"4 Wochen"});
+r("job","Gedörrte Mangostreifen","Süß, zäh, sonnig.",
+"3 reife Mangos",
+"Mangos schälen und in 5 mm dicke Streifen schneiden.|Bei 42 °C 12–16 Stunden dörren.",
+"",{j:"o",h:1,d:"mehrere Wochen"});
+r("job","Knusper-Müsliriegel mit Äpfeln","Fruchtig-nussig und schön knackig.",
+"1 Tasse Rohkost-Granola|½ Tasse getrocknete Apfelstücke|½ Tasse Datteln|2 EL Mandelmus|1 TL Zimt",
+"Datteln mit Mandelmus zu einer Paste verarbeiten.|Granola und Apfelstücke unterkneten.|Flach drücken, 8 Stunden dörren und in Riegel schneiden.",
+"",{j:"o",h:1,d:"2 Wochen"});
+r("job","Buchweizen-Knäckebrot-Sandwich mit Mandel-Feta","Salzig, mediterran und knusprig.",
+"4 Italienische Kräuter-Cracker|3 EL Mandel-Feta|Tomatenscheiben|Gurke|Oliven",
+"Mandel-Feta und Gemüse separat einpacken.|In der Pause Cracker bestreichen und belegen — so bleiben sie knusprig.",
+"",{j:"k",h:1,d:"3 Tage"});
+
+/* ===== Aus dem Rohkost-Rezeptbuch ===== */
+/* Tacos & Wraps */
+r("wrap","Knusprige Taco-Shells","Außen knusprig, flexibel genug zum Befüllen.",
+"2 Tassen goldener Leinsamen, gemahlen|1 Tasse Maisgries, über Nacht eingeweicht|1 Tasse Wasser|1 TL Kreuzkümmel|1 TL Paprikapulver|½ TL Meersalz|1 Knoblauchzehe, gepresst",
+"Leinsamen mit Maisgries vermischen.|Gewürze und Wasser dazugeben, 10 Minuten quellen lassen.|2 mm dünn in 15-cm-Kreisen auf Dörrfolie streichen.|Bei 42 °C 4–5 Stunden dörren, wenden, weitere 2–3 Stunden.|Über ein Gitter oder eine umgedrehte Muffinform legen und 2 Stunden weiterdörren.",
+"Nicht ganz austrocknen — die Shells sollen sich noch leicht biegen lassen.");
+r("wrap","Walnuss-Pilz-Hackfleisch","Die herzhafte Füllung für Tacos, Pizza und Wraps.",
+"2 Tassen Walnüsse, aktiviert|1 Tasse Champignons, fein gewürfelt|2 EL Tamari oder Kokosaminos|1 EL Olivenöl|1 TL Kreuzkümmel|1 TL geräuchertes Paprikapulver|½ TL Chiliflocken|1 Knoblauchzehe|Salz",
+"Walnüsse grob im Food Processor hacken.|Champignons fein würfeln.|Alles gut verkneten.|Mindestens 30 Minuten marinieren, gern über Nacht.",
+"Hält 5 Tage im Kühlschrank.",{j:"k",d:"5 Tage"});
+r("wrap","Sonnenblumen-Taco-Meat","Günstiger als die Walnuss-Variante und genauso köstlich.",
+"2 Tassen Sonnenblumenkerne, aktiviert|½ Tasse getrocknete Tomaten, eingeweicht|2 EL Tamari|1 TL Kreuzkümmel|1 TL Koriander, gemahlen|1 TL Paprikapulver|½ TL Cayennepfeffer|1 kleine Zwiebel",
+"Kerne und Tomaten grob hacken.|Zwiebel fein würfeln und unterheben.|Würzen und 30 Minuten ziehen lassen.","",{j:"k",d:"4 Tage"});
+r("wrap","Collard-Green-Wraps","Große Blätter als knackige Hülle.",
+"Große Kohl- oder Mangoldblätter|Walnuss-Pilz-Hackfleisch|Guacamole|Salsa|geraspelter Rotkohl|Sprossen",
+"Den dicken Stiel flach schneiden.|Blatt ausbreiten und in der Mitte belegen.|Seiten einschlagen und wie eine Frühlingsrolle aufrollen.",
+"Für unterwegs in Butterbrotpapier wickeln.",{j:"k",h:1,d:"1 Tag"});
+r("wrap","Leinsamen-Tortillas","Die flexible Basis für jeden Wrap.",
+"2 Tassen goldene Leinsamen, gemahlen|1 Tasse Wasser|½ TL Salz|½ TL Knoblauchpulver|optional: frische Kräuter",
+"Alles vermischen und 15 Minuten quellen lassen.|In 20-cm-Kreisen dünn ausstreichen.|Bei 42 °C 4 Stunden dörren, wenden, weitere 2 Stunden.",
+"Gerollt lassen sie sich gut aufbewahren.",{j:"o",d:"1 Woche"});
+r("wrap","Pikante Paprika-Füllung","Bunt, frisch und leicht scharf.",
+"2 rote Paprika|1 gelbe Paprika|½ Tasse Mais vom Kolben|1 Avocado|Saft von 1 Limette|1 TL Kreuzkümmel|Koriander|Salz und Chili",
+"Paprika fein würfeln und mit Mais mischen.|Limette und Gewürze unterheben.|Avocado vorsichtig unterziehen.","");
+r("wrap","Zucchini-Wraps","Hauchdünne Zucchinibahnen als frischer Wrap.",
+"2 große Zucchini|1 TL Olivenöl|Salz",
+"Zucchini längs dünn hobeln.|Leicht salzen, 15 Minuten ziehen lassen und abtupfen.|Mit Öl beträufeln und befüllen.","Frisch verwenden, nicht dörren.");
+r("wrap","Kokos-Curry-Wrap-Füllung","Exotisch-cremig mit frischem Ingwer.",
+"1 Tasse junges Kokosfleisch|1 Karotte, geraspelt|1 Zucchini in Julienne|½ Tasse Rotkohl|2 EL Mandelmus|1 EL Limettensaft|1 TL Currypulver|1 TL Ingwer|Tamari",
+"Kokosfleisch in Streifen schneiden und mit Gemüse mischen.|Mandelmus, Limette, Curry, Ingwer und Tamari verrühren.|Sauce untermischen.","",{j:"k",d:"2 Tage"});
+r("wrap","Mango-Avocado-Taco-Füllung","Süß-scharf — ein echtes Highlight.",
+"1 reife Mango|1 Avocado|½ rote Zwiebel|1 Jalapeño|Saft von 1 Limette|Koriander|Salz",
+"Mango und Avocado würfeln.|Mit Zwiebel und Jalapeño mischen.|Limette und Koriander unterheben und salzen.","");
+
+/* Dips */
+r("dip","Guacamole","Der Klassiker, cremig und frisch.",
+"3 reife Avocados|Saft von 1 Limette|1 kleine rote Zwiebel|1 Tomate, entkernt|Koriander|½ Jalapeño|Salz und Pfeffer",
+"Avocados zerdrücken.|Sofort Limettensaft untermischen.|Restliche Zutaten unterheben und abschmecken.",
+"Folie direkt auf die Oberfläche legen — so hält sie einen Tag.",{j:"k",d:"1 Tag"});
+r("dip","Cashew-Sour-Cream","Säuerlich-cremig, passt überall dazu.",
+"1 Tasse Cashews, 4 Std. eingeweicht|½ Tasse Wasser|2 EL Zitronensaft|1 EL Apfelessig|½ TL Salz",
+"Cashews abspülen.|Alles im Hochleistungsmixer cremig pürieren.",
+"Hält 5–7 Tage und wird mit der Zeit noch aromatischer.",{j:"k",d:"5–7 Tage"});
+r("dip","Rohkost-Salsa","Sonnenreife Tomaten mit Feuer.",
+"4 reife Tomaten|1 rote Zwiebel|1 Jalapeño|Saft von 1 Limette|Koriander|1 Knoblauchzehe|Salz",
+"Alles fein würfeln und vermischen.|30 Minuten kühl ziehen lassen und abschmecken.","",{j:"k",d:"2 Tage"});
+r("dip","Zucchini-Hummus","Zucchini statt Kichererbsen — genauso cremig, aber roh.",
+"1 Tasse Zucchini, geschält|½ Tasse Tahini|2 Knoblauchzehen|Saft von 1–2 Zitronen|2 EL Olivenöl|1 TL Kreuzkümmel|Salz|Paprikapulver",
+"Alles cremig pürieren.|Mit Salz und Zitrone abschmecken.|Mit Paprika, Öl und Petersilie garnieren.","",{j:"k",d:"4 Tage"});
+r("dip","Babaganoush","Nicht klassisch geröstet, aber überraschend köstlich.",
+"1 große Aubergine|2 EL Tahini|1 Knoblauchzehe|Saft von 1 Zitrone|1 EL Olivenöl|Salz|Petersilie",
+"Aubergine würfeln und 30 Minuten mit Salz marinieren.|Mit den übrigen Zutaten pürieren.","",{j:"k",d:"3 Tage"});
+r("dip","Sonnenblumenkern-Aufstrich","Der unkomplizierte Alltagsaufstrich.",
+"1 Tasse Sonnenblumenkerne, eingeweicht|2 EL Zitronensaft|1 Knoblauchzehe|1 TL Tamari|2 EL Wasser|frische Kräuter",
+"Alles cremig mixen.|Mit Salz abschmecken.","",{j:"k",d:"5 Tage"});
+
+/* Brote & Cracker */
+r("brot","Buchweizen-Basis-Cracker","Das Grundrezept für unzählige Varianten.",
+"2 Tassen gekeimter Buchweizen|½ Tasse goldene Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Karotte, gerieben|1 TL Salz|1 TL Knoblauchpulver|½ Tasse Wasser",
+"Buchweizen grob zerkleinern.|Alles vermischen und 15 Minuten quellen lassen.|3 mm dünn ausstreichen.|Bei 42 °C 4 Stunden dörren, wenden, in Stücke brechen und 6–8 Stunden weiterdörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Italienische Kräuter-Cracker","Mediterran duftend.",
+"2 Tassen gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|2 EL italienische Kräuter|2 EL Olivenöl|1 TL Salz|1 TL Knoblauchpulver|½ TL Pfeffer|½ Tasse Wasser",
+"Buchweizen grob zerkleinern und alles vermischen.|Dünn ausstreichen.|10–12 Stunden dörren, nach 4 Stunden wenden.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Zwiebel-Cracker","Schmecken wie Röstzwiebeln — nur roh.",
+"2 große Zwiebeln|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne, gemahlen|2 EL Tamari|1 TL Salz",
+"Zwiebeln pürieren.|Mit den übrigen Zutaten vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Tomaten-Basilikum-Cracker","Sommer in Crackerform.",
+"1 Tasse frische Tomaten|1 Tasse getrocknete Tomaten, eingeweicht|1 Tasse Leinsamen, gemahlen|½ Tasse Basilikum|1 Knoblauchzehe|1 TL Salz|1 TL Oregano",
+"Tomaten mit Basilikum und Knoblauch pürieren.|Leinsamen und Gewürze untermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Karotten-Kurkuma-Cracker","Goldgelb und ein echter Hingucker.",
+"2 große Karotten, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 TL Kurkuma|½ TL Ingwer|1 TL Salz|½ Tasse Wasser",
+"Alles vermischen und 15 Minuten quellen lassen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Mohn-Cracker","Perfekt zu Dips.",
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|3 EL Blaumohn|1 TL Salz|½ TL Zwiebelpulver|½ Tasse Wasser",
+"Buchweizen grob zerkleinern und alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Rote-Bete-Cracker","In wunderschönem Pink.",
+"1 Rote Bete, gerieben|1 Tasse Leinsamen, gemahlen|½ Tasse Walnüsse, gehackt|1 TL Salz|½ TL Kümmel|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Rohkost-Brot mit Kräutern","Echte Brotkonsistenz: außen knusprig, innen weich.",
+"1 Tasse gekeimter Buchweizen|1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Leinsamen, gemahlen|½ Tasse Flohsamenschalen|1 Zucchini, gerieben|1 EL Olivenöl|1 TL Salz|2 EL Rosmarin und Thymian|1 Tasse Wasser",
+"Buchweizen und Kerne grob hacken.|Zucchini, Leinsamen, Flohsamen und Gewürze untermischen.|Wasser und Öl dazu, 30 Minuten quellen lassen.|2 cm dick zu einem Laib formen.|Bei 42 °C 12 Stunden dörren, wenden, weitere 10–12 Stunden.",
+"Die Grundlage für jedes Job-Sandwich.",{j:"o",h:1,d:"1 Woche"});
+r("brot","Mandel-Leinsamen-Cracker","Fein, zart und nussig.",
+"1 Tasse aktivierte Mandeln, gemahlen|1 Tasse goldene Leinsamen, gemahlen|½ TL Salz|½ TL Rosmarin|½ Tasse Wasser",
+"Alles vermischen und quellen lassen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Knusprige Grissini","Toll als Snack oder zu Suppen.",
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|2 EL Olivenöl|1 TL Salz|1 TL Rosmarin|½ TL Knoblauchpulver|½ Tasse Wasser",
+"Zu einem festen Teig verarbeiten.|Zu 1 cm dicken Stangen rollen.|12–14 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Spinat-Cracker","Intensiv grün und voller Nährstoffe.",
+"2 Tassen Spinat|1 Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Knoblauchzehe|1 TL Salz|Saft von ½ Zitrone",
+"Spinat mit Knoblauch und Zitrone pürieren.|Leinsamen und Kerne untermischen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Sesam-Cracker","Knusprig wie asiatische Sesam-Snacks.",
+"1 Tasse Sesam, weiß und schwarz|½ Tasse Leinsamen, gemahlen|1 TL Salz|½ Tasse Wasser",
+"Sesam kurz im Mixer anbrechen.|Mit Leinsamen, Salz und Wasser mischen.|Sehr dünn ausstreichen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Oliven-Rosmarin-Cracker","Mediterran und aromatisch.",
+"1 Tasse schwarze Oliven, gehackt|1 Tasse Leinsamen, gemahlen|½ Tasse Walnüsse, gemahlen|2 EL Rosmarin|1 TL Salz|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und dörren.","",{j:"o",h:1,d:"4 Wochen"});
+r("brot","Kokos-Cracker süß-salzig","Zu süßen Aufstrichen oder pur.",
+"1 Tasse Kokosraspeln|1 Tasse Leinsamen, gemahlen|2 EL Dattelpüree|½ TL Salz|½ TL Zimt|½ Tasse Kokosmilch",
+"Alles vermischen, 15 Minuten quellen lassen.|Dünn ausstreichen und 10 Stunden dörren.","",{j:"o",h:1,d:"3 Wochen"});
+r("brot","Pizza-Cracker","Schmecken wie Pizza-Chips.",
+"1 Tasse Leinsamen, gemahlen|½ Tasse getrocknete Tomaten, püriert|1 TL Oregano|1 TL Basilikum|½ TL Knoblauchpulver|1 TL Salz|½ Tasse Wasser",
+"Alles vermischen.|Dünn ausstreichen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"4 Wochen"});
+
+/* Pizza, Quiche & Hauptgerichte */
+r("haupt","Rohkost-Quiche mit Spinat und Champignons","Nussiger Boden, goldene Füllung — ein Festessen, das auch am nächsten Tag in der Jausenbox glänzt.",
+"Boden: 1 Tasse Walnüsse|½ Tasse Sonnenblumenkerne, aktiviert|½ Tasse goldene Leinsamen, gemahlen|1 EL Olivenöl|½ TL Salz|½ TL Thymian|2–3 EL Wasser|Füllung: 1½ Tassen Cashews, 4 Std. eingeweicht|1 kleine Zucchini|½ Tasse Wasser|3 EL Hefeflocken|1 EL Zitronensaft|½ TL Kurkuma|½ TL Kala Namak (Schwarzsalz)|1 Prise Muskat|1 Knoblauchzehe|Einlage: 1 Tasse Champignons, in Scheiben, mit 1 EL Tamari mariniert|2 Handvoll Babyspinat, fein geschnitten|3 Frühlingszwiebeln|Kirschtomaten zum Belegen",
+"Für den Boden Walnüsse und Kerne im Food Processor krümelig hacken, Leinsamen, Öl, Gewürze und Wasser dazugeben, bis die Masse zusammenhält.|In eine Tarteform (ca. 22 cm) drücken und einen Rand formen. Bei 42 °C 4 Stunden vordörren.|Für die Füllung alle Zutaten im Hochleistungsmixer seidig pürieren. Kala Namak verleiht den typischen, eiähnlichen Quiche-Geschmack.|Champignons abtropfen lassen und mit Spinat und Frühlingszwiebeln unter die Creme heben.|Füllung auf den Boden streichen und halbierte Kirschtomaten hineindrücken.|Bei 42 °C weitere 6–8 Stunden dörren, bis die Oberfläche fest und leicht gebräunt ist.|Vor dem Anschneiden 1 Stunde kühlen.",
+"Lauwarm direkt aus dem Dörrgerät ist sie ein Gedicht. Im Kühlschrank hält sie 4 Tage — ein Stück in der Jausenbox macht jede Mittagspause festlich.",{j:"k",d:"4 Tage"});
+r("haupt","Rohkost-Pizzaboden","Lässt sich gut vorbereiten und einfrieren.",
+"1 Tasse gekeimter Buchweizen|½ Tasse Leinsamen, gemahlen|½ Tasse Sonnenblumenkerne|1 Zucchini, gerieben und ausgedrückt|1 TL Salz|1 TL Oregano|1 TL Basilikum|½ Tasse Wasser",
+"Buchweizen und Kerne zerkleinern.|Zucchini, Gewürze, Leinsamen und Wasser untermischen.|25 cm rund auf Dörrfolie ausbreiten.|4 Stunden dörren, wenden, weitere 4–6 Stunden.","",{j:"o",d:"1 Woche"});
+r("haupt","Marinara-Sauce","Frisch am besten, hält aber 5 Tage.",
+"2 Tassen frische Tomaten|½ Tasse getrocknete Tomaten, eingeweicht|1 Knoblauchzehe|2 EL Olivenöl|1 TL Oregano|1 TL Basilikum|Salz",
+"Alles im Mixer pürieren — etwas Textur darf bleiben.|Mit Salz abschmecken.","",{j:"k",d:"5 Tage"});
+r("haupt","Cashew-Mozzarella","Schnittfest und herrlich cremig.",
+"1 Tasse Cashews, eingeweicht|¼ Tasse Wasser|2 EL Zitronensaft|1 Knoblauchzehe|½ TL Salz|2 EL Flohsamenschalen",
+"Alles außer Flohsamen cremig pürieren.|Flohsamen unterrühren.|Mindestens 1 Stunde kühlen, dann schneiden oder krümeln.","",{j:"k",d:"5 Tage"});
+r("haupt","Klassische Rohkost-Pizza","Die Königin der Rohkostküche.",
+"1 Pizzaboden|½ Tasse Marinara|Cashew-Mozzarella|Tomaten|Basilikum|Oliven|Kapern",
+"Boden mit Marinara bestreichen.|Mit Mozzarella, Tomaten, Oliven und Kapern belegen.|Mit Basilikum vollenden.","");
+r("haupt","Zucchini-Nudeln mit Avocado-Pesto","Cremig, grün und blitzschnell.",
+"3 Zucchini|2 Avocados|1 Tasse Basilikum|½ Tasse Pinienkerne|2 Knoblauchzehen|Saft von 1 Zitrone|3 EL Olivenöl|Salz|Kirschtomaten",
+"Zucchini spiralisieren.|Pesto-Zutaten pürieren, Öl langsam einlaufen lassen.|Mit den Nudeln vermengen und garnieren.","",{j:"k",d:"1 Tag"});
+r("haupt","Karotten-Nudeln mit Tahini-Sauce","Süß, nussig und sonnig orange.",
+"4 große Karotten|3 EL Tahini|2 EL Zitronensaft|1 Knoblauchzehe|2 EL Wasser|1 TL Tamari|½ TL Ingwer|Sesam",
+"Karotten zu Nudeln verarbeiten.|Sauce cremig mixen.|Vermengen und mit Sesam bestreuen.","",{j:"k",d:"2 Tage"});
+r("haupt","Gefüllte Paprika","Bunt und herzhaft.",
+"4 große Paprika|1 Tasse Walnuss-Pilz-Hackfleisch|1 Tomate|½ Avocado|Koriander|Cashew-Sour-Cream",
+"Paprika halbieren und entkernen.|Hackfleisch mit Tomate und Koriander mischen und einfüllen.|Mit Avocado und Sour Cream toppen.","",{j:"k",h:1,d:"2 Tage"});
+r("haupt","Rohkost-Lasagne","Schicht für Schicht ein Genuss — über Nacht durchgezogen noch besser.",
+"2 große Zucchini|Marinara-Sauce|Ricotta: 1 Tasse Cashews, eingeweicht, 2 EL Zitronensaft, 1 Knoblauchzehe, ½ TL Salz, 2 EL Hefeflocken|2 Tassen Spinat mit 1 EL Olivenöl und Salz",
+"Zucchini längs dünn hobeln, salzen, 15 Minuten ziehen lassen und abtupfen.|Ricotta cremig mixen.|Spinat marinieren.|Schichten: Zucchini, Marinara, Ricotta, Spinat — wiederholen.|Mindestens 1 Stunde ziehen lassen.",
+"In Portionen geschnitten passt sie perfekt in die Tupperbox.",{j:"k",d:"3 Tage"});
+r("haupt","Blumenkohl-Reis","Universelle Basis als Reis-Ersatz.",
+"1 Blumenkohl|1 EL Olivenöl|Salz|optional: Kurkuma, Kräuter",
+"Röschen im Food Processor reisartig hacken.|Mit Öl, Salz und Gewürzen mischen.","",{j:"k",d:"3 Tage"});
+r("haupt","Curry auf Blumenkohl-Reis","Cremig und wärmend gewürzt.",
+"Blumenkohl-Reis|1 Paprika|1 Karotte|1 Zucchini|½ Tasse Erbsen|Sauce: ½ Tasse Cashews, 1 Tomate, 1 EL Currypulver, 1 TL Kurkuma, 1 Knoblauchzehe, ½ Tasse Wasser, Salz",
+"Sauce cremig pürieren.|Gemüse klein schneiden und mit Sauce mischen.|Auf Blumenkohl-Reis servieren.","",{j:"k",d:"2 Tage"});
+r("haupt","Pilz-Stroganoff","Samtig und würzig.",
+"2 Tassen Champignons|Sauce: 1 Tasse Cashews, ½ Tasse Wasser, 2 EL Tamari, 1 EL Zitronensaft, 1 TL Paprikapulver, 1 Knoblauchzehe|Zucchini-Nudeln",
+"Champignons mit Tamari 30 Minuten marinieren.|Sauce cremig mixen und vermengen.|Auf Zucchini-Nudeln servieren.","");
+r("haupt","Sushi-Rollen","Mit Ingwer und Wasabi ein Fest.",
+"Nori-Blätter|Blumenkohl-Reis mit 1 EL Apfelessig|Avocado, Gurke, Karotte, Paprika in Streifen|Tamari zum Dippen",
+"Nori auf die Matte legen und dünn mit Reis belegen.|Gemüse in die Mitte legen.|Fest aufrollen und schneiden.","",{j:"k",h:1,d:"1 Tag"});
+r("haupt","Mediterrane Buddha-Bowl","Alles Gute in einer Schale.",
+"Blumenkohl-Reis|Falafel|Hummus|Tabbouleh|Gurke|Tomaten|Oliven|Tahini-Dressing",
+"Reis als Basis in die Schale geben.|Komponenten rundherum anrichten.|Mit Tahini beträufeln.","",{j:"k",d:"2 Tage"});
+r("haupt","Rohkost-Falafel","Außen knusprig, innen saftig.",
+"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|½ Tasse Petersilie|½ Tasse Koriander|2 Knoblauchzehen|1 TL Kreuzkümmel|1 TL Koriander, gemahlen|Saft von ½ Zitrone|Salz",
+"Alles zu einer formbaren Masse verarbeiten.|Bällchen formen.|6–8 Stunden dörren.","",{j:"k",h:1,d:"5 Tage"});
+r("haupt","Pad Thai","Nussig, frisch und exotisch.",
+"Zucchini-Nudeln von 2 Zucchini|1 Karotte|1 Paprika|½ Tasse Rotkohl|Sauce: 3 EL Mandelmus, 2 EL Tamari, 1 EL Limettensaft, 1 TL Ingwer, 1 Knoblauchzehe, 1 Dattel, 2 EL Wasser|Koriander und gehackte Mandeln",
+"Sauce cremig mixen.|Gemüse und Nudeln vermengen.|Sauce darübergeben und toppen.","",{j:"k",d:"1 Tag"});
+r("haupt","Rohkost-Burger-Patties","Im großen Salatblatt als Burger.",
+"1 Tasse Sonnenblumenkerne, aktiviert|½ Tasse Walnüsse|1 Karotte, gerieben|½ Zwiebel|1 EL Tamari|1 TL Paprikapulver|½ TL Kreuzkümmel|Salz",
+"Kerne und Nüsse grob hacken.|Mit Gemüse und Gewürzen mischen und Patties formen.|4–6 Stunden pro Seite dörren.","",{j:"k",h:1,d:"4 Tage"});
+r("haupt","Pilz-Walnuss-Bolognese","Kräftig und aromatisch.",
+"2 Tassen Champignons|1 Tasse Walnüsse|1 Tasse getrocknete Tomaten, eingeweicht|2 Tomaten|1 Karotte|1 Stange Sellerie|2 Knoblauchzehen|2 EL Olivenöl|Oregano, Basilikum, Salz",
+"Tomaten mit Knoblauch pürieren.|Pilze und Walnüsse grob hacken.|Alles mischen, 30 Minuten marinieren.|Auf Zucchini-Nudeln servieren.","",{j:"k",d:"3 Tage"});
+r("haupt","Frühlingsrollen im Salatblatt","Frisch, knackig, kräuterduftend.",
+"Salatblätter oder Reispapier|Karotte, Gurke, Avocado, Mango in Streifen|Minze|Koriander|Dip: Mandelmus, Tamari, Limette, Ingwer",
+"Gemüse und Kräuter auf das Blatt legen.|Seiten einschlagen und fest rollen.|Mit Dip servieren.","Für 100 % roh Salatblätter statt Reispapier verwenden.",{j:"k",h:1,d:"1 Tag"});
+
+/* Suppen */
+r("suppe","Gazpacho","Der spanische Sommerklassiker.",
+"4 reife Tomaten|1 Gurke|1 rote Paprika|1 kleine rote Zwiebel|2 Knoblauchzehen|3 EL Olivenöl|2 EL Rotweinessig|Salz und Pfeffer|Basilikum",
+"Gemüse grob würfeln und nicht zu glatt pürieren.|Abschmecken und 2 Stunden kühlen.|Mit Basilikum und Öl servieren.","In einer Thermosflasche wird sie zur Trinksuppe für die Pause.",{j:"k",d:"2 Tage"});
+r("suppe","Karotten-Ingwer-Suppe","Samtig, wärmend, goldfarben.",
+"4 große Karotten|1 Avocado|2 TL Ingwer|1 Knoblauchzehe|2 Tassen Wasser|2 EL Olivenöl|1 TL Kurkuma|Salz|Kürbiskerne",
+"Alles im Hochleistungsmixer cremig pürieren.|Leicht anwärmen (unter 42 °C) oder kalt servieren.|Mit Kürbiskernen garnieren.","",{j:"k",d:"1 Tag"});
+r("suppe","Thai-Kokos-Suppe","Leicht angewärmt noch aromatischer.",
+"1 Tasse Kokosmilch aus jungem Kokosfleisch|1 Tasse Wasser|1 Karotte|1 Zucchini|½ Tasse Champignons|2 EL Tamari|1 TL Ingwer|1 TL rohe Currypaste|Saft von 1 Limette|Koriander",
+"Kokosmilch mit Wasser, Tamari, Ingwer und Curry mixen.|Gemüse fein schneiden und hineingeben.|Mit Limette abschmecken und mit Koriander garnieren.","");
+
+/* Salate */
+r("salat","Tabbouleh","Kräuterfrisch und zitronig.",
+"1 Tasse Blumenkohl-Reis|1 Tasse Petersilie|½ Tasse Minze|2 Tomaten|1 Gurke|3 Frühlingszwiebeln|3 EL Olivenöl|Saft von 1 Zitrone|Salz",
+"Kräuter und Gemüse fein hacken.|Alles mischen und abschmecken.|30 Minuten ziehen lassen.","",{j:"k",d:"3 Tage"});
+r("salat","Caesar-Salat","Cremig, salzig, knackig.",
+"1 Romana-Salat|Dressing: ½ Tasse Cashews, 2 EL Zitronensaft, 1 EL Kapern, 1 Knoblauchzehe, 1 EL Hefeflocken, 3 EL Wasser, Salz, Pfeffer|Parmesan: Mandeln, Hefeflocken, Salz",
+"Dressing cremig mixen.|Salat damit vermengen.|Mit Mandel-Parmesan bestreuen.","");
+r("salat","Thai-Salat mit Mango","Knackiger Kohl mit tropischer Süße.",
+"4 Tassen Weiß- und Rotkohl|1 Mango|1 Paprika|½ Tasse Koriander|¼ Tasse Minze|Dressing: 2 EL Mandelmus, 2 EL Limettensaft, 1 EL Tamari, 1 TL Ingwer, 1 Dattel|gehackte Mandeln",
+"Kohl fein schneiden, mit Mango, Paprika und Kräutern mischen.|Dressing mixen und unterheben.|Mit Mandeln toppen.","Kohlsalate werden in der Box mit der Zeit nur besser.",{j:"k",d:"3 Tage"});
+r("salat","Spinat-Erdbeer-Salat","Sommerlich süß und nussig.",
+"4 Tassen Babyspinat|1 Tasse Erdbeeren|½ Tasse Walnüsse|¼ rote Zwiebel|Dressing: 3 EL Olivenöl, 1 EL Balsamico, 1 TL Dattelpüree, Salz, Pfeffer",
+"Alles in eine Schüssel geben.|Dressing kurz vor dem Servieren unterheben.","");
+r("salat","Gurkensalat mit Dill","Cremig und erfrischend.",
+"2 Gurken|½ rote Zwiebel|3 EL Dill|3 EL Cashew-Sour-Cream|1 EL Zitronensaft|Salz und Pfeffer",
+"Gurken und Zwiebel dünn schneiden.|Dressing mischen und mit Dill unterheben.","");
+r("salat","Avocado-Tomaten-Salat","Einfach und vollkommen.",
+"2 Avocados|4 Tomaten|½ rote Zwiebel|Koriander|2 EL Olivenöl|1 EL Limettensaft|Salz und Pfeffer",
+"Avocado und Tomaten würfeln und mischen.|Zwiebel und Koriander unterheben.|Mit Dressing beträufeln.","");
+r("salat","Krautsalat (Coleslaw)","Cremig-knackig, ideal zum Vorbereiten.",
+"3 Tassen Weißkohl|1 Karotte|2 Frühlingszwiebeln|Dressing: ½ Tasse Cashews, 2 EL Apfelessig, 1 EL Dattelpüree, 1 TL roher Senf, Salz, Pfeffer",
+"Gemüse fein schneiden.|Dressing cremig mixen und untermischen.|30 Minuten ziehen lassen.","",{j:"k",d:"4 Tage"});
+
+/* Snacks, Kekse & Riegel */
+r("snack","Schoko-Dattel-Kekse","Außen knusprig, innen weich — wie echte Cookies.",
+"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|3 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz|optional: Kakaonibs",
+"Mandeln fein mahlen, Datteln dazu verarbeiten.|Kakao, Öl und Salz untermischen.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Kokos-Makronen","Zart und duftend.",
+"2 Tassen Kokosraspeln|½ Tasse Dattelpüree|2 EL Kokosöl|1 TL Vanille|1 Prise Salz",
+"Alles vermischen und Häufchen setzen.|10–12 Stunden dörren.|Optional die Unterseite in Rohschokolade tauchen.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Buchweizen-Rosinen-Cookies","Wie Haferkekse, nur lebendig.",
+"1 Tasse gekeimter Buchweizen|½ Tasse Rosinen|½ Tasse Walnüsse|3 EL Dattelpüree|1 TL Zimt|½ TL Vanille|1 Prise Salz",
+"Buchweizen grob zerkleinern und alles vermischen.|Flache Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Mandelmus-Kekse","Mit Gabelmuster wie früher.",
+"1 Tasse Mandelmus|½ Tasse Dattelpüree|½ Tasse gekeimter Buchweizen, gemahlen|1 TL Vanille|1 Prise Salz",
+"Mandelmus mit Dattelpüree cremig rühren.|Buchweizenmehl und Vanille untermischen.|Kekse formen, mit Gabel eindrücken und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Mohn-Zitronen-Kekse","Frisch und fein.",
+"1 Tasse Mandeln, gemahlen|3 EL Blaumohn|3 EL Dattelpüree|Abrieb von 1 Bio-Zitrone|1 EL Zitronensaft|1 EL Kokosöl",
+"Alles verkneten.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Bananen-Walnuss-Kekse","Nur fünf Zutaten — super einfach.",
+"2 reife Bananen|1 Tasse Walnüsse|½ Tasse Kokosraspeln|½ TL Zimt|optional: Rosinen",
+"Bananen zerdrücken und alles mischen.|Häufchen setzen und 10–12 Stunden dörren.","",{j:"o",h:1,d:"1 Woche"});
+r("snack","Rohkost-Brownies","Kein Dörren nötig — sofort genussfertig.",
+"1 Tasse Walnüsse|1 Tasse Medjool-Datteln|4 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz|optional: Kakaonibs",
+"Walnüsse fein hacken, Datteln dazu verarbeiten.|Kakao, Öl und Salz untermischen.|2 cm dick in eine Form drücken, 1 Stunde kühlen und in Quadrate schneiden.",
+"Ein Brownie in der Jausenbox ist das beste Versprechen für die Nachmittagspause.",{j:"o",h:1,d:"1 Woche"});
+r("snack","Energie-Riegel mit Buchweizen","Perfekt für unterwegs.",
+"1 Tasse gekeimter, getrockneter Buchweizen|½ Tasse Datteln|½ Tasse Mandeln|2 EL Kakaopulver|1 EL Kokosöl|1 Prise Salz",
+"Mandeln und Buchweizen grob hacken.|Datteln, Kakao und Öl cremig verarbeiten.|Alles verbinden, in Riegelform pressen und kühlen.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Zimtschnecken","Ein Hauch von Bäckerei.",
+"Teig: 1 Tasse gekeimter Buchweizen, ½ Tasse Datteln, 1 EL Kokosöl|Füllung: 3 EL Mandelmus, 2 EL Dattelpüree, 1 TL Zimt, Rosinen",
+"Teig verarbeiten und zwischen Backpapier ausrollen.|Füllung verteilen, aufrollen und in Scheiben schneiden.|4–6 Stunden dörren.","",{j:"o",h:1,d:"1 Woche"});
+r("snack","Mandel-Dattel-Riegel","Pur und ehrlich.",
+"1 Tasse aktivierte Mandeln|1 Tasse Medjool-Datteln|½ Tasse Kokosraspeln|1 TL Vanille|1 Prise Salz",
+"Mandeln grob hacken, Datteln pürieren.|Alles verkneten, in Form pressen, kühlen und schneiden.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Superfood-Bällchen","Klein, kraftvoll, köstlich.",
+"½ Tasse Datteln|½ Tasse Mandeln|2 EL Hanfsamen|2 EL Chiasamen|2 EL Kakaopulver|1 EL Maca|1 EL Kokosöl",
+"Alles im Food Processor verarbeiten.|Bällchen formen und in Kokos, Kakao oder Hanf wälzen.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Apfel-Zimt-Kekse","Herbstlich und warm im Geschmack.",
+"1 Tasse getrocknete Apfelringe, eingeweicht|1 Tasse aktivierte Mandeln|½ Tasse Rosinen|1 TL Zimt|¼ TL Muskat|2 EL Kokosöl",
+"Mandeln mahlen, Äpfel und Rosinen hacken.|Alles verkneten, Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Haselnuss-Schoko-Kugeln","Wie Rocher — nur roh.",
+"1 Tasse Haselnüsse, aktiviert|½ Tasse Datteln|3 EL Kakaopulver|1 EL Haselnussmus|1 Prise Salz|Kakao zum Wälzen",
+"Haselnüsse fein hacken.|Übrige Zutaten dazu verarbeiten.|Kugeln formen und in Kakao wälzen.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Ingwer-Kekse","Weihnachtlich und würzig.",
+"1 Tasse Mandeln, gemahlen|½ Tasse Datteln|2 TL frischer Ingwer|1 TL Zimt|½ TL Muskat|¼ TL Nelken|1 EL Kokosöl",
+"Alles verarbeiten.|Kekse formen und 8–10 Stunden dörren.","",{j:"o",h:1,d:"2 Wochen"});
+r("snack","Kokos-Dattel-Konfekt","Kleine Glücksmomente.",
+"1 Tasse Kokosraspeln|½ Tasse Datteln|2 EL Kokosöl|1 TL Vanille|1 Prise Salz|optional: Rohschokolade",
+"Datteln pürieren und mit Kokos, Öl und Vanille verkneten.|Stücke formen, nach Wunsch in Schokolade tauchen und kühlen.","",{j:"o",h:1,d:"2 Wochen"});
+
+/* Torten & Desserts */
+r("torte","Schoko-Avocado-Mousse","So cremig, dass niemand die Avocado schmeckt.",
+"2 reife Avocados|4 EL Kakaopulver|4 Medjool-Datteln|1 TL Vanille|1 Prise Salz|Beeren",
+"Datteln mit wenig Wasser pürieren.|Alles cremig mixen und 1 Stunde kühlen.|Im Glas mit Beeren servieren.","Im Schraubglas auch ein wunderbares Job-Dessert.",{j:"k",d:"2 Tage"});
+r("torte","Bananen-Eis (Nice Cream)","Die einfachste Eiscreme der Welt.",
+"4 gefrorene Bananen|optional: 2 EL Kakao, 1 Tasse gefrorene Beeren oder 2 EL Mandelmus",
+"Bananen im Mixer cremig pürieren.|Nach Wunsch variieren und sofort genießen.","");
+r("torte","Tortenboden (Grundrezept)","Die Basis für alle Torten.",
+"1 Tasse Walnüsse oder Mandeln|1 Tasse Medjool-Datteln|2 EL Kakaopulver (optional)|1 Prise Salz",
+"Nüsse fein hacken.|Datteln dazu verarbeiten, bis die Masse zusammenhält.|In eine 20–22-cm-Springform drücken und kühlen.","");
+r("torte","Beeren-Cashew-Torte","Wie Käsekuchen — komplett roh.",
+"Tortenboden ohne Kakao|2 Tassen Cashews, eingeweicht|½ Tasse Kokosmilch|¼ Tasse Kokosöl|¼ Tasse Dattelpüree|2 Tassen gemischte Beeren|1 TL Vanille|frische Beeren",
+"Füllung cremig mixen, Beeren einmixen.|Auf den Boden gießen und mindestens 4 Stunden einfrieren.|30 Minuten vor dem Servieren herausnehmen und dekorieren.","");
+r("torte","Schokoladentorte","Tief, dunkel, verführerisch.",
+"Tortenboden mit Kakao|2 Tassen Cashews|½ Tasse Kokosmilch|½ Tasse Dattelpüree|4 EL Kakao|3 EL Kokosöl|1 TL Vanille|1 Prise Salz|Kakaonibs und Himbeeren",
+"Füllung cremig mixen.|Auf den Boden gießen und 4 Stunden einfrieren.|Mit Nibs und Himbeeren dekorieren.","");
+r("torte","Mango-Kokos-Torte","Tropisch und erfrischend.",
+"Boden: 1 Tasse Macadamia, 1 Tasse Kokosraspeln, ½ Tasse Datteln|2 Mangos|1 Tasse junges Kokosfleisch|¼ Tasse Kokosöl|2 EL Dattelpüree",
+"Boden in die Form drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren und mit Mango dekorieren.","");
+r("torte","Tiramisu","Italienischer Traum in lebendig.",
+"Mandel-Dattel-Riegel in Stücken|Cold-Brew oder Löwenzahnwurzel-Tee|Creme: 2 Tassen Cashews, ½ Tasse Kokosmilch, 3 EL Dattelpüree, 2 TL Vanille|Kakaopulver",
+"Riegelstücke kurz eintauchen.|Creme mixen.|Schichten und 4 Stunden kühlen.|Großzügig mit Kakao bestäuben.","");
+r("torte","Bananen-Karamell-Torte","Karamellig-süß mit Bananenschmelz.",
+"Tortenboden|Karamell: 1 Tasse Medjool-Datteln, 3 EL Mandelmus, 2 EL Kokosöl, 1 TL Vanille, 1 Prise Salz|3 Bananen|Rohschokolade",
+"Karamell cremig pürieren und auf den Boden streichen.|Bananenscheiben darauflegen und Schokolade darüberraspeln.|2 Stunden kühlen.","");
+r("torte","Roher Apfelkuchen","Mit Zimtstreuseln.",
+"Boden: 1 Tasse Mandeln, 1 Tasse Datteln, 1 TL Zimt|4 Äpfel|2 EL Zitronensaft|2 EL Dattelpüree|1 TL Zimt|½ TL Muskat|¼ TL Ingwer|Streusel: ½ Tasse Mandeln, 2 EL Kokosöl, 1 EL Dattelpüree, ½ TL Zimt",
+"Boden in die Form drücken.|Äpfel dünn schneiden und marinieren.|Fächerförmig auflegen, Streusel darüber.|2 Stunden ziehen lassen.","");
+r("torte","Chia-Pudding","Über Nacht gequollen, morgens gekrönt.",
+"½ Tasse Chiasamen|2 Tassen Mandelmilch|2 EL Dattelpüree|1 TL Vanille|Früchte, Nüsse, Kokos",
+"Alles vermischen und mehrmals umrühren.|Über Nacht quellen lassen.|Mit Toppings servieren.","",{j:"k",d:"3 Tage"});
+r("torte","Kokos-Panna-Cotta","Zart und seidig.",
+"1 Dose Kokosmilch oder gemixtes Kokosfleisch|3 EL Dattelpüree|1 TL Vanille|2 EL Flohsamenschalen",
+"Mixen, Flohsamen einrühren.|In Förmchen 4 Stunden fest werden lassen.|Stürzen und mit Beeren servieren.","");
+r("torte","Himbeertörtchen","Kleine rosa Kunstwerke.",
+"Boden je Törtchen: ½ Tasse Mandeln, ¼ Tasse Kokos, 3 Datteln|1 Tasse Cashews|½ Tasse Himbeeren|2 EL Kokosöl|2 EL Dattelpüree",
+"Böden in Förmchen drücken.|Füllung mixen und verteilen.|2 Stunden einfrieren und mit Himbeeren garnieren.","",{j:"k",h:1,d:"3 Tage"});
+r("torte","Zitronentarte","Erfrischend sauer-süß.",
+"Boden: 1 Tasse Mandeln, ½ Tasse Kokos, ½ Tasse Datteln|1 Tasse Cashews|¼ Tasse Kokosöl|½ Tasse Zitronensaft|Abrieb von 2 Zitronen|¼ Tasse Dattelpüree|¼ TL Kurkuma",
+"Boden in die Tarteform drücken.|Füllung cremig mixen und daraufgießen.|4 Stunden einfrieren.","");
+r("torte","Erdbeertorte","Rosa, fruchtig, festlich.",
+"Tortenboden|2 Tassen Cashews|1 Tasse Erdbeeren|¼ Tasse Kokosöl|3 EL Dattelpüree|1 TL Vanille|Erdbeerhälften",
+"Füllung cremig mixen und auf den Boden gießen.|4 Stunden einfrieren und dekorieren.","");
+r("torte","Rohschokolade","Echte Schokolade ohne Kompromisse.",
+"½ Tasse Kakaobutter|¼ Tasse Kakaopulver|3 EL Dattelpüree oder Kokosblütenzucker|1 TL Vanille|1 Prise Salz|optional: Nüsse, Früchte, Meersalzflocken",
+"Kakaobutter im Wasserbad unter 42 °C schmelzen.|Übrige Zutaten einrühren.|In Formen gießen, toppen und fest werden lassen.","",{j:"k",h:1,d:"4 Wochen"});
+
+/* Käse & Fermentiertes */
+r("kaese","Cashew-Käse (Grundrezept)","Mit Fermentation entsteht echter Käsegeschmack.",
+"2 Tassen Cashews, 4–8 Std. eingeweicht|½ Tasse Wasser|2 EL Zitronensaft|1 Knoblauchzehe|½ TL Salz|2 EL Hefeflocken|optional: 1 Probiotika-Kapsel",
+"Alles cremig mixen.|Für fermentierten Käse Probiotika einrühren.|In ein Käsetuch wickeln und 24–48 Stunden fermentieren.|Kühl lagern.","",{j:"k",d:"1 Woche"});
+r("kaese","Kräuter-Frischkäse","Der Aufstrich fürs Dörrbrot.",
+"Cashew-Käse-Grundrezept|3 EL Schnittlauch, Dill, Petersilie|½ TL Zwiebelpulver",
+"Käse zubereiten.|Kräuter fein hacken und unterheben.","",{j:"k",d:"5 Tage"});
+r("kaese","Mandel-Feta","Perfekt für griechische Salate.",
+"1 Tasse Mandeln, blanchiert und eingeweicht|¼ Tasse Wasser|3 EL Zitronensaft|1 TL Salz|1 EL Olivenöl|½ TL Oregano",
+"Mandeln mit Wasser, Zitrone und Salz cremig mixen.|In eine Form drücken und 4 Stunden kühlen.|Mit Öl und Oregano servieren.","",{j:"k",d:"5 Tage"});
+r("kaese","Macadamia-Brie","Cremig wie echter Brie.",
+"1 Tasse Macadamia, eingeweicht|¼ Tasse Wasser|1 EL Zitronensaft|½ TL Salz|1 Probiotika-Kapsel|optional: Aktivkohle",
+"Cremig mixen und Probiotika einrühren.|Rund formen und 24–48 Stunden fermentieren.|Optional mit Aktivkohle bestäuben und kühl reifen lassen.","");
+r("kaese","Sauerkraut","Voller lebendiger Kulturen.",
+"1 Kopf Weißkohl|1 EL Salz|optional: Kümmel, Wacholder",
+"Kohl fein hobeln und mit Salz 10 Minuten kneten.|Fest ins Bügelglas drücken, bis Flüssigkeit alles bedeckt.|Beschweren und 5–7 Tage fermentieren, täglich Gase ablassen.|Kühl aufbewahren.",
+"Mit Hanfsauce wird daraus eine sättigende Jause.",{j:"k",d:"mehrere Monate"});
+r("kaese","Einfaches Kimchi","Scharf, säuerlich, belebend.",
+"1 Chinakohl|2 EL Salz|3 Knoblauchzehen|2 TL Ingwer|2 EL Gochugaru|1 Bund Frühlingszwiebeln|1 Karotte",
+"Kohl vierteln und 2 Stunden salzen.|Abspülen und ausdrücken.|Paste aus Knoblauch, Ingwer und Chili herstellen, Gemüse untermischen.|Kohlblätter einreiben, ins Glas pressen und 3–5 Tage fermentieren.","",{j:"k",d:"mehrere Monate"});
+
+/* Frühstück & Smoothies */
+r("morgen","Buchweizen-Porridge","Cremig mit Biss.",
+"1 Tasse gekeimter Buchweizen|1 Banane|½ Tasse Pflanzenmilch|1 TL Zimt|Beeren, Nüsse, Samen",
+"Grob pürieren, damit Textur bleibt.|Mit Zimt abschmecken und toppen.","",{j:"k",d:"1 Tag"});
+r("morgen","Overnight-Chia","Das Frühstück, das über Nacht von selbst entsteht.",
+"3 EL Chiasamen|1 Tasse Pflanzenmilch|1 EL Dattelpüree|½ TL Vanille|Toppings",
+"Alles mischen.|Über Nacht quellen lassen.|Morgens toppen.","Direkt im Schraubglas angesetzt, wandert es ohne Umfüllen in die Tasche.",{j:"k",d:"2 Tage"});
+r("morgen","Grüner Power-Smoothie","Grüne Kraft im Glas.",
+"2 Handvoll Spinat|1 gefrorene Banane|1 Tasse Pflanzenmilch|1 EL Mandelmus|1 TL Spirulina|1 Dattel",
+"Alles cremig mixen.","In der Thermosflasche bleibt er bis Mittag frisch.",{j:"k",d:"1 Tag"});
+r("morgen","Beeren-Smoothie-Bowl","Bunt wie ein Sommermorgen.",
+"1 Tasse gefrorene Beeren|1 gefrorene Banane|½ Tasse Pflanzenmilch|Beeren, Granola, Kokos, Chia",
+"Dick pürieren.|In eine Schale geben und dekorieren.","");
+r("morgen","Tropischer Smoothie","Urlaub im Glas.",
+"1 Tasse gefrorene Mango|½ Tasse Ananas|1 Banane|1 Tasse Kokosmilch|optional: 1 TL Kurkuma",
+"Alles cremig mixen und sofort genießen.","");
+r("morgen","Rohkost-Granola","Wird beim Abkühlen noch knuspriger.",
+"1 Tasse gekeimter Buchweizen|½ Tasse Kokosraspeln|½ Tasse Mandeln|¼ Tasse Kürbiskerne|¼ Tasse Sonnenblumenkerne|2 EL Dattelpüree|1 EL Kokosöl|1 TL Zimt|½ TL Vanille|1 Prise Salz",
+"Trockene Zutaten mischen.|Dattelpüree, Öl und Gewürze leicht erwärmen und untermischen.|12–16 Stunden dörren und mehrmals wenden.","",{j:"o",h:1,d:"4 Wochen"});
+
+/* ---------- Baukasten ---------- */
+const B1=["Rohkost-Brot mit Kräutern","Zwiebel-Cracker","Leinsamen-Tortilla","Italienische Kräuter-Cracker","Collard-Green-Blatt","Nori-Blatt","Gemüsesticks","Zucchini-Nudeln im Glas"];
+const B2=["Sonnenblumenkern-Aufstrich","Zucchini-Hummus","Kräuter-Frischkäse","Guacamole","Walnuss-Pilz-Hackfleisch","Mandel-Feta mit Tomate","Sauerkraut mit Hanfsauce","Kimchi mit Avocado"];
+const B3=["Rohkost-Brownie","Gedörrte Bananensticks","Dattel-Kokos-Energiebällchen","Tamari-Mandeln","Apfelchips mit Zimt","Gefüllte Datteln","Mango-Fruchtleder","Grünkohl-Chips"];
+const fill=(id,a)=>document.getElementById(id).innerHTML=a.map(x=>"<li>"+x+"</li>").join("");
+fill("b1",B1);fill("b2",B2);fill("b3",B3);
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+document.getElementById("comboBtn").onclick=()=>{
+  document.getElementById("combo").innerHTML="Morgen gönnst du dir <em>"+pick(B1)+"</em> mit <em>"+pick(B2)+"</em> — und für die süße Pause <em>"+pick(B3)+"</em>. ✦";
+};
+
+/* ---------- Rendern ---------- */
+let cat="all", sub="all", q="";
+const chips=document.getElementById("chips");
+chips.innerHTML='<button class="chip on" data-cat="all" type="button">Alle</button>'+
+  CATS.map(([k,v])=>'<button class="chip'+(k==="job"?" star":"")+'" data-cat="'+k+'" type="button">'+v+'</button>').join("");
+chips.onclick=e=>{const b=e.target.closest("[data-cat]");if(b)setCat(b.dataset.cat);};
+document.getElementById("subchips").onclick=e=>{const b=e.target.closest("[data-sub]");if(!b)return;sub=b.dataset.sub;
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x===b));render();};
+document.getElementById("search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+
+function setCat(c){cat=c;sub="all";
+  document.querySelectorAll("[data-cat]").forEach(x=>x.classList.toggle("on",x.dataset.cat===c));
+  document.querySelectorAll("[data-sub]").forEach(x=>x.classList.toggle("on",x.dataset.sub==="all"));
+  document.getElementById("subchips").classList.toggle("show",c==="job");render();}
+
+function isJob(x){return x.c==="job"||!!x.j;}
+function render(){
+  let list=D.filter(x=>{
+    if(cat==="job"){ if(!isJob(x))return false;
+      if(sub==="o"&&x.j!=="o")return false; if(sub==="k"&&x.j!=="k")return false; if(sub==="h"&&!x.h)return false; }
+    else if(cat!=="all"&&x.c!==cat) return false;
+    if(q){const hay=(x.t+" "+x.desc+" "+x.z.join(" ")).toLowerCase(); if(!hay.includes(q))return false;}
+    return true;});
+  if(cat==="job") list.sort((a,b)=>(b.c==="job")-(a.c==="job"));
+  document.getElementById("grid").innerHTML=list.map(card).join("");
+  document.getElementById("empty").style.display=list.length?"none":"block";
+  const label=cat==="all"?"Rezepte":(CATNAME[cat]||"").replace("★ ","");
+  document.getElementById("count").textContent=list.length+" "+(list.length===1?"Rezept":"Rezepte")+(cat!=="all"?" · "+label:"");
+}
+function card(x){
+  const tags=[];
+  if(isJob(x)) tags.push('<span class="tag dark">✦ Jobtauglich</span>');
+  if(x.j==="o") tags.push('<span class="tag">Ohne Kühlung</span>');
+  if(x.j==="k") tags.push('<span class="tag">Kühltasche</span>');
+  if(x.h) tags.push('<span class="tag">Einhand-Snack</span>');
+  if(x.d) tags.push('<span class="tag">Hält '+x.d+'</span>');
+  return '<article class="recipe'+(x.c==="job"?" job":"")+'"><div class="recipe-top"></div><div class="recipe-body">'+
+    '<div class="r-cat">'+(CATNAME[x.c]||"").replace("★ ","")+'</div><h3>'+x.t+'</h3>'+
+    '<p class="r-desc">'+x.desc+'</p><div class="tags">'+tags.join("")+'</div>'+
+    '<details><summary>✦ Rezept öffnen</summary><div class="r-inner"><h4>Zutaten</h4><ul class="gold-list">'+
+    x.z.map(i=>"<li>"+i+"</li>").join("")+'</ul><h4>Zubereitung</h4><ol class="steps">'+
+    x.s.map(i=>"<li>"+i+"</li>").join("")+'</ol>'+(x.tip?'<div class="tip"><b>Amys Tipp:</b> '+x.tip+'</div>':"")+
+    '</div></details></div></article>';
+}
+if(location.hash==="#job-rezepte") setCat("job"); else render();
+</script>
+</body>
+</html>
